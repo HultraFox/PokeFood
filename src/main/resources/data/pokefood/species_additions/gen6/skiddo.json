@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:skiddo",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0_2",
+			"percentage": 66
+		  }
+		]
+	}
+}

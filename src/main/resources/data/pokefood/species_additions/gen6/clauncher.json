@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:clauncher",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:clauncher_claw",
+			"percentage": 75
+		  }
+		]
+	}
+}

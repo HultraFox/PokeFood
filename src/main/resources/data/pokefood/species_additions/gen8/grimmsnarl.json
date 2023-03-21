@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:grimmsnarl",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_meat",
+			"quantityRange": "1_5",
+			"percentage": 75
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dartrix",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

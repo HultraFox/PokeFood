@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:Drednaw",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:shell",
+			"percentage": 75
+		  }
+		]
+	}
+}
