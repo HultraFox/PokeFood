@@ -1,0 +1,15 @@
+{
+  "parent": "pokefood:custom/barrel",
+  "textures": {
+    "all": "pokefood:blocks/keg1",
+    "particle": "pokefood:blocks/keg1",
+    "0": "pokefood:blocks/barrel_front",
+    "1": "pokefood:blocks/barrel_timer",
+    "2": "pokefood:blocks/barrel_right",
+    "3": "pokefood:blocks/barrel_up",
+    "4": "pokefood:blocks/barrel_left",
+    "5": "pokefood:blocks/barrel_bottom",
+    "missing": "pokefood:blocks/"
+  },
+  "render_type": "cutout"
+}

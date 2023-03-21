@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "pokefood:blocks/calcuim_stage_2",
+    "particle": "pokefood:blocks/calcuim_stage_2"
+  },
+  "render_type": "cutout"
+}

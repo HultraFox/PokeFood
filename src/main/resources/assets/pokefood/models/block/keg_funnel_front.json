@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/keg_funel_front",
+  "textures": {
+    "all": "pokefood:blocks/keg_funnel_up",
+    "particle": "pokefood:blocks/keg_funnel_up",
+    "0": "pokefood:blocks/keg_funnel",
+    "1": "pokefood:blocks/keg_funnel_down",
+    "2": "pokefood:blocks/keg_funnel_up",
+    "missing": "pokefood:blocks/null"
+  },
+  "render_type": "solid"
+}

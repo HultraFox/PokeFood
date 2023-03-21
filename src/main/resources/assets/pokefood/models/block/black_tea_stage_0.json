@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pokefood:blocks/crops_blacktea_1",
+    "particle": "pokefood:blocks/crops_blacktea_1"
+  },
+  "render_type": "cutout"
+}

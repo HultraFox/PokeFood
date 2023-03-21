@@ -1,0 +1,13 @@
+{
+  "parent": "pokefood:custom/icecream_extension",
+  "textures": {
+    "all": "pokefood:blocks/ic_maker_7",
+    "particle": "pokefood:blocks/ic_maker_7",
+    "6": "pokefood:blocks/ic_maker_7",
+    "7": "pokefood:blocks/ic_maker_8",
+    "8": "pokefood:blocks/ic_maker_9",
+    "missing": "pokefood:blocks/null",
+    "9": "pokefood:blocks/icecream_apri_p"
+  },
+  "render_type": "cutout"
+}
