@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:glass_arceum"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:arceum",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:big_glass"
+    }
+  ]
+}

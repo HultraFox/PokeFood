@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_aprijuice_r"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "pokefood:apri_juice_r",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:cup"
+    }
+  ]
+}

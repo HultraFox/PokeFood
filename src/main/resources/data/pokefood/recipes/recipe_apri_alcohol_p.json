@@ -1,0 +1,16 @@
+{
+  "group": "alcohol",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:big_glass"
+    },
+    {
+      "item": "pokefood:apri_alcohol_p_bucket"
+    }
+  ],
+  "result": {
+    "item": "pokefood:glass_apri_p",
+    "count": 1
+  }
+}

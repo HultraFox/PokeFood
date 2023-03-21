@@ -1,0 +1,16 @@
+{
+	"type": "create:mixing",
+    "ingredients": [
+		{
+			"item": "cobblemon:red_apricorn"
+        }
+    ], 
+        "results": [
+		{
+			"fluid": "pokefood:apri_juice_r",
+			"nbt": {},
+			"amount": 250
+        }
+    ],
+	"heatRequirement": "none"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:glass_cidronade"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:cidronade",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:big_glass"
+    }
+  ]
+}

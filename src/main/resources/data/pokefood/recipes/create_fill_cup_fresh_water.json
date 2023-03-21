@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "amount": 100,
+      "fluid": "pokefood:fresh_water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "pokefood:cup_fresh_water"
+    }
+  ]
+}

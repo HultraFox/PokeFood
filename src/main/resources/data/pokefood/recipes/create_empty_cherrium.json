@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:glass_cherry_calcuim_beer"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:cherry_calcuim_beer",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:big_glass"
+    }
+  ]
+}

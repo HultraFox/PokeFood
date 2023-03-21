@@ -1,0 +1,22 @@
+{
+  "group": "aprishake",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_aprijuice_r"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "tag": "pokefood:teas"
+    },
+    {
+      "item": "pokefood:whipped_cream"
+    }
+  ],
+  "result": {
+    "item": "pokefood:apri_shake_r",
+    "count": 1
+  }
+}

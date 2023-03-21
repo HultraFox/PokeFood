@@ -1,0 +1,29 @@
+{
+	"type": "create:mixing",
+    "ingredients": [
+		{
+			"tag": "pokefood:teas",
+			"amount": 50
+        },
+		{
+			"fluid": "pokefood:apri_juice_p",
+			"amount": 50
+        },
+		{
+			"item": "pokefood:whipped_cream"
+        },
+		{
+			"item": "mincearft:honey_bottle"
+        },
+		{
+			"item": "pokefood:cup"
+        }
+    ], 
+        "results": [
+		{
+			"item": "pokefood:apri_shake_p",
+			"count": 1
+        }
+    ],
+	"heatRequirement": "none"
+}

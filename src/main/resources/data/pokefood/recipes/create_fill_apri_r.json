@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "pokefood:big_glass"
+    },
+    {
+      "amount": 1000,
+      "fluid": "pokefood:apri_alcohol_r",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "pokefood:glass_apri_r"
+    }
+  ]
+}
