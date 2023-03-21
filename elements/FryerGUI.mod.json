@@ -1,0 +1,350 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 168,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 168,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 186,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Grease"
+          },
+          "id": 12,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #12",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 13,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #13",
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_0.png",
+          "use1Xscale": false,
+          "name": "fryer_0.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying1"
+          },
+          "name": "fryer_1.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying2"
+          },
+          "name": "fryer_2.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying3"
+          },
+          "name": "fryer_3.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying4"
+          },
+          "name": "fryer_4.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying5"
+          },
+          "name": "fryer_5.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying6"
+          },
+          "name": "fryer_6.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying7"
+          },
+          "name": "fryer_7.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying8"
+          },
+          "name": "fryer_8.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying9"
+          },
+          "name": "fryer_9.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying10"
+          },
+          "name": "fryer_10.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fryer_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frying11"
+          },
+          "name": "fryer_11.png",
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 222,
+          "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 240,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #11",
+          "x": 240,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 15,
+      "oy": 19,
+      "snapOnGrid": true
+    }
+  }
+}

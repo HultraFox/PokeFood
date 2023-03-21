@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.COAL#0"
+      },
+      {
+        "value": "Items.COAL#1"
+      },
+      {
+        "value": "CUSTOM:CarbonPowder"
+      },
+      {
+        "value": "CUSTOM:OilyJunk"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "fuel",
+    "namespace": "forge"
+  }
+}
