@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:charcoal",
+    "minecraft:coal",
+    "pokefood:carbon_powder",
+    "pokefood:oily_junk"
+  ]
+}

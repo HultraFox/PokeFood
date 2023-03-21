@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:salt",
+    "pokefood:fresh_water_bucket",
+    "pokefood:apri_juice_w_bucket"
+  ]
+}

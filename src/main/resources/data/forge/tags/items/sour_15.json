@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glow_berries",
+    "minecraft:cocoa_beans",
+    "pokefood:cup_aprijuice_y",
+    "pokefood:cup_tea"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:calcuim",
+    "minecraft:pumpkin_seeds",
+    "pokefood:calcuim_seeds",
+    "pokefood:cherry",
+    "pokefood:lemon_seeds",
+    "minecraft:wheat",
+    "minecraft:melon_seeds",
+    "pokefood:black_tea_seeds",
+    "pokefood:roserade_tea_leaf",
+    "minecraft:beetroot_seeds",
+    "minecraft:wheat",
+    "minecraft:wheat_seeds",
+    "pokefood:tea_leaf",
+    "pokefood:black_tea_leaf",
+    "pokefood:tea_seeds",
+    "pokefood:banana",
+    "pokefood:lemon_slice"
+  ]
+}
