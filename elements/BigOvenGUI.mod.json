@@ -1,0 +1,432 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CookieDough"
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_0.png",
+          "use1Xscale": false,
+          "name": "oven_0.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven1"
+          },
+          "name": "oven_1.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven2"
+          },
+          "name": "oven_2.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven3"
+          },
+          "name": "oven_3.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven4"
+          },
+          "name": "oven_4.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven5"
+          },
+          "name": "oven_5.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven6"
+          },
+          "name": "oven_6.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven7"
+          },
+          "name": "oven_7.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven8"
+          },
+          "name": "oven_8.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven9"
+          },
+          "name": "oven_9.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven10"
+          },
+          "name": "oven_10.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven11"
+          },
+          "name": "oven_11.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven12"
+          },
+          "name": "oven_12.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven13"
+          },
+          "name": "oven_13.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven14"
+          },
+          "name": "oven_14.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven15"
+          },
+          "name": "oven_15.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven16"
+          },
+          "name": "oven_16.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven17"
+          },
+          "name": "oven_17.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven18"
+          },
+          "name": "oven_18.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven19"
+          },
+          "name": "oven_19.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven20"
+          },
+          "name": "oven_20.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 132,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 14,
+      "snapOnGrid": true
+    }
+  }
+}

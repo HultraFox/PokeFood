@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fryer_still",
+        "1": "grid",
+        "2": "fryer_1",
+        "3": "fryer_2",
+        "4": "fryer_3",
+        "missing": "null"
+      },
+      "name": "default"
+    }
+  }
+}
