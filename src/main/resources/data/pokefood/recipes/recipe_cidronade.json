@@ -1,0 +1,16 @@
+{
+  "group": "alcohol",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:big_glass"
+    },
+    {
+      "item": "pokefood:cidronade_bucket"
+    }
+  ],
+  "result": {
+    "item": "pokefood:glass_cidronade",
+    "count": 1
+  }
+}

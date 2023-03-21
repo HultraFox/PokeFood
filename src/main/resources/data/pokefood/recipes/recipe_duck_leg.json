@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "pokefood:duck_leg"
+  },
+  "result": "pokefood:cooked_duck_leg"
+}

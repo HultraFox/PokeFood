@@ -1,0 +1,13 @@
+{
+  "group": "lemon_slices",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:lime"
+    }
+  ],
+  "result": {
+    "item": "pokefood:lime_slice",
+    "count": 3
+  }
+}

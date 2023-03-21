@@ -1,0 +1,16 @@
+{
+	"type": "create:mixing",
+    "ingredients": [
+		{
+			"fluid": "minecraft:milk",
+			"amount": 250
+        }
+    ], 
+        "results": [
+		{
+			"item": "pokefood:whipped_cream",
+			"count": 4
+        }
+    ],
+	"heatRequirement": "none"
+}

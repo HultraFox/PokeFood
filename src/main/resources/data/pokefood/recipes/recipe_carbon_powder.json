@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "pokefood:fuel"
+    }
+  ],
+  "result": {
+    "item": "pokefood:carbon_powder",
+    "count": 1
+  }
+}

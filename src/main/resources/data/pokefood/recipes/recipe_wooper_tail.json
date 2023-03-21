@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "pokefood:wooper_tail"
+  },
+  "result": "pokefood:grilled_wooper_tail"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "1": {
+      "item": "minecraft:iron_block"
+    },
+    "2": {
+      "item": "minecraft:stone_button"
+    },
+    "3": {
+      "item": "minecraft:bucket"
+    },
+    "4": {
+      "item": "minecraft:hopper"
+    },
+    "5": {
+      "item": "minecraft:glass_bottle"
+    },
+    "6": {
+      "item": "minecraft:bucket"
+    },
+    "7": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "8": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "pokefood:carbonizer_bottle",
+    "count": 1
+  }
+}

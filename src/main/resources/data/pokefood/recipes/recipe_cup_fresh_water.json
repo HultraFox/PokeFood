@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:fresh_water_bucket"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cup_fresh_water",
+    "count": 5
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "tea_bag",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "1": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "2": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "3": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "4": {
+      "item": "pokefood:small_bag"
+    },
+    "5": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "6": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "7": {
+      "item": "pokefood:roserade_tea_leaf"
+    },
+    "8": {
+      "item": "pokefood:roserade_tea_leaf"
+    }
+  },
+  "result": {
+    "item": "pokefood:bag_roserade_tea",
+    "count": 1
+  }
+}

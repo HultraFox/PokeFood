@@ -1,0 +1,13 @@
+{
+  "group": "lemon_seeds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:lemon_slice"
+    }
+  ],
+  "result": {
+    "item": "pokefood:lemon_seeds",
+    "count": 1
+  }
+}

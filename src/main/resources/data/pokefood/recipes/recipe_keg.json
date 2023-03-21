@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:oak_button"
+    },
+    "3": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "4": {
+      "item": "minecraft:barrel"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "pokefood:keg",
+    "count": 1
+  }
+}

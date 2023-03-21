@@ -1,0 +1,16 @@
+{
+  "group": "poffins",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:poffin_bitter"
+    },
+    {
+      "item": "pokefood:sparkles_sweet"
+    }
+  ],
+  "result": {
+    "item": "pokefood:poffin_bitter_sweet",
+    "count": 1
+  }
+}

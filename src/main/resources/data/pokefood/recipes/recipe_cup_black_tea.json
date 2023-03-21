@@ -1,0 +1,28 @@
+{
+  "group": "tea_cup",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:black_tea_bucket"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cup_black_tea",
+    "count": 5
+  }
+}
