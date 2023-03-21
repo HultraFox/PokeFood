@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "keg_funnel",
+        "1": "keg_funnel_down",
+        "2": "keg_funnel_up",
+        "missing": "null"
+      },
+      "name": "default"
+    }
+  }
+}

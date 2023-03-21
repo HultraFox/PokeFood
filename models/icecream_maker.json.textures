@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ic_maker_1",
+        "1": "ic_maker_2",
+        "2": "ic_maker_3",
+        "3": "ic_maker_4",
+        "4": "ic_maker_5",
+        "5": "ic_maker_6",
+        "missing": "null"
+      },
+      "name": "default"
+    }
+  }
+}
