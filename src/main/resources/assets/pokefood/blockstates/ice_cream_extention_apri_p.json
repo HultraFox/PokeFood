@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/ice_cream_extention_apri_p"
+    },
+    "facing=east": {
+      "model": "pokefood:block/ice_cream_extention_apri_p",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/ice_cream_extention_apri_p",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/ice_cream_extention_apri_p",
+      "y": 270
+    }
+  }
+}

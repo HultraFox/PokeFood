@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/pot_water"
+    },
+    "facing=east": {
+      "model": "pokefood:block/pot_water",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/pot_water",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/pot_water",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/pot_water_sugar"
+    },
+    "facing=east": {
+      "model": "pokefood:block/pot_water_sugar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/pot_water_sugar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/pot_water_sugar",
+      "y": 270
+    }
+  }
+}

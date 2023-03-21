@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/ice_cream_extention_lemonade"
+    },
+    "facing=east": {
+      "model": "pokefood:block/ice_cream_extention_lemonade",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/ice_cream_extention_lemonade",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/ice_cream_extention_lemonade",
+      "y": 270
+    }
+  }
+}
