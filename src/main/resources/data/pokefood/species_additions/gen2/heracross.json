@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:heracross",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:heracross_horn",
+			"percentage": 75
+		  }
+		]
+	}
+}

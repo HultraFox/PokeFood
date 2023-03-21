@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:bibarel",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:bibarel_tail",
+			"percentage": 66
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:piloswine",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "2-5",
+			"percentage": 75
+		  }
+		]
+	}
+}

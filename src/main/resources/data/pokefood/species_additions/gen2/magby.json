@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:magby",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

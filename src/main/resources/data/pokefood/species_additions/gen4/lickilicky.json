@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:lickilicky",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "5-20",
+			"percentage": 65
+		  }
+		]
+	}
+}

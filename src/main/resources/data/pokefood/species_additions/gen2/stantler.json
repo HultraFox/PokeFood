@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:stantler",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "minecraft:steak",
+			"quantityRange": "0-3",
+			"percentage": 66
+		  }
+		]
+	}
+}
