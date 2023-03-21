@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:sealeo",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "2-8",
+			"percentage": 66
+		  }
+		]
+	}
+}

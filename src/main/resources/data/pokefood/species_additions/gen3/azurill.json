@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:azurill",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "0_1",
+			"percentage": 50
+		  }
+		]
+	}
+}

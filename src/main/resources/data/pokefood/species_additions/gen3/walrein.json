@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:walrein",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "5-15",
+			"percentage": 75
+		  }
+		]
+	}
+}

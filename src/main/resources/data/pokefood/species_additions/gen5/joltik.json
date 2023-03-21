@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:joltik",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:spider_meat",
+			"percentage": 10
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:whimsicott",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"quantityRange": "0_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

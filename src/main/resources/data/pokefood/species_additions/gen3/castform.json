@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:castform",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"percentage": 50
+		  }
+		]
+	}
+}

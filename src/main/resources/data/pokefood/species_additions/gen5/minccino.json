@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:minccino",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fuffly_steak",
+			"quantityRange": "0_2",
+			"percentage": 66
+		  }
+		]
+	}
+}

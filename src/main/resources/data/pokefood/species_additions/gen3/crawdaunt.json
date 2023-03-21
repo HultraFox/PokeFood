@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:crawdaunt",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:crab_claw",
+			"quantityRange": "1-2",
+			"percentage": 75
+		  }
+		]
+	}
+}

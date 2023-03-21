@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:loudred",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "3-6",
+			"percentage": 66
+		  }
+		]
+	}
+}

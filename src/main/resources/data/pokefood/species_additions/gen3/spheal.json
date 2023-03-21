@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:spheal",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1-5",
+			"percentage": 50
+		  }
+		]
+	}
+}

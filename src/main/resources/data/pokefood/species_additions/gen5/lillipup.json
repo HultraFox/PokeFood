@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:lillipup",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

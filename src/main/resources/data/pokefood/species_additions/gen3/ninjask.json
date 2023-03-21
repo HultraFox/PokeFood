@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:ninjask",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:spider_meat",
+			"percentage": 50
+		  }
+		]
+	}
+}

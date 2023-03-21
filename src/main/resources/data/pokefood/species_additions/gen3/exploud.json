@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:exploud",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "4-10",
+			"percentage": 75
+		  }
+		]
+	}
+}
