@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:magikarp",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:magikarp",
+			"percentage": 33
+		  }
+		]
+	}
+}

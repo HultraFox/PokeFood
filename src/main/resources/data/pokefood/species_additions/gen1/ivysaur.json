@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:ivysaur",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nectar",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

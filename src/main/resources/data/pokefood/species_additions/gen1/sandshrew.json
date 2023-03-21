@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:sandshrew",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:sand_tail",
+			"quantityRange": "1",
+			"percentage": 66
+		  }
+		]
+	}
+}

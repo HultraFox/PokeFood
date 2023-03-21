@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:nidorino",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nido_meat",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

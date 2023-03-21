@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:jigglypuff",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

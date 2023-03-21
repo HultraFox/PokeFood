@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:oddish",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:tea_leaf",
+			"quantityRange": "0-2",
+			"percentage": 33
+		  }
+		]
+	}
+}

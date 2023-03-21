@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:raichu",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "1-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

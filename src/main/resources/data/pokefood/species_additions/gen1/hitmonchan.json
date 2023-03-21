@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:hitmonchan",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0-4",
+			"percentage": 66
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:flareon",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "0-4",
+			"percentage": 50
+		  }
+		]
+	}
+}

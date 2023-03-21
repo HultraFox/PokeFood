@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:tentacool",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:tentacle",
+			"quantityRange": "1_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

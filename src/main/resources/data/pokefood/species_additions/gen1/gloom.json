@@ -1,0 +1,20 @@
+{
+    "target": "cobblemon:gloom",
+	"drops": 
+	{
+		"amount": "3",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:calcuim",
+			"quantityRange": "0-5",
+			"percentage": 20
+		  },
+		  {
+			"item": "pokefood:calcuim_seeds",
+			"quantityRange": "0-1",
+			"percentage": 20
+		  }
+		]
+	}
+}

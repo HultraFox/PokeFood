@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:rapidash",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:horse_meat",
+			"quantityRange": "1-6",
+			"percentage": 75
+		  }
+		]
+	}
+}

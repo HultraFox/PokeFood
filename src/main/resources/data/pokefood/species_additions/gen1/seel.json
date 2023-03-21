@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:seel",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "0-3",
+			"percentage": 50
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:krabby",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:crab_claw",
+			"quantityRange": "0-2",
+			"percentage": 75
+		  }
+		]
+	}
+}
