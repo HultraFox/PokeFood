@@ -1,0 +1,138 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceW.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceD.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceB.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceG.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceR.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceP.bucket"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceW"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceD"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceB"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceR"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceP"
+      },
+      {
+        "value": "CUSTOM:WhippedCream"
+      },
+      {
+        "value": "CUSTOM:Salt"
+      },
+      {
+        "value": "CUSTOM:Tea.bucket"
+      },
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:BlackTea.bucket"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:Lemonade.bucket"
+      },
+      {
+        "value": "CUSTOM:CupLemonade"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:LimeSlice"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:SparklesSpicy"
+      },
+      {
+        "value": "CUSTOM:SparklesDry"
+      },
+      {
+        "value": "CUSTOM:SparklesSweet"
+      },
+      {
+        "value": "CUSTOM:SparklesBitter"
+      },
+      {
+        "value": "CUSTOM:SparklesSour"
+      },
+      {
+        "value": "CUSTOM:FreshWater.bucket"
+      },
+      {
+        "value": "CUSTOM:CupFreshWater"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.MELON"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
+      },
+      {
+        "value": "Items.DYE#3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "can_be_mixed",
+    "namespace": "forge"
+  }
+}

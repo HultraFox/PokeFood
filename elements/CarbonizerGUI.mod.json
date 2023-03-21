@@ -1,0 +1,763 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CarbonPowder"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 150,
+          "y": 54
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.SUGAR"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 204,
+          "y": 54
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ApriJuiceW.bucket"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 258,
+          "y": 54
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:SodaBottle"
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 150,
+          "y": 90
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:PopBall"
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 258,
+          "y": 90
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 204,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_0.png",
+          "use1Xscale": false,
+          "name": "carbonizer_progress_0.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer1"
+          },
+          "name": "carbonizer_progress_1.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer2"
+          },
+          "name": "carbonizer_progress_2.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer3"
+          },
+          "name": "carbonizer_progress_3.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer4"
+          },
+          "name": "carbonizer_progress_4.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer5"
+          },
+          "name": "carbonizer_progress_5.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer6"
+          },
+          "name": "carbonizer_progress_6.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer7"
+          },
+          "name": "carbonizer_progress_7.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer8"
+          },
+          "name": "carbonizer_progress_8.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer9"
+          },
+          "name": "carbonizer_progress_9.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer10"
+          },
+          "name": "carbonizer_progress_10.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer11"
+          },
+          "name": "carbonizer_progress_11.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer12"
+          },
+          "name": "carbonizer_progress_12.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer13"
+          },
+          "name": "carbonizer_progress_13.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer14"
+          },
+          "name": "carbonizer_progress_14.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer15"
+          },
+          "name": "carbonizer_progress_15.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer16"
+          },
+          "name": "carbonizer_progress_16.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer17"
+          },
+          "name": "carbonizer_progress_17.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer18"
+          },
+          "name": "carbonizer_progress_18.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer19"
+          },
+          "name": "carbonizer_progress_19.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer20"
+          },
+          "name": "carbonizer_progress_20.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer21"
+          },
+          "name": "carbonizer_progress_21.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer22"
+          },
+          "name": "carbonizer_progress_22.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer23"
+          },
+          "name": "carbonizer_progress_23.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer24"
+          },
+          "name": "carbonizer_progress_24.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer25"
+          },
+          "name": "carbonizer_progress_25.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer26"
+          },
+          "name": "carbonizer_progress_26.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer27"
+          },
+          "name": "carbonizer_progress_27.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer28"
+          },
+          "name": "carbonizer_progress_28.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer29"
+          },
+          "name": "carbonizer_progress_29.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer30"
+          },
+          "name": "carbonizer_progress_30.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_31.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer31"
+          },
+          "name": "carbonizer_progress_31.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer32"
+          },
+          "name": "carbonizer_progress_32.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_33.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer33"
+          },
+          "name": "carbonizer_progress_33.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_34.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer34"
+          },
+          "name": "carbonizer_progress_34.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_35.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer35"
+          },
+          "name": "carbonizer_progress_35.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_36.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer36"
+          },
+          "name": "carbonizer_progress_36.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_37.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer37"
+          },
+          "name": "carbonizer_progress_37.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_38.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer38"
+          },
+          "name": "carbonizer_progress_38.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_39.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer39"
+          },
+          "name": "carbonizer_progress_39.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer40"
+          },
+          "name": "carbonizer_progress_40.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_41.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer41"
+          },
+          "name": "carbonizer_progress_41.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_42.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer42"
+          },
+          "name": "carbonizer_progress_42.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_43.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer43"
+          },
+          "name": "carbonizer_progress_43.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_44.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer44"
+          },
+          "name": "carbonizer_progress_44.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_45.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer45"
+          },
+          "name": "carbonizer_progress_45.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_46.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer46"
+          },
+          "name": "carbonizer_progress_46.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_47.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer47"
+          },
+          "name": "carbonizer_progress_47.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_48.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer48"
+          },
+          "name": "carbonizer_progress_48.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_49.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer49"
+          },
+          "name": "carbonizer_progress_49.png",
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carbonizer_progress_50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer50"
+          },
+          "name": "carbonizer_progress_50.png",
+          "x": 126,
+          "y": 38
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 16,
+      "oy": 20,
+      "snapOnGrid": true
+    }
+  }
+}
