@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "plains",
+    "meadow"
+  ],
+  "features": "pokefood:lemon_stage_0",
+  "step": "vegetal_decoration"
+}
