@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "PF - Cookies",
+    "icon": {
+      "value": "CUSTOM:CookieBulbasaur"
+    },
+    "showSearch": true
+  }
+}

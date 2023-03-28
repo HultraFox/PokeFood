@@ -1,0 +1,979 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 231,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 231,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 177,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_0.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending1"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending2"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending3"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending4"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending5"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending6"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending7"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending8"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending9"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending10"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending11"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending12"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Carbonizer13"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending14"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending15"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending16"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending17"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending18"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending19"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending20"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending21"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending22"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending23"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending24"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending25"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending26"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending27"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending28"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending29"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending30"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_31.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending31"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending32"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_33.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending33"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_34.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending34"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_35.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending35"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_blending_36.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blending36"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting1"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting2"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting3"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting4"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting5"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting6"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting7"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting8"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting9"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting10"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting11"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting12"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting13"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting14"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting15"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting16"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting17"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting18"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting19"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting20"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting21"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting22"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting23"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting24"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting25"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting26"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting27"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting28"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting29"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting30"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_31.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting31"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting32"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_33.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting33"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_34.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting34"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_35.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting35"
+          },
+          "x": 126,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mixing_frosting_36.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frosting36"
+          },
+          "x": 126,
+          "y": 37
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 17,
+      "oy": 1,
+      "snapOnGrid": true
+    }
+  }
+}

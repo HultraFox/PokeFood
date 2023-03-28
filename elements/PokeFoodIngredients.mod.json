@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood - Ingredients",
+    "icon": {
+      "value": "CUSTOM:PoffinDoughSpicy"
+    },
+    "showSearch": false
+  }
+}
