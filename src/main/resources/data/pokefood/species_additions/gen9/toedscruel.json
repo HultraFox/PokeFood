@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:toedscruel",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:tentacle",
+			"quantityRange": "3_8",
+			"percentage": 50
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:pawmot",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

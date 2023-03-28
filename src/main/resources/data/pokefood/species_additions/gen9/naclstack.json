@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:naclstack",
+	"drops": 
+	{
+		"amount": "10",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:salt",
+			"quantityRange": "1_3",
+			"percentage": 60
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dondozo",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "2_8",
+			"percentage": 66
+		  }
+		]
+	}
+}

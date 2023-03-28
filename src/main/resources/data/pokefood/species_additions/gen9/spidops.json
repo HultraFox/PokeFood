@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:spidops",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:spider_meat",
+			"quantityRange": "0_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

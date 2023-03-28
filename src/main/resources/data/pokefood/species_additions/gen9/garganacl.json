@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:garganacl",
+	"drops": 
+	{
+		"amount": "10",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:salt",
+			"quantityRange": "0_3",
+			"percentage": 60
+		  }
+		]
+	}
+}

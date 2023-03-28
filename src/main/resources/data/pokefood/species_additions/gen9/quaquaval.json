@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:quaquaval",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "1_2",
+			"percentage": 75
+		  }
+		]
+	}
+}

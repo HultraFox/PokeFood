@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dolliv",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1_2",
+			"percentage": 66
+		  }
+		]
+	}
+}

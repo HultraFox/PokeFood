@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:capsakid",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "0_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

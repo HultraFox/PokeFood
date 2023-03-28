@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:tarountula",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:spider_meat",
+			"quantityRange": "1_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

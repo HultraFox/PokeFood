@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:cetoddle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "2_4",
+			"percentage": 50
+		  }
+		]
+	}
+}

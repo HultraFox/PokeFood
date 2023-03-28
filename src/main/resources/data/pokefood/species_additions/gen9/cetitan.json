@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:cetitan",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "4_8",
+			"percentage": 66
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:arboliva",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "2_4",
+			"percentage": 66
+		  }
+		]
+	}
+}

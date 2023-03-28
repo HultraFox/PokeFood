@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:maushold",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_steak",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

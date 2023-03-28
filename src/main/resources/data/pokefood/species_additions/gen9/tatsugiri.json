@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:tatsugiri",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"percentage": 25
+		  }
+		]
+	}
+}
