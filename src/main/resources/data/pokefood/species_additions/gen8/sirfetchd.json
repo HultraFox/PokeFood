@@ -1,0 +1,19 @@
+{
+    "target": "cobblemon:sirfetchd",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "0-2",
+			"percentage": 66
+		  },
+		  {
+			"item": "pokefood:leek",
+			"percentage": 66
+		  }
+		]
+	}
+}

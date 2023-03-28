@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:pangoro",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1_7",
+			"percentage": 66
+		  }
+		]
+	}
+}

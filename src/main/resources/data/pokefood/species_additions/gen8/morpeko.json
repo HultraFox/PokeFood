@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:morpeko",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_meat",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

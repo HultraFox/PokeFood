@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:bounsweet",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:cherry",
+			"percentage": 50
+		  }
+		]
+	}
+}

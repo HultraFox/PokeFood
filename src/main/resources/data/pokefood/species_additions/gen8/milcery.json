@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:milcery",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nectar",
+			"quantityRange": "0_3",
+			"percentage": 50
+		  }
+		]
+	}
+}

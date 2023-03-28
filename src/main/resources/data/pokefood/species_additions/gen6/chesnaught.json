@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:chesnaught",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_meat",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:fennekin",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "0_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

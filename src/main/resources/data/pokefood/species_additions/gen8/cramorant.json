@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:cramorant",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "1_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

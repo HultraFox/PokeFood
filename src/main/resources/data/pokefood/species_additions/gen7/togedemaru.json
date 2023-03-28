@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:togedemaru",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "1_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

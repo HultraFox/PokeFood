@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:tyrantrum",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0_6",
+			"percentage": 75
+		  }
+		]
+	}
+}

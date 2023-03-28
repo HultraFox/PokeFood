@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:helioptile",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

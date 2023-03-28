@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:sylveon",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

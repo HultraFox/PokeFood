@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:delphox",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

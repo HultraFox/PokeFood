@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:brionne",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

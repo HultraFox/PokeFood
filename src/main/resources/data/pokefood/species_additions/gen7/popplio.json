@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:popplio",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "1_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

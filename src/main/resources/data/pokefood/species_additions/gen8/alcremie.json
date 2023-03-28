@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:alcremie",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nectar",
+			"quantityRange": "1_5",
+			"percentage": 66
+		  }
+		]
+	}
+}

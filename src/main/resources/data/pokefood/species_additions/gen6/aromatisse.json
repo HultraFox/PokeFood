@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:aromatisse",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:chicken_leg",
+			"quantityRange": "0_2",
+			"percentage": 66
+		  }
+		]
+	}
+}

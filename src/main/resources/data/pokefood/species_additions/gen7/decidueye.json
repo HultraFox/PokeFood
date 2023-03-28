@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:decidueye",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}
