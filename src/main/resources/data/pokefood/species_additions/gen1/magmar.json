@@ -6,16 +6,8 @@
 		"entries": 
 		[
 		  {
-			"item": "minecraft:blaze_powder",
-			"percentage": 10
-		  },
-		  {
-			"item": "cobblemon:magmarizer",
-			"percentage": 5
-		  },
-		  {
 			"item": "pokefood:flaming_rib",
-			"quantityRange": "0-4",
+			"quantityRange": "1-4",
 			"percentage": 50
 		  }
 		]

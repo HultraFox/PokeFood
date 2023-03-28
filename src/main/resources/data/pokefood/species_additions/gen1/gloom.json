@@ -7,12 +7,11 @@
 		[
 		  {
 			"item": "pokefood:calcuim",
-			"quantityRange": "0-5",
+			"quantityRange": "1-5",
 			"percentage": 20
 		  },
 		  {
 			"item": "pokefood:calcuim_seeds",
-			"quantityRange": "0-1",
 			"percentage": 20
 		  }
 		]
