@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 0.5,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BlueFin"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CookedBlueFin"
+    },
+    "name": "recipe_blue_fin",
+    "namespace": "mod"
+  }
+}

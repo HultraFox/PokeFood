@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 0.5,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:CrabClaw"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CookedCrabClaw"
+    },
+    "name": "recipe_claw",
+    "namespace": "mod"
+  }
+}
