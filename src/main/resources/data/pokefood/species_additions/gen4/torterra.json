@@ -1,0 +1,20 @@
+{
+    "target": "cobblemon:torterra",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1-4",
+			"percentage": 75
+		  },
+		  {
+			"item": "pokefood:lemon_seeds",
+			"quantityRange": "1-5",
+			"percentage": 40
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:teddiursa",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "1-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

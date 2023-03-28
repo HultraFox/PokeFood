@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:wooper",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+          {
+			"item": "pokefood:wooper_tail",
+			"percentage": 75
+		  }
+		]
+	}
+}

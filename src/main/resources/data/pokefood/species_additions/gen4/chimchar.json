@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:chimchar",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

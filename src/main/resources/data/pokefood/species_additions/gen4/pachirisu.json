@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:pachirisu",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "0-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

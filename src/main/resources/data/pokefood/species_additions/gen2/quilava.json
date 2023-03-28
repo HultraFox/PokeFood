@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:quilava",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

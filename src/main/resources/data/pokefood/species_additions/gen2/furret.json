@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:furret",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "1-3",
+			"percentage": 75
+		  }
+		]
+	}
+}

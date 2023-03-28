@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:shinx",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:star_bite",
+			"percentage": 66
+		  }
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "target": "cobblemon:donphan",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "1-5",
+			"percentage": 66
+		  },
+		  {
+			"item": "pokefood:greass",
+			"quantityRange": "2-4",
+			"percentage": 75
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:swinub",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

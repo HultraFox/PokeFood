@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:cleffa",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

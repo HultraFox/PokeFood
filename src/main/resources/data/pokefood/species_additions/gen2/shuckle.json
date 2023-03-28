@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:shuckle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nectar",
+			"quantityRange": "1-3",
+			"percentage": 75
+		  }
+		]
+	}
+}

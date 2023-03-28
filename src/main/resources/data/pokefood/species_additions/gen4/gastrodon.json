@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:gastrodon",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "1-4",
+			"percentage": 75
+		  }
+		]
+	}
+}

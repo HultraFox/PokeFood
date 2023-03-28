@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:leafeon",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

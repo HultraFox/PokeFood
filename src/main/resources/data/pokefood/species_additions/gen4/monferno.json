@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:monferno",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0-3",
+			"percentage": 65
+		  }
+		]
+	}
+}

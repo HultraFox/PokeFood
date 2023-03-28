@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:togetic",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

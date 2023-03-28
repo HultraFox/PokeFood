@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:roserade",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:roserade_tea_leaf",
+			"quantityRange": "1-7",
+			"percentage": 65
+		  }
+		]
+	}
+}

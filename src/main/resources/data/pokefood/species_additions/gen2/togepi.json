@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:togepi",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fairy_meat",
+			"percentage": 50
+		  }
+		]
+	}
+}

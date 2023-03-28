@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:bayleef",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:tea_seeds",
+			"quantityRange": "1-3",
+			"percentage": 50
+		  }
+		]
+	}
+}

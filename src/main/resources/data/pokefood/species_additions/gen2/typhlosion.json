@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:typhlosion",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "1-4",
+			"percentage": 75
+		  }
+		]
+	}
+}

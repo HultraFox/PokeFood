@@ -1,0 +1,20 @@
+{
+    "target": "cobblemon:phanpy",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  },
+		  {
+			"item": "pokefood:greass",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

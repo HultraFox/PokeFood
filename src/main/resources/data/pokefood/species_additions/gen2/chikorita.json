@@ -1,0 +1,20 @@
+{
+    "target": "cobblemon:chikorita",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:black_tea_leaf",
+			"quantityRange": "0-2",
+			"percentage": 33
+		  },
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

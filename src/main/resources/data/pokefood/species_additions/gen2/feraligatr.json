@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:feraligatr",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "1-4",
+			"percentage": 75
+		  }
+		]
+	}
+}

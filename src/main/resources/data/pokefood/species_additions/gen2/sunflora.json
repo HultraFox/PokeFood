@@ -1,0 +1,19 @@
+{
+    "target": "cobblemon:sunflora",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:calcuim",
+			"quantityRange": "1-5",
+			"percentage": 20
+		  },
+		  {
+			"item": "pokefood:calcuim_seeds",
+			"percentage": 20
+		  }
+		]
+	}
+}

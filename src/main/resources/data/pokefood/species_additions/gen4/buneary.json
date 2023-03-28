@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:buneary",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:fluffy_meat",
+			"quantityRange": "0-2",
+			"percentage": 66
+		  }
+		]
+	}
+}

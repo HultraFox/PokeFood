@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:wormadam",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:black_tea_seeds",
+			"quantityRange": "1-4",
+			"percentage": 66
+		  }
+		]
+	}
+}

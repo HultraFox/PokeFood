@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:cherubi",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:cherry",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  }
+		]
+	}
+}
