@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:golduck",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "0-2",
+			"percentage": 75
+		  }
+		]
+	}
+}

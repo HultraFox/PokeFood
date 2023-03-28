@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:kadabra",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:kadabra_tail",
+			"percentage": 75
+		  }
+		]
+	}
+}

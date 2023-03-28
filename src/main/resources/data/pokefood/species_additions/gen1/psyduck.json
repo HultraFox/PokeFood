@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:psyduck",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "1-2",
+			"percentage": 75
+		  }
+		]
+	}
+}

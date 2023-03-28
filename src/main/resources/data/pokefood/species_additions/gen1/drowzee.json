@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:drowzee",
+	"drops": 
+	{
+		"amount": "2",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1-3",
+			"percentage": 50
+		  }
+		]
+	}
+}

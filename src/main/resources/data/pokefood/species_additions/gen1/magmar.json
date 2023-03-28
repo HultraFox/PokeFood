@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:magmar",
+	"drops": 
+	{
+		"amount": "3",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "1-4",
+			"percentage": 50
+		  }
+		]
+	}
+}

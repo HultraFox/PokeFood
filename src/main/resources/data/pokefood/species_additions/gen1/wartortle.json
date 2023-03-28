@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:wartorle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:shell",
+			"quantityRange": "1",
+			"percentage": 100
+		  }
+		]
+	}
+}

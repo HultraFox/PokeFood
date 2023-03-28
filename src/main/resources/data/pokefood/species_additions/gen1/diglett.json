@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:diglett",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:dig_nose",
+			"quantityRange": "1",
+			"percentage": 66
+		  }
+		]
+	}
+}

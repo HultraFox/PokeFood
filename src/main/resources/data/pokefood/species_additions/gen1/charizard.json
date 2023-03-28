@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:charizard",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:flaming_rib",
+			"quantityRange": "1-6",
+			"percentage": 75
+		  }
+		]
+	}
+}

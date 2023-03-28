@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:seaking",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:seaking",
+			"percentage": 66
+		  }
+		]
+	}
+}

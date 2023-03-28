@@ -1,0 +1,13 @@
+{
+    "target": "cobblemon:slowpoke",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:slowpoke_tail"
+		  }
+		]
+	}
+}

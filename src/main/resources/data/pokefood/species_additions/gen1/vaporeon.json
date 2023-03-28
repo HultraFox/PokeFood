@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:vaporeon",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:blue_fin",
+			"quantityRange": "1-2",
+			"percentage": 75
+		  }
+		]
+	}
+}

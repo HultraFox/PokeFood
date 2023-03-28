@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:snorlax",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "2-7",
+			"percentage": 75
+		  }
+		]
+	}
+}

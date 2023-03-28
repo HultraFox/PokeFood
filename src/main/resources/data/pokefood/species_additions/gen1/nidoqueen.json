@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:nidoqueen",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nido_meat",
+			"quantityRange": "1-3",
+			"percentage": 75
+		  }
+		]
+	}
+}

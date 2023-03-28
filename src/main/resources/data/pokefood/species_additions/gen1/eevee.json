@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:eevee",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "1-4",
+			"percentage": 50
+		  }
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:venusaur",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:nectar",
+			"percentage": 50
+		  }
+		]
+	}
+}

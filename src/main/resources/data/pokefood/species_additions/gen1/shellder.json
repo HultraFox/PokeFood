@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:shellder",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:black_pearl",
+			"quantityRange": "1",
+			"percentage": 66
+		  }
+		]
+	}
+}

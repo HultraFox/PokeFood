@@ -1,0 +1,24 @@
+{
+    "target": "cobblemon:electabuzz",
+	"drops": 
+	{
+		"amount": "3",
+		"entries": 
+		[
+		  {
+			"item": "minecraft:redstone",
+			"quantityRange": "1-2",
+			"percentage": 66
+		  },
+		  {
+			"item": "cobblemon:electirizer",
+			"percentage": 5
+		  },
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "1-4",
+			"percentage": 50
+		  }
+		]
+	}
+}

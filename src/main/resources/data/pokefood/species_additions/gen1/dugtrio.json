@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dugtrio",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:dig_nose",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

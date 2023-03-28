@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dewgong",
+	"drops": 
+	{
+		"amount": "3",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1-5",
+			"percentage": 66
+		  }
+		]
+	}
+}

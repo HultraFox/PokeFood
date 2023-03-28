@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:goldeen",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:goldeen",
+			"percentage": 66
+		  }
+		]
+	}
+}
