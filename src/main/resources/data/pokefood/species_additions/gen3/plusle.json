@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:plusle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:plusle_tail",
+			"percentage": 75
+		  }
+		]
+	}
+}

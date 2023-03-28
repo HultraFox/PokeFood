@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:blaziken",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:chiken_leg",
+			"quantityRange": "1-2",
+			"percentage": 75
+		  }
+		]
+	}
+}

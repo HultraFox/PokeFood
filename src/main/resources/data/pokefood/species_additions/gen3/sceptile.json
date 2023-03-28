@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:sceptile",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1-4",
+			"percentage": 75
+		  }
+		]
+	}
+}

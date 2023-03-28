@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:tropius",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:banana",
+			"quantityRange": "1-3",
+			"percentage": 75
+		  }
+		]
+	}
+}

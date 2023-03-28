@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:serperior",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1_4",
+			"percentage": 75
+		  }
+		]
+	}
+}

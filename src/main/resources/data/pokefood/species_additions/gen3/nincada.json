@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:nincada",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:spider_meat",
+			"quantityRange": "1-3",
+			"percentage": 50
+		  }
+		]
+	}
+}

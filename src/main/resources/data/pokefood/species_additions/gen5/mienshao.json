@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:mienshao",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "1_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

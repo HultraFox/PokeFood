@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:ducklett",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "0_2",
+			"percentage": 50
+		  }
+		]
+	}
+}

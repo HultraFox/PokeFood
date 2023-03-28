@@ -1,0 +1,13 @@
+{
+    "target": "cobblemon:wurmple",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:wurmple"
+		  }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:electrike",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:static_steak",
+			"quantityRange": "1_3",
+			"percentage": 50
+		  }
+		]
+	}
+}

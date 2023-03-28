@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:herdier",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:stiff_steak",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

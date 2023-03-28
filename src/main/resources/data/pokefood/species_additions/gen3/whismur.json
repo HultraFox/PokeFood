@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:whismur",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "2-4",
+			"percentage": 50
+		  }
+		]
+	}
+}

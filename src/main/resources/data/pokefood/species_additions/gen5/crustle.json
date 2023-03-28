@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:crustle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:crab_claw",
+			"quantityRange": "1_2",
+			"percentage": 66
+		  }
+		]
+	}
+}

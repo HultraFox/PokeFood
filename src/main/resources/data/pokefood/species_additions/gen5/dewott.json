@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:dewott",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:watery_meat",
+			"quantityRange": "1_3",
+			"percentage": 66
+		  }
+		]
+	}
+}

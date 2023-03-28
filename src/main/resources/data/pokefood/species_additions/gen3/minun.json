@@ -1,0 +1,14 @@
+{
+    "target": "cobblemon:minun",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:minun_tail",
+			"percentage": 75
+		  }
+		]
+	}
+}

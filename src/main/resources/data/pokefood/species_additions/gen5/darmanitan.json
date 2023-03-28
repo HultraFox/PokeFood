@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:darmanitan",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1_8",
+			"percentage": 66
+		  }
+		]
+	}
+}

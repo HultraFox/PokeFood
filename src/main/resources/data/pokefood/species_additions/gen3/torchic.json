@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:torchic",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:chiken_leg",
+			"quantityRange": "0-2",
+			"percentage": 50
+		  }
+		]
+	}
+}

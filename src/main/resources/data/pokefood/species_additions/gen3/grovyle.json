@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:grovyle",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:green_slice",
+			"quantityRange": "1-3",
+			"percentage": 66
+		  }
+		]
+	}
+}

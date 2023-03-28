@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:darumaka",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:grease",
+			"quantityRange": "1_4",
+			"percentage": 50
+		  }
+		]
+	}
+}

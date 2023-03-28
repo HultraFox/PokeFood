@@ -1,0 +1,15 @@
+{
+    "target": "cobblemon:swanna",
+	"drops": 
+	{
+		"amount": "1",
+		"entries": 
+		[
+		  {
+			"item": "pokefood:duck_leg",
+			"quantityRange": "0_3",
+			"percentage": 66
+		  }
+		]
+	}
+}
