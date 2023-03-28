@@ -1,0 +1,33 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ApriJuiceB.bucket"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:SparklesSweet"
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sweet_10",
+    "namespace": "forge"
+  }
+}
