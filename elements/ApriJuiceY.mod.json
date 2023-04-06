@@ -2,8 +2,8 @@
   "_fv": 39,
   "_type": "fluid",
   "definition": {
-    "name": "Yellow arpi-juice",
-    "bucketName": "Yellow arpi-juice Bucket",
+    "name": "Yellow apri-juice",
+    "bucketName": "Yellow apri-juice Bucket",
     "textureStill": "aprijuice_y_still",
     "textureFlowing": "aprijuice_y_flow",
     "tintType": "No tint",
