@@ -1,17 +1,6 @@
 package net.pokefood.procedures;
 
-import net.pokefood.init.PokefoodModItems;
-
-import net.minecraftforge.server.ServerLifecycleHooks;
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
+/* imports omitted */
 
 public class FrostingMixingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -35,16 +24,6 @@ public class FrostingMixingProcedure {
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "result2");
-		if (!world.isClientSide()) {
-			MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
-			if (_mcserv != null)
-				_mcserv.getPlayerList().broadcastSystemMessage(Component.literal(result), false);
-		}
-		if (!world.isClientSide()) {
-			MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
-			if (_mcserv != null)
-				_mcserv.getPlayerList().broadcastSystemMessage(Component.literal(result2), false);
-		}
 		if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
