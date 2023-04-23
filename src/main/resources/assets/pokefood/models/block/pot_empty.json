@@ -3,12 +3,12 @@
   "textures": {
     "all": "pokefood:blocks/cauldron_empty",
     "particle": "pokefood:blocks/cauldron_empty",
-    "0": "pokefood:blocks/fire",
+    "0": "pokefood:blocks/null",
     "1": "pokefood:blocks/cauldron_inner",
     "2": "pokefood:blocks/cauldron_side",
     "3": "pokefood:blocks/cauldron_top",
     "4": "pokefood:blocks/oak_planks",
-    "5": "pokefood:blocks/waterpot",
+    "5": "pokefood:blocks/null",
     "missing": "pokefood:blocks/null"
   },
   "render_type": "cutout"
