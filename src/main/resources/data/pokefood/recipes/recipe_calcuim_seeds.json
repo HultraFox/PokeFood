@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:calcuim"
+    }
+  ],
+  "result": {
+    "item": "pokefood:calcuim_seeds",
+    "count": 1
+  }
+}
