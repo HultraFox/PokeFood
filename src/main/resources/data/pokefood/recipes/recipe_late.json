@@ -1,0 +1,28 @@
+{
+  "group": "coffee_cup",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "pokefood:cup_coffee"
+    },
+    {
+      "item": "pokefood:cup_coffee"
+    },
+    {
+      "item": "pokefood:cup_coffee"
+    },
+    {
+      "item": "pokefood:cup_coffee"
+    },
+    {
+      "item": "pokefood:cup_coffee"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cup_latte",
+    "count": 5
+  }
+}

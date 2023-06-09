@@ -1,0 +1,37 @@
+{
+  "group": "dry_rep",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    }
+  ],
+  "result": {
+    "item": "pokefood:dry_rep_4",
+    "count": 2
+  }
+}

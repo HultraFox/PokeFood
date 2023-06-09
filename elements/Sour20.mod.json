@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ApriJuiceD.bucket"
+      },
+      {
+        "value": "CUSTOM:SourRep2"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sour_20",
+    "namespace": "forge"
+  }
+}

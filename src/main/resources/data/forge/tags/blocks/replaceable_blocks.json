@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fern",
+    "minecraft:seagrass",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:air",
+    "minecraft:vine",
+    "minecraft:tall_seagrass",
+    "minecraft:glow_lichen",
+    "minecraft:large_fern"
+  ]
+}

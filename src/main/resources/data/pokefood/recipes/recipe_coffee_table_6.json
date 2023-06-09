@@ -1,0 +1,20 @@
+{
+  "group": "coffee_table",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "1": {
+      "item": "minecraft:mangrove_fence"
+    }
+  },
+  "result": {
+    "item": "pokefood:coffee_table_6",
+    "count": 1
+  }
+}

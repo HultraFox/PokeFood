@@ -1,10 +1,13 @@
 {
   "group": "sprinkles",
-  "type": "minecraft:smelting",
-  "experience": 1,
-  "cookingtime": 200,
-  "ingredient": {
-    "item": "pokefood:poffin_dough_sweet"
-  },
-  "result": "pokefood:sparkles_sweet"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:poffin_dough_sweet"
+    }
+  ],
+  "result": {
+    "item": "pokefood:sparkles_sweet",
+    "count": 1
+  }
 }

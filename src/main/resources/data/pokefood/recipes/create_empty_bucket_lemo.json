@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:lemonade_bucket"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:lemonade",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ]
+}

@@ -11,7 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class ApriAlcoholWItem extends BucketItem {
 	public ApriAlcoholWItem() {
-		super(PokefoodModFluids.APRI_ALCOHOL_W,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_MISC));
+		super(PokefoodModFluids.APRI_ALCOHOL_W, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
 	}
 }

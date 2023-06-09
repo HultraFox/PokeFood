@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:cocoa_beans",
-    "pokefood:lime_slice"
+    "pokefood:lime_slice",
+    "pokefood:bitter_rep_4",
+    "pokefood:coffee_powder"
   ]
 }

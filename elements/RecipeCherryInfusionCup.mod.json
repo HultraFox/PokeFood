@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 5,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CherryInfusion.bucket"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CupCherryInfusion"
+    },
+    "name": "recipe_cherry_infusion_cup",
+    "namespace": "mod"
+  }
+}

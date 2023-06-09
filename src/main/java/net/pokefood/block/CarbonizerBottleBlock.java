@@ -7,11 +7,16 @@ import net.pokefood.block.entity.CarbonizerBottleBlockEntity;
 
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -46,16 +51,16 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class CarbonizerBottleBlock extends Block
-		implements
-
-			EntityBlock {
+public class CarbonizerBottleBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty BALLS = IntegerProperty.create("ball_nb", 0, 4);
+	public static final BooleanProperty BOTTLE = BooleanProperty.create("bottle");
+	public static final BooleanProperty BOTTLE_FULL = BooleanProperty.create("bottle_full");
+
 
 	public CarbonizerBottleBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).sound(SoundType.METAL).strength(2f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).sound(SoundType.METAL).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(BALLS, Integer.valueOf(0)).setValue(BOTTLE, Boolean.valueOf(false)).setValue(BOTTLE_FULL, Boolean.valueOf(false)));
 	}
 
 	@Override
@@ -69,8 +74,23 @@ public class CarbonizerBottleBlock extends Block
 	}
 
 	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(2, 0, 2, 14, 11, 14);
+			case NORTH -> box(2, 0, 2, 14, 11, 14);
+			case EAST -> box(2, 0, 2, 14, 11, 14);
+			case WEST -> box(2, 0, 2, 14, 11, 14);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, BALLS, BOTTLE, BOTTLE_FULL);
 	}
 
 	@Override
@@ -106,7 +126,6 @@ public class CarbonizerBottleBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		CarbonizingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}

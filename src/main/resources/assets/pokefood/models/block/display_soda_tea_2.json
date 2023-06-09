@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/bottle_2",
+  "textures": {
+    "all": "pokefood:blocks/soda_tea",
+    "particle": "pokefood:blocks/soda_tea",
+    "0": "pokefood:blocks/soda_tea"
+  },
+  "render_type": "cutout_mipped"
+}

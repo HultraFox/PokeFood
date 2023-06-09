@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/bottle_4",
+  "textures": {
+    "all": "pokefood:blocks/soda_tea_roserade",
+    "particle": "pokefood:blocks/soda_tea_roserade",
+    "1": "pokefood:blocks/soda_tea_roserade"
+  },
+  "render_type": "cutout_mipped"
+}

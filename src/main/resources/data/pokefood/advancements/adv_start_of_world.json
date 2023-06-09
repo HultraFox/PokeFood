@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "adv_start_of_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "pokefood:recipe_cup_uncooked",
+      "pokefood:recipe_small_bag",
+      "pokefood:recipe_soda_bottle",
+      "pokefood:recipe_glass"
+    ]
+  }
+}

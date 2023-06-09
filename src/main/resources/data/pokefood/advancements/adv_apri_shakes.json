@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:apri_shake_d"
+    },
+    "title": {
+      "translate": "advancements.adv_apri_shakes.title"
+    },
+    "description": {
+      "translate": "advancements.adv_apri_shakes.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_apri_shakes": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25,
+    "recipes": [
+      "pokefood:recipe_apri_shake_w",
+      "pokefood:recipe_apri_shake_d",
+      "pokefood:recipe_apri_shake_b",
+      "pokefood:recipe_apri_shake_g",
+      "pokefood:recipe_apri_shake_y",
+      "pokefood:recipe_apri_shake_r",
+      "pokefood:recipe_apri_shake_p"
+    ]
+  },
+  "parent": "pokefood:adv_aprijuices"
+}

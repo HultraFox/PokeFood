@@ -1,0 +1,16 @@
+{
+  "group": "banana_log",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:banana_log_3"
+    },
+    {
+      "item": "pokefood:banana_log_3"
+    }
+  ],
+  "result": {
+    "item": "pokefood:banana_log",
+    "count": 1
+  }
+}

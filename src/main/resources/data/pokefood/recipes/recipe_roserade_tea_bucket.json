@@ -1,0 +1,28 @@
+{
+  "group": "tea_cup",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_roserade_tea"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "pokefood:cup_roserade_tea"
+    },
+    {
+      "item": "pokefood:cup_roserade_tea"
+    },
+    {
+      "item": "pokefood:cup_roserade_tea"
+    },
+    {
+      "item": "pokefood:cup_roserade_tea"
+    }
+  ],
+  "result": {
+    "item": "pokefood:roserade_tea_bucket",
+    "count": 1
+  }
+}

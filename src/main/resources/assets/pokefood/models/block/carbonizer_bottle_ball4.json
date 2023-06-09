@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/carbonizer_bottle_ball4_empty",
+  "textures": {
+    "all": "pokefood:blocks/carbonizer_ui_empty",
+    "particle": "pokefood:blocks/carbonizer_gas",
+    "0": "pokefood:blocks/carbonizer_botteler",
+    "1": "pokefood:blocks/carbonizer_filler",
+    "2": "pokefood:blocks/carbonizer_main",
+    "3": "pokefood:blocks/carbonizer_gas"
+  },
+  "render_type": "cutout"
+}

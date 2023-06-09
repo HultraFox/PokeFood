@@ -1,0 +1,14 @@
+{
+  "parent": "pokefood:custom/pokepuff_showcase",
+  "textures": {
+    "all": "pokefood:blocks/glass",
+    "particle": "pokefood:blocks/glass",
+    "0": "pokefood:blocks/null",
+    "1": "pokefood:blocks/glass",
+    "2": "pokefood:blocks/null",
+    "3": "pokefood:blocks/null",
+    "5": "pokefood:blocks/null",
+    "6": "pokefood:blocks/oak_planks"
+  },
+  "render_type": "cutout"
+}

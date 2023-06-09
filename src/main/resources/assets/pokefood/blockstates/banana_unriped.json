@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/banana_unriped"
+    },
+    "facing=east": {
+      "model": "pokefood:block/banana_unriped",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/banana_unriped",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/banana_unriped",
+      "y": 270
+    }
+  }
+}

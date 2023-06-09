@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "calcuim_box",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty4"
+      },
+      {
+        "value": "CUSTOM:PoppedCalcuim"
+      },
+      {
+        "value": "CUSTOM:PoppedCalcuim"
+      },
+      {
+        "value": "CUSTOM:PoppedCalcuim"
+      },
+      {
+        "value": "CUSTOM:PoppedCalcuim"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CalcuimBox4"
+    },
+    "name": "recipe_calcuim_box_4",
+    "namespace": "mod"
+  }
+}

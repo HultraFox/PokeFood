@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "coffee_cup",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.BUCKET"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CoffeeIced.bucket"
+    },
+    "name": "recipe_coffee_iced_bucket",
+    "namespace": "mod"
+  }
+}

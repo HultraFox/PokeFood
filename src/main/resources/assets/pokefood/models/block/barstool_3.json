@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/barstool",
+  "textures": {
+    "all": "pokefood:blocks/barstool_3",
+    "particle": "pokefood:blocks/barstool_3",
+    "0": "pokefood:blocks/barstool_3",
+    "1": "pokefood:blocks/barstool_u_3"
+  },
+  "render_type": "solid"
+}

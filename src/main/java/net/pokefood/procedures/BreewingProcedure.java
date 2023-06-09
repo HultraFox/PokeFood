@@ -29,8 +29,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -191,8 +190,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -293,8 +291,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -455,8 +452,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -557,8 +553,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -719,8 +714,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -821,8 +815,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -983,8 +976,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -1085,8 +1077,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -1247,8 +1238,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -1349,8 +1339,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -1511,8 +1500,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -1613,8 +1601,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -1775,8 +1762,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -1877,8 +1863,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -2039,8 +2024,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -2141,8 +2125,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -2303,8 +2286,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -2405,8 +2387,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -2567,8 +2548,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -2669,8 +2649,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -2831,8 +2810,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -2933,8 +2911,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -3095,8 +3072,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -3197,8 +3173,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -3359,8 +3334,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -3461,8 +3435,7 @@ public class BreewingProcedure {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
 			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
@@ -3623,8 +3596,7 @@ public class BreewingProcedure {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
 						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
@@ -4057,8 +4029,7 @@ public class BreewingProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 7) > 0) {
@@ -4099,8 +4070,7 @@ public class BreewingProcedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 7) == 0 && new Object() {

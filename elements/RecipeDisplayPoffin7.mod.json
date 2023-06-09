@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "poffin_case",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:PoffinSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSour"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DisplayCasePoffin7"
+    },
+    "name": "recipe_display_poffin_7",
+    "namespace": "mod"
+  }
+}

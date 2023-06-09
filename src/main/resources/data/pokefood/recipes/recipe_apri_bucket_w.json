@@ -1,0 +1,28 @@
+{
+  "group": "aprijuice",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_aprijuice_w"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "pokefood:cup_aprijuice_w"
+    },
+    {
+      "item": "pokefood:cup_aprijuice_w"
+    },
+    {
+      "item": "pokefood:cup_aprijuice_w"
+    },
+    {
+      "item": "pokefood:cup_aprijuice_w"
+    }
+  ],
+  "result": {
+    "item": "pokefood:apri_juice_w_bucket",
+    "count": 1
+  }
+}

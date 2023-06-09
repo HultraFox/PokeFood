@@ -2,10 +2,7 @@
   "replace": false,
   "values": [
     "pokefood:black_tea_bucket",
-    "pokefood:cup_black_tea",
-    "pokefood:cup_tea",
     "pokefood:tea_bucket",
-    "pokefood:cup_roserade_tea",
     "pokefood:roserade_tea_bucket"
   ]
 }

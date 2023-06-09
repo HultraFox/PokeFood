@@ -1,4 +1,3 @@
-
 package net.pokefood.client.gui;
 
 import net.pokefood.world.inventory.IceCreaMakerGUIMenu;
@@ -50,6 +49,42 @@ import net.pokefood.procedures.IceLemo14Procedure;
 import net.pokefood.procedures.IceLemo13Procedure;
 import net.pokefood.procedures.IceLemo12Procedure;
 import net.pokefood.procedures.IceLemo11Procedure;
+import net.pokefood.procedures.IceLatte34Procedure;
+import net.pokefood.procedures.IceLatte33Procedure;
+import net.pokefood.procedures.IceLatte32Procedure;
+import net.pokefood.procedures.IceLatte31Procedure;
+import net.pokefood.procedures.IceLatte24Procedure;
+import net.pokefood.procedures.IceLatte23Procedure;
+import net.pokefood.procedures.IceLatte22Procedure;
+import net.pokefood.procedures.IceLatte21Procedure;
+import net.pokefood.procedures.IceLatte14Procedure;
+import net.pokefood.procedures.IceLatte13Procedure;
+import net.pokefood.procedures.IceLatte12Procedure;
+import net.pokefood.procedures.IceLatte11Procedure;
+import net.pokefood.procedures.IceCoffee34Procedure;
+import net.pokefood.procedures.IceCoffee33Procedure;
+import net.pokefood.procedures.IceCoffee32Procedure;
+import net.pokefood.procedures.IceCoffee31Procedure;
+import net.pokefood.procedures.IceCoffee24Procedure;
+import net.pokefood.procedures.IceCoffee23Procedure;
+import net.pokefood.procedures.IceCoffee22Procedure;
+import net.pokefood.procedures.IceCoffee21Procedure;
+import net.pokefood.procedures.IceCoffee14Procedure;
+import net.pokefood.procedures.IceCoffee13Procedure;
+import net.pokefood.procedures.IceCoffee12Procedure;
+import net.pokefood.procedures.IceCoffee11Procedure;
+import net.pokefood.procedures.IceCherry34Procedure;
+import net.pokefood.procedures.IceCherry33Procedure;
+import net.pokefood.procedures.IceCherry32Procedure;
+import net.pokefood.procedures.IceCherry31Procedure;
+import net.pokefood.procedures.IceCherry24Procedure;
+import net.pokefood.procedures.IceCherry23Procedure;
+import net.pokefood.procedures.IceCherry22Procedure;
+import net.pokefood.procedures.IceCherry21Procedure;
+import net.pokefood.procedures.IceCherry14Procedure;
+import net.pokefood.procedures.IceCherry13Procedure;
+import net.pokefood.procedures.IceCherry12Procedure;
+import net.pokefood.procedures.IceCherry11Procedure;
 import net.pokefood.procedures.IceApriY34Procedure;
 import net.pokefood.procedures.IceApriY33Procedure;
 import net.pokefood.procedures.IceApriY32Procedure;
@@ -154,6 +189,9 @@ public class IceCreaMakerGUIScreen extends AbstractContainerScreen<IceCreaMakerG
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
+	Button button_empty1;
+	Button button_empty2;
 
 	public IceCreaMakerGUIScreen(IceCreaMakerGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -184,6 +222,9 @@ public class IceCreaMakerGUIScreen extends AbstractContainerScreen<IceCreaMakerG
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_crea_maker_0.png"));
+		this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_crea_maker_icons.png"));
 		this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
 		if (IceTea11Procedure.execute(world, x, y, z)) {
@@ -714,6 +755,150 @@ public class IceCreaMakerGUIScreen extends AbstractContainerScreen<IceCreaMakerG
 			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_tea_4.png"));
 			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
 		}
+		if (IceCoffee11Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_1.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee12Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_2.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee13Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_3.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee14Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_4.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee21Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_1.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee22Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_2.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee23Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_3.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee24Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_4.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee31Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_1.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee32Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_2.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee33Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_3.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCoffee34Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_coffee_4.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte11Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_1.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte12Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_2.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte13Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_3.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte14Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_4.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte21Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_1.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte22Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_2.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte23Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_3.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte24Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_4.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte31Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_1.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte32Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_2.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte33Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_3.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceLatte34Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_latte_4.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry11Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_1.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry12Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_2.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry13Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_3.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry14Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_4.png"));
+			this.blit(ms, this.leftPos + 53, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry21Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_1.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry22Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_2.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry23Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_3.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry24Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_4.png"));
+			this.blit(ms, this.leftPos + 80, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry31Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_1.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry32Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_2.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry33Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_3.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
+		if (IceCherry34Procedure.execute(world, x, y, z)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/ice_cherry_4.png"));
+			this.blit(ms, this.leftPos + 107, this.topPos + 10, 0, 0, 14, 40, 14, 40);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -745,23 +930,29 @@ public class IceCreaMakerGUIScreen extends AbstractContainerScreen<IceCreaMakerG
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 132, this.topPos + 41, 9, 20, Component.literal(" "), e -> {
+		button_empty = new Button(this.leftPos + 132, this.topPos + 41, 9, 20, Component.translatable("gui.pokefood.ice_crea_maker_gui.button_empty"), e -> {
 			if (true) {
 				PokefoodMod.PACKET_HANDLER.sendToServer(new IceCreaMakerGUIButtonMessage(0, x, y, z));
 				IceCreaMakerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 146, this.topPos + 41, 9, 20, Component.literal(" "), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_empty1 = new Button(this.leftPos + 146, this.topPos + 41, 9, 20, Component.translatable("gui.pokefood.ice_crea_maker_gui.button_empty1"), e -> {
 			if (true) {
 				PokefoodMod.PACKET_HANDLER.sendToServer(new IceCreaMakerGUIButtonMessage(1, x, y, z));
 				IceCreaMakerGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 159, this.topPos + 41, 9, 20, Component.literal(" "), e -> {
+		});
+		guistate.put("button:button_empty1", button_empty1);
+		this.addRenderableWidget(button_empty1);
+		button_empty2 = new Button(this.leftPos + 159, this.topPos + 41, 9, 20, Component.translatable("gui.pokefood.ice_crea_maker_gui.button_empty2"), e -> {
 			if (true) {
 				PokefoodMod.PACKET_HANDLER.sendToServer(new IceCreaMakerGUIButtonMessage(2, x, y, z));
 				IceCreaMakerGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty2", button_empty2);
+		this.addRenderableWidget(button_empty2);
 	}
 }

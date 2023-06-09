@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "tea_bag",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:SmallBag"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BagRoseradeTea"
+    },
+    "name": "recipe_roserade_tea_bag",
+    "namespace": "mod"
+  }
+}

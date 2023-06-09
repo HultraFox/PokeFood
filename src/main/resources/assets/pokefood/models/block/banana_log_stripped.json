@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "pokefood:blocks/stripped_banana_log_top",
+    "up": "pokefood:blocks/stripped_banana_log_top",
+    "north": "pokefood:blocks/stripped_banana_log",
+    "east": "pokefood:blocks/stripped_banana_log",
+    "south": "pokefood:blocks/stripped_banana_log",
+    "west": "pokefood:blocks/stripped_banana_log",
+    "particle": "pokefood:blocks/stripped_banana_log_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:cup_aprijuice_p"
+    },
+    "title": {
+      "translate": "advancements.adv_aprijuices.title"
+    },
+    "description": {
+      "translate": "advancements.adv_aprijuices.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_aprijuices": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25,
+    "recipes": [
+      "pokefood:recipe_aprijuice_w",
+      "pokefood:recipe_aprijuice_d",
+      "pokefood:recipe_aprijuice_b",
+      "pokefood:recipe_aprijuice_g",
+      "pokefood:recipe_aprijuice_y",
+      "pokefood:recipe_aprijuice_r",
+      "pokefood:recipe_aprijuice_p"
+    ]
+  },
+  "parent": "pokefood:adv_drinks_world"
+}

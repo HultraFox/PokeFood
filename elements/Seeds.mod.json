@@ -1,0 +1,42 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TeaSeeds"
+      },
+      {
+        "value": "CUSTOM:BlackTeaSeeds"
+      },
+      {
+        "value": "CUSTOM:LemonSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "Items.WHEAT_SEEDS"
+      },
+      {
+        "value": "Items.PUMPKIN_SEEDS"
+      },
+      {
+        "value": "Items.MELON_SEEDS"
+      },
+      {
+        "value": "Items.BEETROOT_SEEDS"
+      },
+      {
+        "value": "CUSTOM:LeekSeeds"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "seeds",
+    "namespace": "forge"
+  }
+}

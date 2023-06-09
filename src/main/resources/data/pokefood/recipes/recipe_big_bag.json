@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:cloth"
+    },
+    "1": {
+      "item": "pokefood:cloth"
+    },
+    "2": {
+      "item": "pokefood:cloth"
+    },
+    "3": {
+      "item": "pokefood:cloth"
+    },
+    "4": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "pokefood:cloth"
+    },
+    "6": {
+      "item": "pokefood:cloth"
+    },
+    "7": {
+      "item": "pokefood:cloth"
+    },
+    "8": {
+      "item": "pokefood:cloth"
+    }
+  },
+  "result": {
+    "item": "pokefood:big_bag",
+    "count": 1
+  }
+}

@@ -1,0 +1,1057 @@
+{
+  "credit": "Made with Blockbench",
+  "elements": [
+    {
+      "name": "bottle_top",
+      "from": [
+        5.75,
+        4.5,
+        7.25
+      ],
+      "to": [
+        7.25,
+        5.5,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            1.5,
+            3
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            2,
+            0,
+            3
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3.5,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            3.5,
+            3
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            8,
+            3,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_up",
+      "from": [
+        5.5,
+        3.5,
+        7
+      ],
+      "to": [
+        7.5,
+        4.5,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            0,
+            3
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            3
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            1,
+            8,
+            3,
+            6
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            1,
+            6,
+            3,
+            8
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_center",
+      "from": [
+        5.75,
+        3,
+        7.25
+      ],
+      "to": [
+        7.25,
+        3.5,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            1.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            4,
+            0,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3.5,
+            4,
+            2,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            4,
+            3.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_bottom",
+      "from": [
+        5.5,
+        0,
+        7
+      ],
+      "to": [
+        7.5,
+        3,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            2,
+            5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            0,
+            5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            2,
+            5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            1,
+            6,
+            3,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            4,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "sticker",
+      "from": [
+        5.45,
+        0.45,
+        6.95
+      ],
+      "to": [
+        7.55,
+        2.55,
+        9.05
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8,
+            2,
+            10
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            8,
+            0,
+            10
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            8,
+            2,
+            10
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            8,
+            4,
+            10
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            10,
+            2,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            10,
+            2,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "ball",
+      "from": [
+        6,
+        5,
+        7.5
+      ],
+      "to": [
+        7,
+        6,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_top",
+      "from": [
+        8.75,
+        4.5,
+        7.25
+      ],
+      "to": [
+        10.25,
+        5.5,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            1.5,
+            3
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            2,
+            0,
+            3
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3.5,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            3.5,
+            3
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            8,
+            3,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_up",
+      "from": [
+        8.5,
+        3.5,
+        7
+      ],
+      "to": [
+        10.5,
+        4.5,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            0,
+            3
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            2,
+            3
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            3
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            1,
+            8,
+            3,
+            6
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            1,
+            6,
+            3,
+            8
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_center",
+      "from": [
+        8.75,
+        3,
+        7.25
+      ],
+      "to": [
+        10.25,
+        3.5,
+        8.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            1.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            4,
+            0,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3.5,
+            4,
+            2,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            4,
+            3.5,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            3.5,
+            1.5
+          ],
+          "rotation": 180,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "bottle_bottom",
+      "from": [
+        8.5,
+        0,
+        7
+      ],
+      "to": [
+        10.5,
+        3,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            2,
+            5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            0,
+            5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            2,
+            5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            4,
+            5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            1,
+            6,
+            3,
+            8
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2,
+            0,
+            4,
+            2
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "ball",
+      "from": [
+        9,
+        5,
+        7.5
+      ],
+      "to": [
+        10,
+        6,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            3,
+            5,
+            4,
+            6
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "sticker",
+      "from": [
+        8.45,
+        0.45,
+        6.95
+      ],
+      "to": [
+        10.55,
+        2.55,
+        9.05
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          0,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8,
+            2,
+            10
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            8,
+            0,
+            10
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4,
+            8,
+            2,
+            10
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            2,
+            8,
+            4,
+            10
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            10,
+            2,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            10,
+            2,
+            12
+          ],
+          "rotation": 90,
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        6,
+        1.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        6,
+        1.5
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        86,
+        0
+      ],
+      "translation": [
+        0,
+        6,
+        1.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        6,
+        1.5
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        4,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        14,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        6,
+        0
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "bottle",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "bottle",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ]
+}

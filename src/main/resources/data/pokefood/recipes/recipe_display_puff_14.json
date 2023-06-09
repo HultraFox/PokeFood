@@ -1,0 +1,25 @@
+{
+  "group": "puff_case",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:display_case_empty"
+    },
+    {
+      "item": "pokefood:puff_basic_honey"
+    },
+    {
+      "item": "pokefood:puff_frosted_toast"
+    },
+    {
+      "item": "pokefood:puff_fancy_high"
+    },
+    {
+      "item": "pokefood:puff_deluxe_spicy"
+    }
+  ],
+  "result": {
+    "item": "pokefood:display_case_puffs_14",
+    "count": 1
+  }
+}

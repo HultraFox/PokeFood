@@ -8,11 +8,14 @@ import net.pokefood.block.entity.MixerPinkBlockEntity;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -47,16 +50,13 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class MixerPinkBlock extends Block
-		implements
-
-			EntityBlock {
+public class MixerPinkBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty MIXING = IntegerProperty.create("mixing_color", 0, 9);
 
 	public MixerPinkBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(2f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(MIXING, Integer.valueOf(0)));
 	}
 
 	@Override
@@ -70,8 +70,12 @@ public class MixerPinkBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(5, 0, 2, 11, 10, 15);
 			case NORTH -> box(5, 0, 1, 11, 10, 14);
@@ -82,7 +86,7 @@ public class MixerPinkBlock extends Block
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, MIXING);
 	}
 
 	@Override
@@ -118,7 +122,6 @@ public class MixerPinkBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		MixingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
@@ -130,7 +133,7 @@ public class MixerPinkBlock extends Block
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Pink mixer");
+					return Component.literal("Mixer");
 				}
 
 				@Override

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/coffee_maker"
+    },
+    "facing=east": {
+      "model": "pokefood:block/coffee_maker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/coffee_maker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/coffee_maker",
+      "y": 270
+    }
+  }
+}

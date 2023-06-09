@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Tea.bucket"
+      },
+      {
+        "value": "CUSTOM:BlackTea.bucket"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "teas",
+    "namespace": "mod"
+  }
+}

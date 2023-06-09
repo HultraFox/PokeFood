@@ -1,0 +1,44 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cooler_front_blue",
+        "1": "cooler_side_blue",
+        "2": "cooler_top_blue"
+      },
+      "name": "default"
+    },
+    "red": {
+      "map": {
+        "0": "cooler_front_red",
+        "1": "cooler_side_red",
+        "2": "cooler_top_red"
+      },
+      "name": "red"
+    },
+    "pink": {
+      "map": {
+        "0": "cooler_front_pink",
+        "1": "cooler_side_pink",
+        "2": "cooler_top_pink"
+      },
+      "name": "pink"
+    },
+    "yellow": {
+      "map": {
+        "0": "cooler_front_yellow",
+        "1": "cooler_side_yellow",
+        "2": "cooler_top_yellow"
+      },
+      "name": "yellow"
+    },
+    "green": {
+      "map": {
+        "0": "cooler_front_green",
+        "1": "cooler_side_green",
+        "2": "cooler_top_green"
+      },
+      "name": "green"
+    }
+  }
+}

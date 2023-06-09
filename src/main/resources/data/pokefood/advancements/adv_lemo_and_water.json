@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:cup_cherry_infusion"
+    },
+    "title": {
+      "translate": "advancements.adv_lemo_and_water.title"
+    },
+    "description": {
+      "translate": "advancements.adv_lemo_and_water.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_lemo_and_water": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "pokefood:recipe_lemonade_cup",
+      "pokefood:recipe_cup_fresh_water"
+    ]
+  },
+  "parent": "pokefood:adv_cups"
+}

@@ -1,0 +1,20 @@
+{
+  "group": "barstool",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:magenta_wool"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "pokefood:barstool_14",
+    "count": 1
+  }
+}

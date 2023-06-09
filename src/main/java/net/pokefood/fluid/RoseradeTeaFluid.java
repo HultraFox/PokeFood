@@ -14,10 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class RoseradeTeaFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> PokefoodModFluidTypes.ROSERADE_TEA_TYPE.get(), () -> PokefoodModFluids.ROSERADE_TEA.get(),
-			() -> PokefoodModFluids.FLOWING_ROSERADE_TEA.get()).explosionResistance(100f).bucket(() -> PokefoodModItems.ROSERADE_TEA_BUCKET.get())
-			.block(() -> (LiquidBlock) PokefoodModBlocks.ROSERADE_TEA.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.ROSERADE_TEA_TYPE.get(), () -> PokefoodModFluids.ROSERADE_TEA.get(), () -> PokefoodModFluids.FLOWING_ROSERADE_TEA.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.ROSERADE_TEA_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.ROSERADE_TEA.get());
 
 	private RoseradeTeaFluid() {
 		super(PROPERTIES);

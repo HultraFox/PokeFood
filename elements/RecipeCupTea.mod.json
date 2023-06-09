@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 5,
+    "group": "tea_cup",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:Tea.bucket"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CupTea"
+    },
+    "name": "recipe_cup_tea",
+    "namespace": "mod"
+  }
+}

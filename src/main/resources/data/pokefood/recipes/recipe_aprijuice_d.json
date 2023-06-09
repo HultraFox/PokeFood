@@ -7,10 +7,22 @@
     },
     {
       "item": "pokefood:apri_juice_d_bucket"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
+    },
+    {
+      "item": "pokefood:cup"
     }
   ],
   "result": {
     "item": "pokefood:cup_aprijuice_d",
-    "count": 1
+    "count": 5
   }
 }

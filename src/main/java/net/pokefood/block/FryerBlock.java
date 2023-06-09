@@ -8,6 +8,7 @@ import net.pokefood.block.entity.FryerBlockEntity;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -48,15 +49,11 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class FryerBlock extends Block
-		implements
-
-			EntityBlock {
+public class FryerBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public FryerBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(2.5f, 3f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(2.5f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -71,13 +68,17 @@ public class FryerBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0.5, 0, 0, 15.5, 16, 15.7);
-			case NORTH -> box(0.5, 0, 0.3, 15.5, 16, 16);
-			case EAST -> box(0, 0, 0.5, 15.7, 16, 15.5);
-			case WEST -> box(0.3, 0, 0.5, 16, 16, 15.5);
+			default -> box(0.5, 0, 0, 15.5, 16, 15.69999999999999996);
+			case NORTH -> box(0.5, 0, 0.30000000000000004, 15.5, 16, 16);
+			case EAST -> box(0, 0, 0.5, 15.69999999999999996, 16, 15.5);
+			case WEST -> box(0.30000000000000004, 0, 0.5, 16, 16, 15.5);
 		};
 	}
 
@@ -119,7 +120,6 @@ public class FryerBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		FryingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}

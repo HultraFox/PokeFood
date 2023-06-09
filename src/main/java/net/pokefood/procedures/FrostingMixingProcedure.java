@@ -1,6 +1,14 @@
 package net.pokefood.procedures;
 
-/* imports omitted */
+import net.pokefood.init.PokefoodModItems;
+
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
 
 public class FrostingMixingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -407,7 +415,7 @@ public class FrostingMixingProcedure {
 						}
 					}
 				}
-			} else if ((result).equals("spicy") && (result2).equals("dry") || (result).equals("dry") && (result2).equals("sweet")) {
+			} else if ((result).equals("spicy") && (result2).equals("dry") || (result).equals("dry") && (result2).equals("spicy")) {
 				if (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1380,7 +1388,7 @@ public class FrostingMixingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 2;
+						final int _slotid = 4;
 						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SPICY.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
@@ -1393,7 +1401,7 @@ public class FrostingMixingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 2;
+						final int _slotid = 4;
 						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DRY.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
@@ -1406,7 +1414,7 @@ public class FrostingMixingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 2;
+						final int _slotid = 4;
 						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SWEET.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
@@ -1419,7 +1427,7 @@ public class FrostingMixingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 2;
+						final int _slotid = 4;
 						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_BITTER.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
@@ -1432,7 +1440,7 @@ public class FrostingMixingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 2;
+						final int _slotid = 4;
 						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SOUR.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {

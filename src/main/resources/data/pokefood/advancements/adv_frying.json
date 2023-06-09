@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:fried_tail"
+    },
+    "title": {
+      "translate": "advancements.adv_frying.title"
+    },
+    "description": {
+      "translate": "advancements.adv_frying.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_frying": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "pokefood:recipe_glass",
+      "pokefood:recipe_beer",
+      "pokefood:recipe_teanana_beer",
+      "pokefood:recipe_cherrium_beer",
+      "pokefood:recipe_apri_alcohol_w",
+      "pokefood:recipe_apri_alcohol_d",
+      "pokefood:recipe_apri_alcohol_b",
+      "pokefood:recipe_apri_alcohol_y",
+      "pokefood:recipe_apri_alcohol_r",
+      "pokefood:recipe_apri_alcohol_p",
+      "pokefood:recipe_apri_alcohol_g",
+      "pokefood:recipe_brandy",
+      "pokefood:recipe_cidronade",
+      "pokefood:create_fill_arceum"
+    ]
+  },
+  "parent": "pokefood:adv_hunting"
+}

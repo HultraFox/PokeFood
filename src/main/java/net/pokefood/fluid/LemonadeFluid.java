@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class LemonadeFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.LEMONADE_TYPE.get(),
-			() -> PokefoodModFluids.LEMONADE.get(), () -> PokefoodModFluids.FLOWING_LEMONADE.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.LEMONADE_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.LEMONADE.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.LEMONADE_TYPE.get(), () -> PokefoodModFluids.LEMONADE.get(), () -> PokefoodModFluids.FLOWING_LEMONADE.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.LEMONADE_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.LEMONADE.get());
 
 	private LemonadeFluid() {
 		super(PROPERTIES);

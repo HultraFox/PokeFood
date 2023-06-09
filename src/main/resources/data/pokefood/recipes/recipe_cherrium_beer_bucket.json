@@ -1,0 +1,16 @@
+{
+  "group": "alcohol",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:glass_cherry_calcuim_beer"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cherry_calcuim_beer_bucket",
+    "count": 1
+  }
+}

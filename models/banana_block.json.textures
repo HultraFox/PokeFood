@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "banana_riped",
+        "missing": "banana_riped"
+      },
+      "name": "default"
+    },
+    "unriped": {
+      "map": {
+        "3": "banana_unriped",
+        "missing": ""
+      },
+      "name": "unriped"
+    }
+  }
+}

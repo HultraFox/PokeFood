@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "pokefood:clobbopus_tentacle"
+  },
+  "result": "pokefood:cooked_clobbopus_tentacle"
+}

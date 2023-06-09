@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "pokefood:sour_rep_3",
     "pokefood:tea_bucket"
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:Cherry"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:DryCherry"
+    },
+    "name": "smoke_dry_cherry",
+    "namespace": "mod"
+  }
+}

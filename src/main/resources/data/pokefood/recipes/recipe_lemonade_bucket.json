@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "pokefood:cup_lemonade"
+    },
+    {
+      "item": "pokefood:cup_lemonade"
+    },
+    {
+      "item": "pokefood:cup_lemonade"
+    },
+    {
+      "item": "pokefood:cup_lemonade"
+    },
+    {
+      "item": "pokefood:cup_lemonade"
+    }
+  ],
+  "result": {
+    "item": "pokefood:lemonade_bucket",
+    "count": 1
+  }
+}

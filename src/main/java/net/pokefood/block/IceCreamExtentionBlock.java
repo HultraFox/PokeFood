@@ -2,7 +2,6 @@
 package net.pokefood.block;
 
 import net.pokefood.world.inventory.IceCreamExtentionGUIMenu;
-import net.pokefood.procedures.IceCreamExtentionChangeProcedure;
 import net.pokefood.procedures.IceCreamExtendingProcedure;
 import net.pokefood.init.PokefoodModBlocks;
 import net.pokefood.block.entity.IceCreamExtentionBlockEntity;
@@ -10,13 +9,14 @@ import net.pokefood.block.entity.IceCreamExtentionBlockEntity;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -52,16 +52,14 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class IceCreamExtentionBlock extends Block
-		implements
-
-			EntityBlock {
+public class IceCreamExtentionBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty TYPE = IntegerProperty.create("type", 0, 9);
+	public static final IntegerProperty VARIATION = IntegerProperty.create("variation", 0, 9);
 
 	public IceCreamExtentionBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(3f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TYPE, Integer.valueOf(0)).setValue(VARIATION, Integer.valueOf(0)));
 	}
 
 	@Override
@@ -82,8 +80,12 @@ public class IceCreamExtentionBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(3, 0, 0, 13, 14, 15);
 			case NORTH -> box(3, 0, 1, 13, 14, 16);
@@ -94,7 +96,7 @@ public class IceCreamExtentionBlock extends Block
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING,TYPE, VARIATION);
 	}
 
 	@Override
@@ -108,11 +110,6 @@ public class IceCreamExtentionBlock extends Block
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PokefoodModBlocks.ICE_CREAM_EXTENTION.get());
 	}
 
 	@Override
@@ -136,7 +133,6 @@ public class IceCreamExtentionBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		IceCreamExtendingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
@@ -157,15 +153,6 @@ public class IceCreamExtentionBlock extends Block
 				}
 			}, pos);
 		}
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-
-		IceCreamExtentionChangeProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

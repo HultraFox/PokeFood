@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ApriJuiceR.bucket"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      },
+      {
+        "value": "CUSTOM:SpicyRep2"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "spicy_20",
+    "namespace": "forge"
+  }
+}

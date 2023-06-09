@@ -1,0 +1,37 @@
+{
+  "group": "soda_packs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:pack_empty"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    },
+    {
+      "item": "pokefood:soda_apri_p"
+    }
+  ],
+  "result": {
+    "item": "pokefood:pack_apri_p",
+    "count": 1
+  }
+}

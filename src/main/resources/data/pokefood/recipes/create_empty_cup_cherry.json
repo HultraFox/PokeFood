@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_cherry_infusion"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "pokefood:cherry_infusion",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:cup"
+    }
+  ]
+}

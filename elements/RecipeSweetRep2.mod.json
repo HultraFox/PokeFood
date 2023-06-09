@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "sweet_rep",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.HONEY_BOTTLE"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SweetRep2"
+    },
+    "name": "recipe_sweet_rep_2",
+    "namespace": "mod"
+  }
+}

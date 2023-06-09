@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:feebas"
+  },
+  "result": "pokefood:grilled_feebas"
+}

@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "layer0": "pokefood:items/frosted_candy"
+    "0": "pokefood:blocks/frosted_candy",
+    "particle": "pokefood:items/frosted_candy"
   }
 }

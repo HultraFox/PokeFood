@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "pokefood:fluffy_meat"
+  },
+  "result": "pokefood:cooked_fluffy_meat"
+}

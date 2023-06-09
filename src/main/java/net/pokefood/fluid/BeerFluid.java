@@ -14,8 +14,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class BeerFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BEER_TYPE.get(),
-			() -> PokefoodModFluids.BEER.get(), () -> PokefoodModFluids.FLOWING_BEER.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BEER_TYPE.get(), () -> PokefoodModFluids.BEER.get(), () -> PokefoodModFluids.FLOWING_BEER.get()).explosionResistance(100f)
 			.bucket(() -> PokefoodModItems.BEER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BEER.get());
 
 	private BeerFluid() {

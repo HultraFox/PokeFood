@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:dry_cherry"
+    },
+    "1": {
+      "item": "pokefood:dry_cherry"
+    },
+    "2": {
+      "item": "pokefood:dry_cherry"
+    },
+    "3": {
+      "item": "pokefood:dry_cherry"
+    },
+    "4": {
+      "item": "pokefood:small_bag"
+    },
+    "5": {
+      "item": "pokefood:dry_cherry"
+    },
+    "6": {
+      "item": "pokefood:dry_cherry"
+    },
+    "7": {
+      "item": "pokefood:dry_cherry"
+    },
+    "8": {
+      "item": "pokefood:dry_cherry"
+    }
+  },
+  "result": {
+    "item": "pokefood:bag_cherry_dry",
+    "count": 1
+  }
+}

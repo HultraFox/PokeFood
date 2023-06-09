@@ -2,7 +2,6 @@
 package net.pokefood.world.inventory;
 
 import net.pokefood.init.PokefoodModMenus;
-import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -38,7 +37,7 @@ public class FryerGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		super(PokefoodModMenus.FRYER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(14);
+		this.internal = new ItemStackHandler(15);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -89,12 +88,14 @@ public class FryerGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 61, 53) {
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 16, 17) {
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 16, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.GREASE.get() == stack.getItem());
+				return false;
 			}
 		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 16, 53) {
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 16, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -155,16 +156,16 @@ public class FryerGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 14) {
-				if (!this.moveItemStackTo(itemstack1, 14, this.slots.size(), true))
+			if (index < 15) {
+				if (!this.moveItemStackTo(itemstack1, 15, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 14, false)) {
-				if (index < 14 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 14 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 15, false)) {
+				if (index < 15 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 15 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 14, 14 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 15, 15 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "pokefood:latte_bucket",
     "pokefood:cidronade_bucket",
     "pokefood:apri_alcohol_p_bucket",
     "pokefood:apri_alcohol_r_bucket",
@@ -14,7 +15,9 @@
     "pokefood:apri_juice_d_bucket",
     "pokefood:apri_juice_b_bucket",
     "pokefood:banana_tea_beer_bucket",
+    "pokefood:coffee_iced_bucket",
     "pokefood:apri_juice_g_bucket",
+    "pokefood:coffee_bucket",
     "pokefood:beer_bucket",
     "pokefood:apri_juice_p_bucket",
     "pokefood:apri_juice_w_bucket",
@@ -28,6 +31,7 @@
     "minecraft:water_bucket",
     "minecraft:milk_bucket",
     "pokefood:apri_alcohol_y_bucket",
-    "pokefood:black_tea_bucket"
+    "pokefood:black_tea_bucket",
+    "pokefood:cherry_infusion_bucket"
   ]
 }

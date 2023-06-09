@@ -87,7 +87,7 @@ public class IceCreaMakerGUIMenu extends AbstractContainerMenu implements Suppli
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 142, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.ICE_CREAM_CONE.get() == stack.getItem());
+				return PokefoodModItems.ICE_CREAM_CONE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 52, 62) {

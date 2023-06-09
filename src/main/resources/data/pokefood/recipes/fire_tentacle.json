@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 0.5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "pokefood:tentacle"
+  },
+  "result": "pokefood:grilled_tentalce"
+}

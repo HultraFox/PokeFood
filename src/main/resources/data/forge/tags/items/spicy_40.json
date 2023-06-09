@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "pokefood:spicy_juice",
+    "pokefood:spicy_rep_4"
+  ]
 }

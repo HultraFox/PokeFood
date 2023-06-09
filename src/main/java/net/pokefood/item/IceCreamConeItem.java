@@ -9,9 +9,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class IceCreamConeItem extends Item {
 	public IceCreamConeItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(3).saturationMod(3.5f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.5f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 }

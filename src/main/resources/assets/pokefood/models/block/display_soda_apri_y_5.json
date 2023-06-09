@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/bottle_5",
+  "textures": {
+    "all": "pokefood:blocks/soda_apri_y",
+    "particle": "pokefood:blocks/soda_apri_y",
+    "1": "pokefood:blocks/soda_apri_y"
+  },
+  "render_type": "cutout_mipped"
+}

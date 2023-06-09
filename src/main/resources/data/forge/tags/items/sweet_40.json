@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:melon_slice",
+    "pokefood:cherry",
     "pokefood:lemonade_bucket",
-    "pokefood:roserade_tea_bucket"
+    "pokefood:roserade_tea_bucket",
+    "pokefood:sweet_rep_4"
   ]
 }

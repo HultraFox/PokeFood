@@ -31,10 +31,9 @@ public class LemonStage0Feature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new LemonStage0Feature();
-		CONFIGURED_FEATURE = FeatureUtils.register("pokefood:lemon_stage_0", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(PokefoodModBlocks.LEMON_STAGE_0.get())), List.of(), 4));
-		PLACED_FEATURE = PlacementUtils.register("pokefood:lemon_stage_0", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("pokefood:lemon_stage_0", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(PokefoodModBlocks.LEMON_STAGE_0.get())), List.of(), 4));
+		PLACED_FEATURE = PlacementUtils.register("pokefood:lemon_stage_0", CONFIGURED_FEATURE, List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

@@ -1,9 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "mixer_1",
-		"1": "mixer_2",
-		"particle": "mixer_1"
+		"0": "blocks/mixer/mixer_1_blue",
+		"1": "blocks/mixer/mixer_2_blue",
+		"2": "blocks/TAKE CARE UPDATE/Mixer/fluid_base",
+		"particle": "blocks/mixer/mixer_1_blue"
 	},
 	"elements": [
 		{
@@ -234,12 +235,12 @@
 			"from": [6, 2, 2.5],
 			"to": [10, 5, 6.5],
 			"faces": {
-				"north": {"uv": [6, 3, 10, 6], "texture": "#0"},
-				"east": {"uv": [6, 3, 10, 6], "texture": "#0"},
-				"south": {"uv": [6, 3, 10, 6], "texture": "#0"},
-				"west": {"uv": [6, 3, 10, 6], "texture": "#0"},
-				"up": {"uv": [6, 3, 10, 7], "texture": "#0"},
-				"down": {"uv": [6, 3, 10, 7], "texture": "#0"}
+				"north": {"uv": [0, 0, 4, 3], "texture": "#2"},
+				"east": {"uv": [0, 0, 4, 3], "texture": "#2"},
+				"south": {"uv": [0, 0, 4, 3], "texture": "#2"},
+				"west": {"uv": [0, 0, 4, 3], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#2"}
 			}
 		}
 	],

@@ -1,0 +1,25 @@
+{
+  "group": "calcuim_box",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:calcuim_box_empty_1"
+    },
+    {
+      "item": "pokefood:popped_calcuim"
+    },
+    {
+      "item": "pokefood:popped_calcuim"
+    },
+    {
+      "item": "pokefood:popped_calcuim"
+    },
+    {
+      "item": "pokefood:popped_calcuim"
+    }
+  ],
+  "result": {
+    "item": "pokefood:calcuim_box_1",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceD"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY.bucket"
+      },
+      {
+        "value": "CUSTOM:Salt"
+      },
+      {
+        "value": "CUSTOM:SparklesSour"
+      },
+      {
+        "value": "CUSTOM:SourRep1"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sour_10",
+    "namespace": "forge"
+  }
+}

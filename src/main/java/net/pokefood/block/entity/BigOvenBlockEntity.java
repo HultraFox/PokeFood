@@ -35,7 +35,7 @@ public class BigOvenBlockEntity extends RandomizableContainerBlockEntity impleme
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public BigOvenBlockEntity(BlockPos position, BlockState state) {
-		super(PokefoodModBlockEntities.BIG_OVEN.get(), position, state);
+		super(PokefoodModBlockEntities.OVEN.get(), position, state);
 	}
 
 	@Override
@@ -79,7 +79,7 @@ public class BigOvenBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("big_oven");
+		return Component.literal("oven");
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class BigOvenBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Big Oven");
+		return Component.literal("Oven");
 	}
 
 	@Override

@@ -1,0 +1,37 @@
+{
+  "group": "sour_rep",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    }
+  ],
+  "result": {
+    "item": "pokefood:sour_rep_4",
+    "count": 2
+  }
+}

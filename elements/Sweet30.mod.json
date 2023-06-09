@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WhippedCream"
+      },
+      {
+        "value": "CUSTOM:BlackTea.bucket"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "CUSTOM:SweetRep3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sweet_30",
+    "namespace": "forge"
+  }
+}

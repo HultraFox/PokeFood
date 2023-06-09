@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "pokefood:textures/screens/advancements.png",
+    "icon": {
+      "item": "pokefood:puff_deluxe_pepper"
+    },
+    "title": {
+      "translate": "advancements.adv_pokefood.title"
+    },
+    "description": {
+      "translate": "advancements.adv_pokefood.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_pokefood": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

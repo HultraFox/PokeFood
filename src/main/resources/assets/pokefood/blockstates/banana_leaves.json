@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/banana_leaves"
+    },
+    "facing=east": {
+      "model": "pokefood:block/banana_leaves",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/banana_leaves",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/banana_leaves",
+      "y": 270
+    }
+  }
+}

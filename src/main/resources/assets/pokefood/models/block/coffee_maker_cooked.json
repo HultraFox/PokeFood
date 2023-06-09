@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/coffee_maker",
+  "textures": {
+    "all": "pokefood:blocks/coffee_maker",
+    "particle": "pokefood:blocks/coffee_maker",
+    "0": "pokefood:blocks/coffee_maker"
+  },
+  "render_type": "solid"
+}

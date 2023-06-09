@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "barstool_0",
+        "1": "barstool_u_0"
+      },
+      "name": "default"
+    }
+  }
+}

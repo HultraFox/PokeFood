@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:soda_pop"
+    },
+    "title": {
+      "translate": "advancements.adv_drinks_world.title"
+    },
+    "description": {
+      "translate": "advancements.adv_drinks_world.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_drinks_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "pokefood:recipe_coffee",
+      "pokefood:smoke_coffee",
+      "pokefood:fire_coffee",
+      "pokefood:recipe_coffee_powder",
+      "pokefood:recipe_small_bag",
+      "pokefood:recipe_bag_tea",
+      "pokefood:recipe_black_tea_bag",
+      "pokefood:recipe_roserade_tea_bag",
+      "pokefood:recipe_cup_uncooked",
+      "pokefood:recipe_cup",
+      "pokefood:recipe_soda_bottle",
+      "pokefood:recipe_pop_ball",
+      "pokefood:recipe_pot",
+      "pokefood:recipe_carbonizer",
+      "pokefood:recipe_coffee_maker"
+    ]
+  },
+  "parent": "pokefood:adv_pokefood"
+}

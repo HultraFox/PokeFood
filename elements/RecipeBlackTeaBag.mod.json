@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "tea_bag",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:SmallBag"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BagBlackTea"
+    },
+    "name": "recipe_black_tea_bag",
+    "namespace": "mod"
+  }
+}

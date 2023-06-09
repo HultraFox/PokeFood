@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "pokefood:apri_alcohol_p",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "pokefood:apri_p_bucket"
+    }
+  ]
+}

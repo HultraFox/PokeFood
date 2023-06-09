@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "pokefood:custom/poffin",
   "textures": {
-    "layer0": "pokefood:items/poffin_dry_spicy"
+    "0": "pokefood:blocks/poffin_dry_spicy",
+    "particle": "pokefood:items/poffin_dry_spicy"
   }
 }

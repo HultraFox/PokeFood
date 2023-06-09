@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PackEmpty"
+    },
+    "name": "recipe_soda_pack",
+    "namespace": "mod"
+  }
+}

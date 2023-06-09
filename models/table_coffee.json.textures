@@ -1,0 +1,84 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "table_coffee_top_0",
+        "1": "table_coffee_side_0",
+        "2": "table_coffee_bottom_0"
+      },
+      "name": "default"
+    },
+    "spruce": {
+      "map": {
+        "0": "table_coffee_top_1",
+        "1": "table_coffee_side_1",
+        "2": "table_coffee_bottom_1"
+      },
+      "name": "spruce"
+    },
+    "birch": {
+      "map": {
+        "0": "table_coffee_top_2",
+        "1": "table_coffee_side_2",
+        "2": "table_coffee_bottom_2"
+      },
+      "name": "birch"
+    },
+    "jungle": {
+      "map": {
+        "0": "table_coffee_top_3",
+        "1": "table_coffee_side_3",
+        "2": "table_coffee_bottom_3"
+      },
+      "name": "jungle"
+    },
+    "acacia": {
+      "map": {
+        "0": "table_coffee_top_4",
+        "1": "table_coffee_side_4",
+        "2": "table_coffee_bottom_4"
+      },
+      "name": "acacia"
+    },
+    "dark_oak": {
+      "map": {
+        "0": "table_coffee_top_5",
+        "1": "table_coffee_side_5",
+        "2": "table_coffee_bottom_5"
+      },
+      "name": "dark_oak"
+    },
+    "mangrove": {
+      "map": {
+        "0": "table_coffee_top_6",
+        "1": "table_coffee_side_6",
+        "2": "table_coffee_bottom_6"
+      },
+      "name": "mangrove"
+    },
+    "crimson": {
+      "map": {
+        "0": "table_coffee_top_7",
+        "1": "table_coffee_side_7",
+        "2": "table_coffee_bottom_7"
+      },
+      "name": "crimson"
+    },
+    "warped": {
+      "map": {
+        "0": "table_coffee_top_8",
+        "1": "table_coffee_side_8",
+        "2": "table_coffee_bottom_8"
+      },
+      "name": "warped"
+    },
+    "banana": {
+      "map": {
+        "0": "table_coffee_top_10",
+        "1": "table_coffee_side_10",
+        "2": "table_coffee_bottom_10"
+      },
+      "name": "banana"
+    }
+  }
+}

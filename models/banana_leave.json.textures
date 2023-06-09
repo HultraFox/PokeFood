@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "banana_log",
+        "3": "banana_leaves"
+      },
+      "name": "default"
+    }
+  }
+}

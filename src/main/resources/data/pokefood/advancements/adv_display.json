@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:display_case_puffs_13"
+    },
+    "title": {
+      "translate": "advancements.adv_display.title"
+    },
+    "description": {
+      "translate": "advancements.adv_display.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_display": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pokefood:display_case_empty"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "pokefood:recipe_display_puff_0",
+      "pokefood:recipe_display_puff_1",
+      "pokefood:recipe_display_puff_2",
+      "pokefood:recipe_display_puff_3",
+      "pokefood:recipe_display_puff_4",
+      "pokefood:recipe_display_puff_5",
+      "pokefood:recipe_display_puff_6",
+      "pokefood:recipe_display_puff_7",
+      "pokefood:recipe_display_puff_8",
+      "pokefood:recipe_display_puff_9",
+      "pokefood:recipe_display_puff_10",
+      "pokefood:recipe_display_puff_11",
+      "pokefood:recipe_display_puff_12",
+      "pokefood:recipe_display_puff_13",
+      "pokefood:recipe_display_puff_14",
+      "pokefood:recipe_display_poffin_0",
+      "pokefood:recipe_display_poffin_1",
+      "pokefood:recipe_display_poffin_2",
+      "pokefood:recipe_display_poffin_3",
+      "pokefood:recipe_display_poffin_4",
+      "pokefood:recipe_display_poffin_5",
+      "pokefood:recipe_display_poffin_6",
+      "pokefood:recipe_display_poffin_7",
+      "pokefood:recipe_display_poffin_8",
+      "pokefood:recipe_display_poffin_9"
+    ]
+  },
+  "parent": "pokefood:adv_baking_world"
+}

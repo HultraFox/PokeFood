@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/cooler",
+  "textures": {
+    "all": "pokefood:blocks/cooler_front_pink",
+    "particle": "pokefood:blocks/cooler_front_pink",
+    "0": "pokefood:blocks/cooler_front_pink",
+    "1": "pokefood:blocks/cooler_side_pink",
+    "2": "pokefood:blocks/cooler_top_pink"
+  },
+  "render_type": "solid"
+}

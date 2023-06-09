@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "deluxe_candy",
+        "1": "glass",
+        "2": "frosted_sweet",
+        "3": "fancy_ananas",
+        "5": "basic_calm",
+        "6": "oak_planks"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -30,8 +30,7 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.FLUFFY_MEAT.get()) {
@@ -45,8 +44,7 @@ public class FryingResult3Procedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -61,8 +59,7 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.BIBAREL_TAIL.get()) {
@@ -76,8 +73,7 @@ public class FryingResult3Procedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -92,8 +88,7 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.STAR_BITE.get()) {
@@ -107,8 +102,7 @@ public class FryingResult3Procedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -123,8 +117,7 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.CLAUNCHER_CLAW.get()) {
@@ -138,8 +131,7 @@ public class FryingResult3Procedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -154,23 +146,21 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == Items.POTATO) {
+		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.CRABRAWLER_CLAW.get()) {
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				if (_ent != null) {
 					final int _slotid = (int) slot;
-					final ItemStack _setstack = new ItemStack(PokefoodModItems.FRIES.get());
+					final ItemStack _setstack = new ItemStack(PokefoodModItems.FRIED_CLAW.get());
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -185,8 +175,7 @@ public class FryingResult3Procedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.PINK_FIN.get()) {
@@ -200,8 +189,94 @@ public class FryingResult3Procedure {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
 							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+							return _retval.get();
+						}
+					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable)
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+					});
+				}
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == Items.POTATO) {
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = (int) slot;
+					final ItemStack _setstack = new ItemStack(PokefoodModItems.FRIES.get());
+					_setstack.setCount((int) (new Object() {
+						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+							AtomicInteger _retval = new AtomicInteger(0);
+							BlockEntity _ent = world.getBlockEntity(pos);
+							if (_ent != null)
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+							return _retval.get();
+						}
+					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable)
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+					});
+				}
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.RAW_CHIPS.get()) {
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = (int) slot;
+					final ItemStack _setstack = new ItemStack(PokefoodModItems.CHIPS.get());
+					_setstack.setCount((int) (new Object() {
+						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+							AtomicInteger _retval = new AtomicInteger(0);
+							BlockEntity _ent = world.getBlockEntity(pos);
+							if (_ent != null)
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+							return _retval.get();
+						}
+					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable)
+							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+					});
+				}
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos(x, y, z), (int) (slot - 6))).getItem() == PokefoodModItems.LEEK.get()) {
+			{
+				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				if (_ent != null) {
+					final int _slotid = (int) slot;
+					final ItemStack _setstack = new ItemStack(PokefoodModItems.FRIED_LEEK.get());
+					_setstack.setCount((int) (new Object() {
+						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+							AtomicInteger _retval = new AtomicInteger(0);
+							BlockEntity _ent = world.getBlockEntity(pos);
+							if (_ent != null)
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 							return _retval.get();
 						}
 					}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));

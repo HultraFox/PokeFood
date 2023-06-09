@@ -1,0 +1,33 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Tea.bucket"
+      },
+      {
+        "value": "CUSTOM:CupLemonade"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      },
+      {
+        "value": "Blocks.BAMBOO"
+      },
+      {
+        "value": "CUSTOM:SweetRep2"
+      },
+      {
+        "value": "CUSTOM:CherryInfusion.bucket"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sweet_20",
+    "namespace": "forge"
+  }
+}

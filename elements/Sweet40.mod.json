@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Lemonade.bucket"
+      },
+      {
+        "value": "Items.MELON"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:SweetRep4"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sweet_40",
+    "namespace": "forge"
+  }
+}

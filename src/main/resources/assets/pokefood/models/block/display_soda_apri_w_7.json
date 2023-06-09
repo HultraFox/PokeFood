@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/bottle_7",
+  "textures": {
+    "all": "pokefood:blocks/soda_apri_w",
+    "particle": "pokefood:blocks/soda_apri_w",
+    "1": "pokefood:blocks/soda_apri_w"
+  },
+  "render_type": "solid"
+}

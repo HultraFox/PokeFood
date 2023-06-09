@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "pokefood:fuel"
+      "tag": "forge:fuel"
     }
   ],
   "result": {

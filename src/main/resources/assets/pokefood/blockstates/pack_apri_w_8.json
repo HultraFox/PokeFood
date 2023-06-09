@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/pack_apri_w_8"
+    },
+    "facing=east": {
+      "model": "pokefood:block/pack_apri_w_8",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/pack_apri_w_8",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/pack_apri_w_8",
+      "y": 270
+    }
+  }
+}

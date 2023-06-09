@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "puff_case",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStrong"
+      },
+      {
+        "value": "CUSTOM:PuffFancyHoney"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCitrus"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DisplayCasePuffs10"
+    },
+    "name": "recipe_display_puff_10",
+    "namespace": "mod"
+  }
+}

@@ -1,4 +1,25 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "pokefood:spicy_rep_2",
+    "pokefood:spicy_rep_3",
+    "pokefood:spicy_rep_1",
+    "pokefood:dry_rep_2",
+    "pokefood:dry_rep_1",
+    "pokefood:dry_rep_4",
+    "pokefood:bitter_rep_4",
+    "pokefood:dry_rep_3",
+    "pokefood:bitter_rep_2",
+    "pokefood:bitter_rep_3",
+    "pokefood:bitter_rep_1",
+    "pokefood:sour_rep_3",
+    "pokefood:sour_rep_4",
+    "pokefood:sweet_rep_1",
+    "pokefood:sweet_rep_3",
+    "pokefood:sour_rep_1",
+    "pokefood:sweet_rep_2",
+    "pokefood:sour_rep_2",
+    "pokefood:spicy_rep_4",
+    "pokefood:sweet_rep_4"
+  ]
 }

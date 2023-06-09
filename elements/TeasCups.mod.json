@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "teas_cups",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "poffin_spicy",
+        "1": "glass",
+        "2": "poffin_spicy_bitter",
+        "3": "poffin_spicy_dry",
+        "5": "poffin_spicy_sour",
+        "6": "oak_planks",
+        "7": "poffin_spicy_sweet"
+      },
+      "name": "default"
+    }
+  }
+}

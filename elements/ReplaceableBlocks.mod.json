@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Blocks.TALLGRASS#2"
+      },
+      {
+        "value": "Blocks.VINE"
+      },
+      {
+        "value": "Blocks.GLOW_LICHEN"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#3"
+      },
+      {
+        "value": "Blocks.SEAGRASS"
+      },
+      {
+        "value": "Blocks.TALL_SEAGRASS"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "replaceable_blocks",
+    "namespace": "forge"
+  }
+}

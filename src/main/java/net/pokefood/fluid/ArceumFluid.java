@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class ArceumFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.ARCEUM_TYPE.get(),
-			() -> PokefoodModFluids.ARCEUM.get(), () -> PokefoodModFluids.FLOWING_ARCEUM.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.ARCEUM_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.ARCEUM.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.ARCEUM_TYPE.get(), () -> PokefoodModFluids.ARCEUM.get(), () -> PokefoodModFluids.FLOWING_ARCEUM.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.ARCEUM_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.ARCEUM.get());
 
 	private ArceumFluid() {
 		super(PROPERTIES);

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:fluffy_meat"
+  },
+  "result": "pokefood:cooked_fluffy_meat"
+}

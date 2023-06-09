@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class CidronadeFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.CIDRONADE_TYPE.get(),
-			() -> PokefoodModFluids.CIDRONADE.get(), () -> PokefoodModFluids.FLOWING_CIDRONADE.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.CIDRONADE_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.CIDRONADE.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.CIDRONADE_TYPE.get(), () -> PokefoodModFluids.CIDRONADE.get(), () -> PokefoodModFluids.FLOWING_CIDRONADE.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.CIDRONADE_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.CIDRONADE.get());
 
 	private CidronadeFluid() {
 		super(PROPERTIES);

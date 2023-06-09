@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pokefood:block/banana_slab"
+    },
+    "type=top": {
+      "model": "pokefood:block/banana_slab_top"
+    },
+    "type=double": {
+      "model": "pokefood:block/banana_slab_full"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:brandy_bucket"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:brandy",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ConeDisplay"
+    },
+    "name": "recipe_cone_display",
+    "namespace": "mod"
+  }
+}

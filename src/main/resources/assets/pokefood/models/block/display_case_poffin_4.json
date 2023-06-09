@@ -1,0 +1,15 @@
+{
+  "parent": "pokefood:custom/poffin_showcase",
+  "textures": {
+    "all": "pokefood:blocks/case_poffin_5",
+    "particle": "pokefood:blocks/glass",
+    "0": "pokefood:blocks/poffin_sour",
+    "1": "pokefood:blocks/glass",
+    "2": "pokefood:blocks/poffin_dry_sour",
+    "3": "pokefood:blocks/poffin_sweet_sour",
+    "5": "pokefood:blocks/poffin_bitter_sour",
+    "6": "pokefood:blocks/oak_planks",
+    "7": "pokefood:blocks/poffin_sour"
+  },
+  "render_type": "cutout"
+}

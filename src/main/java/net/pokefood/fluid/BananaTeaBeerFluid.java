@@ -14,10 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class BananaTeaBeerFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> PokefoodModFluidTypes.BANANA_TEA_BEER_TYPE.get(), () -> PokefoodModFluids.BANANA_TEA_BEER.get(),
-			() -> PokefoodModFluids.FLOWING_BANANA_TEA_BEER.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.BANANA_TEA_BEER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BANANA_TEA_BEER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BANANA_TEA_BEER_TYPE.get(), () -> PokefoodModFluids.BANANA_TEA_BEER.get(),
+			() -> PokefoodModFluids.FLOWING_BANANA_TEA_BEER.get()).explosionResistance(100f).bucket(() -> PokefoodModItems.BANANA_TEA_BEER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BANANA_TEA_BEER.get());
 
 	private BananaTeaBeerFluid() {
 		super(PROPERTIES);

@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 5,
+    "group": "coffee_cup",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CupLatte"
+    },
+    "name": "recipe_late",
+    "namespace": "mod"
+  }
+}

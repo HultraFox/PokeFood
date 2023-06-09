@@ -14,8 +14,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class MaltFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.MALT_TYPE.get(),
-			() -> PokefoodModFluids.MALT.get(), () -> PokefoodModFluids.FLOWING_MALT.get()).explosionResistance(100f)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.MALT_TYPE.get(), () -> PokefoodModFluids.MALT.get(), () -> PokefoodModFluids.FLOWING_MALT.get()).explosionResistance(100f)
 			.bucket(() -> PokefoodModItems.MALT_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.MALT.get());
 
 	private MaltFluid() {

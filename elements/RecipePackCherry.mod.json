@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "soda_packs",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PackEmpty"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "Items.DYE#17"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PackCherry"
+    },
+    "name": "recipe_pack_cherry",
+    "namespace": "mod"
+  }
+}

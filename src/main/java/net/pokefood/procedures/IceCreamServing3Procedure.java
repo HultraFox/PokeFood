@@ -43,8 +43,7 @@ public class IceCreamServing3Procedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), 2) > 0 && new Object() {
@@ -52,8 +51,7 @@ public class IceCreamServing3Procedure {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(x, y, z), (int) slot) < 64) {
@@ -62,8 +60,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_TEA.get() || (new Object() {
@@ -71,8 +68,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -100,8 +96,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -117,8 +112,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_TEA_B.get() || (new Object() {
@@ -126,8 +120,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -155,8 +148,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -172,8 +164,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_TEA_R.get() || (new Object() {
@@ -181,8 +172,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -210,8 +200,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -227,8 +216,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_LEMO.get() || (new Object() {
@@ -236,8 +224,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -265,8 +252,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -282,8 +268,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_B.get() || (new Object() {
@@ -291,8 +276,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -320,8 +304,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -337,8 +320,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_D.get() || (new Object() {
@@ -346,8 +328,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -375,8 +356,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -392,8 +372,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_G.get() || (new Object() {
@@ -401,8 +380,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -430,8 +408,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -447,8 +424,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_P.get() || (new Object() {
@@ -456,8 +432,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -485,8 +460,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -502,8 +476,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_R.get() || (new Object() {
@@ -511,8 +484,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -540,8 +512,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -557,8 +528,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_W.get() || (new Object() {
@@ -566,8 +536,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -595,8 +564,7 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
@@ -612,8 +580,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_APRI_Y.get() || (new Object() {
@@ -621,8 +588,7 @@ public class IceCreamServing3Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
 			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
@@ -650,8 +616,163 @@ public class IceCreamServing3Procedure {
 								AtomicInteger _retval = new AtomicInteger(0);
 								BlockEntity _ent = world.getBlockEntity(pos);
 								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-											.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable)
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+						});
+					}
+				}
+				tank_quantity = tank_quantity - 1;
+			} else if ((tank_name).equals("coffee") && ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_COFFEE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = 2;
+						final int _amount = 1;
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+								_stk.shrink(_amount);
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+							}
+						});
+					}
+				}
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = (int) slot;
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.ICE_CREAM_COFFEE.get());
+						_setstack.setCount((int) (new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable)
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+						});
+					}
+				}
+				tank_quantity = tank_quantity - 1;
+			} else if ((tank_name).equals("latte") && ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_LATTE.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = 2;
+						final int _amount = 1;
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+								_stk.shrink(_amount);
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+							}
+						});
+					}
+				}
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = (int) slot;
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.ICE_CREAM_LATTE.get());
+						_setstack.setCount((int) (new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable)
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+						});
+					}
+				}
+				tank_quantity = tank_quantity - 1;
+			} else if ((tank_name).equals("cherry") && ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == PokefoodModItems.ICE_CREAM_CHERRY.get() || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					return _retval.get();
+				}
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = 2;
+						final int _amount = 1;
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+								_stk.shrink(_amount);
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+							}
+						});
+					}
+				}
+				{
+					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					if (_ent != null) {
+						final int _slotid = (int) slot;
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.ICE_CREAM_CHERRY.get());
+						_setstack.setCount((int) (new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos(x, y, z), (int) slot) + 1));

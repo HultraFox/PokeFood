@@ -35,8 +35,7 @@ import net.minecraft.core.BlockPos;
 
 public class LemonStage6Block extends FlowerBlock implements EntityBlock {
 	public LemonStage6Block() {
-		super(MobEffects.DIG_SLOWDOWN, 100,
-				BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
+		super(MobEffects.DIG_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
 	@Override

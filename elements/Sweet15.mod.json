@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceB"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sweet_15",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cardbox_bottom",
+        "1": "cardbox_side",
+        "2": "cardbox_side_inv",
+        "3": "cardbox_top",
+        "4": "cardbox_top_open"
+      },
+      "name": "default"
+    }
+  }
+}

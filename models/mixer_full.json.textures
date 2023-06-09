@@ -2,43 +2,12 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "mixer_1_red",
-        "1": "mixer_2_red",
-        "missing": ""
-      },
-      "name": "default"
-    },
-    "pink": {
-      "map": {
-        "0": "mixer_1_pink",
-        "1": "mixer_2_pink",
-        "missing": ""
-      },
-      "name": "pink"
-    },
-    "green": {
-      "map": {
-        "0": "mixer_1_green",
-        "1": "mixer_2_green",
-        "missing": ""
-      },
-      "name": "green"
-    },
-    "blue": {
-      "map": {
         "0": "mixer_1_blue",
         "1": "mixer_2_blue",
-        "missing": ""
+        "2": "mixer_apri_g",
+        "missing": "mixer_1_blue"
       },
-      "name": "blue"
-    },
-    "yellow": {
-      "map": {
-        "0": "mixer_1_yellow",
-        "1": "mixer_2_yellow",
-        "missing": ""
-      },
-      "name": "yellow"
+      "name": "default"
     }
   }
 }

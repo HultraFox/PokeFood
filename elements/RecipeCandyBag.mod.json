@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "CUSTOM:Cardboard"
+      },
+      {
+        "value": "Items.DYE#12"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#11"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CandyBoxEmpty"
+    },
+    "name": "recipe_candy_bag",
+    "namespace": "mod"
+  }
+}

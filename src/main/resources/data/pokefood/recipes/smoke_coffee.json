@@ -1,0 +1,10 @@
+{
+  "group": "coffee",
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "minecraft:sweet_berries"
+  },
+  "result": "pokefood:coffee_beans"
+}

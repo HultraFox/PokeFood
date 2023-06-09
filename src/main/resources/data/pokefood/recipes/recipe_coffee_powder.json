@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:coffee_beans"
+    }
+  ],
+  "result": {
+    "item": "pokefood:coffee_powder",
+    "count": 1
+  }
+}

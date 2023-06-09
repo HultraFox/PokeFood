@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:cup_coffee"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "pokefood:coffee",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:cup"
+    }
+  ]
+}

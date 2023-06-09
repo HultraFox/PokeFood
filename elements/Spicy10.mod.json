@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceR"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceP"
+      },
+      {
+        "value": "CUSTOM:SparklesSpicy"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:SpicyRep1"
+      },
+      {
+        "value": "CUSTOM:CupFreshWater"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "spicy_10",
+    "namespace": "forge"
+  }
+}

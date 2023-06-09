@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:cherry_infusion_bucket"
+    },
+    "1": {
+      "item": "pokefood:cup"
+    },
+    "2": {
+      "item": "pokefood:cup"
+    },
+    "3": {
+      "item": "pokefood:cup"
+    },
+    "4": {
+      "item": "pokefood:cup"
+    },
+    "5": {
+      "item": "pokefood:cup"
+    }
+  },
+  "result": {
+    "item": "pokefood:cup_cherry_infusion",
+    "count": 5
+  }
+}

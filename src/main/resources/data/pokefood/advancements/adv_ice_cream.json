@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:ice_cream_apri_b"
+    },
+    "title": {
+      "translate": "advancements.adv_ice_cream.title"
+    },
+    "description": {
+      "translate": "advancements.adv_ice_cream.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_ice_cream": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "pokefood:recipe_poffin_spicy",
+      "pokefood:recipe_poffin_dry",
+      "pokefood:recipe_poffin_sweet",
+      "pokefood:recipe_poffin_bitter",
+      "pokefood:recipe_poffin_sour",
+      "pokefood:recipe_poffin_spicy_dry",
+      "pokefood:recipe_poffin_spicy_sweet",
+      "pokefood:recipe_poffin_spicy_bitter",
+      "pokefood:recipe_poffin_spicy_sour",
+      "pokefood:recipe_poffin_dry_spicy",
+      "pokefood:recipe_poffin_dry_bitter",
+      "pokefood:recipe_poffin_dry_sour",
+      "pokefood:recipe_poffin_dry_sweet",
+      "pokefood:recipe_poffin_sweet_spicy",
+      "pokefood:recipe_poffin_sweet_dry",
+      "pokefood:recipe_poffin_sweet_bitter",
+      "pokefood:recipe_poffin_sweet_sour",
+      "pokefood:recipe_poffin_bitter_spicy",
+      "pokefood:recipe_poffin_bitter_dry",
+      "pokefood:recipe_poffin_bitter_sweet",
+      "pokefood:recipe_poffin_bitter_sour",
+      "pokefood:recipe_poffin_sour_spicy",
+      "pokefood:recipe_poffin_sour_dry",
+      "pokefood:recipe_poffin_sour_bitter",
+      "pokefood:recipe_poffin_sour_sweet",
+      "pokefood:recipe_sparkles_spicy",
+      "pokefood:recipe_sparkles_dry",
+      "pokefood:recipe_sparkles_sweet",
+      "pokefood:recipe_sparkles_bitter",
+      "pokefood:recipe_sparkles_sour"
+    ]
+  },
+  "parent": "pokefood:adv_pastries"
+}

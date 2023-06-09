@@ -1,0 +1,25 @@
+{
+  "group": "puff_case",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:display_case_empty"
+    },
+    {
+      "item": "pokefood:puff_basic_mocha"
+    },
+    {
+      "item": "pokefood:puff_frosted_pepper"
+    },
+    {
+      "item": "pokefood:puff_fancy_stiff"
+    },
+    {
+      "item": "pokefood:puff_deluxe_ananas"
+    }
+  ],
+  "result": {
+    "item": "pokefood:display_case_puffs_9",
+    "count": 1
+  }
+}

@@ -31,7 +31,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class FryerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(14, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(15, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public FryerBlockEntity(BlockPos position, BlockState state) {

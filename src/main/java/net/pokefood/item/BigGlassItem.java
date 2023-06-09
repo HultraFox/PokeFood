@@ -8,6 +8,6 @@ import net.minecraft.world.item.Item;
 
 public class BigGlassItem extends Item {
 	public BigGlassItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

@@ -1,0 +1,28 @@
+{
+  "group": "poffin_case",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:display_case_empty"
+    },
+    {
+      "item": "pokefood:poffin_dry"
+    },
+    {
+      "item": "pokefood:poffin_dry_spicy"
+    },
+    {
+      "item": "pokefood:poffin_dry_sweet"
+    },
+    {
+      "item": "pokefood:poffin_dry_bitter"
+    },
+    {
+      "item": "pokefood:poffin_dry_sour"
+    }
+  ],
+  "result": {
+    "item": "pokefood:display_case_poffin_6",
+    "count": 1
+  }
+}

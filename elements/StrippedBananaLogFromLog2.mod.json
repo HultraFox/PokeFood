@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "banana_log",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BananaLog2Stripped"
+      },
+      {
+        "value": "CUSTOM:BananaLog2Stripped"
+      },
+      {
+        "value": "CUSTOM:BananaLog2Stripped"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BananaLogStripped"
+    },
+    "name": "stripped_banana_log_from_log_2",
+    "namespace": "mod"
+  }
+}

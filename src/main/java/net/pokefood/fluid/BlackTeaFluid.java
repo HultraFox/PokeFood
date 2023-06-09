@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class BlackTeaFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BLACK_TEA_TYPE.get(),
-			() -> PokefoodModFluids.BLACK_TEA.get(), () -> PokefoodModFluids.FLOWING_BLACK_TEA.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.BLACK_TEA_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BLACK_TEA.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BLACK_TEA_TYPE.get(), () -> PokefoodModFluids.BLACK_TEA.get(), () -> PokefoodModFluids.FLOWING_BLACK_TEA.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.BLACK_TEA_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BLACK_TEA.get());
 
 	private BlackTeaFluid() {
 		super(PROPERTIES);

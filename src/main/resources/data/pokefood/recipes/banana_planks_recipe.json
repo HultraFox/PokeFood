@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:banana_items_tag"
+    }
+  ],
+  "result": {
+    "item": "pokefood:banana_planks",
+    "count": 4
+  }
+}

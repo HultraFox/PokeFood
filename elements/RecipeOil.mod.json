@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Oil"
+    },
+    "name": "recipe_oil",
+    "namespace": "mod"
+  }
+}

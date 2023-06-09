@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:manta_fin"
+  },
+  "result": "pokefood:cooked_manta_fin"
+}

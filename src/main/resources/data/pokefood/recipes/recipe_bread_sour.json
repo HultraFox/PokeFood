@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:poffin_dough_sour"
+    },
+    "1": {
+      "item": "pokefood:poffin_dough_sour"
+    },
+    "2": {
+      "item": "pokefood:poffin_dough_sour"
+    }
+  },
+  "result": {
+    "item": "pokefood:bread_sour",
+    "count": 1
+  }
+}

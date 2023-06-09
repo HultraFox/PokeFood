@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:cardboard"
+    },
+    "2": {
+      "item": "pokefood:cardboard"
+    },
+    "3": {
+      "item": "pokefood:cardboard"
+    },
+    "4": {
+      "item": "pokefood:cardboard"
+    },
+    "5": {
+      "item": "pokefood:cardboard"
+    }
+  },
+  "result": {
+    "item": "pokefood:pack_empty",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "layer0": "pokefood:items/deluxe_mint"
+    "0": "pokefood:blocks/deluxe_mint",
+    "particle": "pokefood:items/deluxe_mint"
   }
 }

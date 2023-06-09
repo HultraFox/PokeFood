@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:ApriAlcoholW"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholD"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholB"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholG"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholY"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholP"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholR"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_calcite",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:mixer_red"
+    },
+    "title": {
+      "translate": "advancements.adv_baking_world.title"
+    },
+    "description": {
+      "translate": "advancements.adv_baking_world.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_baking_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "pokefood:recipe_mixer_red",
+      "pokefood:recipe_mixer_pink",
+      "pokefood:recipe_mixer_yellow",
+      "pokefood:recipe_mixer_green",
+      "pokefood:recipe_mixer_blue",
+      "pokefood:recipe_big_oven",
+      "pokefood:recipe_ice_cream_cone",
+      "pokefood:recipe_ice_cream_maker",
+      "pokefood:recipe_ice_cream_extention"
+    ]
+  },
+  "parent": "pokefood:adv_pokefood"
+}

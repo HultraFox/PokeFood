@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:cherry_infusion_bucket"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:cherry_infusion",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ]
+}

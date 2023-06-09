@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "adv_pastries": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "pokefood:adv_baking_world"
+}

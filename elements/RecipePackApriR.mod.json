@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "soda_packs",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PackEmpty"
+      },
+      {
+        "value": "Items.DYE#19"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PackApriR"
+    },
+    "name": "recipe_pack_apri_r",
+    "namespace": "mod"
+  }
+}

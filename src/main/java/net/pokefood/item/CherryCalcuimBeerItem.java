@@ -11,7 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CherryCalcuimBeerItem extends BucketItem {
 	public CherryCalcuimBeerItem() {
-		super(PokefoodModFluids.CHERRY_CALCUIM_BEER,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_MISC));
+		super(PokefoodModFluids.CHERRY_CALCUIM_BEER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
 	}
 }

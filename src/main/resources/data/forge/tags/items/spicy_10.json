@@ -2,9 +2,11 @@
   "replace": false,
   "values": [
     "minecraft:glow_berries",
+    "pokefood:spicy_rep_1",
     "pokefood:sparkles_spicy",
     "pokefood:cup_aprijuice_p",
     "pokefood:cup_aprijuice_r",
+    "pokefood:cup_fresh_water",
     "pokefood:cup_roserade_tea"
   ]
 }

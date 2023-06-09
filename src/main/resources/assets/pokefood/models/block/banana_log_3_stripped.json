@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/banana_up",
+  "textures": {
+    "all": "pokefood:blocks/stripped_banana_log",
+    "particle": "pokefood:blocks/stripped_banana_log",
+    "1": "pokefood:blocks/stripped_banana_log"
+  },
+  "render_type": "solid"
+}

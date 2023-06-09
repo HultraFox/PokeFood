@@ -11,7 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class FreshWaterItem extends BucketItem {
 	public FreshWaterItem() {
-		super(PokefoodModFluids.FRESH_WATER,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_MISC));
+		super(PokefoodModFluids.FRESH_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
 	}
 }

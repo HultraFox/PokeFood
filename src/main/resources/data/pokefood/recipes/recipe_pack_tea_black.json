@@ -1,0 +1,37 @@
+{
+  "group": "soda_packs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:pack_empty"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    },
+    {
+      "item": "pokefood:soda_punch_tea"
+    }
+  ],
+  "result": {
+    "item": "pokefood:pack_tea_black",
+    "count": 1
+  }
+}

@@ -31,10 +31,9 @@ public class CalcuimPlantFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new CalcuimPlantFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("pokefood:calcuim_plant", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(PokefoodModBlocks.CALCUIM_PLANT.get())), List.of(), 10));
-		PLACED_FEATURE = PlacementUtils.register("pokefood:calcuim_plant", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(10), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("pokefood:calcuim_plant", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(PokefoodModBlocks.CALCUIM_PLANT.get())), List.of(), 10));
+		PLACED_FEATURE = PlacementUtils.register("pokefood:calcuim_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

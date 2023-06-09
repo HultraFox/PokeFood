@@ -10,10 +10,9 @@ import net.minecraft.world.food.FoodProperties;
 
 public class LeekItem extends Item {
 	public LeekItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(2f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(1f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

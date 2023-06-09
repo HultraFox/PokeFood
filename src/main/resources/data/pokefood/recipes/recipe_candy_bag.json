@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cardboard"
+    },
+    {
+      "item": "pokefood:cardboard"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "pokefood:cardboard"
+    },
+    {
+      "item": "pokefood:cardboard"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "item": "pokefood:candy_box_empty",
+    "count": 2
+  }
+}

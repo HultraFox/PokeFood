@@ -1,0 +1,16 @@
+{
+  "group": "ice_cream_add_chocolate",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:ice_cream_apri_b"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "item": "pokefood:ice_cream_apri_bc",
+    "count": 1
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceW"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceD"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceB"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceR"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceP"
+      },
+      {
+        "value": "CUSTOM:ApriShakeW"
+      },
+      {
+        "value": "CUSTOM:ApriShakeD"
+      },
+      {
+        "value": "CUSTOM:ApriShakeB"
+      },
+      {
+        "value": "CUSTOM:ApriShakeG"
+      },
+      {
+        "value": "CUSTOM:ApriShakeY"
+      },
+      {
+        "value": "CUSTOM:ApriShakeR"
+      },
+      {
+        "value": "CUSTOM:ApriShakeP"
+      },
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:CupLemonade"
+      },
+      {
+        "value": "CUSTOM:CupFreshWater"
+      },
+      {
+        "value": "CUSTOM:SodaPopTemp"
+      },
+      {
+        "value": "CUSTOM:SodaHighTea"
+      },
+      {
+        "value": "CUSTOM:SodaPunchTea"
+      },
+      {
+        "value": "CUSTOM:SodaPowerLemon"
+      },
+      {
+        "value": "CUSTOM:SodaApriD"
+      },
+      {
+        "value": "CUSTOM:SodaApriW"
+      },
+      {
+        "value": "CUSTOM:SodaApriB"
+      },
+      {
+        "value": "CUSTOM:SodaApriG"
+      },
+      {
+        "value": "CUSTOM:SodaApriY"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriP"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": "CUSTOM:CupLatte"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": "CUSTOM:CupCherryInfusion"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:CreamedCoffee"
+      },
+      {
+        "value": "CUSTOM:CreamedLatte"
+      },
+      {
+        "value": "CUSTOM:SodaRosineTea"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "soft_drinks",
+    "namespace": "mod"
+  }
+}

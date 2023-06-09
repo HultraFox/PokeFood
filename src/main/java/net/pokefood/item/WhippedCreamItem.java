@@ -9,9 +9,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class WhippedCreamItem extends Item {
 	public WhippedCreamItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.25f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 }

@@ -14,10 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class CherryCalcuimBeerFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> PokefoodModFluidTypes.CHERRY_CALCUIM_BEER_TYPE.get(), () -> PokefoodModFluids.CHERRY_CALCUIM_BEER.get(),
-			() -> PokefoodModFluids.FLOWING_CHERRY_CALCUIM_BEER.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.CHERRY_CALCUIM_BEER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.CHERRY_CALCUIM_BEER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.CHERRY_CALCUIM_BEER_TYPE.get(), () -> PokefoodModFluids.CHERRY_CALCUIM_BEER.get(),
+			() -> PokefoodModFluids.FLOWING_CHERRY_CALCUIM_BEER.get()).explosionResistance(100f).bucket(() -> PokefoodModItems.CHERRY_CALCUIM_BEER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.CHERRY_CALCUIM_BEER.get());
 
 	private CherryCalcuimBeerFluid() {
 		super(PROPERTIES);

@@ -26,8 +26,7 @@ public class LemonCollectingProcedure {
 				if (randomNumber >= 0.66) {
 					for (int index0 = 0; index0 < (int) (4); index0++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LIME.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LIME.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -35,8 +34,7 @@ public class LemonCollectingProcedure {
 				} else if (randomNumber >= 0.33) {
 					for (int index1 = 0; index1 < (int) (3); index1++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LIME.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LIME.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -44,8 +42,7 @@ public class LemonCollectingProcedure {
 				} else {
 					for (int index2 = 0; index2 < (int) (2); index2++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LIME.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LIME.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -53,13 +50,9 @@ public class LemonCollectingProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")),
-								SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z,
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")),
-								SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_3.get().defaultBlockState(), 3);
@@ -70,8 +63,7 @@ public class LemonCollectingProcedure {
 				if (randomNumber >= 0.66) {
 					for (int index3 = 0; index3 < (int) (4); index3++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LEMON.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LEMON.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -79,8 +71,7 @@ public class LemonCollectingProcedure {
 				} else if (randomNumber >= 0.33) {
 					for (int index4 = 0; index4 < (int) (3); index4++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LEMON.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LEMON.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -88,8 +79,7 @@ public class LemonCollectingProcedure {
 				} else {
 					for (int index5 = 0; index5 < (int) (2); index5++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05),
-									new ItemStack(PokefoodModItems.LEMON.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.05), (y + 0.05), (z + 0.05), new ItemStack(PokefoodModItems.LEMON.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -97,13 +87,9 @@ public class LemonCollectingProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")),
-								SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z,
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")),
-								SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				{

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "1": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "2": {
+      "item": "minecraft:iron_bars"
+    },
+    "3": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "pokefood:cone_display",
+    "count": 1
+  }
+}

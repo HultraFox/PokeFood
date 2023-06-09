@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "coffee",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.SWEET_BERRIES"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CoffeeBeans"
+    },
+    "name": "recipe_coffee",
+    "namespace": "mod"
+  }
+}

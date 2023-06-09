@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:fresh_water_bucket"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:fresh_water",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ]
+}

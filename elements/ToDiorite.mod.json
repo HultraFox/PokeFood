@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:ApriJuiceW"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceD"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceB"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceG"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceR"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceP"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_diorite",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "group": "spicy_rep",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:spicy_juice"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:salt"
+    }
+  ],
+  "result": {
+    "item": "pokefood:spicy_rep_3",
+    "count": 2
+  }
+}

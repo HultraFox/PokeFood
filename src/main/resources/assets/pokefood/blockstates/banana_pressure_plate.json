@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "pokefood:block/banana_pressure_plate"
+    },
+    "powered=true": {
+      "model": "pokefood:block/banana_pressure_plate_down"
+    }
+  }
+}

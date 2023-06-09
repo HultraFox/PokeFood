@@ -1,0 +1,25 @@
+{
+  "group": "bitter_rep",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:oil"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:coffee_powder"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "pokefood:coffee_powder"
+    }
+  ],
+  "result": {
+    "item": "pokefood:bitter_rep_2",
+    "count": 2
+  }
+}

@@ -1,18 +1,171 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,mixing_color=0": {
       "model": "pokefood:block/mixer_yellow"
     },
-    "facing=east": {
+    "facing=east,mixing_color=0": {
       "model": "pokefood:block/mixer_yellow",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,mixing_color=0": {
       "model": "pokefood:block/mixer_yellow",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,mixing_color=0": {
       "model": "pokefood:block/mixer_yellow",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=1": {
+      "model": "pokefood:block/mixer_yellow0"
+    },
+    "facing=east,mixing_color=1": {
+      "model": "pokefood:block/mixer_yellow0",
+      "y": 90
+    },
+    "facing=south,mixing_color=1": {
+      "model": "pokefood:block/mixer_yellow0",
+      "y": 180
+    },
+    "facing=west,mixing_color=1": {
+      "model": "pokefood:block/mixer_yellow0",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=2": {
+      "model": "pokefood:block/mixer_yellow1"
+    },
+    "facing=east,mixing_color=2": {
+      "model": "pokefood:block/mixer_yellow1",
+      "y": 90
+    },
+    "facing=south,mixing_color=2": {
+      "model": "pokefood:block/mixer_yellow1",
+      "y": 180
+    },
+    "facing=west,mixing_color=2": {
+      "model": "pokefood:block/mixer_yellow1",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=3": {
+      "model": "pokefood:block/mixer_yellow2"
+    },
+    "facing=east,mixing_color=3": {
+      "model": "pokefood:block/mixer_yellow2",
+      "y": 90
+    },
+    "facing=south,mixing_color=3": {
+      "model": "pokefood:block/mixer_yellow2",
+      "y": 180
+    },
+    "facing=west,mixing_color=3": {
+      "model": "pokefood:block/mixer_yellow2",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=4": {
+      "model": "pokefood:block/mixer_yellow3"
+    },
+    "facing=east,mixing_color=4": {
+      "model": "pokefood:block/mixer_yellow3",
+      "y": 90
+    },
+    "facing=south,mixing_color=4": {
+      "model": "pokefood:block/mixer_yellow3",
+      "y": 180
+    },
+    "facing=west,mixing_color=4": {
+      "model": "pokefood:block/mixer_yellow3",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=5": {
+      "model": "pokefood:block/mixer_yellow4"
+    },
+    "facing=east,mixing_color=5": {
+      "model": "pokefood:block/mixer_yellow4",
+      "y": 90
+    },
+    "facing=south,mixing_color=5": {
+      "model": "pokefood:block/mixer_yellow4",
+      "y": 180
+    },
+    "facing=west,mixing_color=5": {
+      "model": "pokefood:block/mixer_yellow4",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=6": {
+      "model": "pokefood:block/mixer_yellow5"
+    },
+    "facing=east,mixing_color=6": {
+      "model": "pokefood:block/mixer_yellow5",
+      "y": 90
+    },
+    "facing=south,mixing_color=6": {
+      "model": "pokefood:block/mixer_yellow5",
+      "y": 180
+    },
+    "facing=west,mixing_color=6": {
+      "model": "pokefood:block/mixer_yellow5",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=7": {
+      "model": "pokefood:block/mixer_yellow6"
+    },
+    "facing=east,mixing_color=7": {
+      "model": "pokefood:block/mixer_yellow6",
+      "y": 90
+    },
+    "facing=south,mixing_color=7": {
+      "model": "pokefood:block/mixer_yellow6",
+      "y": 180
+    },
+    "facing=west,mixing_color=7": {
+      "model": "pokefood:block/mixer_yellow6",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=8": {
+      "model": "pokefood:block/mixer_yellow7"
+    },
+    "facing=east,mixing_color=8": {
+      "model": "pokefood:block/mixer_yellow7",
+      "y": 90
+    },
+    "facing=south,mixing_color=8": {
+      "model": "pokefood:block/mixer_yellow7",
+      "y": 180
+    },
+    "facing=west,mixing_color=8": {
+      "model": "pokefood:block/mixer_yellow7",
+      "y": 270
+    },
+
+
+    "facing=north,mixing_color=9": {
+      "model": "pokefood:block/mixer_yellow8"
+    },
+    "facing=east,mixing_color=9": {
+      "model": "pokefood:block/mixer_yellow8",
+      "y": 90
+    },
+    "facing=south,mixing_color=9": {
+      "model": "pokefood:block/mixer_yellow8",
+      "y": 180
+    },
+    "facing=west,mixing_color=9": {
+      "model": "pokefood:block/mixer_yellow8",
       "y": 270
     }
   }

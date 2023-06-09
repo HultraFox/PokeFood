@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:banana_wood",
+    "pokefood:banana_log_3_stripped",
+    "pokefood:banana_log",
+    "pokefood:banana_top",
+    "pokefood:banana_log_2_controler",
+    "pokefood:banana_wood_tree_controler",
+    "pokefood:banana_wood_stripped",
+    "pokefood:banana_log_2",
+    "pokefood:banana_top_stripped",
+    "pokefood:banana_log_3",
+    "pokefood:banana_log_stripped",
+    "pokefood:banana_log_2_stripped"
+  ]
+}

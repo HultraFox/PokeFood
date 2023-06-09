@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:banana_log_stripped"
+    },
+    "1": {
+      "item": "pokefood:banana_log_stripped"
+    },
+    "2": {
+      "item": "pokefood:banana_log_stripped"
+    },
+    "3": {
+      "item": "pokefood:banana_log_stripped"
+    }
+  },
+  "result": {
+    "item": "pokefood:banana_wood_stripped",
+    "count": 3
+  }
+}

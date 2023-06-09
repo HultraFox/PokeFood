@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class BrandyFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BRANDY_TYPE.get(),
-			() -> PokefoodModFluids.BRANDY.get(), () -> PokefoodModFluids.FLOWING_BRANDY.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.BRANDY_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BRANDY.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.BRANDY_TYPE.get(), () -> PokefoodModFluids.BRANDY.get(), () -> PokefoodModFluids.FLOWING_BRANDY.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.BRANDY_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.BRANDY.get());
 
 	private BrandyFluid() {
 		super(PROPERTIES);

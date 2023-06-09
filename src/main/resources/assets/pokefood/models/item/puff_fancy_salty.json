@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "layer0": "pokefood:items/fancy_salty"
+    "0": "pokefood:blocks/fancy_salty",
+    "particle": "pokefood:items/fancy_salty"
   }
 }

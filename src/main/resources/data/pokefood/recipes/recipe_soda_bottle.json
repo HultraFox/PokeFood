@@ -1,22 +1,27 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "0": {
       "item": "minecraft:glass_pane"
     },
-    {
+    "2": {
       "item": "minecraft:glass_pane"
     },
-    {
+    "3": {
       "item": "minecraft:glass_pane"
     },
-    {
+    "5": {
       "item": "minecraft:glass_pane"
     },
-    {
+    "7": {
       "item": "minecraft:glass_pane"
     }
-  ],
+  },
   "result": {
     "item": "pokefood:soda_bottle",
     "count": 5

@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:dry_rep_4"
+    },
+    "title": {
+      "translate": "advancements.adv_replacements.title"
+    },
+    "description": {
+      "translate": "advancements.adv_replacements.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_replacements": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "pokefood:recipe_spicy_rep_1",
+      "pokefood:recipe_spicy_rep_2",
+      "pokefood:recipe_spicy_rep_3",
+      "pokefood:recipe_spicy_rep_4",
+      "pokefood:recipe_dry_rep_1",
+      "pokefood:recipe_dry_rep_2",
+      "pokefood:recipe_dry_rep_3",
+      "pokefood:recipe_dry_rep_4",
+      "pokefood:recipe_sweet_rep_1",
+      "pokefood:recipe_sweet_rep_2",
+      "pokefood:recipe_sweet_rep_3",
+      "pokefood:recipe_sweet_rep_4",
+      "pokefood:recipe_bitter_rep_1",
+      "pokefood:recipe_bitter_rep_2",
+      "pokefood:recipe_bitter_rep_3",
+      "pokefood:recipe_bitter_rep_4",
+      "pokefood:recipe_sour_rep_1",
+      "pokefood:recipe_sour_rep_2",
+      "pokefood:recipe_sour_rep_3",
+      "pokefood:recipe_sour_rep_4"
+    ]
+  },
+  "parent": "pokefood:adv_baking_world"
+}

@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:wheat_bag"
+    },
+    "title": {
+      "translate": "advancements.adv_malt.title"
+    },
+    "description": {
+      "translate": "advancements.adv_malt.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_malt": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25,
+    "recipes": [
+      "pokefood:recipe_glass",
+      "pokefood:recipe_beer",
+      "pokefood:recipe_teanana_beer",
+      "pokefood:recipe_cherrium_beer",
+      "pokefood:recipe_apri_alcohol_w",
+      "pokefood:recipe_apri_alcohol_d",
+      "pokefood:recipe_apri_alcohol_b",
+      "pokefood:recipe_apri_alcohol_y",
+      "pokefood:recipe_apri_alcohol_r",
+      "pokefood:recipe_apri_alcohol_p",
+      "pokefood:recipe_apri_alcohol_g",
+      "pokefood:recipe_brandy",
+      "pokefood:recipe_cidronade",
+      "pokefood:create_fill_arceum"
+    ]
+  },
+  "parent": "pokefood:adv_alcohol_world"
+}

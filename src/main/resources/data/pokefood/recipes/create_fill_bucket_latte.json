@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "pokefood:latte",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "pokefood:latte_bucket"
+    }
+  ]
+}

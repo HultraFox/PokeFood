@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:minun_ear"
+  },
+  "result": "pokefood:cooked_minun_ear"
+}

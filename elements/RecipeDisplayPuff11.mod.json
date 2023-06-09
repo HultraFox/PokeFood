@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "puff_case",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:PuffBasicToast"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStiff"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCalm"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSalty"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DisplayCasePuffs11"
+    },
+    "name": "recipe_display_puff_11",
+    "namespace": "mod"
+  }
+}

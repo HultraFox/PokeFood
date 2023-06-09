@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "soda_packs",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PackEmpty"
+      },
+      {
+        "value": "Items.DYE#17"
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      },
+      {
+        "value": "CUSTOM:SodaSombrine"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PackCoffee"
+    },
+    "name": "recipe_pack_coffee",
+    "namespace": "mod"
+  }
+}

@@ -35,8 +35,7 @@ import java.util.Collections;
 
 public class TeaStage1Block extends FlowerBlock implements EntityBlock {
 	public TeaStage1Block() {
-		super(MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS)
-				.instabreak().speedFactor(0.5f).noCollission());
+		super(MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().speedFactor(0.5f).noCollission());
 	}
 
 	@Override

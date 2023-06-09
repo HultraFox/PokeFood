@@ -13,10 +13,9 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class PoffinDoughSpicyItem extends Item {
 	public PoffinDoughSpicyItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(1f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(1.5f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

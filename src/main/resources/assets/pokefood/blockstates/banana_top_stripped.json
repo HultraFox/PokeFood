@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "pokefood:block/banana_top_stripped",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "pokefood:block/banana_top_stripped"
+    },
+    "axis=z": {
+      "model": "pokefood:block/banana_top_stripped",
+      "x": 90
+    }
+  }
+}

@@ -80,7 +80,6 @@ public class IceCreaMakerGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PokefoodMod.addNetworkMessage(IceCreaMakerGUIButtonMessage.class, IceCreaMakerGUIButtonMessage::buffer, IceCreaMakerGUIButtonMessage::new,
-				IceCreaMakerGUIButtonMessage::handler);
+		PokefoodMod.addNetworkMessage(IceCreaMakerGUIButtonMessage.class, IceCreaMakerGUIButtonMessage::buffer, IceCreaMakerGUIButtonMessage::new, IceCreaMakerGUIButtonMessage::handler);
 	}
 }

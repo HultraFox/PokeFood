@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:calcuim"
+    },
+    {
+      "item": "pokefood:calcuim"
+    },
+    {
+      "item": "pokefood:calcuim"
+    },
+    {
+      "item": "pokefood:calcuim"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    }
+  ],
+  "result": {
+    "item": "pokefood:spicy_juice",
+    "count": 1
+  }
+}

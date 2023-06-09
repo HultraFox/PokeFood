@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:clobbopus_tentacle"
+  },
+  "result": "pokefood:cooked_clobbopus_tentacle"
+}

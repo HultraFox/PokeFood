@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:banana_planks"
+    },
+    "3": {
+      "item": "pokefood:banana_planks"
+    },
+    "4": {
+      "item": "pokefood:banana_planks"
+    },
+    "6": {
+      "item": "pokefood:banana_planks"
+    },
+    "7": {
+      "item": "pokefood:banana_planks"
+    },
+    "8": {
+      "item": "pokefood:banana_planks"
+    }
+  },
+  "result": {
+    "item": "pokefood:banana_stairs",
+    "count": 4
+  }
+}

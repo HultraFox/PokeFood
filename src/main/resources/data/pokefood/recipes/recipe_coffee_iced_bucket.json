@@ -1,0 +1,28 @@
+{
+  "group": "coffee_cup",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "pokefood:cup_iced_coffee"
+    },
+    {
+      "item": "pokefood:cup_iced_coffee"
+    },
+    {
+      "item": "pokefood:cup_iced_coffee"
+    },
+    {
+      "item": "pokefood:cup_iced_coffee"
+    },
+    {
+      "item": "pokefood:cup_iced_coffee"
+    }
+  ],
+  "result": {
+    "item": "pokefood:coffee_iced_bucket",
+    "count": 1
+  }
+}

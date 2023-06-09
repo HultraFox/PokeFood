@@ -1,0 +1,37 @@
+{
+  "group": "soda_packs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:pack_empty"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    },
+    {
+      "item": "pokefood:soda_high_tea"
+    }
+  ],
+  "result": {
+    "item": "pokefood:pack_tea",
+    "count": 1
+  }
+}

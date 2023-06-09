@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "big_bag",
+        "1": "big_bag_top",
+        "2": "big_bag_detail",
+        "3": "big_bag_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Malt"
+      },
+      {
+        "value": "CUSTOM:Beer"
+      },
+      {
+        "value": "CUSTOM:BananaTeaBeer"
+      },
+      {
+        "value": "CUSTOM:CherryCalcuimBeer"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_tuff",
+    "namespace": "mod"
+  }
+}

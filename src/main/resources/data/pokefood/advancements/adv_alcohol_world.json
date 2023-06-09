@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:keg"
+    },
+    "title": {
+      "translate": "advancements.adv_alcohol_world.title"
+    },
+    "description": {
+      "translate": "advancements.adv_alcohol_world.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_alcohol_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "pokefood:recipe_keg",
+      "pokefood:recipe_keg_funnel",
+      "pokefood:recipe_wheat_bag"
+    ]
+  },
+  "parent": "pokefood:adv_pokefood"
+}

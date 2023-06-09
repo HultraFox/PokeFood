@@ -1,0 +1,51 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BananaWood"
+      },
+      {
+        "value": "CUSTOM:BananaLog"
+      },
+      {
+        "value": "CUSTOM:BananaTop"
+      },
+      {
+        "value": "CUSTOM:BananaLog2"
+      },
+      {
+        "value": "CUSTOM:BananaLog3"
+      },
+      {
+        "value": "CUSTOM:BananaLogStripped"
+      },
+      {
+        "value": "CUSTOM:BananaWoodStripped"
+      },
+      {
+        "value": "CUSTOM:BananaWoodTreeControler"
+      },
+      {
+        "value": "CUSTOM:BananaLog2Controler"
+      },
+      {
+        "value": "CUSTOM:BananaLog2Stripped"
+      },
+      {
+        "value": "CUSTOM:BananaLog3Stripped"
+      },
+      {
+        "value": "CUSTOM:BananaTopStripped"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "woods",
+    "namespace": "mod"
+  }
+}

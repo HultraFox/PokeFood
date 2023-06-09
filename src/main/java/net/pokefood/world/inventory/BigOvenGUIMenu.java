@@ -79,55 +79,55 @@ public class BigOvenGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 124, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 34, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 124, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 34, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 79, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 124, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem());
+				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 35) {

@@ -35,7 +35,7 @@ public class CarbonizerBottleBlockEntity extends RandomizableContainerBlockEntit
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public CarbonizerBottleBlockEntity(BlockPos position, BlockState state) {
-		super(PokefoodModBlockEntities.CARBONIZER_BOTTLE.get(), position, state);
+		super(PokefoodModBlockEntities.CARBONIZER.get(), position, state);
 	}
 
 	@Override
@@ -79,7 +79,7 @@ public class CarbonizerBottleBlockEntity extends RandomizableContainerBlockEntit
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("carbonizer_bottle");
+		return Component.literal("carbonizer");
 	}
 
 	@Override

@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:coffee_iced_bucket"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "pokefood:coffee_iced",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "puff_case",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCalm"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFancyMocha"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeMint"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DisplayCasePuffs3"
+    },
+    "name": "recipe_display_puff_3",
+    "namespace": "mod"
+  }
+}

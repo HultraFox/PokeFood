@@ -14,9 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class FreshWaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.FRESH_WATER_TYPE.get(),
-			() -> PokefoodModFluids.FRESH_WATER.get(), () -> PokefoodModFluids.FLOWING_FRESH_WATER.get()).explosionResistance(100f)
-			.bucket(() -> PokefoodModItems.FRESH_WATER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.FRESH_WATER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.FRESH_WATER_TYPE.get(), () -> PokefoodModFluids.FRESH_WATER.get(), () -> PokefoodModFluids.FLOWING_FRESH_WATER.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.FRESH_WATER_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.FRESH_WATER.get());
 
 	private FreshWaterFluid() {
 		super(PROPERTIES);

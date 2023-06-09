@@ -162,6 +162,28 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_CHERRY_FIRED.get() && new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 2) {
+			{
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockState _bs = PokefoodModBlocks.POT_CHERRY_COOKED.get().defaultBlockState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.getValue(_property) != null)
+						try {
+							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
+						}
+				}
+				world.setBlock(_bp, _bs, 3);
+			}
 		}
 	}
 }

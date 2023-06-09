@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/bottle_pack_1",
+  "textures": {
+    "all": "pokefood:blocks/6_pack_tea_black",
+    "particle": "pokefood:blocks/6_pack_tea_black",
+    "1": "pokefood:blocks/soda_tea_black",
+    "2": "pokefood:blocks/6_pack_tea_black"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/display_soda_sombrine_7"
+    },
+    "facing=east": {
+      "model": "pokefood:block/display_soda_sombrine_7",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/display_soda_sombrine_7",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/display_soda_sombrine_7",
+      "y": 270
+    }
+  }
+}

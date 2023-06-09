@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:display_soda_tea_roserade_7"
+    },
+    "title": {
+      "translate": "advancements.adv_display_soda.title"
+    },
+    "description": {
+      "translate": "advancements.adv_display_soda.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_display_soda": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "pokefood:adv_soda"
+}

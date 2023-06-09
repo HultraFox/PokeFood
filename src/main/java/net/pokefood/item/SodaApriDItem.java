@@ -1,6 +1,7 @@
 
 package net.pokefood.item;
 
+import net.pokefood.procedures.SodaUnlockAdvProcedure;
 import net.pokefood.init.PokefoodModTabs;
 import net.pokefood.init.PokefoodModItems;
 
@@ -12,13 +13,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
 public class SodaApriDItem extends Item {
 	public SodaApriDItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(1.5f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.5f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override
@@ -39,5 +40,11 @@ public class SodaApriDItem extends Item {
 			}
 			return itemstack;
 		}
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		SodaUnlockAdvProcedure.execute(entity);
 	}
 }

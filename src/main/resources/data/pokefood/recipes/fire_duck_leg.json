@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:duck_leg"
+  },
+  "result": "pokefood:cooked_duck_leg"
+}

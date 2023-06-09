@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    }
+  ],
+  "result": {
+    "item": "pokefood:oil",
+    "count": 1
+  }
+}

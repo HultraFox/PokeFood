@@ -1,0 +1,37 @@
+{
+  "group": "soda_packs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:pack_empty"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    },
+    {
+      "item": "pokefood:soda_cherrish"
+    }
+  ],
+  "result": {
+    "item": "pokefood:pack_cherry",
+    "count": 1
+  }
+}

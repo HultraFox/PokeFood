@@ -99,12 +99,9 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(new BlockPos(x, y, z + 1))))) == Direction.NORTH
-					&& (world.getBlockState(new BlockPos(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getDirection((world.getBlockState(new BlockPos(x, y, z + 1))))) == Direction.NORTH && (world.getBlockState(new BlockPos(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_FUNNEL_FRONT.get().defaultBlockState();
@@ -163,12 +160,9 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(new BlockPos(x, y, z - 1))))) == Direction.SOUTH
-					&& (world.getBlockState(new BlockPos(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getDirection((world.getBlockState(new BlockPos(x, y, z - 1))))) == Direction.SOUTH && (world.getBlockState(new BlockPos(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_FUNNEL_FRONT.get().defaultBlockState();
@@ -227,12 +221,9 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(new BlockPos(x + 1, y, z))))) == Direction.WEST
-					&& (world.getBlockState(new BlockPos(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getDirection((world.getBlockState(new BlockPos(x + 1, y, z))))) == Direction.WEST && (world.getBlockState(new BlockPos(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_FUNNEL_FRONT.get().defaultBlockState();
@@ -291,12 +282,9 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(new BlockPos(x - 1, y, z))))) == Direction.EAST
-					&& (world.getBlockState(new BlockPos(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getDirection((world.getBlockState(new BlockPos(x - 1, y, z))))) == Direction.EAST && (world.getBlockState(new BlockPos(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_FUNNEL_FRONT.get().defaultBlockState();
@@ -351,8 +339,7 @@ public class FunnelChangeStateProcedure {
 				}
 			}
 		} else if (!((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL.get())) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get()
-					&& !(world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get() && !(world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				close = true;
 			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get() && (new Object() {
 				public Direction getDirection(BlockState _bs) {
@@ -360,9 +347,7 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
 			}.getDirection((world.getBlockState(new BlockPos(x, y, z))))) == Direction.NORTH && (new Object() {
 				public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -371,8 +356,7 @@ public class FunnelChangeStateProcedure {
 						return blockEntity.getPersistentData().getString(tag);
 					return "";
 				}
-			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("North")
-					&& !(world.getBlockState(new BlockPos(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("North") && !(world.getBlockState(new BlockPos(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				close = true;
 			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get() && (new Object() {
 				public Direction getDirection(BlockState _bs) {
@@ -380,9 +364,7 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
 			}.getDirection((world.getBlockState(new BlockPos(x, y, z))))) == Direction.SOUTH && (new Object() {
 				public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -391,8 +373,7 @@ public class FunnelChangeStateProcedure {
 						return blockEntity.getPersistentData().getString(tag);
 					return "";
 				}
-			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("South")
-					&& !(world.getBlockState(new BlockPos(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("South") && !(world.getBlockState(new BlockPos(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				close = true;
 			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get() && (new Object() {
 				public Direction getDirection(BlockState _bs) {
@@ -400,9 +381,7 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
 			}.getDirection((world.getBlockState(new BlockPos(x, y, z))))) == Direction.WEST && (new Object() {
 				public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -411,8 +390,7 @@ public class FunnelChangeStateProcedure {
 						return blockEntity.getPersistentData().getString(tag);
 					return "";
 				}
-			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("West")
-					&& !(world.getBlockState(new BlockPos(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("West") && !(world.getBlockState(new BlockPos(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				close = true;
 			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get() && (new Object() {
 				public Direction getDirection(BlockState _bs) {
@@ -420,9 +398,7 @@ public class FunnelChangeStateProcedure {
 					if (_prop instanceof DirectionProperty _dp)
 						return _bs.getValue(_dp);
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-							? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-							: Direction.NORTH;
+					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
 			}.getDirection((world.getBlockState(new BlockPos(x, y, z))))) == Direction.EAST && (new Object() {
 				public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -431,8 +407,7 @@ public class FunnelChangeStateProcedure {
 						return blockEntity.getPersistentData().getString(tag);
 					return "";
 				}
-			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("East")
-					&& !(world.getBlockState(new BlockPos(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
+			}.getValue(world, new BlockPos(x, y, z), "Interaction")).equals("East") && !(world.getBlockState(new BlockPos(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("forge:kegs")))) {
 				close = true;
 			} else {
 				close = false;
@@ -469,219 +444,151 @@ public class FunnelChangeStateProcedure {
 				}
 			}
 			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()) {
-				if ((world.getBlockState(new BlockPos(((Entity) world
-						.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+				if ((world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world
-								.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-										.add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-						.getBlockPos().getX(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getY(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
-									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getZ())))
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
 						.getBlock() == PokefoodModBlocks.KEG_FUNNEL.get()) {
-					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-							.sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
+					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
 						_player.closeContainer();
 				}
 			} else if (!world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()) {
-				if ((world.getBlockState(new BlockPos(((Entity) world
-						.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+				if ((world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+						((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-								((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-								((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-										.add(((Entity) world
-												.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-								((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-						.getBlockPos().getX(),
-						((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getY(),
-						((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+						((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getZ())))
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
 						.getBlock() == PokefoodModBlocks.KEG_FUNNEL.get()) {
-					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-							.sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
+					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
 						_player.closeContainer();
 				}
 			}
@@ -698,421 +605,281 @@ public class FunnelChangeStateProcedure {
 		}
 		if (changed == true) {
 			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()) {
-				if ((world.getBlockState(new BlockPos(((Entity) world
-						.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+				if ((world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world
-								.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-										.add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-						.getBlockPos().getX(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getY(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
+						.getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get() || (world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getZ())))
-						.getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get()
-						|| (world.getBlockState(new BlockPos(((Entity) world
-								.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getX(),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-														.add(((Entity) world
-																.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-																.stream().sorted(new Object() {
-																	Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																		return Comparator
-																				.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-																	}
-																}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-										.getBlockPos().getY(),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-														.add(((Entity) world
-																.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-																.stream().sorted(new Object() {
-																	Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																		return Comparator
-																				.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-																	}
-																}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-										.getBlockPos().getZ())))
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
 								.getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get()) {
-					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-							.sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
+					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
 						_player.closeContainer();
 				}
 			} else if (!world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()) {
-				if ((world.getBlockState(new BlockPos(((Entity) world
-						.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+				if ((world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world
-								.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-										.add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-												.stream().sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
-											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-						.getBlockPos().getX(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getY(),
-						((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-								.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
+						.getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get() || (world.getBlockState(new BlockPos(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getZ())))
-						.getBlock() == PokefoodModBlocks.KEG_FUNNEL_UP.get()
-						|| (world.getBlockState(new BlockPos(((Entity) world
-								.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getX(), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-												.add(((Entity) world
-														.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-														.sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-												.sorted(new Object() {
-													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-														return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-													}
-												}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-								.getBlockPos().getX(),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-														.add(((Entity) world
-																.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-																.stream().sorted(new Object() {
-																	Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																		return Comparator
-																				.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-																	}
-																}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-										.getBlockPos().getY(),
-								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-										.sorted(new Object() {
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getY(),
+								((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f), ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f).add(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+										((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
 											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 												return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 											}
-										}.compareDistOf(x, y, z)).findFirst().orElse(null)).level.clip(new ClipContext(
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f),
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null)).getEyePosition(1f)
-														.add(((Entity) world
-																.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-																.stream().sorted(new Object() {
-																	Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																		return Comparator
-																				.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-																	}
-																}.compareDistOf(x, y, z)).findFirst().orElse(null)).getViewVector(1f).scale(5)),
-												ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
-												((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true)
-														.stream().sorted(new Object() {
-															Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-																return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-															}
-														}.compareDistOf(x, y, z)).findFirst().orElse(null))))
-										.getBlockPos().getZ())))
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getBlockPos().getZ())))
 								.getBlock() == PokefoodModBlocks.KEG_FUNNEL_FRONT.get()) {
-					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()
-							.sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
+					if (((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _player)
 						_player.closeContainer();
 				}
 			}

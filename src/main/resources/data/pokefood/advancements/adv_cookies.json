@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "pokefood:cookie_onix"
+    },
+    "title": {
+      "translate": "advancements.adv_cookies.title"
+    },
+    "description": {
+      "translate": "advancements.adv_cookies.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_cookies": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "pokefood:recipe_cookie_dough"
+    ]
+  },
+  "parent": "pokefood:adv_baking_world"
+}

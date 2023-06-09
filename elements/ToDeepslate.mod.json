@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Coffee"
+      },
+      {
+        "value": "CUSTOM:CoffeeIced"
+      },
+      {
+        "value": "CUSTOM:Latte"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_deepslate",
+    "namespace": "mod"
+  }
+}

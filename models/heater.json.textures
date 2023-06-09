@@ -1,0 +1,21 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "heater_front",
+        "1": "heater_top",
+        "2": "heater_side",
+        "3": "heater_back",
+        "4": "heater_bottom",
+        "5": "heater_back_hot",
+        "6": "heater_hot",
+        "7": "heater_hot",
+        "8": "heater_side_hot",
+        "missing": "heater_top",
+        "9": "heater_top_hot",
+        "10": "heater_grid"
+      },
+      "name": "default"
+    }
+  }
+}

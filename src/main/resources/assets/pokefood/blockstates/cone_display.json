@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,cone=false": {
+      "model": "pokefood:block/cone_display"
+    },
+    "facing=east,cone=false": {
+      "model": "pokefood:block/cone_display",
+      "y": 90
+    },
+    "facing=south,cone=false": {
+      "model": "pokefood:block/cone_display",
+      "y": 180
+    },
+    "facing=west,cone=false": {
+      "model": "pokefood:block/cone_display",
+      "y": 270
+    },
+
+
+    "facing=north,cone=true": {
+      "model": "pokefood:block/cone_display_cone"
+    },
+    "facing=east,cone=true": {
+      "model": "pokefood:block/cone_display_cone",
+      "y": 90
+    },
+    "facing=south,cone=true": {
+      "model": "pokefood:block/cone_display_cone",
+      "y": 180
+    },
+    "facing=west,cone=true": {
+      "model": "pokefood:block/cone_display_cone",
+      "y": 270
+    }
+  }
+}

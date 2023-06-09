@@ -1,0 +1,26 @@
+{
+  "group": "calcuim_box_empty",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:cardboard"
+    },
+    "1": {
+      "item": "minecraft:red_dye"
+    },
+    "2": {
+      "item": "pokefood:cardboard"
+    },
+    "4": {
+      "item": "pokefood:cardboard"
+    }
+  },
+  "result": {
+    "item": "pokefood:calcuim_box_empty_5",
+    "count": 1
+  }
+}

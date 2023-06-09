@@ -7,6 +7,9 @@ import net.pokefood.procedures.PotCookingProcedure;
 import net.pokefood.init.PokefoodModBlocks;
 import net.pokefood.block.entity.PotLemonadeBlockEntity;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -43,15 +46,11 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class PotLemonadeBlock extends Block
-		implements
-
-			EntityBlock {
+public class PotLemonadeBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public PotLemonadeBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).sound(SoundType.METAL).strength(2f, 10f).noOcclusion()
-				.randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).sound(SoundType.METAL).strength(2f, 10f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -63,6 +62,11 @@ public class PotLemonadeBlock extends Block
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -107,7 +111,6 @@ public class PotLemonadeBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		PotCookingProcedure.execute(world, x, y, z);
 	}
 
@@ -128,7 +131,6 @@ public class PotLemonadeBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		PotInsertProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

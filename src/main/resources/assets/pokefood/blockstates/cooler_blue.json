@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/cooler_blue"
+    },
+    "facing=east": {
+      "model": "pokefood:block/cooler_blue",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/cooler_blue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/cooler_blue",
+      "y": 270
+    }
+  }
+}

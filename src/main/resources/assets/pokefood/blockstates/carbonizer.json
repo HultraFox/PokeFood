@@ -1,0 +1,257 @@
+{
+  "variants": {
+    "facing=north,ball_nb=0,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer"
+    },
+    "facing=east,ball_nb=0,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer",
+      "y": 90
+    },
+    "facing=south,ball_nb=0,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer",
+      "y": 180
+    },
+    "facing=west,ball_nb=0,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=1,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball1"
+    },
+    "facing=east,ball_nb=1,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball1",
+      "y": 90
+    },
+    "facing=south,ball_nb=1,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball1",
+      "y": 180
+    },
+    "facing=west,ball_nb=1,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball1",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=2,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball2"
+    },
+    "facing=east,ball_nb=2,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball2",
+      "y": 90
+    },
+    "facing=south,ball_nb=2,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball2",
+      "y": 180
+    },
+    "facing=west,ball_nb=2,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball2",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=3,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball3"
+    },
+    "facing=east,ball_nb=3,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball3",
+      "y": 90
+    },
+    "facing=south,ball_nb=3,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball3",
+      "y": 180
+    },
+    "facing=west,ball_nb=3,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball3",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=4,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball4"
+    },
+    "facing=east,ball_nb=4,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball4",
+      "y": 90
+    },
+    "facing=south,ball_nb=4,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball4",
+      "y": 180
+    },
+    "facing=west,ball_nb=4,bottle=false,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_ball4",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=0,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle"
+    },
+    "facing=east,ball_nb=0,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle",
+      "y": 90
+    },
+    "facing=south,ball_nb=0,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle",
+      "y": 180
+    },
+    "facing=west,ball_nb=0,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=1,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball1"
+    },
+    "facing=east,ball_nb=1,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball1",
+      "y": 90
+    },
+    "facing=south,ball_nb=1,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball1",
+      "y": 180
+    },
+    "facing=west,ball_nb=1,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball1",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=2,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball2"
+    },
+    "facing=east,ball_nb=2,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball2",
+      "y": 90
+    },
+    "facing=south,ball_nb=2,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball2",
+      "y": 180
+    },
+    "facing=west,ball_nb=2,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball2",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=3,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball3"
+    },
+    "facing=east,ball_nb=3,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball3",
+      "y": 90
+    },
+    "facing=south,ball_nb=3,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball3",
+      "y": 180
+    },
+    "facing=west,ball_nb=3,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball3",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=4,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball4"
+    },
+    "facing=east,ball_nb=4,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball4",
+      "y": 90
+    },
+    "facing=south,ball_nb=4,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball4",
+      "y": 180
+    },
+    "facing=west,ball_nb=4,bottle=true,bottle_full=false": {
+      "model": "pokefood:block/carbonizer_bottle_ball4",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=0,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full"
+    },
+    "facing=east,ball_nb=0,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full",
+      "y": 90
+    },
+    "facing=south,ball_nb=0,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full",
+      "y": 180
+    },
+    "facing=west,ball_nb=0,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=1,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball1"
+    },
+    "facing=east,ball_nb=1,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball1",
+      "y": 90
+    },
+    "facing=south,ball_nb=1,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball1",
+      "y": 180
+    },
+    "facing=west,ball_nb=1,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball1",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=2,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball2"
+    },
+    "facing=east,ball_nb=2,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball2",
+      "y": 90
+    },
+    "facing=south,ball_nb=2,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball2",
+      "y": 180
+    },
+    "facing=west,ball_nb=2,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball2",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=3,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball3"
+    },
+    "facing=east,ball_nb=3,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball3",
+      "y": 90
+    },
+    "facing=south,ball_nb=3,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball3",
+      "y": 180
+    },
+    "facing=west,ball_nb=3,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball3",
+      "y": 270
+    },
+
+    
+    "facing=north,ball_nb=4,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball4"
+    },
+    "facing=east,ball_nb=4,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball4",
+      "y": 90
+    },
+    "facing=south,ball_nb=4,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball4",
+      "y": 180
+    },
+    "facing=west,ball_nb=4,bottle_full=true": {
+      "model": "pokefood:block/carbonizer_full_ball4",
+      "y": 270
+    }
+  }
+}

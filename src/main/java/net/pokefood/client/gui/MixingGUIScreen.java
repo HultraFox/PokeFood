@@ -1,4 +1,3 @@
-
 package net.pokefood.client.gui;
 
 import net.pokefood.world.inventory.MixingGUIMenu;
@@ -38,7 +37,6 @@ import net.pokefood.procedures.Frosting13Procedure;
 import net.pokefood.procedures.Frosting12Procedure;
 import net.pokefood.procedures.Frosting11Procedure;
 import net.pokefood.procedures.Frosting10Procedure;
-import net.pokefood.procedures.Carbonizer13Procedure;
 import net.pokefood.procedures.Blending9Procedure;
 import net.pokefood.procedures.Blending8Procedure;
 import net.pokefood.procedures.Blending7Procedure;
@@ -71,6 +69,7 @@ import net.pokefood.procedures.Blending17Procedure;
 import net.pokefood.procedures.Blending16Procedure;
 import net.pokefood.procedures.Blending15Procedure;
 import net.pokefood.procedures.Blending14Procedure;
+import net.pokefood.procedures.Blending13Procedure;
 import net.pokefood.procedures.Blending12Procedure;
 import net.pokefood.procedures.Blending11Procedure;
 import net.pokefood.procedures.Blending10Procedure;
@@ -173,7 +172,7 @@ public class MixingGUIScreen extends AbstractContainerScreen<MixingGUIMenu> {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/mixing_blending_12.png"));
 			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
-		if (Carbonizer13Procedure.execute(world, x, y, z)) {
+		if (Blending13Procedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/mixing_blending_13.png"));
 			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}

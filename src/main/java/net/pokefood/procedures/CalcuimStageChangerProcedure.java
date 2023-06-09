@@ -5,6 +5,8 @@ import net.pokefood.init.PokefoodModBlocks;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
@@ -73,6 +75,14 @@ public class CalcuimStageChangerProcedure {
 						}
 				}
 				world.setBlock(_bp, _bs, 3);
+			}
+		}
+		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.FARMLAND)) {
+			world.levelEvent(2001, new BlockPos(x, y, z), Block.getId((world.getBlockState(new BlockPos(x, y, z)))));
+			{
+				BlockPos _pos = new BlockPos(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, new BlockPos(x, y, z), null);
+				world.destroyBlock(_pos, false);
 			}
 		}
 	}

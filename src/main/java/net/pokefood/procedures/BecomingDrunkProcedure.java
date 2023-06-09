@@ -13,7 +13,7 @@ public class BecomingDrunkProcedure {
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 300, (int) 0.5, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, (int) 0.5, (false), (false)));
 		}
 	}
 }

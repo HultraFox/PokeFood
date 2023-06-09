@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "aprijuice",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "Items.BUCKET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ApriJuiceG.bucket"
+    },
+    "name": "recipe_apri_bucket_g",
+    "namespace": "mod"
+  }
+}

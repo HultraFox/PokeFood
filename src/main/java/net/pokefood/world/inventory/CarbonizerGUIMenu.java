@@ -104,6 +104,9 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 					|| PokefoodModItems.BLACK_TEA_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.ROSERADE_TEA_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.LEMONADE_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.CHERRY_INFUSION_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.COFFEE_ICED_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.LATTE_BUCKET.get() == stack.getItem()
 					);
 			}
 		}));
