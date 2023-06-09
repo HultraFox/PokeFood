@@ -8,7 +8,7 @@
     "name": "Mug",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodMisc"
+      "value": "CUSTOM:PokeFoodOthers"
     },
     "stackSize": 64,
     "enchantability": 0,

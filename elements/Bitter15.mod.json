@@ -9,6 +9,12 @@
       },
       {
         "value": "Items.APPLE"
+      },
+      {
+        "value": "CUSTOM:Oil"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
       }
     ],
     "blocks": [],

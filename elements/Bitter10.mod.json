@@ -15,6 +15,9 @@
       },
       {
         "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "CUSTOM:BitterRep1"
       }
     ],
     "blocks": [],

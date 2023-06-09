@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Big Oven",
+    "name": "Oven",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodMisc"
+      "value": "CUSTOM:PokeFoodOthers"
     },
     "destroyTool": "Not specified",
     "customDrop": {

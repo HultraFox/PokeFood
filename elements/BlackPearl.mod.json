@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "HuntingUnlockAdv"
+    },
     "isFood": true,
     "nutritionalValue": 3,
     "saturation": 0.5,

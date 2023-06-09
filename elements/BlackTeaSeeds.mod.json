@@ -8,7 +8,7 @@
     "name": "Black tea seeds",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodMisc"
+      "value": "CUSTOM:PokeFoodOthers"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -29,9 +29,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "BlackTeaPlanting"
-    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

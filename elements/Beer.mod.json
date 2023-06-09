@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "beer_bucket",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodMisc"
+      "value": "CUSTOM:PokeFoodOthers"
     },
     "emptySound": {
       "value": ""
@@ -38,6 +38,12 @@
     "tickRate": 10,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "SNOW"
+    "colorOnMap": "BROWN",
+    "onBlockAdded": {
+      "name": "CheckIfLavaOrNether"
+    },
+    "onTickUpdate": {
+      "name": "CheckIfLavaOrNether"
+    }
   }
 }
