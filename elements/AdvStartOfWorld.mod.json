@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Adv Start Of World",
+    "achievementDescription": "give at start",
+    "achievementIcon": {
+      "value": "CUSTOM:CupAprijuiceP"
+    },
+    "background": "Default",
+    "disableDisplay": true,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RecipeCupUncooked",
+      "RecipeSmallBag",
+      "RecipeSodaBottle",
+      "RecipeGlass"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"98\" y=\"106\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

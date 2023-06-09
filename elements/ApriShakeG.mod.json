@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "apricup_milkshake_g",
+    "customModelName": "Normal",
+    "name": "Green apri-shake",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:PokeFood"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": "CUSTOM:Cup"
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "AprishakeUnlockAdv"
+    },
+    "isFood": true,
+    "nutritionalValue": 6,
+    "saturation": 0.6,
+    "eatResultItem": {
+      "value": "CUSTOM:Cup"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "drink"
+  }
+}

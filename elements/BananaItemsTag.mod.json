@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BananaWood"
+      },
+      {
+        "value": "CUSTOM:BananaLog"
+      },
+      {
+        "value": "CUSTOM:BananaLogStripped"
+      },
+      {
+        "value": "CUSTOM:BananaWoodStripped"
+      },
+      {
+        "value": "CUSTOM:BananaWoodTreeControler"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "banana_items_tag",
+    "namespace": "forge"
+  }
+}

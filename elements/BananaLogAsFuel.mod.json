@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 0.15,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "TAG:pokefood:woods"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.COAL#1"
+    },
+    "name": "banana_log_as_fuel",
+    "namespace": "mod"
+  }
+}

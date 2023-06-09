@@ -1,0 +1,29 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Gotta cook them all !",
+    "achievementDescription": "Learn how to cook everything",
+    "achievementIcon": {
+      "value": "CUSTOM:Magikarp"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RecipeKeg",
+      "RecipeKegFunnel",
+      "RecipeWheatBag"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:AdvPokefood"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"65\" y=\"32\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}
