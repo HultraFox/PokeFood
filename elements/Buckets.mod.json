@@ -83,10 +83,22 @@
         "value": "CUSTOM:Arceum.bucket"
       },
       {
+        "value": "CUSTOM:Coffee.bucket"
+      },
+      {
+        "value": "CUSTOM:CoffeeIced.bucket"
+      },
+      {
+        "value": "CUSTOM:Latte.bucket"
+      },
+      {
         "value": "Items.WATER_BUCKET"
       },
       {
         "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": "CUSTOM:CherryInfusion.bucket"
       }
     ],
     "blocks": [],

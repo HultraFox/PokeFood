@@ -2,17 +2,17 @@
   "_fv": 39,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "calcuim",
-    "customModelName": "Normal",
-    "name": "Calcuim",
+    "renderType": 1,
+    "texture": "poped_calcuim_box_4",
+    "customModelName": "pop_calcuim_box_empty:default",
+    "name": "Empty poped calcuim box",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,14 +29,14 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.1,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 1.5,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "none"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.POTIONITEM"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:Oil"
+      },
+      {
+        "value": "CUSTOM:SpicyJuice"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "bottles",
+    "namespace": "forge"
+  }
+}
