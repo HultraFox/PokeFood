@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "cherium_beer",
+    "customModelName": "Normal",
+    "name": "Red aprium mug",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:PokeFood"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 48,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": "CUSTOM:BigGlass"
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "AlcoholUnlockAdv"
+    },
+    "onFinishUsingItem": {
+      "name": "BecomingDrunk"
+    },
+    "isFood": true,
+    "nutritionalValue": 13,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": "CUSTOM:BigGlass"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "drink"
+  }
+}
