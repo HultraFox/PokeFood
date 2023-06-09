@@ -1,0 +1,75 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SpicyRep1"
+      },
+      {
+        "value": "CUSTOM:SpicyRep2"
+      },
+      {
+        "value": "CUSTOM:SpicyRep3"
+      },
+      {
+        "value": "CUSTOM:SpicyRep4"
+      },
+      {
+        "value": "CUSTOM:DryRep1"
+      },
+      {
+        "value": "CUSTOM:DryRep2"
+      },
+      {
+        "value": "CUSTOM:DryRep3"
+      },
+      {
+        "value": "CUSTOM:DryRep4"
+      },
+      {
+        "value": "CUSTOM:SweetRep1"
+      },
+      {
+        "value": "CUSTOM:SweetRep2"
+      },
+      {
+        "value": "CUSTOM:SweetRep3"
+      },
+      {
+        "value": "CUSTOM:SweetRep4"
+      },
+      {
+        "value": "CUSTOM:BitterRep1"
+      },
+      {
+        "value": "CUSTOM:BitterRep2"
+      },
+      {
+        "value": "CUSTOM:BitterRep3"
+      },
+      {
+        "value": "CUSTOM:BitterRep4"
+      },
+      {
+        "value": "CUSTOM:SourRep1"
+      },
+      {
+        "value": "CUSTOM:SourRep2"
+      },
+      {
+        "value": "CUSTOM:SourRep3"
+      },
+      {
+        "value": "CUSTOM:SourRep4"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "berries",
+    "namespace": "forge"
+  }
+}

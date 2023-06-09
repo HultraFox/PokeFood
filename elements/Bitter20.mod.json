@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ApriJuiceG.bucket"
+      },
+      {
+        "value": "CUSTOM:Lemonade.bucket"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:BitterRep2"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "bitter_20",
+    "namespace": "forge"
+  }
+}

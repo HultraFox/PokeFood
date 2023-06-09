@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BlackTea.bucket"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:BitterRep3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "bitter_30",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TeaSeeds"
+      },
+      {
+        "value": "CUSTOM:TeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaSeeds"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:LemonSeeds"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "Items.WHEAT_SEEDS"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.PUMPKIN_SEEDS"
+      },
+      {
+        "value": "Items.MELON_SEEDS"
+      },
+      {
+        "value": "Items.BEETROOT_SEEDS"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "breewable",
+    "namespace": "forge"
+  }
+}
