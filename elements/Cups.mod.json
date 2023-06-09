@@ -1,0 +1,63 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceW"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceD"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceB"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceR"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceP"
+      },
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:CupLemonade"
+      },
+      {
+        "value": "CUSTOM:CupFreshWater"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": "CUSTOM:CupLatte"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": "CUSTOM:CupCherryInfusion"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "cups",
+    "namespace": "forge"
+  }
+}
