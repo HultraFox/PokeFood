@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 1.0,
+    "cookingTime": 600,
+    "recipeRetstackSize": 1,
+    "group": "coffee",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "Items.SWEET_BERRIES"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:CoffeeBeans"
+    },
+    "name": "fire_coffee",
+    "namespace": "mod"
+  }
+}
