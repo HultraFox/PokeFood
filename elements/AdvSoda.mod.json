@@ -1,0 +1,25 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Sparkly !",
+    "achievementDescription": "Use the carboniser on one of those poor drinks",
+    "achievementIcon": {
+      "value": "CUSTOM:SodaApriR"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 25,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:AdvDrinksWorld"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"19\" y=\"69\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

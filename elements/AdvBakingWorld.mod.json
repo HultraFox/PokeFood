@@ -1,0 +1,35 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The baker's dream",
+    "achievementDescription": "Let's learn how to bake !",
+    "achievementIcon": {
+      "value": "CUSTOM:MixerRed"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RecipeMixerRed",
+      "RecipeMixerPink",
+      "RecipeMixerYellow",
+      "RecipeMixerGreen",
+      "RecipeMixerBlue",
+      "RecipeBigOven",
+      "RecipeIceCreamCone",
+      "RecipeIceCreamMaker",
+      "RecipeIceCreamExtention"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:AdvPokefood"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"98\" y=\"106\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

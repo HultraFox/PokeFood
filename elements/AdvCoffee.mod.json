@@ -1,0 +1,29 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "As dark as my soul",
+    "achievementDescription": "Make some coffee",
+    "achievementIcon": {
+      "value": "CUSTOM:CupCoffee"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RecipeIcedCoffeeCup",
+      "RecipeCoffeeIced",
+      "RecipeLate"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 50,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:AdvCups"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"19\" y=\"69\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The sweet i love",
+    "achievementDescription": "Make a poffin to enjoy !",
+    "achievementIcon": {
+      "value": "CUSTOM:PoffinSourSpicy"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RecipePoffinSpicy",
+      "RecipePoffinDry",
+      "RecipePoffinSweet",
+      "RecipePoffinBitter",
+      "RecipePoffinSour",
+      "RecipePoffinSpicyDry",
+      "RecipePoffinSpicySweet",
+      "RecipePoffinSpicyBitter",
+      "RecipePoffinSpicySour",
+      "RecipePoffinDrySpicy",
+      "RecipePoffinDryBitter",
+      "RecipePoffinDrySour",
+      "RecipePoffinDrySweet",
+      "RecipePoffinSweetSpicy",
+      "RecipePoffinSweetDry",
+      "RecipePoffinSweetBitter",
+      "RecipePoffinSweetSour",
+      "RecipePoffinBitterSpicy",
+      "RecipePoffinBitterDry",
+      "RecipePoffinBitterSweet",
+      "RecipePoffinBitterSour",
+      "RecipePoffinSourSpicy",
+      "RecipePoffinSourDry",
+      "RecipePoffinSourBitter",
+      "RecipePoffinSourSweet",
+      "RecipeSparklesSpicy",
+      "RecipeSparklesDry",
+      "RecipeSparklesSweet",
+      "RecipeSparklesBitter",
+      "RecipeSparklesSour"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 50,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:AdvPastries"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"133\" y=\"109\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}
