@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood - Others",
+    "icon": {
+      "value": "CUSTOM:CardboardBox"
+    },
+    "showSearch": false
+  }
+}

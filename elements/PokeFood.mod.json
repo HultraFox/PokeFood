@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood",
+    "icon": {
+      "value": "CUSTOM:PuffFancyPepper"
+    },
+    "showSearch": true
+  }
+}
