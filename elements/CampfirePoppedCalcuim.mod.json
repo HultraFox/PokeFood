@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:Calcuim"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:PoppedCalcuim"
+    },
+    "name": "campfire_popped_calcuim",
+    "namespace": "mod"
+  }
+}
