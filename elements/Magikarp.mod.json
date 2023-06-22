@@ -32,8 +32,8 @@
     "onItemInInventoryTick": {
       "name": "HuntingUnlockAdv"
     },
-    "isFood": false,
-    "nutritionalValue": 4,
+    "isFood": true,
+    "nutritionalValue": 2,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""

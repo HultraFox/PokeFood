@@ -32,11 +32,11 @@
     "onItemInInventoryTick": {
       "name": "HuntingUnlockAdv"
     },
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 1,
+    "saturation": 0.5,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.BONE"
     },
     "isMeat": false,
     "isAlwaysEdible": false,

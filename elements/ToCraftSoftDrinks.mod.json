@@ -1,0 +1,204 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CupAprijuiceW"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceD"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceB"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceG"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceY"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceR"
+      },
+      {
+        "value": "CUSTOM:CupAprijuiceP"
+      },
+      {
+        "value": "CUSTOM:ApriShakeW"
+      },
+      {
+        "value": "CUSTOM:ApriShakeD"
+      },
+      {
+        "value": "CUSTOM:ApriShakeB"
+      },
+      {
+        "value": "CUSTOM:ApriShakeG"
+      },
+      {
+        "value": "CUSTOM:ApriShakeY"
+      },
+      {
+        "value": "CUSTOM:ApriShakeR"
+      },
+      {
+        "value": "CUSTOM:ApriShakeP"
+      },
+      {
+        "value": "CUSTOM:CupTea"
+      },
+      {
+        "value": "CUSTOM:CupBlackTea"
+      },
+      {
+        "value": "CUSTOM:CupLemonade"
+      },
+      {
+        "value": "CUSTOM:CupFreshWater"
+      },
+      {
+        "value": "CUSTOM:SodaPopTemp"
+      },
+      {
+        "value": "CUSTOM:SodaHighTea"
+      },
+      {
+        "value": "CUSTOM:SodaPunchTea"
+      },
+      {
+        "value": "CUSTOM:SodaPowerLemon"
+      },
+      {
+        "value": "CUSTOM:SodaApriD"
+      },
+      {
+        "value": "CUSTOM:SodaApriW"
+      },
+      {
+        "value": "CUSTOM:SodaApriB"
+      },
+      {
+        "value": "CUSTOM:SodaApriG"
+      },
+      {
+        "value": "CUSTOM:SodaApriY"
+      },
+      {
+        "value": "CUSTOM:SodaApriR"
+      },
+      {
+        "value": "CUSTOM:SodaApriP"
+      },
+      {
+        "value": "CUSTOM:CupRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:CupCoffee"
+      },
+      {
+        "value": "CUSTOM:CupLatte"
+      },
+      {
+        "value": "CUSTOM:CupIcedCoffee"
+      },
+      {
+        "value": "CUSTOM:CupCherryInfusion"
+      },
+      {
+        "value": "CUSTOM:SodaCherrish"
+      },
+      {
+        "value": "CUSTOM:CreamedCoffee"
+      },
+      {
+        "value": "CUSTOM:CreamedLatte"
+      },
+      {
+        "value": "CUSTOM:SodaRosineTea"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceW.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceD.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceB.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceG.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY.bucket"
+      },
+      {
+        "value": "CUSTOM:CupUncooked"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
+        "value": "CUSTOM:TeaSeeds"
+      },
+      {
+        "value": "CUSTOM:TeaLeaf"
+      },
+      {
+        "value": "CUSTOM:Tea.bucket"
+      },
+      {
+        "value": "CUSTOM:BlackTeaSeeds"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTea.bucket"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea.bucket"
+      },
+      {
+        "value": "CUSTOM:CoffeePowder"
+      },
+      {
+        "value": "CUSTOM:CoffeeBeans"
+      },
+      {
+        "value": "CUSTOM:Coffee.bucket"
+      },
+      {
+        "value": "CUSTOM:CoffeeIced.bucket"
+      },
+      {
+        "value": "CUSTOM:Latte.bucket"
+      },
+      {
+        "value": "Items.MELON"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      },
+      {
+        "value": "Items.DYE#3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_craft_soft_drinks",
+    "namespace": "mod"
+  }
+}

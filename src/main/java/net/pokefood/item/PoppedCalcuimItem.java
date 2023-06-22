@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 
 public class PoppedCalcuimItem extends Item {
 	public PoppedCalcuimItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(1.5f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(1f).alwaysEat()
 
 				.build()));
 	}

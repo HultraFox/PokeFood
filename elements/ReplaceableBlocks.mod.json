@@ -37,6 +37,9 @@
       },
       {
         "value": "Blocks.TALL_SEAGRASS"
+      },
+      {
+        "value": "CUSTOM:BananaPlant"
       }
     ],
     "functions": [],

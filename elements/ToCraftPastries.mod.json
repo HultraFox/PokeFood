@@ -1,0 +1,987 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PoffinSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicyDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicySweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicyBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicySour"
+      },
+      {
+        "value": "CUSTOM:PoffinDry"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySweet"
+      },
+      {
+        "value": "CUSTOM:PoffinDryBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySour"
+      },
+      {
+        "value": "CUSTOM:PoffinSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSour"
+      },
+      {
+        "value": "CUSTOM:PoffinBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterDry"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSour"
+      },
+      {
+        "value": "CUSTOM:PoffinSour"
+      },
+      {
+        "value": "CUSTOM:PoffinSourSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSourDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSourSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSourBitter"
+      },
+      {
+        "value": "CUSTOM:PuffBasicSweet"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSweet"
+      },
+      {
+        "value": "CUSTOM:PuffFancySweet"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSweet"
+      },
+      {
+        "value": "CUSTOM:PuffBasicMint"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedMint"
+      },
+      {
+        "value": "CUSTOM:PuffFancyMint"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeMint"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffBasicMocha"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedMocha"
+      },
+      {
+        "value": "CUSTOM:PuffFancyMocha"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeMocha"
+      },
+      {
+        "value": "CUSTOM:PuffBasicSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffFancySpicy"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffBasicHoney"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedHoney"
+      },
+      {
+        "value": "CUSTOM:PuffFancyHoney"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeHoney"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCalm"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCalm"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCalm"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCalm"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCandy"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCandy"
+      },
+      {
+        "value": "CUSTOM:PuffBasicStiff"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStiff"
+      },
+      {
+        "value": "CUSTOM:PuffFancyStiff"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeStiff"
+      },
+      {
+        "value": "CUSTOM:PuffBasicStrong"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStrong"
+      },
+      {
+        "value": "CUSTOM:PuffFancyStrong"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeStrong"
+      },
+      {
+        "value": "CUSTOM:PuffBasicToast"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedToast"
+      },
+      {
+        "value": "CUSTOM:PuffFancyToast"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeToast"
+      },
+      {
+        "value": "CUSTOM:PuffBasicSalty"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSalty"
+      },
+      {
+        "value": "CUSTOM:PuffFancySalty"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSalty"
+      },
+      {
+        "value": "CUSTOM:PuffBasicAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffFancyAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffBasicHigh"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedHigh"
+      },
+      {
+        "value": "CUSTOM:PuffFancyHigh"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeHigh"
+      },
+      {
+        "value": "CUSTOM:PuffBasicPepper"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedPepper"
+      },
+      {
+        "value": "CUSTOM:PuffFancyPepper"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxePepper"
+      },
+      {
+        "value": "CUSTOM:CookieBulbasaur"
+      },
+      {
+        "value": "CUSTOM:CookieIvysaur"
+      },
+      {
+        "value": "CUSTOM:CookieVenusaur"
+      },
+      {
+        "value": "CUSTOM:CookieCharmander"
+      },
+      {
+        "value": "CUSTOM:CookieCharmeleon"
+      },
+      {
+        "value": "CUSTOM:CookieCharizard"
+      },
+      {
+        "value": "CUSTOM:CookieSquirtle"
+      },
+      {
+        "value": "CUSTOM:CookieWartortle"
+      },
+      {
+        "value": "CUSTOM:CookieBlastoise"
+      },
+      {
+        "value": "CUSTOM:CookieCaterpie"
+      },
+      {
+        "value": "CUSTOM:CookieMetapod"
+      },
+      {
+        "value": "CUSTOM:CookieButterfree"
+      },
+      {
+        "value": "CUSTOM:CookieWeedle"
+      },
+      {
+        "value": "CUSTOM:CookieKakuna"
+      },
+      {
+        "value": "CUSTOM:CookieBeedrill"
+      },
+      {
+        "value": "CUSTOM:CookiePidgey"
+      },
+      {
+        "value": "CUSTOM:CookiePidgeotto"
+      },
+      {
+        "value": "CUSTOM:CookiePidgeot"
+      },
+      {
+        "value": "CUSTOM:CookieRattata"
+      },
+      {
+        "value": "CUSTOM:CookieRaticate"
+      },
+      {
+        "value": "CUSTOM:CookieSpearow"
+      },
+      {
+        "value": "CUSTOM:CookieFearow"
+      },
+      {
+        "value": "CUSTOM:CookieEkans"
+      },
+      {
+        "value": "CUSTOM:CookieArbok"
+      },
+      {
+        "value": "CUSTOM:CookiePikachu"
+      },
+      {
+        "value": "CUSTOM:CookieRaichu"
+      },
+      {
+        "value": "CUSTOM:CookieSandshrew"
+      },
+      {
+        "value": "CUSTOM:CookieSandslash"
+      },
+      {
+        "value": "CUSTOM:CookieNidoran"
+      },
+      {
+        "value": "CUSTOM:CookieNidorina"
+      },
+      {
+        "value": "CUSTOM:CookieNidorino"
+      },
+      {
+        "value": "CUSTOM:CookieNidoqueen"
+      },
+      {
+        "value": "CUSTOM:CookieNidoking"
+      },
+      {
+        "value": "CUSTOM:CookieClefairy"
+      },
+      {
+        "value": "CUSTOM:CookieClefable"
+      },
+      {
+        "value": "CUSTOM:CookieVulpix"
+      },
+      {
+        "value": "CUSTOM:CookieNinetales"
+      },
+      {
+        "value": "CUSTOM:CookieJigglypuff"
+      },
+      {
+        "value": "CUSTOM:CookieWigglytuff"
+      },
+      {
+        "value": "CUSTOM:CookieZubat"
+      },
+      {
+        "value": "CUSTOM:CookieGolbat"
+      },
+      {
+        "value": "CUSTOM:CookieOddish"
+      },
+      {
+        "value": "CUSTOM:CookieGloom"
+      },
+      {
+        "value": "CUSTOM:CookieVileplume"
+      },
+      {
+        "value": "CUSTOM:CookieParas"
+      },
+      {
+        "value": "CUSTOM:CookieParasect"
+      },
+      {
+        "value": "CUSTOM:CookieVenonat"
+      },
+      {
+        "value": "CUSTOM:CookieVenomoth"
+      },
+      {
+        "value": "CUSTOM:CookieDiglett"
+      },
+      {
+        "value": "CUSTOM:CookieDugtrio"
+      },
+      {
+        "value": "CUSTOM:CookieMeowth"
+      },
+      {
+        "value": "CUSTOM:CookiePersian"
+      },
+      {
+        "value": "CUSTOM:CookiePsyduck"
+      },
+      {
+        "value": "CUSTOM:CookieGolduck"
+      },
+      {
+        "value": "CUSTOM:CookieMankey"
+      },
+      {
+        "value": "CUSTOM:CookiePrimeape"
+      },
+      {
+        "value": "CUSTOM:CookieGrowlithe"
+      },
+      {
+        "value": "CUSTOM:CookieArcanine"
+      },
+      {
+        "value": "CUSTOM:CookiePoliwag"
+      },
+      {
+        "value": "CUSTOM:CookiePoliwhirl"
+      },
+      {
+        "value": "CUSTOM:CookiePoliwrath"
+      },
+      {
+        "value": "CUSTOM:CookieAbra"
+      },
+      {
+        "value": "CUSTOM:CookieKadabra"
+      },
+      {
+        "value": "CUSTOM:CookieAlakazam"
+      },
+      {
+        "value": "CUSTOM:CookieMachop"
+      },
+      {
+        "value": "CUSTOM:CookieMachamp"
+      },
+      {
+        "value": "CUSTOM:CookieBellsprout"
+      },
+      {
+        "value": "CUSTOM:CookieWeepinbell"
+      },
+      {
+        "value": "CUSTOM:CookieVictreebel"
+      },
+      {
+        "value": "CUSTOM:CookieTentacool"
+      },
+      {
+        "value": "CUSTOM:CookieTentacruel"
+      },
+      {
+        "value": "CUSTOM:CookieGeodude"
+      },
+      {
+        "value": "CUSTOM:CookieGraveler"
+      },
+      {
+        "value": "CUSTOM:CookieGolem"
+      },
+      {
+        "value": "CUSTOM:CookiePonyta"
+      },
+      {
+        "value": "CUSTOM:CookieRapidash"
+      },
+      {
+        "value": "CUSTOM:CookieSlowpoke"
+      },
+      {
+        "value": "CUSTOM:CookieSlowbro"
+      },
+      {
+        "value": "CUSTOM:CookieMagnemite"
+      },
+      {
+        "value": "CUSTOM:CookieMagneton"
+      },
+      {
+        "value": "CUSTOM:CookieFarfetchd"
+      },
+      {
+        "value": "CUSTOM:CookieDoduo"
+      },
+      {
+        "value": "CUSTOM:CookieDodrio"
+      },
+      {
+        "value": "CUSTOM:CookieSeel"
+      },
+      {
+        "value": "CUSTOM:CookieDewgong"
+      },
+      {
+        "value": "CUSTOM:CookieGrimger"
+      },
+      {
+        "value": "CUSTOM:CookieMuk"
+      },
+      {
+        "value": "CUSTOM:CookieShellder"
+      },
+      {
+        "value": "CUSTOM:CookieCloyster"
+      },
+      {
+        "value": "CUSTOM:CookieGastly"
+      },
+      {
+        "value": "CUSTOM:CookieHaunter"
+      },
+      {
+        "value": "CUSTOM:CookieGrengar"
+      },
+      {
+        "value": "CUSTOM:CookieOnix"
+      },
+      {
+        "value": "CUSTOM:CookieDrowzee"
+      },
+      {
+        "value": "CUSTOM:CookieHypno"
+      },
+      {
+        "value": "CUSTOM:CookieKrabby"
+      },
+      {
+        "value": "CUSTOM:CookieKingler"
+      },
+      {
+        "value": "CUSTOM:CookieVoltorb"
+      },
+      {
+        "value": "CUSTOM:CookieElectrode"
+      },
+      {
+        "value": "CUSTOM:CookieExeggcute"
+      },
+      {
+        "value": "CUSTOM:CookieExeggutor"
+      },
+      {
+        "value": "CUSTOM:CookieCubone"
+      },
+      {
+        "value": "CUSTOM:CookieMarowak"
+      },
+      {
+        "value": "CUSTOM:CookieHitmonlee"
+      },
+      {
+        "value": "CUSTOM:CookieHitmonchan"
+      },
+      {
+        "value": "CUSTOM:CookieLickitung"
+      },
+      {
+        "value": "CUSTOM:CookieKoffing"
+      },
+      {
+        "value": "CUSTOM:CookieWeezing"
+      },
+      {
+        "value": "CUSTOM:CookieRhyhorn"
+      },
+      {
+        "value": "CUSTOM:CookieRhydon"
+      },
+      {
+        "value": "CUSTOM:CookieChansey"
+      },
+      {
+        "value": "CUSTOM:CookieTangela"
+      },
+      {
+        "value": "CUSTOM:CookieKangaskhan"
+      },
+      {
+        "value": "CUSTOM:CookieHorsea"
+      },
+      {
+        "value": "CUSTOM:CookieSeadra"
+      },
+      {
+        "value": "CUSTOM:CookieGoldeen"
+      },
+      {
+        "value": "CUSTOM:CookieStaryu"
+      },
+      {
+        "value": "CUSTOM:CookieStarmie"
+      },
+      {
+        "value": "CUSTOM:CookieMrmime"
+      },
+      {
+        "value": "CUSTOM:CookieScyther"
+      },
+      {
+        "value": "CUSTOM:CookieJynx"
+      },
+      {
+        "value": "CUSTOM:CookieElectabuzz"
+      },
+      {
+        "value": "CUSTOM:CookieMagmar"
+      },
+      {
+        "value": "CUSTOM:CookiePinsir"
+      },
+      {
+        "value": "CUSTOM:CookieTauros"
+      },
+      {
+        "value": "CUSTOM:CookieMagikarp"
+      },
+      {
+        "value": "CUSTOM:CookieGyarados"
+      },
+      {
+        "value": "CUSTOM:CookieLapras"
+      },
+      {
+        "value": "CUSTOM:CookieDitto"
+      },
+      {
+        "value": "CUSTOM:CookieEevee"
+      },
+      {
+        "value": "CUSTOM:CookieVaporeon"
+      },
+      {
+        "value": "CUSTOM:CookieJolteon"
+      },
+      {
+        "value": "CUSTOM:CookieFlareon"
+      },
+      {
+        "value": "CUSTOM:CookiePorygon"
+      },
+      {
+        "value": "CUSTOM:CookieOmanyte"
+      },
+      {
+        "value": "CUSTOM:CookieOmastar"
+      },
+      {
+        "value": "CUSTOM:CookieKabuto"
+      },
+      {
+        "value": "CUSTOM:CookieKabutops"
+      },
+      {
+        "value": "CUSTOM:CookieAerodactyl"
+      },
+      {
+        "value": "CUSTOM:CookieSnorlax"
+      },
+      {
+        "value": "CUSTOM:CookieArticuno"
+      },
+      {
+        "value": "CUSTOM:CookieZapdos"
+      },
+      {
+        "value": "CUSTOM:CookieMoltres"
+      },
+      {
+        "value": "CUSTOM:CookieDratini"
+      },
+      {
+        "value": "CUSTOM:CookieDragonair"
+      },
+      {
+        "value": "CUSTOM:CookieDragonite"
+      },
+      {
+        "value": "CUSTOM:CookieMewtwo"
+      },
+      {
+        "value": "CUSTOM:CookieMew"
+      },
+      {
+        "value": "CUSTOM:CookieMachoke"
+      },
+      {
+        "value": "CUSTOM:CookieSeaking"
+      },
+      {
+        "value": "CUSTOM:CookiePokeball"
+      },
+      {
+        "value": "CUSTOM:IceCreamTea"
+      },
+      {
+        "value": "CUSTOM:IceCreamTeaB"
+      },
+      {
+        "value": "CUSTOM:IceCreamTeaR"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriB"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriD"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriG"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriP"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriR"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriW"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriY"
+      },
+      {
+        "value": "CUSTOM:IceCreamLemo"
+      },
+      {
+        "value": "CUSTOM:Candy0"
+      },
+      {
+        "value": "CUSTOM:Candy1"
+      },
+      {
+        "value": "CUSTOM:Candy2"
+      },
+      {
+        "value": "CUSTOM:Candy3"
+      },
+      {
+        "value": "CUSTOM:Candy4"
+      },
+      {
+        "value": "CUSTOM:Candy5"
+      },
+      {
+        "value": "CUSTOM:Candy6"
+      },
+      {
+        "value": "CUSTOM:Candy7"
+      },
+      {
+        "value": "CUSTOM:Candy8"
+      },
+      {
+        "value": "CUSTOM:Candy9"
+      },
+      {
+        "value": "CUSTOM:Candy10"
+      },
+      {
+        "value": "CUSTOM:Candy11"
+      },
+      {
+        "value": "CUSTOM:Candy12"
+      },
+      {
+        "value": "CUSTOM:Candy13"
+      },
+      {
+        "value": "CUSTOM:Candy14"
+      },
+      {
+        "value": "CUSTOM:Candy15"
+      },
+      {
+        "value": "CUSTOM:IceCreamCoffee"
+      },
+      {
+        "value": "CUSTOM:IceCreamLatte"
+      },
+      {
+        "value": "CUSTOM:IceCreamTeaC"
+      },
+      {
+        "value": "CUSTOM:IceCreamTeaBC"
+      },
+      {
+        "value": "CUSTOM:IceCreamTeaRC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriBC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriDC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriGC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriPC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriRC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriWC"
+      },
+      {
+        "value": "CUSTOM:IceCreamApriYC"
+      },
+      {
+        "value": "CUSTOM:IceCreamLemoC"
+      },
+      {
+        "value": "CUSTOM:IceCreamCoffeeC"
+      },
+      {
+        "value": "CUSTOM:IceCreamLatteC"
+      },
+      {
+        "value": "CUSTOM:IceCreamCherry"
+      },
+      {
+        "value": "CUSTOM:IceCreamCherryC"
+      },
+      {
+        "value": "CUSTOM:Lemon"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:Lime"
+      },
+      {
+        "value": "CUSTOM:LimeSlice"
+      },
+      {
+        "value": "CUSTOM:PoffinDoughSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinDoughDry"
+      },
+      {
+        "value": "CUSTOM:PoffinDoughSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinDoughBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinDoughSour"
+      },
+      {
+        "value": "CUSTOM:SparklesSpicy"
+      },
+      {
+        "value": "CUSTOM:SparklesDry"
+      },
+      {
+        "value": "CUSTOM:SparklesSweet"
+      },
+      {
+        "value": "CUSTOM:SparklesBitter"
+      },
+      {
+        "value": "CUSTOM:SparklesSour"
+      },
+      {
+        "value": "CUSTOM:CookieDough"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:BreadSpicy"
+      },
+      {
+        "value": "CUSTOM:BreadDry"
+      },
+      {
+        "value": "CUSTOM:BreadSweet"
+      },
+      {
+        "value": "CUSTOM:BreadBitter"
+      },
+      {
+        "value": "CUSTOM:BreadSour"
+      },
+      {
+        "value": "CUSTOM:SpicyRep1"
+      },
+      {
+        "value": "CUSTOM:SpicyRep2"
+      },
+      {
+        "value": "CUSTOM:SpicyRep3"
+      },
+      {
+        "value": "CUSTOM:SpicyRep4"
+      },
+      {
+        "value": "CUSTOM:DryRep1"
+      },
+      {
+        "value": "CUSTOM:DryRep2"
+      },
+      {
+        "value": "CUSTOM:DryRep3"
+      },
+      {
+        "value": "CUSTOM:DryRep4"
+      },
+      {
+        "value": "CUSTOM:SweetRep1"
+      },
+      {
+        "value": "CUSTOM:SweetRep2"
+      },
+      {
+        "value": "CUSTOM:SweetRep3"
+      },
+      {
+        "value": "CUSTOM:SweetRep4"
+      },
+      {
+        "value": "CUSTOM:BitterRep1"
+      },
+      {
+        "value": "CUSTOM:BitterRep2"
+      },
+      {
+        "value": "CUSTOM:BitterRep3"
+      },
+      {
+        "value": "CUSTOM:BitterRep4"
+      },
+      {
+        "value": "CUSTOM:SourRep1"
+      },
+      {
+        "value": "CUSTOM:SourRep2"
+      },
+      {
+        "value": "CUSTOM:SourRep3"
+      },
+      {
+        "value": "CUSTOM:SourRep4"
+      },
+      {
+        "value": "CUSTOM:DryCherry"
+      },
+      {
+        "value": "Items.APPLE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "to_craft_pastries",
+    "namespace": "mod"
+  }
+}
