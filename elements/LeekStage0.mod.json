@@ -2,10 +2,10 @@
   "_fv": 39,
   "_type": "plant",
   "definition": {
-    "renderType": 12,
+    "renderType": 2,
     "texture": "leek_0",
     "textureBottom": "",
-    "customModelName": "Cross model",
+    "customModelName": "crop_plant:default",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",

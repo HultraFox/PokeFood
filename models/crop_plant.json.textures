@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "leek_0"
+      },
+      "name": "default"
+    }
+  }
+}
