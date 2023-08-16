@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apricup_milkshake_g",
     "customModelName": "Normal",
-    "name": "Green apri-shake",
+    "name": "Green Aprishake",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

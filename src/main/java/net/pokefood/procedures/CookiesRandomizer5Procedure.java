@@ -40,7 +40,7 @@ public class CookiesRandomizer5Procedure {
 		} else if (SelectedCookieNb == 13) {
 			SelectedItme = new ItemStack(PokefoodModItems.COOKIE_HAUNTER.get());
 		} else if (SelectedCookieNb == 14) {
-			SelectedItme = new ItemStack(PokefoodModItems.COOKIE_GRENGAR.get());
+			SelectedItme = new ItemStack(PokefoodModItems.COOKIE_GENGAR.get());
 		} else if (SelectedCookieNb == 15) {
 			SelectedItme = new ItemStack(PokefoodModItems.COOKIE_ONIX.get());
 		} else if (SelectedCookieNb == 16) {

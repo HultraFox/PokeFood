@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bread_sweet",
     "customModelName": "Normal",
-    "name": "Sweet bread",
+    "name": "Sweet Bread",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

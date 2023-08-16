@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cookie_dough",
     "customModelName": "Normal",
-    "name": "Cookie dough",
+    "name": "Cookie Dough",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

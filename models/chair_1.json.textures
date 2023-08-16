@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chair_1_front_0",
+        "2": "chair_1_back_0",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

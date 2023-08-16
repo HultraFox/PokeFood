@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "wheat_bag",
     "customModelName": "Normal",
-    "name": "Wheat bag",
+    "name": "Wheat Bag",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

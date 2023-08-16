@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_wurmple_on_a_spike",
     "customModelName": "Normal",
-    "name": "Fried Wurmple tail",
+    "name": "Fried Wurmple Tail",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

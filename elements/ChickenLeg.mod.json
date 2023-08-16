@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "chiken_leg",
     "customModelName": "Normal",
-    "name": "Chicken leg",
+    "name": "Chicken Leg",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

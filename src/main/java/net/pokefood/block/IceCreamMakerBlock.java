@@ -131,7 +131,7 @@ public class IceCreamMakerBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Ice-cream maker");
+					return Component.literal("Ice-Cream Maker");
 				}
 
 				@Override

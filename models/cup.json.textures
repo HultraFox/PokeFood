@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cup",
+        "1": "aprijuice_b_still"
+      },
+      "name": "default"
+    }
+  }
+}

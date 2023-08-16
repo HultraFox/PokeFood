@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_planks",
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Banana fence gate",
+    "name": "Banana Fence Gate",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 3.0,

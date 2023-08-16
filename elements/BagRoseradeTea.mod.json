@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "roserade_tea_bag",
     "customModelName": "Normal",
-    "name": "Roserade tea bag",
+    "name": "Roserade Tea Bag",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

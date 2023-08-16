@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "candy_15",
     "customModelName": "Normal",
-    "name": "Pink candy",
+    "name": "Pink Candy",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

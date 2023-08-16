@@ -94,7 +94,7 @@ public class CandyBoxEmptyBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Empty candy box");
+		return Component.literal("Empty Candy Box");
 	}
 
 	@Override

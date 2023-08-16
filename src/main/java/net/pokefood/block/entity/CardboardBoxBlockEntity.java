@@ -94,7 +94,7 @@ public class CardboardBoxBlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Cardboard box");
+		return Component.literal("Cardboard Box");
 	}
 
 	@Override

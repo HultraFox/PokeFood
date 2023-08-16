@@ -138,8 +138,6 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 					|| Items.MELON_SEEDS == stack.getItem()
 					|| Items.BEETROOT_SEEDS == stack.getItem()
 					);
-
-
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 106, 17) {

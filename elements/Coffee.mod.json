@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
     "name": "Coffee",
-    "bucketName": "Coffee bucket",
+    "bucketName": "Coffee Bucket",
     "textureStill": "coffee_still",
     "textureFlowing": "coffee_flow",
     "tintType": "No tint",

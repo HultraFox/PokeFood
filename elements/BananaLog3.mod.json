@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_log",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Small banana log",
+    "name": "Small Banana Log",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,

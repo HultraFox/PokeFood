@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "latte_creamed",
     "customModelName": "Normal",
-    "name": "Creamed latte",
+    "name": "Creamed Latte",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

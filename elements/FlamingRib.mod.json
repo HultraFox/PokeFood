@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "flaming_rib",
     "customModelName": "Normal",
-    "name": "Flaming rib",
+    "name": "Flaming Rib",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

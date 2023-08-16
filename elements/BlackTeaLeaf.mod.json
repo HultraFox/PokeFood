@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "blacktea_leaf",
     "customModelName": "Normal",
-    "name": "Black tea leaf",
+    "name": "Black Tea Leaf",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

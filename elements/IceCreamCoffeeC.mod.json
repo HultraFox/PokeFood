@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_coffee_c",
     "customModelName": "Normal",
-    "name": "Coffee ice-cream with chocolate",
+    "name": "Coffee Ice-Cream with Chocolate",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

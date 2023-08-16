@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bitter_rep_20",
     "customModelName": "Normal",
-    "name": "Bitter replacement powder",
+    "name": "Bitter Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

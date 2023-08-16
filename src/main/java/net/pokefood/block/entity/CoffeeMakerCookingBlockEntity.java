@@ -91,7 +91,7 @@ public class CoffeeMakerCookingBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Coffee maker");
+		return Component.literal("Coffee Maker");
 	}
 
 	@Override

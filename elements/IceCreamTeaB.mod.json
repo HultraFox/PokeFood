@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_tea_b",
     "customModelName": "Normal",
-    "name": "Black tea ice-cream",
+    "name": "Black Tea Ice-Cream",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

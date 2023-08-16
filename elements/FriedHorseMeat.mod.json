@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_horse_meat",
     "customModelName": "Normal",
-    "name": "Fried horse meat",
+    "name": "Fried Horse Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

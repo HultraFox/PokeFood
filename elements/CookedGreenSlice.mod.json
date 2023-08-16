@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_chikorita_slice",
     "customModelName": "Normal",
-    "name": "Cooked green slice",
+    "name": "Cooked Green Slice",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

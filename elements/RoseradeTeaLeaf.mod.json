@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "roserade_tea_leaf",
     "customModelName": "Normal",
-    "name": "Roserade tea leaf",
+    "name": "Roserade Tea Leaf",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

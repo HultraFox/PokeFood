@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_riped",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Riped anana block",
+    "name": "Riped Banana Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,

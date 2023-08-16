@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Black tea",
-    "bucketName": "Black tea bucket",
+    "name": "Black Tea",
+    "bucketName": "Black Tea Bucket",
     "textureStill": "blacktea_still",
     "textureFlowing": "blacktea_flow",
     "tintType": "No tint",

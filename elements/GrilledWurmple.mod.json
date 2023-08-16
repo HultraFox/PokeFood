@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "grilled_wurmple",
     "customModelName": "Normal",
-    "name": "Grilled Wurmple tail",
+    "name": "Grilled Wurmple Tail",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

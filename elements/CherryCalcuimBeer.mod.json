@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Cherrium beer",
-    "bucketName": "Cherrium beer Bucket",
+    "name": "Cherrium Beer",
+    "bucketName": "Cherrium Beer Bucket",
     "textureStill": "cherry_calcuim_beer_still",
     "textureFlowing": "cheery_calcuim_beer_flow",
     "tintType": "No tint",

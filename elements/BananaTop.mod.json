@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_log",
@@ -51,7 +51,7 @@
         "subtract": false
       }
     ],
-    "name": "Banana tree top",
+    "name": "Banana Tree Top",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,

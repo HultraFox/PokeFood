@@ -80,13 +80,13 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 18) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.CARBON_POWDER.get() == stack.getItem());
+				return PokefoodModItems.CARBON_POWDER.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 18) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.SUGAR == stack.getItem());
+				return Items.SUGAR == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 18) {
@@ -113,13 +113,13 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 25, 54) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.SODA_BOTTLE.get() == stack.getItem());
+				return PokefoodModItems.SODA_BOTTLE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 133, 54) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (PokefoodModItems.POP_BALL.get() == stack.getItem());
+				return PokefoodModItems.GLASS_BALL.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 54) {

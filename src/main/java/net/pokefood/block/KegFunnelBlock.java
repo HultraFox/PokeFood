@@ -131,7 +131,7 @@ public class KegFunnelBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Keg funnel");
+					return Component.literal("Keg Funnel");
 				}
 
 				@Override

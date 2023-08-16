@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_watery_meat",
     "customModelName": "Normal",
-    "name": "Cooked watery meat",
+    "name": "Cooked Watery Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

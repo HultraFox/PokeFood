@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bitter_sprinkles",
     "customModelName": "Normal",
-    "name": "Bitter sprinkles",
+    "name": "Bitter Sprinkles",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

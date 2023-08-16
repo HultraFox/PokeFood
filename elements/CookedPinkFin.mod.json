@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_pink_fin",
     "customModelName": "Normal",
-    "name": "Cooked pink fin",
+    "name": "Cooked Pink Fin",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

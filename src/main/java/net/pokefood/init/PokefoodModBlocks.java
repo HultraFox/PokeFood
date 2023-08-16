@@ -278,6 +278,7 @@ import net.pokefood.block.CoffeeBlock;
 import net.pokefood.block.CidronadeBlock;
 import net.pokefood.block.CherryInfusionBlock;
 import net.pokefood.block.CherryCalcuimBeerBlock;
+import net.pokefood.block.CardboardBoxOpenBlock;
 import net.pokefood.block.CardboardBoxBlock;
 import net.pokefood.block.CarbonizerBottleBlock;
 import net.pokefood.block.CandyBoxEmptyBlock;
@@ -471,10 +472,10 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> LEMONADE = REGISTRY.register("lemonade", () -> new LemonadeBlock());
 	public static final RegistryObject<Block> FRESH_WATER = REGISTRY.register("fresh_water", () -> new FreshWaterBlock());
 	public static final RegistryObject<Block> CHERRY_INFUSION = REGISTRY.register("cherry_infusion", () -> new CherryInfusionBlock());
-	public static final RegistryObject<Block> APRI_JUICE_B = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBBlock());
 	public static final RegistryObject<Block> APRI_JUICE_D = REGISTRY.register("apri_juice_d", () -> new ApriJuiceDBlock());
-	public static final RegistryObject<Block> APRI_JUICE_Y = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYBlock());
+	public static final RegistryObject<Block> APRI_JUICE_B = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBBlock());
 	public static final RegistryObject<Block> APRI_JUICE_G = REGISTRY.register("apri_juice_g", () -> new ApriJuiceGBlock());
+	public static final RegistryObject<Block> APRI_JUICE_Y = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYBlock());
 	public static final RegistryObject<Block> APRI_JUICE_R = REGISTRY.register("apri_juice_r", () -> new ApriJuiceRBlock());
 	public static final RegistryObject<Block> APRI_JUICE_P = REGISTRY.register("apri_juice_p", () -> new ApriJuicePBlock());
 	public static final RegistryObject<Block> APRI_JUICE_W = REGISTRY.register("apri_juice_w", () -> new ApriJuiceWBlock());
@@ -504,11 +505,11 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> BANANA_STAIRS = REGISTRY.register("banana_stairs", () -> new BananaStairsBlock());
 	public static final RegistryObject<Block> BANANA_SLAB = REGISTRY.register("banana_slab", () -> new BananaSlabBlock());
 	public static final RegistryObject<Block> BANANA_FENCE = REGISTRY.register("banana_fence", () -> new BananaFenceBlock());
-	public static final RegistryObject<Block> BANANA_BUTTON = REGISTRY.register("banana_button", () -> new BananaButtonBlock());
-	public static final RegistryObject<Block> BANANA_PRESSURE_PLATE = REGISTRY.register("banana_pressure_plate", () -> new BananaPressurePlateBlock());
+	public static final RegistryObject<Block> BANANA_FENCE_GATE = REGISTRY.register("banana_fence_gate", () -> new BananaFenceGateBlock());
 	public static final RegistryObject<Block> BANANA_DOOR = REGISTRY.register("banana_door", () -> new BananaDoorBlock());
 	public static final RegistryObject<Block> BANANA_TRAPDOOR = REGISTRY.register("banana_trapdoor", () -> new BananaTrapdoorBlock());
-	public static final RegistryObject<Block> BANANA_FENCE_GATE = REGISTRY.register("banana_fence_gate", () -> new BananaFenceGateBlock());
+	public static final RegistryObject<Block> BANANA_PRESSURE_PLATE = REGISTRY.register("banana_pressure_plate", () -> new BananaPressurePlateBlock());
+	public static final RegistryObject<Block> BANANA_BUTTON = REGISTRY.register("banana_button", () -> new BananaButtonBlock());
 	public static final RegistryObject<Block> TEA_STAGE_0 = REGISTRY.register("tea_stage_0", () -> new TeaStage0Block());
 	public static final RegistryObject<Block> TEA_STAGE_1 = REGISTRY.register("tea_stage_1", () -> new TeaStage1Block());
 	public static final RegistryObject<Block> TEA_STAGE_2 = REGISTRY.register("tea_stage_2", () -> new TeaStage2Block());
@@ -774,4 +775,5 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> CALCUIM_B_13 = REGISTRY.register("calcuim_b_13", () -> new CalcuimB13Block());
 	public static final RegistryObject<Block> CALCUIM_B_14 = REGISTRY.register("calcuim_b_14", () -> new CalcuimB14Block());
 	public static final RegistryObject<Block> CALCUIM_B_15 = REGISTRY.register("calcuim_b_15", () -> new CalcuimB15Block());
+	public static final RegistryObject<Block> CARDBOARD_BOX_OPEN = REGISTRY.register("cardboard_box_open", () -> new CardboardBoxOpenBlock());
 }

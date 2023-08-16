@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Iced coffee",
-    "bucketName": "Iced coffee bucket",
+    "name": "Iced Coffee",
+    "bucketName": "Iced Coffee Bucket",
     "textureStill": "coffee_iced_still",
     "textureFlowing": "coffee_iced_flow",
     "tintType": "No tint",

@@ -17,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class PotWaterLemonBDestroyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (Level.NETHER)) {
+		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.NETHER) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1);
@@ -30,7 +30,7 @@ public class PotWaterLemonBDestroyProcedure {
 		} else {
 			world.setBlock(new BlockPos(x, y, z), Blocks.WATER.defaultBlockState(), 3);
 		}
-		for (int index0 = 0; index0 < (int) (4); index0++) {
+		for (int index0 = 0; index0 < 4; index0++) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PokefoodModItems.LEMON_SLICE.get()));
 				entityToSpawn.setPickUpDelay(10);

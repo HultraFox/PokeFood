@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_watery_meat",
     "customModelName": "Normal",
-    "name": "Fried watery meat",
+    "name": "Fried Watery Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

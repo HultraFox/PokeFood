@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_apri_b",
     "customModelName": "Normal",
-    "name": "Blue apricorn ice-cream",
+    "name": "Blue Apricorn Ice-Cream",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

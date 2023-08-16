@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Black aprium",
-    "bucketName": "Black aprium Bucket",
+    "name": "Black Aprium",
+    "bucketName": "Black Aprium Bucket",
     "textureStill": "apri_alcohol_d_still",
     "textureFlowing": "apri_alcohol_d_flow",
     "tintType": "No tint",

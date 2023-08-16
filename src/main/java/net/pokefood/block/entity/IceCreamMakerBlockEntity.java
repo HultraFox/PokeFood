@@ -94,7 +94,7 @@ public class IceCreamMakerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Ice-cream maker");
+		return Component.literal("Ice-Cream Maker");
 	}
 
 	@Override

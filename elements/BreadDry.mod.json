@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bread_dry",
     "customModelName": "Normal",
-    "name": "Dry bread",
+    "name": "Dry Bread",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -91,7 +91,7 @@ public class BananaPlantBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Banana plant");
+		return Component.literal("Banana Plant");
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "cardbox_bottom",
@@ -18,7 +18,7 @@
     "particleTexture": "cardbox_side",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Cardboard box",
+    "name": "Cardboard Box",
     "specialInfo": [
       "§cWill drop the items in it if broken !"
     ],
@@ -54,7 +54,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "WOOD"
     },

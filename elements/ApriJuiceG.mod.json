@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Green apri-juice",
-    "bucketName": "Green apri-juice Bucket",
+    "name": "Green Aprijuice",
+    "bucketName": "Green Aprijuice Bucket",
     "textureStill": "aprijuice_g_still",
     "textureFlowing": "aprijuice_g_flow",
     "tintType": "No tint",

@@ -4,15 +4,13 @@ license="Mozilla Public License 2.0"
 
 [[mods]]
 modId="pokefood"
-version="1.1.0"
+version="1.1."
 displayName="PokeFood"
 credits="The cobblemon team and community"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/pokefood"
 logoFile="logo.png"
 authors="HultraFox"
-description='''
-Food to be used with cobblemon (may contain traces of calcuim !)
-'''
+description="Food to be used with cobblemon (may contain traces of calcuim !)"
 
 [[dependencies.pokefood]]
     modId="minecraft"

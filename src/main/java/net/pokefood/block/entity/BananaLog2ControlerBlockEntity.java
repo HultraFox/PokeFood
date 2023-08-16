@@ -91,7 +91,7 @@ public class BananaLog2ControlerBlockEntity extends RandomizableContainerBlockEn
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Banana log");
+		return Component.literal("Banana Log");
 	}
 
 	@Override

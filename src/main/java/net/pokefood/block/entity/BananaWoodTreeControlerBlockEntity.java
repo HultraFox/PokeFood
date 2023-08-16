@@ -91,7 +91,7 @@ public class BananaWoodTreeControlerBlockEntity extends RandomizableContainerBlo
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Banana wood");
+		return Component.literal("Banana Wood");
 	}
 
 	@Override

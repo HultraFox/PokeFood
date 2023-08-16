@@ -1538,7 +1538,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1581,7 +1581,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 1;
 				if (new Object() {
@@ -1608,7 +1607,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1651,7 +1650,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 2;
 				if (new Object() {
@@ -1678,7 +1676,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1721,7 +1719,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 3;
 				if (new Object() {
@@ -1748,7 +1745,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1791,7 +1788,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 			}
 			CheckItem = new ItemStack(Items.GLASS_BOTTLE);
@@ -1829,7 +1825,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1906,7 +1902,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1983,7 +1979,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2060,7 +2056,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2143,7 +2139,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2186,7 +2182,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 1;
 				if (new Object() {
@@ -2213,7 +2208,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2256,7 +2251,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 2;
 				if (new Object() {
@@ -2283,7 +2277,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2326,7 +2320,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 3;
 				if (new Object() {
@@ -2353,7 +2346,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2396,7 +2389,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 			}
 			CheckItem = new ItemStack(Items.GLASS_BOTTLE);
@@ -2434,7 +2426,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2511,7 +2503,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2588,7 +2580,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2665,7 +2657,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2748,7 +2740,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2791,7 +2783,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 1;
 				if (new Object() {
@@ -2818,7 +2809,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2861,7 +2852,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 2;
 				if (new Object() {
@@ -2888,7 +2878,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -2931,7 +2921,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 3;
 				if (new Object() {
@@ -2958,7 +2947,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3001,7 +2990,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 			}
 			CheckItem = new ItemStack(Items.GLASS_BOTTLE);
@@ -3039,7 +3027,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3116,7 +3104,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3193,7 +3181,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3270,7 +3258,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3353,7 +3341,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3396,7 +3384,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 1;
 				if (new Object() {
@@ -3423,7 +3410,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3466,7 +3453,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 2;
 				if (new Object() {
@@ -3493,7 +3479,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3536,7 +3522,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 				Slot = 3;
 				if (new Object() {
@@ -3563,7 +3548,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3606,7 +3591,6 @@ public class KegFunnelTransferProcedure {
 							});
 						}
 					}
-					BreewingResetProcedure.execute(world, X, Y, Z);
 				}
 			}
 			CheckItem = new ItemStack(Items.GLASS_BOTTLE);
@@ -3644,7 +3628,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3721,7 +3705,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3798,7 +3782,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -3875,7 +3859,7 @@ public class KegFunnelTransferProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+				}.getItemStack(world, new BlockPos(x, y, z), (int) Slot)).getItem() == ItemStack.EMPTY.getItem())) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {

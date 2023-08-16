@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "coffee_creamed",
     "customModelName": "Normal",
-    "name": "Creamed coffee",
+    "name": "Creamed Coffee",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

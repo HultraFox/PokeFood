@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_apri_p",
     "customModelName": "Normal",
-    "name": "Pink apricorn ice-cream",
+    "name": "Pink Apricorn Ice-Cream",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

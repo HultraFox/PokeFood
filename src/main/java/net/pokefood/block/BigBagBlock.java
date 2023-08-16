@@ -118,7 +118,7 @@ public class BigBagBlock extends FallingBlock implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Big bag");
+					return Component.literal("Big Bag");
 				}
 
 				@Override

@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Teanana beer",
-    "bucketName": "Teanana beer Bucket",
+    "name": "Teanana Beer",
+    "bucketName": "Teanana Beer Bucket",
     "textureStill": "banana_tea_beer_still",
     "textureFlowing": "banana_tea_beer_flow",
     "tintType": "No tint",

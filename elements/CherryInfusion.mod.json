@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Cherry infusion",
-    "bucketName": "Cherry infusion bucket",
+    "name": "Cherry Infusion",
+    "bucketName": "Cherry Infusion Bucket",
     "textureStill": "cherry_infusion_still",
     "textureFlowing": "cherry_infusion_flow",
     "tintType": "No tint",

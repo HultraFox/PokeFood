@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "White apri-juice",
-    "bucketName": "White apri-juice Bucket",
+    "name": "White Aprijuice",
+    "bucketName": "White Aprijuice Bucket",
     "textureStill": "aprijuice_w_still",
     "textureFlowing": "aprijuice_w_flow",
     "tintType": "No tint",

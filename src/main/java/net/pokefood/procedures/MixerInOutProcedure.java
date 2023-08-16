@@ -3055,7 +3055,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3114,7 +3114,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3173,7 +3173,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3232,7 +3232,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3295,7 +3295,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3354,7 +3354,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3413,7 +3413,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3472,7 +3472,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3535,7 +3535,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3594,7 +3594,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3653,7 +3653,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3712,7 +3712,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3775,7 +3775,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3834,7 +3834,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3893,7 +3893,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 2)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {
@@ -3952,7 +3952,7 @@ public class MixerInOutProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == (ItemStack.EMPTY).getItem()) {
+				}.getItemStack(world, new BlockPos(x_pos, y, z_pos), 3)).getItem() == ItemStack.EMPTY.getItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x_pos, y, z_pos));
 						if (_ent != null) {

@@ -25,14 +25,14 @@ public class ConeDisplayUpdateTickProcedure {
 				BlockPos _pos = new BlockPos(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("cone") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, (true)), 3);
+					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 			}
 		} else {
 			{
 				BlockPos _pos = new BlockPos(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("cone") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, (false)), 3);
+					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 			}
 		}
 	}

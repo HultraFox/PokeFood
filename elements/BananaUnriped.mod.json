@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_unriped",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Unriped anana block",
+    "name": "Unriped Banana Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,

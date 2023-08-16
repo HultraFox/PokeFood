@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_leaves",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Banana plant",
+    "name": "Banana Plant",
     "specialInfo": [],
     "hardness": 0.2,
     "resistance": 0.2,

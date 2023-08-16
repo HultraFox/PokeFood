@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_apri_w_c",
     "customModelName": "Normal",
-    "name": "White apricorn ice-cream with chocolate",
+    "name": "White Apricorn Ice-Cream with Chocolate",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lamp_0_off",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

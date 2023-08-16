@@ -52,10 +52,10 @@ public class PokefoodModFluidTypes {
 	public static final RegistryObject<FluidType> LEMONADE_TYPE = REGISTRY.register("lemonade", () -> new LemonadeFluidType());
 	public static final RegistryObject<FluidType> FRESH_WATER_TYPE = REGISTRY.register("fresh_water", () -> new FreshWaterFluidType());
 	public static final RegistryObject<FluidType> CHERRY_INFUSION_TYPE = REGISTRY.register("cherry_infusion", () -> new CherryInfusionFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_B_TYPE = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBFluidType());
 	public static final RegistryObject<FluidType> APRI_JUICE_D_TYPE = REGISTRY.register("apri_juice_d", () -> new ApriJuiceDFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_Y_TYPE = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYFluidType());
+	public static final RegistryObject<FluidType> APRI_JUICE_B_TYPE = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBFluidType());
 	public static final RegistryObject<FluidType> APRI_JUICE_G_TYPE = REGISTRY.register("apri_juice_g", () -> new ApriJuiceGFluidType());
+	public static final RegistryObject<FluidType> APRI_JUICE_Y_TYPE = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYFluidType());
 	public static final RegistryObject<FluidType> APRI_JUICE_R_TYPE = REGISTRY.register("apri_juice_r", () -> new ApriJuiceRFluidType());
 	public static final RegistryObject<FluidType> APRI_JUICE_P_TYPE = REGISTRY.register("apri_juice_p", () -> new ApriJuicePFluidType());
 	public static final RegistryObject<FluidType> APRI_JUICE_W_TYPE = REGISTRY.register("apri_juice_w", () -> new ApriJuiceWFluidType());

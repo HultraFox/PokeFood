@@ -636,6 +636,7 @@ public class PotInsertProcedure {
 			}
 		} else {
 			PotInsert2Procedure.execute(world, x, y, z, entity);
+			PotLootProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

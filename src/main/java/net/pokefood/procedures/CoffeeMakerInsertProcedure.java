@@ -44,7 +44,7 @@ public class CoffeeMakerInsertProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.pointed_dripstone.step")), SoundSource.BLOCKS, 1, 1);
@@ -90,7 +90,7 @@ public class CoffeeMakerInsertProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill")), SoundSource.BLOCKS, (float) 0.5, 1);
@@ -135,7 +135,7 @@ public class CoffeeMakerInsertProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == PokefoodModItems.COFFEE_BUCKET.get()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY).getItem()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 				if (entity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(PokefoodModItems.COFFEE_BUCKET.get());
 					_setstack.setCount(1);
@@ -261,5 +261,6 @@ public class CoffeeMakerInsertProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CLOUD, (x + 0.5), (y + 1), (z + 0.5), 3, 0, 0.5, 0, 0.05);
 		}
+		CoffeeMakerLootProcedure.execute(world, x, y, z, entity);
 	}
 }

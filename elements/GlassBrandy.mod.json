@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "brandy",
     "customModelName": "Normal",
-    "name": "Brandy mug",
+    "name": "Brandy Mug",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

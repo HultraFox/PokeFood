@@ -62,11 +62,11 @@ public class PokefoodMod {
 
 		PokefoodModBlockEntities.REGISTRY.register(bus);
 		PokefoodModFeatures.REGISTRY.register(bus);
-		PokefoodModFluids.REGISTRY.register(bus);
-		PokefoodModFluidTypes.REGISTRY.register(bus);
 
 		PokefoodModMenus.REGISTRY.register(bus);
 
+		PokefoodModFluids.REGISTRY.register(bus);
+		PokefoodModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

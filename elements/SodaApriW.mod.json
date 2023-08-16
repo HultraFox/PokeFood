@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "soda_apri_white",
     "customModelName": "Normal",
-    "name": "White apridiziac",
+    "name": "White Apridiziac",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -40,7 +40,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -48,13 +48,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot0_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot0_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -64,7 +64,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot0_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot0_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -95,7 +95,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 7)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 7)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -103,13 +103,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot1_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot1_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -119,7 +119,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot1_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot1_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -150,7 +150,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 8)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 8)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -158,13 +158,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot2_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot2_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -174,7 +174,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot2_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot2_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -205,7 +205,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 9)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 9)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -213,13 +213,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot3_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot3_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -229,7 +229,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot3_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot3_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -260,7 +260,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 10)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 10)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -268,13 +268,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot4_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot4_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -284,7 +284,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot4_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot4_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -315,7 +315,7 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 11)).getItem() == (ItemStack.EMPTY).getItem() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 11)).getItem() == ItemStack.EMPTY.getItem() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -323,13 +323,13 @@ public class FryerSameOrNullProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == (ItemStack.EMPTY).getItem()) {
+		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot5_sameOrNul", (true));
+					_blockEntity.getPersistentData().putBoolean("slot5_sameOrNul", true);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -339,7 +339,7 @@ public class FryerSameOrNullProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putBoolean("slot5_sameOrNul", (false));
+					_blockEntity.getPersistentData().putBoolean("slot5_sameOrNul", false);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

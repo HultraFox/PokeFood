@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.util.ForgeSoundType;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -19,7 +20,6 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -28,9 +28,10 @@ public class DisplayCasePoffin7Block extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public DisplayCasePoffin7Block() {
-		super(BlockBehaviour.Properties
-				.of(Material.WOOD, MaterialColor.WOOD).sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.glass.break")), () -> new SoundEvent(new ResourceLocation("block.wood.step")),
-						() -> new SoundEvent(new ResourceLocation("block.wood.place")), () -> new SoundEvent(new ResourceLocation("block.glass.hit")), () -> new SoundEvent(new ResourceLocation("block.wood.fall"))))
+		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD)
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.step")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.fall"))))
 				.strength(0.25f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}

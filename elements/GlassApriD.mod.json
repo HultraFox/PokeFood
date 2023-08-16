@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apri_d",
     "customModelName": "Normal",
-    "name": "Black aprium mug",
+    "name": "Black Aprium Mug",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:leek"
+    }
+  ],
+  "result": {
+    "item": "pokefood:leek_seeds",
+    "count": 1
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Roserade tea",
-    "bucketName": "Roserate tea bucket",
+    "name": "Roserade Tea",
+    "bucketName": "Roserate Tea Bucket",
     "textureStill": "roserade_tea_still",
     "textureFlowing": "roserade_tea_flow",
     "tintType": "No tint",

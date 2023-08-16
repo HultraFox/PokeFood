@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "candy_bag",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Candy box",
+    "name": "Candy Box",
     "specialInfo": [],
     "hardness": 0.1,
     "resistance": 0.1,

@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "arceum",
     "customModelName": "Normal",
-    "name": "Arceum mug",
+    "name": "Arceum Mug",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

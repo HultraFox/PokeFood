@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_heracross_horn",
     "customModelName": "Normal",
-    "name": "Fried heracross horn meat",
+    "name": "Fried Heracross Horn Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

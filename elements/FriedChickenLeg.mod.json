@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_chiken_leg",
     "customModelName": "Normal",
-    "name": "Fried chicken leg",
+    "name": "Fried Chicken Leg",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

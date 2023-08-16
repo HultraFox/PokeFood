@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "ic_maker_6",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Ice-cream maker",
+    "name": "Ice-Cream Maker",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,

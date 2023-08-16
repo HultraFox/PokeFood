@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "banana_door_bottom",
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Banana door",
+    "name": "Banana Door",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,

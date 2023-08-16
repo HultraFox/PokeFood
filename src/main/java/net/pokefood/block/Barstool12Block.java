@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.util.ForgeSoundType;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -22,7 +23,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -34,9 +34,10 @@ public class Barstool12Block extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public Barstool12Block() {
-		super(BlockBehaviour.Properties
-				.of(Material.METAL, MaterialColor.COLOR_BLUE).sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.metal.break")), () -> new SoundEvent(new ResourceLocation("block.wool.step")),
-						() -> new SoundEvent(new ResourceLocation("block.metal.place")), () -> new SoundEvent(new ResourceLocation("block.wool.hit")), () -> new SoundEvent(new ResourceLocation("block.wool.fall"))))
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE)
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wool.step")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wool.hit")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wool.fall"))))
 				.strength(3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}

@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cherium_beer",
     "customModelName": "Normal",
-    "name": "Chereium beer mug",
+    "name": "Chereium Beer Mug",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

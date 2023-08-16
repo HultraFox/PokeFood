@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_fairy_meat",
     "customModelName": "Normal",
-    "name": "Fried fairy meat",
+    "name": "Fried Fairy Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

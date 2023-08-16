@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apricup_d",
     "customModelName": "Normal",
-    "name": "Cup of black apri-juice",
+    "name": "Cup of Black Aprijuice",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

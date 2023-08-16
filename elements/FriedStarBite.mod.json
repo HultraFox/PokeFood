@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_star_bit",
     "customModelName": "Normal",
-    "name": "Fried star-bite",
+    "name": "Fried Star-Bite",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

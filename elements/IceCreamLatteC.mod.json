@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_latte_c",
     "customModelName": "Normal",
-    "name": "Latte ice-cream with chocolate",
+    "name": "Latte Ice-Cream with Chocolate",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

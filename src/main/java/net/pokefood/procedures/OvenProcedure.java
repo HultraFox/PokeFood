@@ -110,7 +110,7 @@ public class OvenProcedure {
 				BlockPos _pos = new BlockPos(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, (true)), 3);
+					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SMOKE, x, y, z, Mth.nextInt(RandomSource.create(), 5, 10), 0.5, 0.5, 0.5, 0.01);
@@ -294,7 +294,7 @@ public class OvenProcedure {
 					BlockPos _pos = new BlockPos(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _booleanProp)
-						world.setBlock(_pos, _bs.setValue(_booleanProp, (false)), 3);
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 				}
 			}
 		} else {

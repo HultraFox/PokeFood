@@ -85,7 +85,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_POP.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -132,7 +132,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_HIGH_TEA.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -179,7 +179,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_PUNCH_TEA.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -226,7 +226,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_ROSINE_TEA.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -273,7 +273,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_POWER_LEMON.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -320,7 +320,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_D.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -367,7 +367,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_B.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -414,7 +414,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_G.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -461,7 +461,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_Y.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -508,7 +508,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_R.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -555,7 +555,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_P.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -602,7 +602,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_APRI_W.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -649,7 +649,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_CHERRISH.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -696,7 +696,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_SOMBRINE.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
@@ -743,7 +743,7 @@ public class PlaceSodasProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PokefoodModItems.SODA_SOMBRADE.get());
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}

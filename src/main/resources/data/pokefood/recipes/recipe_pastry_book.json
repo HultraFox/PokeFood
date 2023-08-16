@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "pokefood:pastries"
+      "tag": "pokefood:to_craft_pastries"
     },
     {
       "item": "minecraft:book"

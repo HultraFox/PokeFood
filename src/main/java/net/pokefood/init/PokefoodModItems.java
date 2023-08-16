@@ -673,7 +673,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> CUP = REGISTRY.register("cup", () -> new CupItem());
 	public static final RegistryObject<Item> BIG_GLASS = REGISTRY.register("big_glass", () -> new BigGlassItem());
 	public static final RegistryObject<Item> SODA_BOTTLE = REGISTRY.register("soda_bottle", () -> new SodaBottleItem());
-	public static final RegistryObject<Item> POP_BALL = REGISTRY.register("pop_ball", () -> new PopBallItem());
+	public static final RegistryObject<Item> GLASS_BALL = REGISTRY.register("glass_ball", () -> new PopBallItem());
 	public static final RegistryObject<Item> CARBON_POWDER = REGISTRY.register("carbon_powder", () -> new CarbonPowderItem());
 	public static final RegistryObject<Item> OILY_JUNK = REGISTRY.register("oily_junk", () -> new OilyJunkItem());
 	public static final RegistryObject<Item> CLOTH = REGISTRY.register("cloth", () -> new ClothItem());
@@ -771,10 +771,10 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> LEMONADE_BUCKET = REGISTRY.register("lemonade_bucket", () -> new LemonadeItem());
 	public static final RegistryObject<Item> FRESH_WATER_BUCKET = REGISTRY.register("fresh_water_bucket", () -> new FreshWaterItem());
 	public static final RegistryObject<Item> CHERRY_INFUSION_BUCKET = REGISTRY.register("cherry_infusion_bucket", () -> new CherryInfusionItem());
-	public static final RegistryObject<Item> APRI_JUICE_B_BUCKET = REGISTRY.register("apri_juice_b_bucket", () -> new ApriJuiceBItem());
 	public static final RegistryObject<Item> APRI_JUICE_D_BUCKET = REGISTRY.register("apri_juice_d_bucket", () -> new ApriJuiceDItem());
-	public static final RegistryObject<Item> APRI_JUICE_Y_BUCKET = REGISTRY.register("apri_juice_y_bucket", () -> new ApriJuiceYItem());
+	public static final RegistryObject<Item> APRI_JUICE_B_BUCKET = REGISTRY.register("apri_juice_b_bucket", () -> new ApriJuiceBItem());
 	public static final RegistryObject<Item> APRI_JUICE_G_BUCKET = REGISTRY.register("apri_juice_g_bucket", () -> new ApriJuiceGItem());
+	public static final RegistryObject<Item> APRI_JUICE_Y_BUCKET = REGISTRY.register("apri_juice_y_bucket", () -> new ApriJuiceYItem());
 	public static final RegistryObject<Item> APRI_JUICE_R_BUCKET = REGISTRY.register("apri_juice_r_bucket", () -> new ApriJuiceRItem());
 	public static final RegistryObject<Item> APRI_JUICE_P_BUCKET = REGISTRY.register("apri_juice_p_bucket", () -> new ApriJuicePItem());
 	public static final RegistryObject<Item> APRI_JUICE_W_BUCKET = REGISTRY.register("apri_juice_w_bucket", () -> new ApriJuiceWItem());
@@ -808,13 +808,13 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> CUP_COFFEE = REGISTRY.register("cup_coffee", () -> new CupCoffeeItem());
 	public static final RegistryObject<Item> CUP_ICED_COFFEE = REGISTRY.register("cup_iced_coffee", () -> new CupIcedCoffeeItem());
 	public static final RegistryObject<Item> CUP_LATTE = REGISTRY.register("cup_latte", () -> new CupLatteItem());
-	public static final RegistryObject<Item> APRI_SHAKE_D = REGISTRY.register("apri_shake_d", () -> new ApriShakeDItem());
-	public static final RegistryObject<Item> APRI_SHAKE_B = REGISTRY.register("apri_shake_b", () -> new ApriShakeBItem());
-	public static final RegistryObject<Item> APRI_SHAKE_G = REGISTRY.register("apri_shake_g", () -> new ApriShakeGItem());
-	public static final RegistryObject<Item> APRI_SHAKE_Y = REGISTRY.register("apri_shake_y", () -> new ApriShakeYItem());
-	public static final RegistryObject<Item> APRI_SHAKE_R = REGISTRY.register("apri_shake_r", () -> new ApriShakeRItem());
-	public static final RegistryObject<Item> APRI_SHAKE_P = REGISTRY.register("apri_shake_p", () -> new ApriShakePItem());
-	public static final RegistryObject<Item> APRI_SHAKE_W = REGISTRY.register("apri_shake_w", () -> new ApriShakeWItem());
+	public static final RegistryObject<Item> APRISHAKE_D = REGISTRY.register("aprishake_d", () -> new ApriShakeDItem());
+	public static final RegistryObject<Item> APRISHAKE_B = REGISTRY.register("aprishake_b", () -> new ApriShakeBItem());
+	public static final RegistryObject<Item> APRISHAKE_G = REGISTRY.register("aprishake_g", () -> new ApriShakeGItem());
+	public static final RegistryObject<Item> APRISHAKE_Y = REGISTRY.register("aprishake_y", () -> new ApriShakeYItem());
+	public static final RegistryObject<Item> APRISHAKE_R = REGISTRY.register("aprishake_r", () -> new ApriShakeRItem());
+	public static final RegistryObject<Item> APRISHAKE_P = REGISTRY.register("aprishake_p", () -> new ApriShakePItem());
+	public static final RegistryObject<Item> APRISHAKE_W = REGISTRY.register("aprishake_w", () -> new ApriShakeWItem());
 	public static final RegistryObject<Item> CREAMED_COFFEE = REGISTRY.register("creamed_coffee", () -> new CreamedCoffeeItem());
 	public static final RegistryObject<Item> CREAMED_LATTE = REGISTRY.register("creamed_latte", () -> new CreamedLatteItem());
 	public static final RegistryObject<Item> SODA_HIGH_TEA = REGISTRY.register("soda_high_tea", () -> new SodaHighTeaItem());
@@ -1112,7 +1112,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> COOKIE_CLOYSTER = REGISTRY.register("cookie_cloyster", () -> new CookieCloysterItem());
 	public static final RegistryObject<Item> COOKIE_GASTLY = REGISTRY.register("cookie_gastly", () -> new CookieGastlyItem());
 	public static final RegistryObject<Item> COOKIE_HAUNTER = REGISTRY.register("cookie_haunter", () -> new CookieHaunterItem());
-	public static final RegistryObject<Item> COOKIE_GRENGAR = REGISTRY.register("cookie_grengar", () -> new CookieGrengarItem());
+	public static final RegistryObject<Item> COOKIE_GENGAR = REGISTRY.register("cookie_gengar", () -> new CookieGrengarItem());
 	public static final RegistryObject<Item> COOKIE_ONIX = REGISTRY.register("cookie_onix", () -> new CookieOnixItem());
 	public static final RegistryObject<Item> COOKIE_DROWZEE = REGISTRY.register("cookie_drowzee", () -> new CookieDrowzeeItem());
 	public static final RegistryObject<Item> COOKIE_HYPNO = REGISTRY.register("cookie_hypno", () -> new CookieHypnoItem());
@@ -1263,11 +1263,11 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> BANANA_STAIRS = block(PokefoodModBlocks.BANANA_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> BANANA_SLAB = block(PokefoodModBlocks.BANANA_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> BANANA_FENCE = block(PokefoodModBlocks.BANANA_FENCE, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> BANANA_BUTTON = block(PokefoodModBlocks.BANANA_BUTTON, CreativeModeTab.TAB_REDSTONE);
-	public static final RegistryObject<Item> BANANA_PRESSURE_PLATE = block(PokefoodModBlocks.BANANA_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BANANA_FENCE_GATE = block(PokefoodModBlocks.BANANA_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> BANANA_DOOR = doubleBlock(PokefoodModBlocks.BANANA_DOOR, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> BANANA_TRAPDOOR = block(PokefoodModBlocks.BANANA_TRAPDOOR, CreativeModeTab.TAB_REDSTONE);
-	public static final RegistryObject<Item> BANANA_FENCE_GATE = block(PokefoodModBlocks.BANANA_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BANANA_PRESSURE_PLATE = block(PokefoodModBlocks.BANANA_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BANANA_BUTTON = block(PokefoodModBlocks.BANANA_BUTTON, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> TEA_STAGE_0 = block(PokefoodModBlocks.TEA_STAGE_0, null);
 	public static final RegistryObject<Item> TEA_STAGE_1 = block(PokefoodModBlocks.TEA_STAGE_1, null);
 	public static final RegistryObject<Item> TEA_STAGE_2 = block(PokefoodModBlocks.TEA_STAGE_2, null);
@@ -1538,6 +1538,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> SWEET_DRINKBOOK = REGISTRY.register("sweet_drinkbook", () -> new SweetDrinkbookItem());
 	public static final RegistryObject<Item> COOKINGBOOK = REGISTRY.register("cookingbook", () -> new CookingbookItem());
 	public static final RegistryObject<Item> OTHERBOOK = REGISTRY.register("otherbook", () -> new OtherbookItem());
+	public static final RegistryObject<Item> CARDBOARD_BOX_OPEN = block(PokefoodModBlocks.CARDBOARD_BOX_OPEN, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

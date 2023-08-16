@@ -20,33 +20,33 @@ public class CalcuimCollectingProcedure {
 			if (!world.isClientSide()) {
 				randomNumber = Math.random();
 				if (randomNumber >= 0.66) {
-					for (int index0 = 0; index0 < (int) (3); index0++) {
+					for (int index0 = 0; index0 < 3; index0++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PokefoodModItems.CALCUIM.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(PokefoodModItems.CALCUIM.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else if (randomNumber >= 0.33) {
-					for (int index1 = 0; index1 < (int) (2); index1++) {
+					for (int index1 = 0; index1 < 2; index1++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PokefoodModItems.CALCUIM.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(PokefoodModItems.CALCUIM.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PokefoodModItems.CALCUIM.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(PokefoodModItems.CALCUIM.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, new BlockPos(x + 0.5, y, z + 0.5), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound((x + 0.5), y, (z + 0.5), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.pick_berries")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.CALCUIM_STAGE_0.get().defaultBlockState(), 3);

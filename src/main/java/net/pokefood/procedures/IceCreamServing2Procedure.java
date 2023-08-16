@@ -71,7 +71,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -123,7 +123,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -175,7 +175,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -227,7 +227,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -279,7 +279,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -331,7 +331,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -383,7 +383,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -435,7 +435,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -487,7 +487,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -539,7 +539,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -591,7 +591,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -643,7 +643,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -695,7 +695,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -747,7 +747,7 @@ public class IceCreamServing2Procedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == (ItemStack.EMPTY).getItem())) {
+			}.getItemStack(world, new BlockPos(x, y, z), (int) slot)).getItem() == ItemStack.EMPTY.getItem())) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {

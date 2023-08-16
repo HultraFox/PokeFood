@@ -50,7 +50,7 @@ public class IceCreamExtendingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y - 1, z), 0)).getItem() == (ItemStack.EMPTY).getItem()) {
+			}.getItemStack(world, new BlockPos(x, y - 1, z), 0)).getItem() == ItemStack.EMPTY.getItem()) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

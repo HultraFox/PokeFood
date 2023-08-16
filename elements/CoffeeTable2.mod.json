@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "table_coffee_top_2",
@@ -42,7 +42,7 @@
         "subtract": false
       }
     ],
-    "name": "Birch coffee table",
+    "name": "Birch Coffee Table",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,

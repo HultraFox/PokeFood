@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_stiff_steak",
     "customModelName": "Normal",
-    "name": "Cooked stiff steak",
+    "name": "Cooked Stiff Steak",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

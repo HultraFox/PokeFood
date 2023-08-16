@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Red aprium",
-    "bucketName": "Red aprium Bucket",
+    "name": "Red Aprium",
+    "bucketName": "Red Aprium Bucket",
     "textureStill": "apri_alcohol_r_still",
     "textureFlowing": "apri_alcohol_r_flow",
     "tintType": "No tint",

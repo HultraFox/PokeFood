@@ -94,7 +94,7 @@ public class BigBagBlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Big bag");
+		return Component.literal("Big Bag");
 	}
 
 	@Override

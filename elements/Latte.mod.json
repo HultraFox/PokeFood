@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
     "name": "Latte",
-    "bucketName": "Latte bucket",
+    "bucketName": "Latte Bucket",
     "textureStill": "latte_still",
     "textureFlowing": "latte_flow",
     "tintType": "No tint",

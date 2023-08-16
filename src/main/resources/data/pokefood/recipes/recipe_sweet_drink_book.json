@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "pokefood:soft_drinks"
+      "tag": "pokefood:to_craft_soft_drinks"
     },
     {
       "item": "minecraft:book"

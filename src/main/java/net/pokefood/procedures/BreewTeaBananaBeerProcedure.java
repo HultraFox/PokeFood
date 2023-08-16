@@ -142,7 +142,7 @@ public class BreewTeaBananaBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos(x, y, z), 0) > 3 && nbBanana == 3 && nbTea == 2) {
+		}.getAmount(world, new BlockPos(x, y, z), 0) > 0 && nbBanana == 3 && nbTea == 2) {
 			logic = true;
 		} else {
 			logic = false;

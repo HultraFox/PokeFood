@@ -33,7 +33,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == (ItemStack.EMPTY).getItem()) || !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -41,7 +41,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == (ItemStack.EMPTY).getItem()) || !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -49,7 +49,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == (ItemStack.EMPTY).getItem()) || !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -57,7 +57,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == (ItemStack.EMPTY).getItem()) || !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -65,7 +65,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == (ItemStack.EMPTY).getItem()) || !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -73,7 +73,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == (ItemStack.EMPTY).getItem())) && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem())) && (new Object() {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)

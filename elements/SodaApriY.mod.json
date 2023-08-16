@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "soda_apri_yellow",
     "customModelName": "Normal",
-    "name": "Yellow apridiziac",
+    "name": "Yellow Apridiziac",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -1,4 +1,3 @@
-
 package net.pokefood.client.gui;
 
 import net.pokefood.world.inventory.KegGUIMenu;

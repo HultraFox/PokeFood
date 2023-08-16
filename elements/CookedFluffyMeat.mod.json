@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_fluffy_meat",
     "customModelName": "Normal",
-    "name": "Cooked fluffy meat",
+    "name": "Cooked Fluffy Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

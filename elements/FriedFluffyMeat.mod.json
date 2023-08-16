@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_fluffy_meat",
     "customModelName": "Normal",
-    "name": "Fried fluffy meat",
+    "name": "Fried Fluffy Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

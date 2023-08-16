@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Pink apri-juice",
-    "bucketName": "Pink apri-juice Bucket",
+    "name": "Pink Aprijuice",
+    "bucketName": "Pink Aprijuice Bucket",
     "textureStill": "aprijuice_p_still",
     "textureFlowing": "aprijuice_p_flow",
     "tintType": "No tint",

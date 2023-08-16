@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fresh_water_cup",
     "customModelName": "Normal",
-    "name": "Fresh water cup",
+    "name": "Fresh Water Cup",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "grilled_sand_tail",
     "customModelName": "Normal",
-    "name": "Grilled sand tail",
+    "name": "Grilled Sand Tail",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

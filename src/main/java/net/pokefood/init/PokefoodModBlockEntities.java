@@ -64,6 +64,7 @@ import net.pokefood.block.entity.ConeDisplayBlockEntity;
 import net.pokefood.block.entity.CoffeeMakerCookingBlockEntity;
 import net.pokefood.block.entity.CoffeeMakerCookedBlockEntity;
 import net.pokefood.block.entity.CoffeeMakerBlockEntity;
+import net.pokefood.block.entity.CardboardBoxOpenBlockEntity;
 import net.pokefood.block.entity.CardboardBoxBlockEntity;
 import net.pokefood.block.entity.CarbonizerBottleBlockEntity;
 import net.pokefood.block.entity.CandyBoxEmptyBlockEntity;
@@ -165,6 +166,7 @@ public class PokefoodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> LEEK_STAGE_2 = register("leek_stage_2", PokefoodModBlocks.LEEK_STAGE_2, LeekStage2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LEEK_STAGE_3 = register("leek_stage_3", PokefoodModBlocks.LEEK_STAGE_3, LeekStage3BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> POT_CHERRY_FIRED = register("pot_cherry_fired", PokefoodModBlocks.POT_CHERRY_FIRED, PotCherryFiredBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CARDBOARD_BOX_OPEN = register("cardboard_box_open", PokefoodModBlocks.CARDBOARD_BOX_OPEN, CardboardBoxOpenBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

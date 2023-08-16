@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "crabrawler_claw",
     "customModelName": "Normal",
-    "name": "Crabrawler claw",
+    "name": "Crabrawler Claw",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

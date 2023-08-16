@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "block",
   "definition": {
     "texture": "big_bag",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Big bag",
+    "name": "Big Bag",
     "specialInfo": [],
     "hardness": 5.0,
     "resistance": 15.0,

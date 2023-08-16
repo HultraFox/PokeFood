@@ -30,7 +30,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -38,7 +38,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -46,7 +46,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -54,7 +54,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -62,7 +62,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -70,7 +70,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -78,7 +78,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -86,7 +86,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 7)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 7)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -94,7 +94,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 8)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 8)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -102,7 +102,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 9)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 9)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -110,7 +110,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 10)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 10)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -118,7 +118,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 11)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 11)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -126,7 +126,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -134,7 +134,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 13)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 13)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -142,7 +142,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 14)).getItem() == (ItemStack.EMPTY).getItem()) && !((new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 14)).getItem() == ItemStack.EMPTY.getItem()) && !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -150,7 +150,7 @@ public class CandyBagCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 15)).getItem() == (ItemStack.EMPTY).getItem())) {
+		}.getItemStack(world, new BlockPos(x, y, z), 15)).getItem() == ItemStack.EMPTY.getItem())) {
 			{
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				if (_ent != null) {

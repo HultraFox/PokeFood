@@ -132,7 +132,7 @@ public class CandyBoxEmptyBlock extends FallingBlock implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Empty candy box");
+					return Component.literal("Empty Candy Box");
 				}
 
 				@Override

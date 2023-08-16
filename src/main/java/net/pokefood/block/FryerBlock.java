@@ -75,10 +75,10 @@ public class FryerBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0.5, 0, 0, 15.5, 16, 15.69999999999999996);
-			case NORTH -> box(0.5, 0, 0.30000000000000004, 15.5, 16, 16);
-			case EAST -> box(0, 0, 0.5, 15.69999999999999996, 16, 15.5);
-			case WEST -> box(0.30000000000000004, 0, 0.5, 16, 16, 15.5);
+			default -> box(0.5, 0, 0, 15.5, 16, 15.7);
+			case NORTH -> box(0.5, 0, 0.3, 15.5, 16, 16);
+			case EAST -> box(0, 0, 0.5, 15.7, 16, 15.5);
+			case WEST -> box(0.3, 0, 0.5, 16, 16, 15.5);
 		};
 	}
 

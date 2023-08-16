@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "sour_rep_40",
     "customModelName": "Normal",
-    "name": "Sour replacement powder",
+    "name": "Sour Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodOthers"

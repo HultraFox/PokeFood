@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_scizor_claw",
     "customModelName": "Normal",
-    "name": "Cooked Scizor claw",
+    "name": "Cooked Scizor Claw",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

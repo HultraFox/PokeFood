@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "tea_cup",
     "customModelName": "Normal",
-    "name": "Green tea cup",
+    "name": "Green Tea Cup",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

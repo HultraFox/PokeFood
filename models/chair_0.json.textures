@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chair_0",
+        "1": "chair_0_under"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "iced_coffee_cup",
     "customModelName": "Normal",
-    "name": "Iced coffee cup",
+    "name": "Iced Coffee Cup",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

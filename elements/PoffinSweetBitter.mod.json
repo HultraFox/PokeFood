@@ -1,11 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "item",
   "definition": {
     "renderType": 1,
     "texture": "poffin_sweet_bitter",
     "customModelName": "poffin:default",
-    "name": "Sweet and bitter poffin",
+    "name": "Sweet and Bitter Poffin",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

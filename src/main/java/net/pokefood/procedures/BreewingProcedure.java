@@ -3430,7 +3430,7 @@ public class BreewingProcedure {
 					}
 				}
 			}
-			if (BreewCidronadeProcedure.execute(world, x, y, z) == true && new Object() {
+			if (BreewArceumProcedure.execute(world, x, y, z) == true && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -3700,14 +3700,14 @@ public class BreewingProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingTime") > 0 && !(new Object() {
+		}.getValue(world, new BlockPos(x, y, z), "craftingTime") == 0 && !(new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals(recipeSelected)) {
+		}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals(recipeSelected) && !((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG.get())) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -3993,47 +3993,6 @@ public class BreewingProcedure {
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") == 7) {
-				{
-					BlockPos _bp = new BlockPos(x, y, z);
-					BlockState _bs = PokefoodModBlocks.KEG_7.get().defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
-					}
-					BlockEntity _be = world.getBlockEntity(_bp);
-					CompoundTag _bnbt = null;
-					if (_be != null) {
-						_bnbt = _be.saveWithFullMetadata();
-						_be.setRemoved();
-					}
-					world.setBlock(_bp, _bs, 3);
-					if (_bnbt != null) {
-						_be = world.getBlockEntity(_bp);
-						if (_be != null) {
-							try {
-								_be.load(_bnbt);
-							} catch (Exception ignored) {
-							}
-						}
-					}
-				}
-			}
-		}
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-				return _retval.get();
-			}
-		}.getAmount(world, new BlockPos(x, y, z), 7) > 0) {
-			if (!((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG_7.get())) {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_7.get().defaultBlockState();

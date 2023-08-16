@@ -8,6 +8,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
 
 public class LemonStageChangerProcedure {
@@ -29,19 +31,19 @@ public class LemonStageChangerProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_0.get()
+		if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_0.get()
 				&& ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.CAVE_AIR)) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_1.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_1.get()
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_1.get()
 				&& ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.CAVE_AIR)) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_2.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_2.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_2.get()) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_3.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_3.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_3.get()) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_4.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_4.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_4.get()) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_5.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_5.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.LEMON_STAGE_5.get()) {
 			world.setBlock(new BlockPos(x, y, z), PokefoodModBlocks.LEMON_STAGE_6.get().defaultBlockState(), 3);
 		}
 		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK) && !((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DIRT)) {

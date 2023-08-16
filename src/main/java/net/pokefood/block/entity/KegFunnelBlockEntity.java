@@ -94,7 +94,7 @@ public class KegFunnelBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Keg funnel");
+		return Component.literal("Keg Funnel");
 	}
 
 	@Override

@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Green tea",
-    "bucketName": "Green tea bucket",
+    "name": "Green Tea",
+    "bucketName": "Green Tea Bucket",
     "textureStill": "tea_still",
     "textureFlowing": "tea_flow",
     "tintType": "No tint",

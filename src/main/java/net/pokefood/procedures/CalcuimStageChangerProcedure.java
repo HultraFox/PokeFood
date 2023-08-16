@@ -9,6 +9,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
 
 import java.util.Map;
@@ -31,7 +33,7 @@ public class CalcuimStageChangerProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_0.get()) {
+		if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_0.get()) {
 			{
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockState _bs = PokefoodModBlocks.CALCUIM_STAGE_1.get().defaultBlockState();
@@ -46,7 +48,7 @@ public class CalcuimStageChangerProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_1.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_1.get()) {
 			{
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockState _bs = PokefoodModBlocks.CALCUIM_STAGE_2.get().defaultBlockState();
@@ -61,7 +63,7 @@ public class CalcuimStageChangerProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_2.get()) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2 && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.CALCUIM_STAGE_2.get()) {
 			{
 				BlockPos _bp = new BlockPos(x, y, z);
 				BlockState _bs = PokefoodModBlocks.CALCUIM_STAGE_3.get().defaultBlockState();

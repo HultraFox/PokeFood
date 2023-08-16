@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "res_sofa_front_0",
+        "1": "res_sofa_up_0",
+        "2": "res_sofa_side_0",
+        "3": "res_sofa_back_0",
+        "4": "res_sofa_under",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "_fv": 39,
+  "_fv": 43,
   "_type": "fluid",
   "definition": {
-    "name": "Yellow aprium",
-    "bucketName": "Yellow aprium Bucket",
+    "name": "Yellow Aprium",
+    "bucketName": "Yellow Aprium Bucket",
     "textureStill": "apri_alcohol_y_still",
     "textureFlowing": "apri_alcohol_y_flow",
     "tintType": "No tint",
