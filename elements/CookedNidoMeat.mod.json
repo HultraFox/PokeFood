@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_nido_meat",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Cooked Nido Meat",
     "rarity": "COMMON",
     "creativeTab": {

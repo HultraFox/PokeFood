@@ -6,13 +6,13 @@
     },
     {
       "amount": 1000,
-      "fluid": "pokefood:apri_juice_d",
+      "fluid": "pokefood:aprijuice_d",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "item": "pokefood:apri_juice_d_bucket"
+      "item": "pokefood:aprijuice_d_bucket"
     }
   ]
 }

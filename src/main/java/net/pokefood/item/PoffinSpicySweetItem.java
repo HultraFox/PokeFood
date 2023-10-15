@@ -12,7 +12,7 @@ import net.minecraft.world.InteractionResult;
 
 public class PoffinSpicySweetItem extends Item {
 	public PoffinSpicySweetItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.5f)
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.5f)
 
 				.build()));
 	}

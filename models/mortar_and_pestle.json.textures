@@ -1,0 +1,81 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "candy_pot_0",
+        "missing": ""
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "0": "candy_pot_1",
+        "missing": ""
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "0": "candy_pot_2",
+        "missing": ""
+      },
+      "name": "_2"
+    },
+    "_3": {
+      "map": {
+        "0": "candy_pot_3",
+        "missing": ""
+      },
+      "name": "_3"
+    },
+    "_4": {
+      "map": {
+        "0": "candy_pot_4",
+        "missing": ""
+      },
+      "name": "_4"
+    },
+    "_5": {
+      "map": {
+        "0": "candy_pot_5",
+        "missing": ""
+      },
+      "name": "_5"
+    },
+    "_6": {
+      "map": {
+        "0": "candy_pot_6",
+        "missing": ""
+      },
+      "name": "_6"
+    },
+    "_7": {
+      "map": {
+        "0": "candy_pot_7",
+        "missing": ""
+      },
+      "name": "_7"
+    },
+    "_8": {
+      "map": {
+        "0": "candy_pot_8",
+        "missing": ""
+      },
+      "name": "_8"
+    },
+    "_9": {
+      "map": {
+        "0": "candy_pot_9",
+        "missing": ""
+      },
+      "name": "_9"
+    },
+    "_10": {
+      "map": {
+        "0": "candy_pot_10",
+        "missing": ""
+      },
+      "name": "_10"
+    }
+  }
+}

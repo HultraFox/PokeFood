@@ -6,7 +6,26 @@
     "pokefood:dry_rep_1",
     "pokefood:sparkles_dry",
     "pokefood:cup_aprijuice_b",
-    "pokefood:apri_juice_p_bucket",
-    "pokefood:cup_fresh_water"
+    "pokefood:aprijuice_p_bucket",
+    "pokefood:cup_fresh_water",
+	"cobblemon:babiri_berry",
+	"cobblemon:bluk_berry",
+	"cobblemon:chesto_berry",
+	"cobblemon:coba_berry",
+	"cobblemon:enigma_berry",
+	"cobblemon:hondew_berry",
+	"cobblemon:kelpsy_berry",
+	"cobblemon:lansat_berry",
+	"cobblemon:liechi_berry",
+	"cobblemon:lum_berry",
+	"cobblemon:maranga_berry",
+	"cobblemon:oran_berry",
+	"cobblemon:perism_berry",
+	"cobblemon:razz_berry",
+	"cobblemon:sitrus_berry",
+	"cobblemon:spelon_berry",
+	"cobblemon:starf_berry",
+	"cobblemon:tamato_berry",
+	"cobblemon:yache_berry"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "pokefood:white_wine",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "pokefood:white_wine_bucket"
+    }
+  ]
+}

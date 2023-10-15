@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sugar_melter",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:end_stone_brick_slab"
+    },
+    "1": {
+      "item": "minecraft:end_stone_brick_slab"
+    },
+    "2": {
+      "item": "minecraft:end_stone_brick_slab"
+    },
+    "3": {
+      "item": "minecraft:end_stone_brick_slab"
+    },
+    "5": {
+      "item": "minecraft:end_stone_brick_slab"
+    }
+  },
+  "result": {
+    "item": "pokefood:sugar_melter_9",
+    "count": 1
+  }
+}

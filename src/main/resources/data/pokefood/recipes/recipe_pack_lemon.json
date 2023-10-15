@@ -1,6 +1,7 @@
 {
-  "group": "soda_packs",
   "type": "minecraft:crafting_shapeless",
+  "group": "soda_packs",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:pack_empty"

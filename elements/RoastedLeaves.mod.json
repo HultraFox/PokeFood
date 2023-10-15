@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RoastedTeaLeave"
+      },
+      {
+        "value": "CUSTOM:RoastedBlackTeaLeave"
+      },
+      {
+        "value": "CUSTOM:RoastedRedTeaLeave"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "roasted_leaves",
+    "namespace": "forge"
+  }
+}

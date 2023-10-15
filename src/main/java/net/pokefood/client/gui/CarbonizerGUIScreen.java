@@ -58,11 +58,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class CarbonizerGUIScreen extends AbstractContainerScreen<CarbonizerGUIMenu> {
@@ -85,222 +84,170 @@ public class CarbonizerGUIScreen extends AbstractContainerScreen<CarbonizerGUIMe
 	private static final ResourceLocation texture = new ResourceLocation("pokefood:textures/screens/carbonizer_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_0.png"));
-		this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_0.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 
 		if (Carbonizer1Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_1.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_1.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer2Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_2.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_2.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer3Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_3.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_3.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer4Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_4.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_4.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer5Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_5.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_5.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer6Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_6.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_6.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer7Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_7.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_7.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer8Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_8.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_8.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer9Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_9.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_9.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer10Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_10.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_10.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer11Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_11.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_11.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer12Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_12.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_12.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer13Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_13.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_13.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer14Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_14.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_14.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer15Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_15.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_15.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer16Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_16.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_16.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer17Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_17.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_17.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer18Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_18.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_18.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer19Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_19.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_19.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer20Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_20.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_20.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer21Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_21.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_21.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer22Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_22.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_22.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer23Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_23.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_23.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer24Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_24.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_24.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer25Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_25.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_25.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer26Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_26.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_26.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer27Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_27.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_27.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer28Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_28.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_28.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer29Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_29.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_29.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer30Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_30.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_30.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer31Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_31.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_31.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer32Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_32.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_32.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer33Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_33.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_33.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer34Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_34.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_34.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer35Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_35.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_35.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer36Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_36.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_36.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer37Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_37.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_37.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer38Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_38.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_38.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer39Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_39.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_39.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer40Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_40.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_40.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer41Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_41.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_41.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer42Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_42.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_42.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer43Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_43.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_43.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer44Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_44.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_44.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer45Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_45.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_45.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer46Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_46.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_46.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer47Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_47.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_47.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer48Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_48.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_48.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer49Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_49.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_49.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Carbonizer50Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/carbonizer_progress_50.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/carbonizer_progress_50.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -320,18 +267,16 @@ public class CarbonizerGUIScreen extends AbstractContainerScreen<CarbonizerGUIMe
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 	}
 }

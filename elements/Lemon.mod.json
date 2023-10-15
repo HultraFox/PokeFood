@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "lemon",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Lemon",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,

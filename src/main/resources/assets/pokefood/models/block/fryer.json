@@ -1,14 +1,14 @@
 {
   "parent": "pokefood:custom/fryer",
   "textures": {
-    "all": "pokefood:blocks/fryer_2",
-    "particle": "pokefood:blocks/fryer_2",
-    "0": "pokefood:blocks/fryer_still",
-    "1": "pokefood:blocks/grid",
-    "2": "pokefood:blocks/fryer_1",
-    "3": "pokefood:blocks/fryer_2",
-    "4": "pokefood:blocks/fryer_3",
-    "missing": "pokefood:blocks/null"
+    "all": "pokefood:block/fryer_2",
+    "particle": "pokefood:block/fryer_2",
+    "0": "pokefood:block/fryer_still",
+    "1": "pokefood:block/grid",
+    "2": "pokefood:block/fryer_1",
+    "3": "pokefood:block/fryer_2",
+    "4": "pokefood:block/fryer_3",
+    "missing": "pokefood:block/null"
   },
   "render_type": "translucent"
 }

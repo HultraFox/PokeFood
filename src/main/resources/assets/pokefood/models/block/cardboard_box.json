@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "pokefood:blocks/cardbox_bottom",
-    "up": "pokefood:blocks/cardbox_top",
-    "north": "pokefood:blocks/cardbox_side",
-    "east": "pokefood:blocks/cardbox_side_inv",
-    "south": "pokefood:blocks/cardbox_side",
-    "west": "pokefood:blocks/cardbox_side_inv",
-    "particle": "pokefood:blocks/cardbox_side"
+    "down": "pokefood:block/cardbox_bottom",
+    "up": "pokefood:block/cardbox_top",
+    "north": "pokefood:block/cardbox_side",
+    "east": "pokefood:block/cardbox_side_inv",
+    "south": "pokefood:block/cardbox_side",
+    "west": "pokefood:block/cardbox_side_inv",
+    "particle": "pokefood:block/cardbox_side"
   },
   "render_type": "solid"
 }

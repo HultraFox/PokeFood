@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "paras",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Paras cookie",
     "rarity": "COMMON",
     "creativeTab": {

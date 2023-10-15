@@ -1,11 +1,11 @@
 {
   "parent": "pokefood:custom/cooler",
   "textures": {
-    "all": "pokefood:blocks/cooler_front_red",
-    "particle": "pokefood:blocks/cooler_front_red",
-    "0": "pokefood:blocks/cooler_front_red",
-    "1": "pokefood:blocks/cooler_side_red",
-    "2": "pokefood:blocks/cooler_top_red"
+    "all": "pokefood:block/cooler_front_red",
+    "particle": "pokefood:block/cooler_front_red",
+    "0": "pokefood:block/cooler_front_red",
+    "1": "pokefood:block/cooler_side_red",
+    "2": "pokefood:block/cooler_top_red"
   },
   "render_type": "solid"
 }

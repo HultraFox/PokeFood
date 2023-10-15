@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/grape_vine_2",
+  "textures": {
+    "all": "pokefood:block/grapes_leaves_2",
+    "particle": "pokefood:block/grapes_leaves_2",
+    "1": "pokefood:block/grapes_log",
+    "2": "pokefood:block/grapes_leaves_2",
+    "3": "pokefood:block/dark_oak_planks"
+  },
+  "render_type": "cutout"
+}

@@ -25,7 +25,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.MALT_BUCKET.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == PokefoodModItems.MALT_BUCKET.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -33,7 +33,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -41,7 +41,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -49,7 +49,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos(x, y, z), 3) > 0 && (new Object() {
+		}.getAmount(world, BlockPos.containing(x, y, z), 3) > 0 && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -57,7 +57,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 4)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 4)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -65,7 +65,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 5)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 5)).is(ItemTags.create(new ResourceLocation("forge:seeds"))) && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -73,7 +73,7 @@ public class BreewBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 6)).is(ItemTags.create(new ResourceLocation("forge:seeds")))) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 6)).is(ItemTags.create(new ResourceLocation("forge:seeds")))) {
 			logic = true;
 		} else {
 			logic = false;

@@ -1,17 +1,24 @@
 
 package net.pokefood.world.inventory;
 
+import net.pokefood.procedures.CardboardBoxOpenedProcedure;
+import net.pokefood.procedures.CardboardBoxOpenProcedure;
+import net.pokefood.procedures.CardboardBoxCloseProcedure;
 import net.pokefood.init.PokefoodModMenus;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -24,96 +31,104 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class CardboardBoxGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
+	private ContainerLevelAccess access = ContainerLevelAccess.NULL;
 	private IItemHandler internal;
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
+	private Supplier<Boolean> boundItemMatcher = null;
+	private Entity boundEntity = null;
+	private BlockEntity boundBlockEntity = null;
 
 	public CardboardBoxGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PokefoodModMenus.CARDBOARD_BOX_GUI.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(15);
+		this.world = inv.player.level();
+		this.internal = new ItemStackHandler(9);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
 			this.x = pos.getX();
 			this.y = pos.getY();
 			this.z = pos.getZ();
+			access = ContainerLevelAccess.create(world, pos);
 		}
 		if (pos != null) {
 			if (extraData.readableBytes() == 1) { // bound to item
 				byte hand = extraData.readByte();
-				ItemStack itemstack;
-				if (hand == 0)
-					itemstack = this.entity.getMainHandItem();
-				else
-					itemstack = this.entity.getOffhandItem();
+				ItemStack itemstack = hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem();
+				this.boundItemMatcher = () -> itemstack == (hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem());
 				itemstack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					this.internal = capability;
 					this.bound = true;
 				});
-			} else if (extraData.readableBytes() > 1) {
+			} else if (extraData.readableBytes() > 1) { // bound to entity
 				extraData.readByte(); // drop padding
-				Entity entity = world.getEntity(extraData.readVarInt());
-				if (entity != null)
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundEntity = world.getEntity(extraData.readVarInt());
+				if (boundEntity != null)
+					boundEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
-				if (ent != null) {
-					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundBlockEntity = this.world.getBlockEntity(pos);
+				if (boundBlockEntity != null)
+					boundBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
-				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 17) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 17) {
+			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 17) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 17) {
+			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 17) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 17) {
+			private final int slot = 2;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 17) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 35) {
+			private final int slot = 3;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 115, 17) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 35) {
+			private final int slot = 4;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 43, 35) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 35) {
+			private final int slot = 5;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 35) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 53) {
+			private final int slot = 6;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 79, 35) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 79, 53) {
+			private final int slot = 7;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 97, 35) {
-		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 115, 35) {
-		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 43, 53) {
-		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 61, 53) {
-		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 79, 53) {
-		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 97, 53) {
-		}));
-		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 115, 53) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 97, 53) {
+			private final int slot = 8;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+		CardboardBoxOpenProcedure.execute(world, x, y, z);
 	}
 
 	@Override
 	public boolean stillValid(Player player) {
+		if (this.bound) {
+			if (this.boundItemMatcher != null)
+				return this.boundItemMatcher.get();
+			else if (this.boundBlockEntity != null)
+				return AbstractContainerMenu.stillValid(this.access, player, this.boundBlockEntity.getBlockState().getBlock());
+			else if (this.boundEntity != null)
+				return this.boundEntity.isAlive();
+		}
 		return true;
 	}
 
@@ -124,16 +139,16 @@ public class CardboardBoxGUIMenu extends AbstractContainerMenu implements Suppli
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 15) {
-				if (!this.moveItemStackTo(itemstack1, 15, this.slots.size(), true))
+			if (index < 9) {
+				if (!this.moveItemStackTo(itemstack1, 9, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 15, false)) {
-				if (index < 15 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 15 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 9, false)) {
+				if (index < 9 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 9 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 15, 15 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 9, 9 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -207,9 +222,9 @@ public class CardboardBoxGUIMenu extends AbstractContainerMenu implements Suppli
 				ItemStack itemstack1 = slot1.getItem();
 				if (itemstack1.isEmpty() && slot1.mayPlace(p_38904_)) {
 					if (p_38904_.getCount() > slot1.getMaxStackSize()) {
-						slot1.set(p_38904_.split(slot1.getMaxStackSize()));
+						slot1.setByPlayer(p_38904_.split(slot1.getMaxStackSize()));
 					} else {
-						slot1.set(p_38904_.split(p_38904_.getCount()));
+						slot1.setByPlayer(p_38904_.split(p_38904_.getCount()));
 					}
 					slot1.setChanged();
 					flag = true;
@@ -228,6 +243,7 @@ public class CardboardBoxGUIMenu extends AbstractContainerMenu implements Suppli
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		CardboardBoxCloseProcedure.execute(world, x, y, z);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -243,5 +259,17 @@ public class CardboardBoxGUIMenu extends AbstractContainerMenu implements Suppli
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof CardboardBoxGUIMenu) {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			CardboardBoxOpenedProcedure.execute(world, x, y, z);
+		}
 	}
 }

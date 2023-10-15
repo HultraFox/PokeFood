@@ -15,7 +15,7 @@ public class PotCookingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double cookTimer = 0;
 		if (!world.isClientSide()) {
-			BlockPos _bp = new BlockPos(x, y, z);
+			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
@@ -26,20 +26,20 @@ public class PotCookingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "cookTimer") + 1));
+				}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") + 1));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_WATER_FIRED.get() && new Object() {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_WATER_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 3) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 3) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_FRESH_WATER.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -52,16 +52,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_TEA_FIRED.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_TEA_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 2) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 2) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_TEA_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -74,16 +74,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_BLACK_TEA_FIRED.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_BLACK_TEA_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 2) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 2) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_BLACK_TEA_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -96,16 +96,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_ROSERADE_TEA_FIRED.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_ROSERADE_TEA_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 2) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 2) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_ROSERADE_TEA_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -118,16 +118,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_LEMONADE.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_LEMONADE.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 4) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 4) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_LEMONADE_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -140,16 +140,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_MALT_FIRED.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_MALT_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 3) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 3) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_MALT_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -162,16 +162,16 @@ public class PotCookingProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.POT_CHERRY_FIRED.get() && new Object() {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.POT_CHERRY_FIRED.get() && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "cookTimer") >= 2) {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookTimer") >= 2) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.POT_CHERRY_COOKED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

@@ -1,0 +1,16 @@
+{
+  "parent": "pokefood:custom/curry_pot_berries_4",
+  "textures": {
+    "all": "pokefood:block/cauldron_water",
+    "particle": "pokefood:block/cauldron_inner",
+    "0": "pokefood:block/fire",
+    "1": "pokefood:block/cauldron_inner",
+    "2": "pokefood:block/cauldron_side",
+    "3": "pokefood:block/cauldron_top",
+    "4": "pokefood:block/oak_planks",
+    "5": "pokefood:block/curry_still",
+    "6": "pokefood:block/berries_6",
+    "missing": "pokefood:block/"
+  },
+  "render_type": "translucent"
+}

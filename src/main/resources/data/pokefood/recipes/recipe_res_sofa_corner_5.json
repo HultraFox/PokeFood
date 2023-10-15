@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "restaurant_sofas_corner_0",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:restaurant_sofa_5"
+    }
+  ],
+  "result": {
+    "item": "pokefood:restaurant_sofa_corner_5",
+    "count": 1
+  }
+}

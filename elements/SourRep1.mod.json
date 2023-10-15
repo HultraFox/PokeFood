@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "sour_rep_10",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Sour Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "The smallest quantity"
+      "§7The smallest quantity"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

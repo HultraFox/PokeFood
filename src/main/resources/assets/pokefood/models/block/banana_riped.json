@@ -1,10 +1,10 @@
 {
   "parent": "pokefood:custom/banana_block",
   "textures": {
-    "all": "pokefood:blocks/banana_riped",
-    "particle": "pokefood:blocks/banana_riped",
-    "3": "pokefood:blocks/banana_riped",
-    "missing": "pokefood:blocks/banana_riped"
+    "all": "pokefood:block/banana_riped",
+    "particle": "pokefood:block/banana_riped",
+    "3": "pokefood:block/banana_riped",
+    "missing": "pokefood:block/banana_riped"
   },
   "render_type": "solid"
 }

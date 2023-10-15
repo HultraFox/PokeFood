@@ -2,13 +2,16 @@
   "replace": false,
   "values": [
     "minecraft:pumpkin_seeds",
+    "pokefood:onion_seeds",
     "pokefood:black_tea_seeds",
     "pokefood:calcuim_seeds",
     "minecraft:beetroot_seeds",
     "minecraft:wheat_seeds",
+    "pokefood:rice_seeds",
     "pokefood:lemon_seeds",
     "pokefood:tea_seeds",
     "pokefood:leek_seeds",
+    "pokefood:lettuce_seeds",
     "minecraft:melon_seeds"
   ]
 }

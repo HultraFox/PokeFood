@@ -28,11 +28,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class BigOvenGUIScreen extends AbstractContainerScreen<BigOvenGUIMenu> {
@@ -55,102 +54,80 @@ public class BigOvenGUIScreen extends AbstractContainerScreen<BigOvenGUIMenu> {
 	private static final ResourceLocation texture = new ResourceLocation("pokefood:textures/screens/big_oven_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_0.png"));
-		this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_0.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 
 		if (Oven1Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_1.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_1.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven2Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_2.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_2.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven3Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_3.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_3.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven4Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_4.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_4.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven5Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_5.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_5.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven6Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_6.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_6.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven7Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_7.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_7.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven8Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_8.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_8.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven9Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_9.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_9.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven10Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_10.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_10.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven11Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_11.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_11.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven12Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_12.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_12.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven13Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_13.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_13.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven14Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_14.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_14.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven15Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_15.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_15.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven16Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_16.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_16.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven17Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_17.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_17.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven18Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_18.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_18.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven19Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_19.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_19.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven20Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/oven_20.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_20.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -170,18 +147,16 @@ public class BigOvenGUIScreen extends AbstractContainerScreen<BigOvenGUIMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 	}
 }

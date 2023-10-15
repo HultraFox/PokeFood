@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.pokefood.procedures.LemonValidPlacementProcedure;
 import net.pokefood.procedures.LemonStageChangerProcedure;
 import net.pokefood.init.PokefoodModItems;
 import net.pokefood.block.entity.LemonStage1BlockEntity;
@@ -9,9 +10,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -35,7 +37,7 @@ import java.util.Collections;
 
 public class LemonStage1Block extends FlowerBlock implements EntityBlock {
 	public LemonStage1Block() {
-		super(MobEffects.DIG_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
+		super(() -> MobEffects.DIG_SLOWDOWN, 100, BlockBehaviour.Properties.of().mapColor(MapColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -65,7 +67,7 @@ public class LemonStage1Block extends FlowerBlock implements EntityBlock {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
@@ -74,7 +76,15 @@ public class LemonStage1Block extends FlowerBlock implements EntityBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT);
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = LemonValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return (groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT)) && additionalCondition;
 	}
 
 	@Override

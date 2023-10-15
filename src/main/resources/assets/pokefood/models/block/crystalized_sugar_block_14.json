@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "pokefood:block/crystalized_sugar_14",
+    "particle": "pokefood:block/crystalized_sugar_14"
+  },
+  "render_type": "solid"
+}

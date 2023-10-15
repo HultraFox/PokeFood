@@ -3,7 +3,6 @@ package net.pokefood.item;
 
 import net.pokefood.procedures.BecomingDrunkProcedure;
 import net.pokefood.procedures.AlcoholUnlockAdvProcedure;
-import net.pokefood.init.PokefoodModTabs;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraft.world.level.Level;
@@ -18,9 +17,7 @@ import net.minecraft.world.entity.Entity;
 
 public class GlassApriDItem extends Item {
 	public GlassApriDItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(13).saturationMod(0.3f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(13).saturationMod(0.3f).alwaysEat().build()));
 	}
 
 	@Override
@@ -50,7 +47,6 @@ public class GlassApriDItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		BecomingDrunkProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;

@@ -1,6 +1,7 @@
 {
-  "group": "sweet_rep",
   "type": "minecraft:crafting_shapeless",
+  "group": "sweet_rep",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:honey_bottle"

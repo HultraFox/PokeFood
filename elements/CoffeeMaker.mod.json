@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "block",
   "definition": {
     "texture": "coffee_maker",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Coffee maker",
+    "name": "Coffee Maker",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,

@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "koffing",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Koffing cookie",
     "rarity": "COMMON",
     "creativeTab": {

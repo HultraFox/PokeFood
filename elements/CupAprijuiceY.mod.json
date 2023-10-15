@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apricup_y",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Cup of Yellow Aprijuice",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodDrinks"
     },
     "stackSize": 64,
     "enchantability": 0,

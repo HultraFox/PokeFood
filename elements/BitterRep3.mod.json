@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bitter_rep_30",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Bitter Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "A normal quantity"
+      "§7A normal quantity"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

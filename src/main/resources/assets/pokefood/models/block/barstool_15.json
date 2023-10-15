@@ -1,10 +1,10 @@
 {
   "parent": "pokefood:custom/barstool",
   "textures": {
-    "all": "pokefood:blocks/barstool_15",
-    "particle": "pokefood:blocks/barstool_15",
-    "0": "pokefood:blocks/barstool_15",
-    "1": "pokefood:blocks/barstool_u_15"
+    "all": "pokefood:block/barstool_15",
+    "particle": "pokefood:block/barstool_15",
+    "0": "pokefood:block/barstool_15",
+    "1": "pokefood:block/barstool_u_15"
   },
   "render_type": "solid"
 }

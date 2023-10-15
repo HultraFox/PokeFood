@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ice_cream_tea_c",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Tea Ice-Cream with Chocolate",
     "rarity": "COMMON",
     "creativeTab": {

@@ -2,7 +2,6 @@
 package net.pokefood.item;
 
 import net.pokefood.procedures.ReplacementsUnlockAdvProcedure;
-import net.pokefood.init.PokefoodModTabs;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -16,13 +15,13 @@ import java.util.List;
 
 public class BitterRep2Item extends Item {
 	public BitterRep2Item() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A small quantity"));
+		list.add(Component.literal("\u00A77A small quantity"));
 	}
 
 	@Override

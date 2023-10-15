@@ -30,6 +30,9 @@
     "pokefood:coffee",
     "pokefood:coffee_iced",
     "pokefood:latte",
-    "pokefood:cherry_infusion"
+    "pokefood:cherry_infusion",
+	"pokefood:red_wine",
+	"pokefood:white_wine",
+	"pokefood:rose_wine"
   ]
 }

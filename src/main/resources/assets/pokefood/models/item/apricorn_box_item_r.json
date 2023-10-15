@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/apricorn_box",
+  "textures": {
+    "0": "pokefood:block/apricorn_box_r",
+    "particle": "pokefood:item/aprijuice_r_bucket"
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "group": "dry_rep",
   "type": "minecraft:crafting_shapeless",
+  "group": "dry_rep",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:potato"

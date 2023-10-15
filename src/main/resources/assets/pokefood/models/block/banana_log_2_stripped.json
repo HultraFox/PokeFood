@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/banana_center",
   "textures": {
-    "all": "pokefood:blocks/stripped_banana_log",
-    "particle": "pokefood:blocks/stripped_banana_log",
-    "1": "pokefood:blocks/stripped_banana_log"
+    "all": "pokefood:block/stripped_banana_log",
+    "particle": "pokefood:block/stripped_banana_log",
+    "1": "pokefood:block/stripped_banana_log"
   },
   "render_type": "solid"
 }

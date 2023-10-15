@@ -19,11 +19,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class FryerGUIScreen extends AbstractContainerScreen<FryerGUIMenu> {
@@ -46,66 +45,53 @@ public class FryerGUIScreen extends AbstractContainerScreen<FryerGUIMenu> {
 	private static final ResourceLocation texture = new ResourceLocation("pokefood:textures/screens/fryer_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_0.png"));
-		this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_0.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
 		if (Frying1Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_1.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_1.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying2Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_2.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_2.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying3Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_3.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_3.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying4Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_4.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_4.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying5Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_5.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_5.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying6Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_6.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_6.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying7Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_7.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_7.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying8Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_8.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_8.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying9Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_9.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_9.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying10Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_10.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_10.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		if (Frying11Procedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("pokefood:textures/screens/fryer_11.png"));
-			this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/fryer_11.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -125,18 +111,16 @@ public class FryerGUIScreen extends AbstractContainerScreen<FryerGUIMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 	}
 }

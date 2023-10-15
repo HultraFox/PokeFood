@@ -14,8 +14,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class ApriJuiceGFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.APRI_JUICE_G_TYPE.get(), () -> PokefoodModFluids.APRI_JUICE_G.get(), () -> PokefoodModFluids.FLOWING_APRI_JUICE_G.get())
-			.explosionResistance(100f).bucket(() -> PokefoodModItems.APRI_JUICE_G_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.APRI_JUICE_G.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PokefoodModFluidTypes.APRIJUICE_G_TYPE.get(), () -> PokefoodModFluids.APRIJUICE_G.get(), () -> PokefoodModFluids.FLOWING_APRIJUICE_G.get())
+			.explosionResistance(100f).bucket(() -> PokefoodModItems.APRIJUICE_G_BUCKET.get()).block(() -> (LiquidBlock) PokefoodModBlocks.APRIJUICE_G.get());
 
 	private ApriJuiceGFluid() {
 		super(PROPERTIES);

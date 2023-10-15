@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -7,6 +7,15 @@
     "blocks": [
       {
         "value": "CUSTOM:Lemonade"
+      },
+      {
+        "value": "CUSTOM:RedWine"
+      },
+      {
+        "value": "CUSTOM:WhiteWine"
+      },
+      {
+        "value": "CUSTOM:RoseWine"
       }
     ],
     "functions": [],

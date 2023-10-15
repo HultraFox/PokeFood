@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/cheese__1-4",
+  "textures": {
+    "all": "pokefood:block/cheese_quarter_5",
+    "particle": "pokefood:block/cheese_5",
+    "0": "pokefood:block/cheese_5"
+  },
+  "render_type": "solid"
+}

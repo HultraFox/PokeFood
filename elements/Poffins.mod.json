@@ -1,0 +1,90 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PoffinSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicyDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicySweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicyBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinSpicySour"
+      },
+      {
+        "value": "CUSTOM:PoffinDry"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySweet"
+      },
+      {
+        "value": "CUSTOM:PoffinDryBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinDrySour"
+      },
+      {
+        "value": "CUSTOM:PoffinSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinSweetSour"
+      },
+      {
+        "value": "CUSTOM:PoffinBitter"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterDry"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinBitterSour"
+      },
+      {
+        "value": "CUSTOM:PoffinSour"
+      },
+      {
+        "value": "CUSTOM:PoffinSourSpicy"
+      },
+      {
+        "value": "CUSTOM:PoffinSourDry"
+      },
+      {
+        "value": "CUSTOM:PoffinSourSweet"
+      },
+      {
+        "value": "CUSTOM:PoffinSourBitter"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "poffins",
+    "namespace": "mod"
+  }
+}

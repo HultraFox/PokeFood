@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "pokefood:items/aprijuice_y_bucket"
-  }
-}

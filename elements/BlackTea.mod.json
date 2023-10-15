@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "fluid",
   "definition": {
     "name": "Black Tea",
@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "blacktea_bucket_classic",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "emptySound": {
       "value": ""

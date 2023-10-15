@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "spicy_juice",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Spicy Juice",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 16,
     "enchantability": 0,

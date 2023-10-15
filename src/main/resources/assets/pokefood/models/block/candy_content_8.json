@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/candy_stack_8",
+  "textures": {
+    "all": "pokefood:block/candy_noise_3",
+    "particle": "pokefood:block/candy_noise_3",
+    "0": "pokefood:block/candy_noise_3"
+  },
+  "render_type": "cutout"
+}

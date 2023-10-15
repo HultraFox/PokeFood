@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "block",
   "definition": {
     "texture": "cardbox_bottom",
@@ -42,7 +42,7 @@
     "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -105,7 +105,7 @@
     "hasInventory": true,
     "guiBoundTo": "CardboardBoxGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 15,
+    "inventorySize": 16,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -125,7 +125,8 @@
       11,
       12,
       13,
-      14
+      14,
+      15
     ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -135,6 +136,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TakeCardboardBox"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

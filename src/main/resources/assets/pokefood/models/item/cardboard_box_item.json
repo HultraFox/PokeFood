@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/block",
+  "textures": {
+    "0": "pokefood:block/cardbox_bottom",
+    "1": "pokefood:block/cardbox_side",
+    "2": "pokefood:block/cardbox_side_inv",
+    "3": "pokefood:block/cardbox_top",
+    "particle": "pokefood:item/cardboard"
+  }
+}

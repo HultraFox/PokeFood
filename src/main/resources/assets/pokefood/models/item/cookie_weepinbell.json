@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/weepingbell"
+    "layer0": "pokefood:item/weepingbell"
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/frosted_high",
-    "particle": "pokefood:items/frosted_high"
+    "0": "pokefood:block/frosted_high",
+    "particle": "pokefood:item/frosted_high"
   }
 }

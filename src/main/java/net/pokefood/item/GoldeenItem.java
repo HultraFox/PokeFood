@@ -2,7 +2,6 @@
 package net.pokefood.item;
 
 import net.pokefood.procedures.HuntingUnlockAdvProcedure;
-import net.pokefood.init.PokefoodModTabs;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -13,9 +12,7 @@ import net.minecraft.world.entity.Entity;
 
 public class GoldeenItem extends Item {
 	public GoldeenItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_HUNT).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(1f)
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(1f).build()));
 	}
 
 	@Override

@@ -40,13 +40,13 @@ public class BananaTopAddLeavesProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get() || (world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.BANANA_TOP_STRIPPED.get()) {
-			if ((world.getBlockState(new BlockPos(x + 1, y, z + 0))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.BANANA_TOP_STRIPPED.get()) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z + 0))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.BANANA_LEAVES_ITEM.get()) {
-				world.setBlock(new BlockPos(x + 1, y, z + 0), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + 1, y, z + 0), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.EAST;
-					BlockPos _pos = new BlockPos(x + 1, y, z + 0);
+					BlockPos _pos = BlockPos.containing(x + 1, y, z + 0);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -62,12 +62,12 @@ public class BananaTopAddLeavesProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
-			if ((world.getBlockState(new BlockPos(x + 0, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
+			if ((world.getBlockState(BlockPos.containing(x + 0, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.BANANA_LEAVES_ITEM.get()) {
-				world.setBlock(new BlockPos(x + 0, y, z + 1), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + 0, y, z + 1), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.SOUTH;
-					BlockPos _pos = new BlockPos(x + 0, y, z + 1);
+					BlockPos _pos = BlockPos.containing(x + 0, y, z + 1);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -83,12 +83,12 @@ public class BananaTopAddLeavesProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
-			if ((world.getBlockState(new BlockPos(x - 1, y, z + 0))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z + 0))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.BANANA_LEAVES_ITEM.get()) {
-				world.setBlock(new BlockPos(x - 1, y, z + 0), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x - 1, y, z + 0), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.WEST;
-					BlockPos _pos = new BlockPos(x - 1, y, z + 0);
+					BlockPos _pos = BlockPos.containing(x - 1, y, z + 0);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -104,12 +104,12 @@ public class BananaTopAddLeavesProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
-			if ((world.getBlockState(new BlockPos(x + 0, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
+			if ((world.getBlockState(BlockPos.containing(x + 0, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:is_air")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.BANANA_LEAVES_ITEM.get()) {
-				world.setBlock(new BlockPos(x + 0, y, z - 1), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x + 0, y, z - 1), PokefoodModBlocks.BANANA_LEAVES.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.NORTH;
-					BlockPos _pos = new BlockPos(x + 0, y, z - 1);
+					BlockPos _pos = BlockPos.containing(x + 0, y, z - 1);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {

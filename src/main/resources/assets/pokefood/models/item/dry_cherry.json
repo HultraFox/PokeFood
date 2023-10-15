@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/dry_cherry"
+    "layer0": "pokefood:item/dry_cherry"
   }
 }

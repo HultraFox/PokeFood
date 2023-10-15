@@ -2,6 +2,7 @@ package net.pokefood.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -14,51 +15,85 @@ import net.minecraft.core.BlockPos;
 
 public class CheckIfLavaOrNetherProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x + 1, y + 0, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x - 1, y + 0, z + 0))).getBlock() == Blocks.LAVA
-				|| (world.getBlockState(new BlockPos(x + 0, y + 1, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + 0, y - 1, z + 0))).getBlock() == Blocks.LAVA
-				|| (world.getBlockState(new BlockPos(x + 0, y + 0, z + 1))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + 0, y + 0, z - 1))).getBlock() == Blocks.LAVA
-				|| (world.getBlockState(new BlockPos(x + 1, y + 0, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x - 1, y + 0, z + 0))).getBlock() == Blocks.LAVA
-				|| (world.getBlockState(new BlockPos(x + 0, y + 1, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + 0, y - 1, z + 0))).getBlock() == Blocks.LAVA
-				|| (world.getBlockState(new BlockPos(x + 0, y + 0, z + 1))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + 0, y + 0, z - 1))).getBlock() == Blocks.LAVA) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_cobble")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_dripstone")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.DRIPSTONE_BLOCK.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_tuff")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.TUFF.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_calcite")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.CALCITE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_deepslate")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.DEEPSLATE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_andesite")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.ANDESITE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_diorite")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.DIORITE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_granite")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.GRANITE.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_stone")))) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.STONE.defaultBlockState(), 3);
-			}
+		BlockState changeToBlock = Blocks.AIR.defaultBlockState();
+		boolean changeBlock = false;
+		double yChange = 0;
+		double zChange = 0;
+		double xChange = 0;
+		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.NETHER) {
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.LARGE_SMOKE, (x + 0.5), (y + 0.5), (z + 0.5), 5, 0, 0, 0, 0.1);
-		} else if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.NETHER) {
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1, false);
-				}
+		} else {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).getBlock() == Blocks.LAVA) {
+				xChange = x + 1;
+				yChange = y + 0;
+				zChange = z + 0;
+				changeBlock = true;
+			} else if ((world.getBlockState(BlockPos.containing(x + 0, y + 1, z + 0))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x + 0, y + 1, z + 0))).getBlock() == Blocks.LAVA) {
+				xChange = x + 0;
+				yChange = y + 0;
+				zChange = z + 0;
+				changeBlock = true;
+			} else if ((world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).getBlock() == Blocks.LAVA) {
+				xChange = x + 0;
+				yChange = y + 0;
+				zChange = z + 1;
+				changeBlock = true;
+			} else if ((world.getBlockState(BlockPos.containing(x - 1, y - 0, z - 0))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x - 1, y - 0, z - 0))).getBlock() == Blocks.LAVA) {
+				xChange = x - 1;
+				yChange = y - 0;
+				zChange = z - 0;
+				changeBlock = true;
+			} else if ((world.getBlockState(BlockPos.containing(x - 0, y - 1, z - 0))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x - 0, y - 1, z - 0))).getBlock() == Blocks.LAVA) {
+				xChange = x - 0;
+				yChange = y - 1;
+				zChange = z - 0;
+				changeBlock = true;
+			} else if ((world.getBlockState(BlockPos.containing(x - 0, y - 0, z - 1))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x - 0, y - 0, z - 1))).getBlock() == Blocks.LAVA) {
+				xChange = x - 0;
+				yChange = y - 0;
+				zChange = z - 1;
+				changeBlock = true;
 			}
-			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.LARGE_SMOKE, (x + 0.5), (y + 0.5), (z + 0.5), 5, 0, 0, 0, 0.1);
+			if (changeBlock == true) {
+				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_cobble")))) {
+					changeToBlock = Blocks.COBBLESTONE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_dripstone")))) {
+					changeToBlock = Blocks.DRIPSTONE_BLOCK.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_tuff")))) {
+					changeToBlock = Blocks.TUFF.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_calcite")))) {
+					changeToBlock = Blocks.CALCITE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_deepslate")))) {
+					changeToBlock = Blocks.DEEPSLATE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_andesite")))) {
+					changeToBlock = Blocks.ANDESITE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_diorite")))) {
+					changeToBlock = Blocks.DIORITE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_granite")))) {
+					changeToBlock = Blocks.GRANITE.defaultBlockState();
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("pokefood:to_stone")))) {
+					changeToBlock = Blocks.STONE.defaultBlockState();
+				}
+				world.setBlock(BlockPos.containing(xChange, yChange, zChange), changeToBlock, 3);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(xChange, yChange, zChange), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1);
+					} else {
+						_level.playLocalSound(xChange, yChange, zChange, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.lava.extinguish")), SoundSource.BLOCKS, (float) 0.5, 1, false);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.LARGE_SMOKE, (xChange + 0.5), (yChange + 0.5), (zChange + 0.5), 5, 0, 0, 0, 0.1);
+			}
 		}
 	}
 }

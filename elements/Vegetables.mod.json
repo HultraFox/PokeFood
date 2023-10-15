@@ -1,11 +1,17 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tag",
   "definition": {
     "type": "Items",
     "items": [
       {
         "value": "CUSTOM:Leek"
+      },
+      {
+        "value": "CUSTOM:Onion"
+      },
+      {
+        "value": "CUSTOM:Letuce"
       }
     ],
     "blocks": [],

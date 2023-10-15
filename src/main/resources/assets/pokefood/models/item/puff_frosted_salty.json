@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/frosted_salty",
-    "particle": "pokefood:items/frosted_salty"
+    "0": "pokefood:block/frosted_salty",
+    "particle": "pokefood:item/frosted_salty"
   }
 }

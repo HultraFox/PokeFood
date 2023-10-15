@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0 2",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:clay_ball"
+    },
+    "2": {
+      "item": "minecraft:clay_ball"
+    },
+    "4": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "item": "pokefood:plate_uncooked",
+    "count": 3
+  }
+}

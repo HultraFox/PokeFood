@@ -4,6 +4,7 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.world.inventory.PlateGUIMenu;
 import net.pokefood.world.inventory.MixingGUIMenu;
 import net.pokefood.world.inventory.KegGUIMenu;
 import net.pokefood.world.inventory.KegFunnelGUIMenu;
@@ -11,11 +12,14 @@ import net.pokefood.world.inventory.IceCreamExtentionGUIMenu;
 import net.pokefood.world.inventory.IceCreaMakerGUIMenu;
 import net.pokefood.world.inventory.FryerGUIMenu;
 import net.pokefood.world.inventory.ConeDisplayGUIMenu;
+import net.pokefood.world.inventory.CardboardBoxItemGUIMenu;
 import net.pokefood.world.inventory.CardboardBoxGUIMenu;
 import net.pokefood.world.inventory.CarbonizerGUIMenu;
 import net.pokefood.world.inventory.CandyPackagerMenu;
+import net.pokefood.world.inventory.CandyMachineGUIMenu;
 import net.pokefood.world.inventory.BigOvenGUIMenu;
 import net.pokefood.world.inventory.BigBagGUIMenu;
+import net.pokefood.world.inventory.ApricornBoxGUIMenu;
 import net.pokefood.PokefoodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -39,4 +43,8 @@ public class PokefoodModMenus {
 	public static final RegistryObject<MenuType<CardboardBoxGUIMenu>> CARDBOARD_BOX_GUI = REGISTRY.register("cardboard_box_gui", () -> IForgeMenuType.create(CardboardBoxGUIMenu::new));
 	public static final RegistryObject<MenuType<ConeDisplayGUIMenu>> CONE_DISPLAY_GUI = REGISTRY.register("cone_display_gui", () -> IForgeMenuType.create(ConeDisplayGUIMenu::new));
 	public static final RegistryObject<MenuType<BigBagGUIMenu>> BIG_BAG_GUI = REGISTRY.register("big_bag_gui", () -> IForgeMenuType.create(BigBagGUIMenu::new));
+	public static final RegistryObject<MenuType<PlateGUIMenu>> PLATE_GUI = REGISTRY.register("plate_gui", () -> IForgeMenuType.create(PlateGUIMenu::new));
+	public static final RegistryObject<MenuType<CandyMachineGUIMenu>> CANDY_MACHINE_GUI = REGISTRY.register("candy_machine_gui", () -> IForgeMenuType.create(CandyMachineGUIMenu::new));
+	public static final RegistryObject<MenuType<ApricornBoxGUIMenu>> APRICORN_BOX_GUI = REGISTRY.register("apricorn_box_gui", () -> IForgeMenuType.create(ApricornBoxGUIMenu::new));
+	public static final RegistryObject<MenuType<CardboardBoxItemGUIMenu>> CARDBOARD_BOX_ITEM_GUI = REGISTRY.register("cardboard_box_item_gui", () -> IForgeMenuType.create(CardboardBoxItemGUIMenu::new));
 }

@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 
 public class CookieSquirtleItem extends Item {
 	public CookieSquirtleItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_COOKIES).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.25f).alwaysEat()
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.25f).alwaysEat()
 
 				.build()));
 	}

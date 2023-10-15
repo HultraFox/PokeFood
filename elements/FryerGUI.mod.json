@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:Grease"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -24,7 +24,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 168,
+          "x": 141,
           "y": 53
         }
       },
@@ -43,7 +43,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 168,
-          "y": 71
+          "y": 53
         }
       },
       {
@@ -61,7 +61,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 168,
-          "y": 89
+          "y": 71
         }
       },
       {
@@ -78,8 +78,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 186,
-          "y": 53
+          "x": 168,
+          "y": 89
         }
       },
       {
@@ -97,7 +97,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 186,
-          "y": 71
+          "y": 53
         }
       },
       {
@@ -115,7 +115,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 186,
-          "y": 89
+          "y": 71
         }
       },
       {
@@ -127,13 +127,13 @@
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 12,
+          "id": 6,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 53
+          "x": 186,
+          "y": 89
         }
       },
       {
@@ -304,25 +304,13 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 6,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 222,
-          "y": 53
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
           "id": 7,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
           "x": 222,
-          "y": 71
+          "y": 53
         }
       },
       {
@@ -334,7 +322,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 222,
-          "y": 89
+          "y": 71
         }
       },
       {
@@ -345,8 +333,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 240,
-          "y": 53
+          "x": 222,
+          "y": 89
         }
       },
       {
@@ -358,13 +346,25 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 240,
-          "y": 71
+          "y": 53
         }
       },
       {
         "type": "outputslot",
         "data": {
           "id": 11,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 12,
           "disablePickup": {
             "fixedValue": false
           },

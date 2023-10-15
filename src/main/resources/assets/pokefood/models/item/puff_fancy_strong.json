@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/fancy_strong",
-    "particle": "pokefood:items/fancy_strong"
+    "0": "pokefood:block/fancy_strong",
+    "particle": "pokefood:item/fancy_strong"
   }
 }

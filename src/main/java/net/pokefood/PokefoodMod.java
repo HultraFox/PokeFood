@@ -54,17 +54,16 @@ public class PokefoodMod {
 
 	public PokefoodMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		PokefoodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		PokefoodModBlocks.REGISTRY.register(bus);
+		PokefoodModBlockEntities.REGISTRY.register(bus);
 		PokefoodModItems.REGISTRY.register(bus);
 
-		PokefoodModBlockEntities.REGISTRY.register(bus);
+		PokefoodModTabs.REGISTRY.register(bus);
 		PokefoodModFeatures.REGISTRY.register(bus);
 
 		PokefoodModMenus.REGISTRY.register(bus);
-
 		PokefoodModFluids.REGISTRY.register(bus);
 		PokefoodModFluidTypes.REGISTRY.register(bus);
 	}

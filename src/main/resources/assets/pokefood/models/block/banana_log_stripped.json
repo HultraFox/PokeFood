@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "pokefood:blocks/stripped_banana_log_top",
-    "up": "pokefood:blocks/stripped_banana_log_top",
-    "north": "pokefood:blocks/stripped_banana_log",
-    "east": "pokefood:blocks/stripped_banana_log",
-    "south": "pokefood:blocks/stripped_banana_log",
-    "west": "pokefood:blocks/stripped_banana_log",
-    "particle": "pokefood:blocks/stripped_banana_log_top"
+    "down": "pokefood:block/stripped_banana_log_top",
+    "up": "pokefood:block/stripped_banana_log_top",
+    "north": "pokefood:block/stripped_banana_log",
+    "east": "pokefood:block/stripped_banana_log",
+    "south": "pokefood:block/stripped_banana_log",
+    "west": "pokefood:block/stripped_banana_log",
+    "particle": "pokefood:block/stripped_banana_log_top"
   },
   "render_type": "solid"
 }

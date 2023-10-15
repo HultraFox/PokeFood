@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "wooper_tail",
     "customModelName": "Normal",
-    "name": "Wooper Tail",
+    "customProperties": {},
+    "states": [],
+    "name": "Wooper tail",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

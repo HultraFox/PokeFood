@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/sweet_rep_10"
+    "layer0": "pokefood:item/sweet_rep_10"
   }
 }

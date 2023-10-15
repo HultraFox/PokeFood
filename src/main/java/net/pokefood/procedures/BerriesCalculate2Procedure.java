@@ -22,7 +22,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "result");
+		}.getValue(world, BlockPos.containing(x, y, z), "result");
 		spicy = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -30,7 +30,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "spicy");
+		}.getValue(world, BlockPos.containing(x, y, z), "spicy");
 		dry = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -38,7 +38,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "dry");
+		}.getValue(world, BlockPos.containing(x, y, z), "dry");
 		sweet = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -46,7 +46,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "sweet");
+		}.getValue(world, BlockPos.containing(x, y, z), "sweet");
 		bitter = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -54,7 +54,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "bitter");
+		}.getValue(world, BlockPos.containing(x, y, z), "bitter");
 		sour = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -62,7 +62,7 @@ public class BerriesCalculate2Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "sour");
+		}.getValue(world, BlockPos.containing(x, y, z), "sour");
 		if ((result).equals("spicy")) {
 			if (dry > sweet && dry > bitter && dry > sour) {
 				if (spicy / 2 <= dry) {
@@ -155,7 +155,7 @@ public class BerriesCalculate2Procedure {
 			}
 		}
 		if (!world.isClientSide()) {
-			BlockPos _bp = new BlockPos(x, y, z);
+			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)

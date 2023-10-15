@@ -23,7 +23,7 @@ public class FrostingMixingProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "result");
+		}.getValue(world, BlockPos.containing(x, y, z), "result");
 		result2 = new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -31,7 +31,7 @@ public class FrostingMixingProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "result2");
+		}.getValue(world, BlockPos.containing(x, y, z), "result2");
 		if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -39,7 +39,7 @@ public class FrostingMixingProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingType")).equals("frosting")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("frosting")) {
 			if ((result).equals("spicy") && (result2).equals("")) {
 				if (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -48,9 +48,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_SPICY.get());
@@ -68,9 +68,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_SPICY.get());
@@ -88,9 +88,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_SPICY.get());
@@ -103,7 +103,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_SPICY.get());
@@ -123,9 +123,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_MINT.get());
@@ -143,9 +143,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_MINT.get());
@@ -163,9 +163,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_MINT.get());
@@ -178,7 +178,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_MINT.get());
@@ -198,9 +198,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_SWEET.get());
@@ -218,9 +218,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_SWEET.get());
@@ -238,9 +238,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_SWEET.get());
@@ -253,7 +253,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_SWEET.get());
@@ -273,9 +273,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_MOCHA.get());
@@ -293,9 +293,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_MOCHA.get());
@@ -313,9 +313,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_MOCHA.get());
@@ -328,7 +328,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_MOCHA.get());
@@ -348,9 +348,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_CITRUS.get());
@@ -368,9 +368,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_CITRUS.get());
@@ -388,9 +388,9 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_CITRUS.get());
@@ -403,7 +403,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_CITRUS.get());
@@ -423,16 +423,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_TOAST.get());
@@ -450,16 +450,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_TOAST.get());
@@ -477,16 +477,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_TOAST.get());
@@ -499,7 +499,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_TOAST.get());
@@ -519,16 +519,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_PEPPER.get());
@@ -546,16 +546,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_PEPPER.get());
@@ -573,16 +573,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_PEPPER.get());
@@ -595,7 +595,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_PEPPER.get());
@@ -615,16 +615,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_HIGH.get());
@@ -642,16 +642,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_HIGH.get());
@@ -669,16 +669,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_HIGH.get());
@@ -691,7 +691,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_HIGH.get());
@@ -711,16 +711,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_ANANAS.get());
@@ -738,16 +738,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_ANANAS.get());
@@ -765,16 +765,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "spicy") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "spicy") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_ANANAS.get());
@@ -787,7 +787,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_ANANAS.get());
@@ -807,16 +807,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_HONEY.get());
@@ -834,16 +834,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_HONEY.get());
@@ -861,16 +861,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_HONEY.get());
@@ -883,7 +883,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_HONEY.get());
@@ -903,16 +903,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_STRONG.get());
@@ -930,16 +930,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_STRONG.get());
@@ -957,16 +957,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_STRONG.get());
@@ -979,7 +979,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_STRONG.get());
@@ -999,16 +999,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_STIFF.get());
@@ -1026,16 +1026,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_STIFF.get());
@@ -1053,16 +1053,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "dry") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "dry") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_STIFF.get());
@@ -1075,7 +1075,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_STIFF.get());
@@ -1095,16 +1095,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_CANDY.get());
@@ -1122,16 +1122,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_CANDY.get());
@@ -1149,16 +1149,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_CANDY.get());
@@ -1171,7 +1171,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_CANDY.get());
@@ -1191,16 +1191,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_CALM.get());
@@ -1218,16 +1218,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_CALM.get());
@@ -1245,16 +1245,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sweet") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "sweet") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_CALM.get());
@@ -1267,7 +1267,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_CALM.get());
@@ -1287,16 +1287,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 30) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 30) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_BASIC_SALTY.get());
@@ -1314,16 +1314,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 60) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 60) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FROSTED_SALTY.get());
@@ -1341,16 +1341,16 @@ public class FrostingMixingProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "bitter") + new Object() {
+				}.getValue(world, BlockPos.containing(x, y, z), "bitter") + new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "sour") < 90) {
+				}.getValue(world, BlockPos.containing(x, y, z), "sour") < 90) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_FANCY_SALTY.get());
@@ -1363,7 +1363,7 @@ public class FrostingMixingProcedure {
 					}
 				} else {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(PokefoodModItems.PUFF_DELUXE_SALTY.get());
@@ -1383,13 +1383,13 @@ public class FrostingMixingProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingType")).equals("blending")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending")) {
 			if ((result).equals("spicy")) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 4;
-						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DOUGH_SPICY.get());
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SPICY.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)
@@ -1399,10 +1399,10 @@ public class FrostingMixingProcedure {
 				}
 			} else if ((result).equals("dry")) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 4;
-						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DOUGH_DRY.get());
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DRY.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)
@@ -1412,10 +1412,10 @@ public class FrostingMixingProcedure {
 				}
 			} else if ((result).equals("sweet")) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 4;
-						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DOUGH_SWEET.get());
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SWEET.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)
@@ -1425,10 +1425,10 @@ public class FrostingMixingProcedure {
 				}
 			} else if ((result).equals("bitter")) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 4;
-						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DOUGH_BITTER.get());
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_BITTER.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)
@@ -1438,10 +1438,10 @@ public class FrostingMixingProcedure {
 				}
 			} else {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 4;
-						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_DOUGH_SOUR.get());
+						final ItemStack _setstack = new ItemStack(PokefoodModItems.POFFIN_SOUR.get());
 						_setstack.setCount(1);
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)

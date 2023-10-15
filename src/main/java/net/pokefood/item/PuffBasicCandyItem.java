@@ -15,7 +15,7 @@ import java.util.List;
 
 public class PuffBasicCandyItem extends Item {
 	public PuffBasicCandyItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.25f).alwaysEat()
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.25f).alwaysEat()
 
 				.build()));
 	}
@@ -23,6 +23,6 @@ public class PuffBasicCandyItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A candied one"));
+		list.add(Component.literal("§7A candied one"));
 	}
 }

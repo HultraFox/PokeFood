@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/ice_cream_holder",
   "textures": {
-    "all": "pokefood:blocks/cone_stand",
-    "particle": "pokefood:blocks/cone_stand",
-    "0": "pokefood:blocks/cone_stand"
+    "all": "pokefood:block/cone_stand",
+    "particle": "pokefood:block/cone_stand",
+    "0": "pokefood:block/cone_stand"
   },
   "render_type": "cutout"
 }

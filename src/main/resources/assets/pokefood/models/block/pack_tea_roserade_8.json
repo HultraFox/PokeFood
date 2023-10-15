@@ -1,10 +1,10 @@
 {
   "parent": "pokefood:custom/bottle_pack_2",
   "textures": {
-    "all": "pokefood:blocks/6_pack_tea_roserade",
-    "particle": "pokefood:blocks/6_pack_tea_roserade",
-    "1": "pokefood:blocks/soda_tea_roserade",
-    "2": "pokefood:blocks/6_pack_tea_roserade"
+    "all": "pokefood:block/6_pack_tea_roserade",
+    "particle": "pokefood:block/6_pack_tea_roserade",
+    "1": "pokefood:block/soda_tea_roserade",
+    "2": "pokefood:block/6_pack_tea_roserade"
   },
   "render_type": "cutout"
 }

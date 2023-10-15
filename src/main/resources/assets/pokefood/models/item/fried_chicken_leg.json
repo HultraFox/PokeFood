@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/fried_chiken_leg"
+    "layer0": "pokefood:item/fried_chiken_leg"
   }
 }

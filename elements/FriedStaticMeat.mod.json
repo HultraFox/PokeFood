@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fried_static_steak",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Fried Static Steak",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodOnTheGo"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,12 +1,13 @@
 {
-  "group": "aprijuice",
   "type": "minecraft:crafting_shapeless",
+  "group": "aprijuice",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:cup"
     },
     {
-      "item": "pokefood:apri_juice_y_bucket"
+      "item": "pokefood:aprijuice_y_bucket"
     },
     {
       "item": "pokefood:cup"

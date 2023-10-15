@@ -12,14 +12,14 @@ import java.util.function.Consumer;
 
 public class MaltFluidType extends FluidType {
 	public MaltFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
-				.sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("pokefood:blocks/malt_still"), FLOWING_TEXTURE = new ResourceLocation("pokefood:blocks/malt_flow");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("pokefood:block/malt_still"), FLOWING_TEXTURE = new ResourceLocation("pokefood:block/malt_flow");
 
 			@Override
 			public ResourceLocation getStillTexture() {

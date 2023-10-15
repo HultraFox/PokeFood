@@ -15,7 +15,7 @@ public class IceApriR14Procedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "tank_1_name");
+		}.getValue(world, BlockPos.containing(x, y, z), "tank_1_name");
 		fluid_quantity = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -23,7 +23,7 @@ public class IceApriR14Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "tank_1_quantity");
+		}.getValue(world, BlockPos.containing(x, y, z), "tank_1_quantity");
 		if ((fluid_name).equals("apri_r") && fluid_quantity == 4) {
 			return true;
 		}

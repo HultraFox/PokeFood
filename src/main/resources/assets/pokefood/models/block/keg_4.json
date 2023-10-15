@@ -1,15 +1,15 @@
 {
   "parent": "pokefood:custom/barrel",
   "textures": {
-    "all": "pokefood:blocks/keg4",
-    "particle": "pokefood:blocks/keg4",
-    "0": "pokefood:blocks/barrel_front",
-    "1": "pokefood:blocks/barrel_timer_4",
-    "2": "pokefood:blocks/barrel_right",
-    "3": "pokefood:blocks/barrel_up",
-    "4": "pokefood:blocks/barrel_left",
-    "5": "pokefood:blocks/barrel_bottom",
-    "missing": "pokefood:blocks/"
+    "all": "pokefood:block/keg4",
+    "particle": "pokefood:block/keg4",
+    "0": "pokefood:block/barrel_front",
+    "1": "pokefood:block/barrel_timer_4",
+    "2": "pokefood:block/barrel_right",
+    "3": "pokefood:block/barrel_up",
+    "4": "pokefood:block/barrel_left",
+    "5": "pokefood:block/barrel_bottom",
+    "missing": "pokefood:block/"
   },
   "render_type": "cutout"
 }

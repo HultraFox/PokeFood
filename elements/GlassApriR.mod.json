@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cherium_beer",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Red Aprium Mug",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodDrinks"
     },
     "stackSize": 1,
     "enchantability": 0,

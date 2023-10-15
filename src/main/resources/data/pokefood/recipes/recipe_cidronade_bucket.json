@@ -1,6 +1,7 @@
 {
-  "group": "alcohol",
   "type": "minecraft:crafting_shapeless",
+  "group": "alcohol",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:glass_cidronade"

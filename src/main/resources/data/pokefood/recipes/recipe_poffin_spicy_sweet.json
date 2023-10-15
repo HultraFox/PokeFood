@@ -1,6 +1,7 @@
 {
-  "group": "poffins",
   "type": "minecraft:crafting_shapeless",
+  "group": "poffins",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:poffin_spicy"

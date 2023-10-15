@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/table_coffee",
+  "textures": {
+    "all": "pokefood:block/table_coffee_top_9",
+    "particle": "pokefood:block/table_coffee_top_9",
+    "0": "pokefood:block/table_coffee_top_9",
+    "1": "pokefood:block/table_coffee_side_9",
+    "2": "pokefood:block/table_coffee_bottom_9"
+  },
+  "render_type": "solid"
+}

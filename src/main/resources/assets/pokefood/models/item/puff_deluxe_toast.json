@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/deluxe_toast",
-    "particle": "pokefood:items/deluxe_toasted"
+    "0": "pokefood:block/deluxe_toast",
+    "particle": "pokefood:item/deluxe_toasted"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "fluid",
   "definition": {
     "name": "White Aprijuice",
@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "aprijuice_w_bucket",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "emptySound": {
       "value": ""

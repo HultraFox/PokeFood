@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/basic_honey",
-    "particle": "pokefood:items/basic_honey"
+    "0": "pokefood:block/basic_honey",
+    "particle": "pokefood:item/basic_honey"
   }
 }

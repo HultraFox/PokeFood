@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/apricup_milkshake_d"
+    "layer0": "pokefood:item/apricup_milkshake_d"
   }
 }

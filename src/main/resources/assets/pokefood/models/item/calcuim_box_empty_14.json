@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pop_calcuim_box_empty",
   "textures": {
-    "0": "pokefood:blocks/poped_calcuim_box_14",
-    "particle": "pokefood:items/poped_calcuim_box_14"
+    "0": "pokefood:block/poped_calcuim_box_14",
+    "particle": "pokefood:item/poped_calcuim_box_14"
   }
 }

@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "watery_meat",
     "customModelName": "Normal",
-    "name": "Watery Meat",
+    "customProperties": {},
+    "states": [],
+    "name": "Watery meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

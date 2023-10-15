@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "crystalized_sugar",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:crystalized_sugar_block_15"
+    }
+  ],
+  "result": {
+    "item": "pokefood:crystalized_sugar_15",
+    "count": 9
+  }
+}

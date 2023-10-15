@@ -14,7 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class CalcuimBox9Item extends Item {
 	public CalcuimBox9Item() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1.5f).alwaysEat()
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1.5f).alwaysEat()
 
 				.build()));
 	}

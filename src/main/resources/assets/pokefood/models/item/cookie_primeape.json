@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/primeape"
+    "layer0": "pokefood:item/primeape"
   }
 }

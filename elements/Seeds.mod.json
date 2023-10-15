@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tag",
   "definition": {
     "type": "Items",
@@ -30,6 +30,15 @@
       },
       {
         "value": "CUSTOM:LeekSeeds"
+      },
+      {
+        "value": "CUSTOM:OnionSeeds"
+      },
+      {
+        "value": "CUSTOM:LetuceSeeds"
+      },
+      {
+        "value": "CUSTOM:RiceSeeds"
       }
     ],
     "blocks": [],

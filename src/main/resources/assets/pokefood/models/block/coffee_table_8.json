@@ -1,11 +1,11 @@
 {
   "parent": "pokefood:custom/table_coffee",
   "textures": {
-    "all": "pokefood:blocks/table_coffee_top_8",
-    "particle": "pokefood:blocks/table_coffee_top_8",
-    "0": "pokefood:blocks/table_coffee_top_8",
-    "1": "pokefood:blocks/table_coffee_side_8",
-    "2": "pokefood:blocks/table_coffee_bottom_8"
+    "all": "pokefood:block/table_coffee_top_8",
+    "particle": "pokefood:block/table_coffee_top_8",
+    "0": "pokefood:block/table_coffee_top_8",
+    "1": "pokefood:block/table_coffee_side_8",
+    "2": "pokefood:block/table_coffee_bottom_8"
   },
   "render_type": "solid"
 }

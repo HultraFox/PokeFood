@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 license="Mozilla Public License 2.0"
 
 [[mods]]
 modId="pokefood"
-version="1.1."
+version="1.2.2"
 displayName="PokeFood"
 credits="The cobblemon team and community"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/pokefood"
@@ -15,7 +15,7 @@ description="Food to be used with cobblemon (may contain traces of calcuim !)"
 [[dependencies.pokefood]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 

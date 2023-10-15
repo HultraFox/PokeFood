@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "chikorita_slice",
     "customModelName": "Normal",
-    "name": "Green Slice",
+    "customProperties": {},
+    "states": [],
+    "name": "Green slice",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

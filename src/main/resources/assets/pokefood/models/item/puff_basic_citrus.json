@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/basic_citrus",
-    "particle": "pokefood:items/basic_citrus"
+    "0": "pokefood:block/basic_citrus",
+    "particle": "pokefood:item/basic_citrus"
   }
 }

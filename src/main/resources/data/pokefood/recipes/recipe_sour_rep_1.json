@@ -1,6 +1,7 @@
 {
-  "group": "sour_rep",
   "type": "minecraft:crafting_shapeless",
+  "group": "sour_rep",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:lemon"

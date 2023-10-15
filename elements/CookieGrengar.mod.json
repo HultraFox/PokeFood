@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "grengar",
     "customModelName": "Normal",
-    "name": "Gengar cookie",
+    "customProperties": {},
+    "states": [],
+    "name": "Grengar cookie",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodCookies"

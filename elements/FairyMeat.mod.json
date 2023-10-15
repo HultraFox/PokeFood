@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fairy_meat",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Fairy Meat",
     "rarity": "COMMON",
     "creativeTab": {

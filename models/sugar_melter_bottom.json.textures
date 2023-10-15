@@ -1,0 +1,64 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "candy_pot_bottom_0"
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "1": "candy_pot_bottom_1"
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "1": "candy_pot_bottom_2"
+      },
+      "name": "_2"
+    },
+    "_3": {
+      "map": {
+        "1": "candy_pot_bottom_3"
+      },
+      "name": "_3"
+    },
+    "_4": {
+      "map": {
+        "1": "candy_pot_bottom_4"
+      },
+      "name": "_4"
+    },
+    "_5": {
+      "map": {
+        "1": "candy_pot_bottom_5"
+      },
+      "name": "_5"
+    },
+    "_6": {
+      "map": {
+        "1": "candy_pot_bottom_6"
+      },
+      "name": "_6"
+    },
+    "_7": {
+      "map": {
+        "1": "candy_pot_bottom_7"
+      },
+      "name": "_7"
+    },
+    "_8": {
+      "map": {
+        "1": "candy_pot_bottom_8"
+      },
+      "name": "_8"
+    },
+    "_9": {
+      "map": {
+        "1": "candy_pot_bottom_9"
+      },
+      "name": "_9"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rice_3_b",
+        "1": "rice_3_t"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/bottle_pack_empty",
   "textures": {
-    "all": "pokefood:blocks/6_pack_empty",
-    "particle": "pokefood:blocks/6_pack_empty",
-    "2": "pokefood:blocks/6_pack_empty"
+    "all": "pokefood:block/6_pack_empty",
+    "particle": "pokefood:block/6_pack_empty",
+    "2": "pokefood:block/6_pack_empty"
   },
   "render_type": "cutout"
 }

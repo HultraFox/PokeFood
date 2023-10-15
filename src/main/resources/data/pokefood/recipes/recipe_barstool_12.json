@@ -1,6 +1,7 @@
 {
-  "group": "barstool",
   "type": "minecraft:crafting_shaped",
+  "group": "barstool",
+  "category": "misc",
   "pattern": [
     "0",
     "1"

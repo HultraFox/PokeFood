@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/nidoking"
+    "layer0": "pokefood:item/nidoking"
   }
 }

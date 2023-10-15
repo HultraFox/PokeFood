@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/candy_bag",
+  "textures": {
+    "all": "pokefood:block/candy_bag_2",
+    "particle": "pokefood:block/candy_bag_2",
+    "0": "pokefood:block/candy_bag_2"
+  },
+  "render_type": "cutout"
+}

@@ -1,8 +1,6 @@
 {
   "pack": {
-    "description": "pokefood mod resources",
-    "pack_format": 9,
-    "forge:resource_pack_format": 9,
-    "forge:data_pack_format": 10
+    "pack_format": 15,
+    "description": "Food to be used with cobblemon (may contain traces of calcuim !)"
   }
 }

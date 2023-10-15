@@ -31,7 +31,7 @@ public class BananaWoodTreeControlProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "broken")) == false) {
+		}.getValue(world, BlockPos.containing(x, y, z), "broken")) == false) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -39,10 +39,10 @@ public class BananaWoodTreeControlProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "age") == 1
-					&& !((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get() && (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get())) {
+			}.getValue(world, BlockPos.containing(x, y, z), "age") == 1
+					&& !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get() && (world.getBlockState(BlockPos.containing(x, y + 2, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get())) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -57,11 +57,11 @@ public class BananaWoodTreeControlProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "age") == 2 && !((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_2.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_2.get() && (world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get()
-					&& (world.getBlockState(new BlockPos(x, y + 4, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get() && (world.getBlockState(new BlockPos(x, y + 5, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get())) {
+			}.getValue(world, BlockPos.containing(x, y, z), "age") == 2 && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_2.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_2.get() && (world.getBlockState(BlockPos.containing(x, y + 3, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 4, z))).getBlock() == PokefoodModBlocks.BANANA_LOG_3.get() && (world.getBlockState(BlockPos.containing(x, y + 5, z))).getBlock() == PokefoodModBlocks.BANANA_TOP.get())) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -77,47 +77,47 @@ public class BananaWoodTreeControlProcedure {
 						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "broken")) == false && new Object() {
+			}.getValue(world, BlockPos.containing(x, y, z), "broken")) == false && new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "age") == 0 && Mth.nextInt(RandomSource.create(), 1, 5) == 2 && (world instanceof Level _lvl22 && _lvl22.isDay()) == true) {
-				if ((world.getBlockState(new BlockPos(x + 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 0, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 0, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-					if ((world.getBlockState(new BlockPos(x + 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 0, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 0, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-						if ((world.getBlockState(new BlockPos(x + 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x + 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x + 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x - 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x - 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x - 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x + 0, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x + 0, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+			}.getValue(world, BlockPos.containing(x, y, z), "age") == 0 && Mth.nextInt(RandomSource.create(), 1, 5) == 2 && (world instanceof Level _lvl22 && _lvl22.isDay()) == true) {
+				if ((world.getBlockState(BlockPos.containing(x + 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 0, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+					if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 0, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 0, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+						if ((world.getBlockState(BlockPos.containing(x + 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x + 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x + 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x - 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x - 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x - 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x + 0, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x + 0, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
 							if (world instanceof ServerLevel _serverworld) {
 								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("pokefood", "banana_tree_small"));
 								if (template != null) {
-									template.placeInWorld(_serverworld, new BlockPos(x - 1, y, z - 1), new BlockPos(x - 1, y, z - 1), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-											_serverworld.random, 3);
+									template.placeInWorld(_serverworld, BlockPos.containing(x - 1, y, z - 1), BlockPos.containing(x - 1, y, z - 1),
+											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
 							if (!world.isClientSide()) {
-								BlockPos _bp = new BlockPos(x, y, z);
+								BlockPos _bp = BlockPos.containing(x, y, z);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
@@ -135,78 +135,78 @@ public class BananaWoodTreeControlProcedure {
 						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "broken")) == false && new Object() {
+			}.getValue(world, BlockPos.containing(x, y, z), "broken")) == false && new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "age") == 1 && Mth.nextInt(RandomSource.create(), 1, 5) == 2 && (world instanceof Level _lvl76 && _lvl76.isDay()) == true) {
-				if ((world.getBlockState(new BlockPos(x + 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x - 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 0, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-						&& (world.getBlockState(new BlockPos(x + 0, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-					if ((world.getBlockState(new BlockPos(x + 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x - 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 0, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-							&& (world.getBlockState(new BlockPos(x + 0, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-						if ((world.getBlockState(new BlockPos(x + 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& ((world.getBlockState(new BlockPos(x + 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										|| (world.getBlockState(new BlockPos(x + 1, y + 2, z + 0))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
-								&& (world.getBlockState(new BlockPos(x + 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& (world.getBlockState(new BlockPos(x - 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& ((world.getBlockState(new BlockPos(x - 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										|| (world.getBlockState(new BlockPos(x - 1, y + 2, z + 0))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
-								&& (world.getBlockState(new BlockPos(x - 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-								&& ((world.getBlockState(new BlockPos(x + 0, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										|| (world.getBlockState(new BlockPos(x + 0, y + 2, z - 1))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
-								&& ((world.getBlockState(new BlockPos(x + 0, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										|| (world.getBlockState(new BlockPos(x + 0, y + 2, z + 1))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())) {
-							if ((world.getBlockState(new BlockPos(x + 1, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x + 1, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x + 1, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x - 1, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x - 1, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x - 1, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x + 0, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x + 0, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-									&& (world.getBlockState(new BlockPos(x + 0, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-								if ((world.getBlockState(new BlockPos(x + 1, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x + 1, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x + 1, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x - 1, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x - 1, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x - 1, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x + 0, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x + 0, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-										&& (world.getBlockState(new BlockPos(x + 0, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
-									if ((world.getBlockState(new BlockPos(x + 1, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x + 1, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x + 1, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x - 1, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x - 1, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x - 1, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x + 0, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x + 0, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
-											&& (world.getBlockState(new BlockPos(x + 0, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+			}.getValue(world, BlockPos.containing(x, y, z), "age") == 1 && Mth.nextInt(RandomSource.create(), 1, 5) == 2 && (world instanceof Level _lvl76 && _lvl76.isDay()) == true) {
+				if ((world.getBlockState(BlockPos.containing(x + 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x - 1, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 0, y + 0, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+						&& (world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+					if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 0, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+							&& (world.getBlockState(BlockPos.containing(x + 0, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+						if ((world.getBlockState(BlockPos.containing(x + 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& ((world.getBlockState(BlockPos.containing(x + 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										|| (world.getBlockState(BlockPos.containing(x + 1, y + 2, z + 0))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
+								&& (world.getBlockState(BlockPos.containing(x + 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& (world.getBlockState(BlockPos.containing(x - 1, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& ((world.getBlockState(BlockPos.containing(x - 1, y + 2, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										|| (world.getBlockState(BlockPos.containing(x - 1, y + 2, z + 0))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
+								&& (world.getBlockState(BlockPos.containing(x - 1, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+								&& ((world.getBlockState(BlockPos.containing(x + 0, y + 2, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										|| (world.getBlockState(BlockPos.containing(x + 0, y + 2, z - 1))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())
+								&& ((world.getBlockState(BlockPos.containing(x + 0, y + 2, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										|| (world.getBlockState(BlockPos.containing(x + 0, y + 2, z + 1))).getBlock() == PokefoodModBlocks.BANANA_LEAVES.get())) {
+							if ((world.getBlockState(BlockPos.containing(x + 1, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x + 1, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x + 1, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x - 1, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x - 1, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x - 1, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x + 0, y + 3, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x + 0, y + 3, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+									&& (world.getBlockState(BlockPos.containing(x + 0, y + 3, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+								if ((world.getBlockState(BlockPos.containing(x + 1, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x + 1, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x + 1, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x - 1, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x - 1, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x - 1, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x + 0, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x + 0, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+										&& (world.getBlockState(BlockPos.containing(x + 0, y + 4, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+									if ((world.getBlockState(BlockPos.containing(x + 1, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x + 1, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x + 1, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x - 1, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x - 1, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x - 1, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x + 0, y + 5, z - 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x + 0, y + 5, z + 1))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+											&& (world.getBlockState(BlockPos.containing(x + 0, y + 5, z + 0))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
 										if (world instanceof ServerLevel _serverworld) {
 											StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("pokefood", "banana_tree"));
 											if (template != null) {
-												template.placeInWorld(_serverworld, new BlockPos(x - 1, y, z - 1), new BlockPos(x - 1, y, z - 1), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-														_serverworld.random, 3);
+												template.placeInWorld(_serverworld, BlockPos.containing(x - 1, y, z - 1), BlockPos.containing(x - 1, y, z - 1),
+														new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 											}
 										}
 										if (!world.isClientSide()) {
-											BlockPos _bp = new BlockPos(x, y, z);
+											BlockPos _bp = BlockPos.containing(x, y, z);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
@@ -227,20 +227,20 @@ public class BananaWoodTreeControlProcedure {
 						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "broken")) == false && new Object() {
+			}.getValue(world, BlockPos.containing(x, y, z), "broken")) == false && new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "age") == 2 && Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
+			}.getValue(world, BlockPos.containing(x, y, z), "age") == 2 && Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 				rNB = Mth.nextInt(RandomSource.create(), 1, 4);
-				if ((world.getBlockState(new BlockPos(x + 1, y + 4, z - 0))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 1) {
-					world.setBlock(new BlockPos(x + 1, y + 4, z - 0), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x + 1, y + 4, z - 0))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 1) {
+					world.setBlock(BlockPos.containing(x + 1, y + 4, z - 0), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
 					{
 						Direction _dir = Direction.EAST;
-						BlockPos _pos = new BlockPos(x + 1, y + 4, z - 0);
+						BlockPos _pos = BlockPos.containing(x + 1, y + 4, z - 0);
 						BlockState _bs = world.getBlockState(_pos);
 						Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 						if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -252,11 +252,11 @@ public class BananaWoodTreeControlProcedure {
 						}
 					}
 				}
-				if ((world.getBlockState(new BlockPos(x - 1, y + 4, z - 0))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 2) {
-					world.setBlock(new BlockPos(x - 1, y + 4, z - 0), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x - 1, y + 4, z - 0))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 2) {
+					world.setBlock(BlockPos.containing(x - 1, y + 4, z - 0), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
 					{
 						Direction _dir = Direction.WEST;
-						BlockPos _pos = new BlockPos(x - 1, y + 4, z - 0);
+						BlockPos _pos = BlockPos.containing(x - 1, y + 4, z - 0);
 						BlockState _bs = world.getBlockState(_pos);
 						Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 						if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -268,11 +268,11 @@ public class BananaWoodTreeControlProcedure {
 						}
 					}
 				}
-				if ((world.getBlockState(new BlockPos(x - 0, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 3) {
-					world.setBlock(new BlockPos(x - 0, y + 4, z + 1), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x - 0, y + 4, z + 1))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 3) {
+					world.setBlock(BlockPos.containing(x - 0, y + 4, z + 1), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
 					{
 						Direction _dir = Direction.SOUTH;
-						BlockPos _pos = new BlockPos(x - 0, y + 4, z + 1);
+						BlockPos _pos = BlockPos.containing(x - 0, y + 4, z + 1);
 						BlockState _bs = world.getBlockState(_pos);
 						Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 						if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -284,11 +284,11 @@ public class BananaWoodTreeControlProcedure {
 						}
 					}
 				}
-				if ((world.getBlockState(new BlockPos(x - 0, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 4) {
-					world.setBlock(new BlockPos(x - 0, y + 4, z - 1), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x - 0, y + 4, z - 1))).is(BlockTags.create(new ResourceLocation("forge:is_air"))) && rNB == 4) {
+					world.setBlock(BlockPos.containing(x - 0, y + 4, z - 1), PokefoodModBlocks.BANANA_UNRIPED.get().defaultBlockState(), 3);
 					{
 						Direction _dir = Direction.NORTH;
-						BlockPos _pos = new BlockPos(x - 0, y + 4, z - 1);
+						BlockPos _pos = BlockPos.containing(x - 0, y + 4, z - 1);
 						BlockState _bs = world.getBlockState(_pos);
 						Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
 						if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {

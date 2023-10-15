@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "letuce_wild"
+      },
+      "name": "default"
+    }
+  }
+}

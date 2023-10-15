@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "jolteon",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Jolteon cookie",
     "rarity": "COMMON",
     "creativeTab": {

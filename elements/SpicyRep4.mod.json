@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "spicy_rep_40",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Spicy Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "A big quantity"
+      "§7A big quantity"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

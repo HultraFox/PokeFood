@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mortar_and_pestle",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PLANKS#0"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "Blocks.PLANKS#0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PLANKS#0"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MortarAndPestle0"
+    },
+    "name": "recipe_mortar_and_pestle_0",
+    "namespace": "mod"
+  }
+}

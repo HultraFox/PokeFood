@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/watery_meat"
+    "layer0": "pokefood:item/watery_meat"
   }
 }

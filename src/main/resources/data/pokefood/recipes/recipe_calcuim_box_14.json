@@ -1,6 +1,7 @@
 {
-  "group": "calcuim_box",
   "type": "minecraft:crafting_shapeless",
+  "group": "calcuim_box",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:calcuim_box_empty_14"

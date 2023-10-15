@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "pokefood:item/cheese_quarter_0"
+  },
+  "render_type": "translucent"
+}

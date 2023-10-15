@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "block",
   "definition": {
     "texture": "barstool_7",
@@ -49,7 +49,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodBuilding"
     },
     "destroyTool": "Not specified",
     "customDrop": {

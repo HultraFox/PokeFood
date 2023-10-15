@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "pokefood:blocks/lemon_tree_stage_4",
-    "particle": "pokefood:blocks/lemon_tree_stage_4"
-  },
-  "render_type": "cutout"
-}

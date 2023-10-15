@@ -32,7 +32,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -40,7 +40,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Beer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Beer")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -48,9 +48,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -59,7 +59,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -70,7 +70,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -81,16 +81,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -104,7 +104,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -118,7 +118,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -132,7 +132,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -146,7 +146,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -160,7 +160,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -174,7 +174,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.BEER_BUCKET.get());
@@ -193,9 +193,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -208,7 +208,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -223,7 +223,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -232,7 +232,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -248,9 +248,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Beer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Beer")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -265,9 +265,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -276,7 +276,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -294,7 +294,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -302,7 +302,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("BananaTeaBeer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("BananaTeaBeer")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -310,9 +310,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -321,7 +321,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -332,7 +332,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -343,16 +343,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -366,7 +366,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -380,7 +380,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -394,7 +394,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -408,7 +408,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -422,7 +422,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -436,7 +436,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.BANANA_TEA_BEER_BUCKET.get());
@@ -455,9 +455,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -470,7 +470,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -485,7 +485,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -494,7 +494,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -510,9 +510,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("BananaTeaBeer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("BananaTeaBeer")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -527,9 +527,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -538,7 +538,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -556,7 +556,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -564,7 +564,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("CherryCalcuimBeer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("CherryCalcuimBeer")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -572,9 +572,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -583,7 +583,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -594,7 +594,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -605,16 +605,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -628,7 +628,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -642,7 +642,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -656,7 +656,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -670,7 +670,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -684,7 +684,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -698,7 +698,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.CHERRY_CALCUIM_BEER_BUCKET.get());
@@ -717,9 +717,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -732,7 +732,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -747,7 +747,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -756,7 +756,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -772,9 +772,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("CherryCalcuimBeer")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("CherryCalcuimBeer")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -789,9 +789,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -800,7 +800,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -818,7 +818,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -826,7 +826,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriW")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriW")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -834,9 +834,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -845,7 +845,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -856,7 +856,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -867,16 +867,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -890,7 +890,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -904,7 +904,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -918,7 +918,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -932,7 +932,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -946,7 +946,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -960,7 +960,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_W_BUCKET.get());
@@ -979,9 +979,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -994,7 +994,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -1009,7 +1009,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1018,7 +1018,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1034,9 +1034,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriW")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriW")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1051,9 +1051,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1062,7 +1062,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1080,7 +1080,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1088,7 +1088,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriW")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriW")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1096,9 +1096,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1107,7 +1107,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1118,7 +1118,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -1129,16 +1129,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -1152,7 +1152,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -1166,7 +1166,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -1180,7 +1180,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -1194,7 +1194,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -1208,7 +1208,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -1222,7 +1222,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_W_BUCKET.get());
@@ -1241,9 +1241,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -1256,7 +1256,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -1271,7 +1271,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1280,7 +1280,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1296,9 +1296,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriW")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriW")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1313,9 +1313,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1324,7 +1324,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1342,7 +1342,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1350,7 +1350,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriD")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriD")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1358,9 +1358,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1369,7 +1369,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1380,7 +1380,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -1391,16 +1391,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -1414,7 +1414,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -1428,7 +1428,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -1442,7 +1442,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -1456,7 +1456,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -1470,7 +1470,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -1484,7 +1484,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_D_BUCKET.get());
@@ -1503,9 +1503,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -1518,7 +1518,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -1533,7 +1533,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1542,7 +1542,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1558,9 +1558,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriD")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriD")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1575,9 +1575,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1586,7 +1586,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1604,7 +1604,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1612,7 +1612,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriB")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriB")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1620,9 +1620,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1631,7 +1631,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1642,7 +1642,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -1653,16 +1653,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -1676,7 +1676,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -1690,7 +1690,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -1704,7 +1704,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -1718,7 +1718,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -1732,7 +1732,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -1746,7 +1746,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_B_BUCKET.get());
@@ -1765,9 +1765,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -1780,7 +1780,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -1795,7 +1795,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1804,7 +1804,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -1820,9 +1820,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriB")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriB")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1837,9 +1837,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1848,7 +1848,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1866,7 +1866,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1874,7 +1874,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriG")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriG")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1882,9 +1882,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1893,7 +1893,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -1904,7 +1904,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -1915,16 +1915,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -1938,7 +1938,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -1952,7 +1952,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -1966,7 +1966,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -1980,7 +1980,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -1994,7 +1994,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -2008,7 +2008,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_G_BUCKET.get());
@@ -2027,9 +2027,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -2042,7 +2042,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -2057,7 +2057,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2066,7 +2066,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2082,9 +2082,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriG")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriG")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2099,9 +2099,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2110,7 +2110,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2128,7 +2128,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2136,7 +2136,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriY")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriY")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2144,9 +2144,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2155,7 +2155,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2166,7 +2166,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -2177,16 +2177,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -2200,7 +2200,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -2214,7 +2214,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -2228,7 +2228,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -2242,7 +2242,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -2256,7 +2256,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -2270,7 +2270,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_Y_BUCKET.get());
@@ -2289,9 +2289,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -2304,7 +2304,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -2319,7 +2319,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2328,7 +2328,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2344,9 +2344,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriY")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriY")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2361,9 +2361,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2372,7 +2372,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2390,7 +2390,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2398,7 +2398,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriP")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriP")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2406,9 +2406,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2417,7 +2417,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2428,7 +2428,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -2439,16 +2439,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -2462,7 +2462,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -2476,7 +2476,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -2490,7 +2490,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -2504,7 +2504,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -2518,7 +2518,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -2532,7 +2532,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_P_BUCKET.get());
@@ -2551,9 +2551,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -2566,7 +2566,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -2581,7 +2581,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2590,7 +2590,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2606,9 +2606,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriP")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriP")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2623,9 +2623,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2634,7 +2634,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2652,7 +2652,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2660,7 +2660,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriR")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriR")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2668,9 +2668,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2679,7 +2679,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2690,7 +2690,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -2701,16 +2701,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -2724,7 +2724,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -2738,7 +2738,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -2752,7 +2752,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -2766,7 +2766,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -2780,7 +2780,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -2794,7 +2794,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.APRI_ALCOHOL_R_BUCKET.get());
@@ -2813,9 +2813,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -2828,7 +2828,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -2843,7 +2843,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2852,7 +2852,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2868,9 +2868,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("ApriR")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("ApriR")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2885,9 +2885,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2896,7 +2896,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2914,7 +2914,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2922,7 +2922,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Brandy")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Brandy")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -2930,9 +2930,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2941,7 +2941,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2952,7 +2952,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -2963,16 +2963,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -2986,7 +2986,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -3000,7 +3000,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -3014,7 +3014,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -3028,7 +3028,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -3042,7 +3042,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -3056,7 +3056,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.BRANDY_BUCKET.get());
@@ -3075,9 +3075,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -3090,7 +3090,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -3105,7 +3105,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3114,7 +3114,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3130,9 +3130,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Brandy")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Brandy")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3147,9 +3147,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3158,7 +3158,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3176,7 +3176,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -3184,7 +3184,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Cidroande")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Cidroande")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -3192,9 +3192,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3203,7 +3203,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3214,7 +3214,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -3225,16 +3225,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -3248,7 +3248,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -3262,7 +3262,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -3276,7 +3276,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -3290,7 +3290,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -3304,7 +3304,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -3318,7 +3318,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.CIDRONADE_BUCKET.get());
@@ -3337,9 +3337,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -3352,7 +3352,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -3367,7 +3367,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3376,7 +3376,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3392,9 +3392,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Cidroande")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Cidroande")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3409,9 +3409,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3420,7 +3420,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3438,7 +3438,7 @@ public class BreewingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(x, y, z), 7) == 0) {
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -3446,7 +3446,7 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Arceum")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Arceum")) {
 					recipeSelected = new Object() {
 						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -3454,9 +3454,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3465,7 +3465,7 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3476,7 +3476,7 @@ public class BreewingProcedure {
 										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
-							}.getValue(world, new BlockPos(x, y, z), "craftingProgress") + 1));
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -3487,16 +3487,16 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingProgress") >= new Object() {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "craftingTime")) {
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 0;
 								final int _amount = 1;
@@ -3510,7 +3510,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -3524,7 +3524,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 2;
 								final int _amount = 1;
@@ -3538,7 +3538,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 4;
 								final int _amount = 1;
@@ -3552,7 +3552,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 5;
 								final int _amount = 1;
@@ -3566,7 +3566,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 6;
 								final int _amount = 1;
@@ -3580,7 +3580,7 @@ public class BreewingProcedure {
 							}
 						}
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 7;
 								final ItemStack _setstack = new ItemStack(PokefoodModItems.ARCEUM_BUCKET.get());
@@ -3599,9 +3599,9 @@ public class BreewingProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
+						}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Items.HONEY_BOTTLE) {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
@@ -3614,7 +3614,7 @@ public class BreewingProcedure {
 							}
 						} else {
 							{
-								BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+								BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_ent != null) {
 									final int _slotid = 3;
 									final int _amount = 1;
@@ -3629,7 +3629,7 @@ public class BreewingProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3638,7 +3638,7 @@ public class BreewingProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, y, z);
+							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -3654,9 +3654,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals("Arceum")) {
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("Arceum")) {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3671,9 +3671,9 @@ public class BreewingProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, new BlockPos(x, y, z), "recipeSelected");
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3682,7 +3682,682 @@ public class BreewingProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(x, y, z);
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", 1);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
+			}
+			if (BrewRedWineProcedure.execute(world, x, y, z) == true && new Object() {
+				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					return _retval.get();
+				}
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
+				if ((new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("RedWine")) {
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 0;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 2;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 4;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 5;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 6;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 7;
+								final ItemStack _setstack = new ItemStack(PokefoodModItems.RED_WINE_BUCKET.get());
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingTime", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					}
+				} else if (!(new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("RedWine")) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeSelected", "RedWine");
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", 1);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
+			}
+			if (BrewWhiteWineProcedure.execute(world, x, y, z) == true && new Object() {
+				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					return _retval.get();
+				}
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
+				if ((new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("WhiteWine")) {
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 0;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 2;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 4;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 5;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 6;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 7;
+								final ItemStack _setstack = new ItemStack(PokefoodModItems.WHITE_WINE_BUCKET.get());
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingTime", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					}
+				} else if (!(new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("WhiteWine")) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeSelected", "WhiteWine");
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", 1);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
+			}
+			if (BrewRoseWineProcedure.execute(world, x, y, z) == true && new Object() {
+				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					BlockEntity _ent = world.getBlockEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+					return _retval.get();
+				}
+			}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0) {
+				if ((new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("RoseWine")) {
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") >= new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) {
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 0;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 2;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 4;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 5;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 6;
+								final int _amount = 1;
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable) {
+										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+										_stk.shrink(_amount);
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+									}
+								});
+							}
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 7;
+								final ItemStack _setstack = new ItemStack(PokefoodModItems.ROSE_WINE_BUCKET.get());
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingTime", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					}
+				} else if (!(new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals("RoseWine")) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("recipeSelected", "RoseWine");
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					recipeSelected = new Object() {
+						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getString(tag);
+							return "";
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected");
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 7);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -3700,16 +4375,16 @@ public class BreewingProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingTime") == 0 && !(new Object() {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingTime") == 0 && !(new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "recipeSelected")).equals(recipeSelected) && !((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG.get())) {
+		}.getValue(world, BlockPos.containing(x, y, z), "recipeSelected")).equals(recipeSelected) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.KEG.get())) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -3718,7 +4393,7 @@ public class BreewingProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -3727,7 +4402,7 @@ public class BreewingProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.KEG.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3762,7 +4437,7 @@ public class BreewingProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingProgress") > 0) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") > 0) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -3770,9 +4445,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 2) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 2) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_2.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3807,9 +4482,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 3) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 3) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_2.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3844,9 +4519,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 4) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 4) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_3.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3881,9 +4556,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 5) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 5) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_4.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3918,9 +4593,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 6) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 6) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_5.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3955,9 +4630,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") < 7) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") < 7) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_6.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -3992,9 +4667,9 @@ public class BreewingProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "craftingProgress") == 7) {
+			}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") == 7) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG_7.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -4032,17 +4707,17 @@ public class BreewingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos(x, y, z), 7) == 0 && new Object() {
+		}.getAmount(world, BlockPos.containing(x, y, z), 7) == 0 && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingProgress") == 0) {
-			if (!((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.KEG.get())) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") == 0) {
+			if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.KEG.get())) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = PokefoodModBlocks.KEG.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -4077,9 +4752,9 @@ public class BreewingProcedure {
 							return blockEntity.getPersistentData().getString(tag);
 						return "";
 					}
-				}.getValue(world, new BlockPos(x, y, z), "none");
+				}.getValue(world, BlockPos.containing(x, y, z), "none");
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -4088,7 +4763,7 @@ public class BreewingProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)

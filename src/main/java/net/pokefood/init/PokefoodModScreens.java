@@ -4,6 +4,7 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.client.gui.PlateGUIScreen;
 import net.pokefood.client.gui.MixingGUIScreen;
 import net.pokefood.client.gui.KegGUIScreen;
 import net.pokefood.client.gui.KegFunnelGUIScreen;
@@ -11,11 +12,14 @@ import net.pokefood.client.gui.IceCreamExtentionGUIScreen;
 import net.pokefood.client.gui.IceCreaMakerGUIScreen;
 import net.pokefood.client.gui.FryerGUIScreen;
 import net.pokefood.client.gui.ConeDisplayGUIScreen;
+import net.pokefood.client.gui.CardboardBoxItemGUIScreen;
 import net.pokefood.client.gui.CardboardBoxGUIScreen;
 import net.pokefood.client.gui.CarbonizerGUIScreen;
 import net.pokefood.client.gui.CandyPackagerScreen;
+import net.pokefood.client.gui.CandyMachineGUIScreen;
 import net.pokefood.client.gui.BigOvenGUIScreen;
 import net.pokefood.client.gui.BigBagGUIScreen;
+import net.pokefood.client.gui.ApricornBoxGUIScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -41,6 +45,10 @@ public class PokefoodModScreens {
 			MenuScreens.register(PokefoodModMenus.CARDBOARD_BOX_GUI.get(), CardboardBoxGUIScreen::new);
 			MenuScreens.register(PokefoodModMenus.CONE_DISPLAY_GUI.get(), ConeDisplayGUIScreen::new);
 			MenuScreens.register(PokefoodModMenus.BIG_BAG_GUI.get(), BigBagGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.PLATE_GUI.get(), PlateGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.CANDY_MACHINE_GUI.get(), CandyMachineGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.APRICORN_BOX_GUI.get(), ApricornBoxGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.CARDBOARD_BOX_ITEM_GUI.get(), CardboardBoxItemGUIScreen::new);
 		});
 	}
 }

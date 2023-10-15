@@ -15,7 +15,7 @@ public class BananaChangingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Mth.nextInt(RandomSource.create(), 1, 5) == 3) {
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = PokefoodModBlocks.BANANA_RIPED.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

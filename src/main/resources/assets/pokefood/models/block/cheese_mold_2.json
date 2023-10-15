@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/cheese_mold",
+  "textures": {
+    "all": "pokefood:block/cheese_mold",
+    "particle": "pokefood:block/cheese_mold",
+    "0": "pokefood:block/cheese_mold",
+    "1": "pokefood:block/cheese_bag_2"
+  },
+  "render_type": "cutout"
+}

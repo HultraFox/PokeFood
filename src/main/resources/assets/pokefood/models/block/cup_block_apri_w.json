@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/cup",
+  "textures": {
+    "all": "pokefood:block/cup",
+    "particle": "pokefood:block/cup",
+    "0": "pokefood:block/cup",
+    "1": "pokefood:block/aprijuice_w_still"
+  },
+  "render_type": "translucent"
+}

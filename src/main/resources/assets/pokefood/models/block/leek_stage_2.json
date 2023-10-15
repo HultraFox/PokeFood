@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/crop_plant",
   "textures": {
-    "all": "pokefood:blocks/leek_2",
-    "particle": "pokefood:blocks/leek_2",
-    "0": "pokefood:blocks/leek_2"
+    "all": "pokefood:block/leek_2",
+    "particle": "pokefood:block/leek_2",
+    "0": "pokefood:block/leek_2"
   },
   "render_type": "cutout"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/crab_claw"
+    "layer0": "pokefood:item/crab_claw"
   }
 }

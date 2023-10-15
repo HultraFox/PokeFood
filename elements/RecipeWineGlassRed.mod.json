@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "wine",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WineGlass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WineGlass"
+      },
+      {
+        "value": "CUSTOM:RedWine.bucket"
+      },
+      {
+        "value": "CUSTOM:WineGlass"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WineGlass"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WineGlassRed"
+    },
+    "name": "recipe_wine_glass_red",
+    "namespace": "mod"
+  }
+}

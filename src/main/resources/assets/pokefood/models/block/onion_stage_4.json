@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "pokefood:block/onion_4",
+    "particle": "pokefood:block/onion_4"
+  },
+  "render_type": "cutout"
+}

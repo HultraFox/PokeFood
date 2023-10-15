@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 1,
     "texture": "basic_stiff",
     "customModelName": "pokepuff:default",
+    "customProperties": {},
+    "states": [],
     "name": "Poké puff",
     "rarity": "COMMON",
     "creativeTab": {

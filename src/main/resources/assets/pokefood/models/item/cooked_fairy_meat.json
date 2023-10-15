@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/cooked_fairy_meat"
+    "layer0": "pokefood:item/cooked_fairy_meat"
   }
 }

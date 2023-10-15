@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "grapes_log",
+        "2": "grapes_leaves",
+        "3": "oak_planks"
+      },
+      "name": "default"
+    }
+  }
+}

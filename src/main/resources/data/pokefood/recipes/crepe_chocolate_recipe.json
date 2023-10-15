@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "crepe",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:crepe"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "item": "pokefood:crepe_chocolate",
+    "count": 1
+  }
+}

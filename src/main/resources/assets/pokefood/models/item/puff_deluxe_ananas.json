@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/deluxe_ananas",
-    "particle": "pokefood:items/deluxe_ananas"
+    "0": "pokefood:block/deluxe_ananas",
+    "particle": "pokefood:item/deluxe_ananas"
   }
 }

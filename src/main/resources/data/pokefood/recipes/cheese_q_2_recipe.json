@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cheese_half",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:cheese_h_2"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cheese_q_2",
+    "count": 2
+  }
+}

@@ -3,6 +3,9 @@
   "values": [
     "pokefood:black_tea_bucket",
     "pokefood:bitter_rep_3",
-    "pokefood:lemon_slice"
+    "pokefood:lemon_slice",
+	"cobblemon:ganlon_berry",
+	"cobblemon:maranga_berry",
+	"cobblemon:petaya_berry"
   ]
 }

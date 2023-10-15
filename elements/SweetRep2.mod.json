@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "sweet_rep_20",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Sweet Replacement Powder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "A small quantity"
+      "§7A small quantity"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

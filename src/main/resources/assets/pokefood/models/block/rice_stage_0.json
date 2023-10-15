@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/large_plant",
+  "textures": {
+    "all": "pokefood:block/rice_0",
+    "particle": "pokefood:block/rice_0",
+    "0": "pokefood:block/rice_0",
+    "1": "pokefood:block/null"
+  },
+  "render_type": "cutout"
+}

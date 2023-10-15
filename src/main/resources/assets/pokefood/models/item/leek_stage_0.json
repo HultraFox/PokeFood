@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:blocks/leek_0"
+    "layer0": "pokefood:block/leek_0"
   }
 }

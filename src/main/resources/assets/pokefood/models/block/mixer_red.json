@@ -1,11 +1,11 @@
 {
   "parent": "pokefood:custom/mixer",
   "textures": {
-    "all": "pokefood:blocks/mixer_2_red",
-    "particle": "pokefood:blocks/mixer_2_red",
-    "0": "pokefood:blocks/mixer_1_red",
-    "1": "pokefood:blocks/mixer_2_red",
-    "missing": "pokefood:blocks/"
+    "all": "pokefood:block/mixer_2_red",
+    "particle": "pokefood:block/mixer_2_red",
+    "0": "pokefood:block/mixer_1_red",
+    "1": "pokefood:block/mixer_2_red",
+    "missing": "pokefood:block/"
   },
   "render_type": "cutout"
 }

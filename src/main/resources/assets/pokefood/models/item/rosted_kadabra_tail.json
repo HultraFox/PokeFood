@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/rosted_kadabra_tail"
+    "layer0": "pokefood:item/rosted_kadabra_tail"
   }
 }

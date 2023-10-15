@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/tall_plant",
   "textures": {
-    "all": "pokefood:blocks/lemon_tree_stage3",
-    "particle": "pokefood:blocks/lemon_tree_stage3",
-    "0": "pokefood:blocks/lemon_tree_stage3"
+    "all": "pokefood:block/lemon_tree_stage3",
+    "particle": "pokefood:block/lemon_tree_stage3",
+    "0": "pokefood:block/lemon_tree_stage3"
   },
   "render_type": "cutout"
 }

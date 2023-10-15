@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "fluid",
   "definition": {
     "name": "Fresh Water",
@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "fresh_water_bucket",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "emptySound": {
       "value": ""

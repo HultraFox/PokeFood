@@ -1,15 +1,15 @@
 {
   "parent": "pokefood:custom/icecream_maker",
   "textures": {
-    "all": "pokefood:blocks/ic_maker_6",
-    "particle": "pokefood:blocks/ic_maker_6",
-    "0": "pokefood:blocks/ic_maker_1",
-    "1": "pokefood:blocks/ic_maker_2",
-    "2": "pokefood:blocks/ic_maker_3",
-    "3": "pokefood:blocks/ic_maker_4",
-    "4": "pokefood:blocks/ic_maker_5",
-    "5": "pokefood:blocks/ic_maker_6",
-    "missing": "pokefood:blocks/null"
+    "all": "pokefood:block/ic_maker_6",
+    "particle": "pokefood:block/ic_maker_6",
+    "0": "pokefood:block/ic_maker_1",
+    "1": "pokefood:block/ic_maker_2",
+    "2": "pokefood:block/ic_maker_3",
+    "3": "pokefood:block/ic_maker_4",
+    "4": "pokefood:block/ic_maker_5",
+    "5": "pokefood:block/ic_maker_6",
+    "missing": "pokefood:block/null"
   },
   "render_type": "cutout"
 }

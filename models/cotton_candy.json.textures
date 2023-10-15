@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cotton_candy_5",
+        "2": "stick"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/caterpie_on_a_spike"
+    "layer0": "pokefood:item/caterpie_on_a_spike"
   }
 }

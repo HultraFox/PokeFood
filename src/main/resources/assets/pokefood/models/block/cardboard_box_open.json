@@ -1,13 +1,13 @@
 {
   "parent": "pokefood:custom/open_box",
   "textures": {
-    "all": "pokefood:blocks/cardbox_side",
-    "particle": "pokefood:blocks/cardbox_side",
-    "0": "pokefood:blocks/cardbox_bottom",
-    "1": "pokefood:blocks/cardbox_side",
-    "2": "pokefood:blocks/cardbox_side_inv",
-    "3": "pokefood:blocks/cardbox_top",
-    "4": "pokefood:blocks/cardbox_top_open"
+    "all": "pokefood:block/cardbox_side",
+    "particle": "pokefood:block/cardbox_side",
+    "0": "pokefood:block/cardbox_bottom",
+    "1": "pokefood:block/cardbox_side",
+    "2": "pokefood:block/cardbox_side_inv",
+    "3": "pokefood:block/cardbox_top",
+    "4": "pokefood:block/cardbox_top_open"
   },
   "render_type": "solid"
 }

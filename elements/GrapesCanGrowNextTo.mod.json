@@ -1,0 +1,2283 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.GRASS_PATH"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.TALLGRASS"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#1"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#2"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#3"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#4"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#5"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#6"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#7"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "Blocks.CORNFLOWER"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#0"
+      },
+      {
+        "value": "CUSTOM:BananaFence"
+      },
+      {
+        "value": "CUSTOM:BananaFenceGate"
+      },
+      {
+        "value": "Blocks.OAK_FENCE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE"
+      },
+      {
+        "value": "Blocks.MANGROVE_FENCE"
+      },
+      {
+        "value": "Blocks.OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.MANGROVE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.NETHER_BRICK_FENCE"
+      },
+      {
+        "value": "CUSTOM:BananaTrapdoor"
+      },
+      {
+        "value": "Blocks.TRAPDOOR"
+      },
+      {
+        "value": "Blocks.SPRUCE_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.BIRCH_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.JUNGLE_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.ACACIA_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.DARK_OAK_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.WARPED_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.MANGROVE_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.IRON_TRAPDOOR"
+      },
+      {
+        "value": "CUSTOM:BananaDoor"
+      },
+      {
+        "value": "Blocks.OAK_DOOR"
+      },
+      {
+        "value": "Blocks.SPRUCE_DOOR"
+      },
+      {
+        "value": "Blocks.BIRCH_DOOR"
+      },
+      {
+        "value": "Blocks.JUNGLE_DOOR"
+      },
+      {
+        "value": "Blocks.ACACIA_DOOR"
+      },
+      {
+        "value": "Blocks.DARK_OAK_DOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_DOOR"
+      },
+      {
+        "value": "Blocks.WARPED_DOOR"
+      },
+      {
+        "value": "Blocks.MANGROVE_DOOR"
+      },
+      {
+        "value": "Blocks.IRON_DOOR"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceW"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceD"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceB"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceG"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceR"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceP"
+      },
+      {
+        "value": "CUSTOM:Tea"
+      },
+      {
+        "value": "CUSTOM:TeaStage0"
+      },
+      {
+        "value": "CUSTOM:TeaStage1"
+      },
+      {
+        "value": "CUSTOM:TeaStage2"
+      },
+      {
+        "value": "CUSTOM:BlackTea"
+      },
+      {
+        "value": "CUSTOM:BlackTeaStage0"
+      },
+      {
+        "value": "CUSTOM:BlackTeaStage1"
+      },
+      {
+        "value": "CUSTOM:BlackTeaStage2"
+      },
+      {
+        "value": "CUSTOM:Lemonade"
+      },
+      {
+        "value": "CUSTOM:LemonStage0"
+      },
+      {
+        "value": "CUSTOM:LemonStage1"
+      },
+      {
+        "value": "CUSTOM:LemonStage2"
+      },
+      {
+        "value": "CUSTOM:LemonStage3"
+      },
+      {
+        "value": "CUSTOM:LemonStage4"
+      },
+      {
+        "value": "CUSTOM:LemonStage5"
+      },
+      {
+        "value": "CUSTOM:LemonStage6"
+      },
+      {
+        "value": "CUSTOM:CalcuimStage0"
+      },
+      {
+        "value": "CUSTOM:CalcuimStage1"
+      },
+      {
+        "value": "CUSTOM:CalcuimStage2"
+      },
+      {
+        "value": "CUSTOM:CalcuimStage3"
+      },
+      {
+        "value": "CUSTOM:CalcuimPlant"
+      },
+      {
+        "value": "CUSTOM:PotEmpty"
+      },
+      {
+        "value": "CUSTOM:PotWater"
+      },
+      {
+        "value": "CUSTOM:PotWaterFired"
+      },
+      {
+        "value": "CUSTOM:PotTea"
+      },
+      {
+        "value": "CUSTOM:PotTeaFired"
+      },
+      {
+        "value": "CUSTOM:PotBlackTea"
+      },
+      {
+        "value": "CUSTOM:PotBlackTeaFired"
+      },
+      {
+        "value": "CUSTOM:PotTeaCooked"
+      },
+      {
+        "value": "CUSTOM:PotBlackTeaCooked"
+      },
+      {
+        "value": "CUSTOM:PotFreshWater"
+      },
+      {
+        "value": "CUSTOM:PotWaterSugar"
+      },
+      {
+        "value": "CUSTOM:PotWaterLemon"
+      },
+      {
+        "value": "CUSTOM:PotLemonade"
+      },
+      {
+        "value": "CUSTOM:PotLemonadeCooked"
+      },
+      {
+        "value": "CUSTOM:CarbonizerBottle"
+      },
+      {
+        "value": "CUSTOM:MixerRed"
+      },
+      {
+        "value": "CUSTOM:MixerBlue"
+      },
+      {
+        "value": "CUSTOM:MixerGreen"
+      },
+      {
+        "value": "CUSTOM:MixerYellow"
+      },
+      {
+        "value": "CUSTOM:MixerPink"
+      },
+      {
+        "value": "CUSTOM:RoseradeTea"
+      },
+      {
+        "value": "CUSTOM:PotRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:PotRoseradeTeaFired"
+      },
+      {
+        "value": "CUSTOM:PotRoseradeTeaCooked"
+      },
+      {
+        "value": "CUSTOM:Keg"
+      },
+      {
+        "value": "CUSTOM:Keg2"
+      },
+      {
+        "value": "CUSTOM:Keg3"
+      },
+      {
+        "value": "CUSTOM:Keg4"
+      },
+      {
+        "value": "CUSTOM:Keg5"
+      },
+      {
+        "value": "CUSTOM:Keg6"
+      },
+      {
+        "value": "CUSTOM:Keg7"
+      },
+      {
+        "value": "CUSTOM:PotMalt"
+      },
+      {
+        "value": "CUSTOM:PotMaltFired"
+      },
+      {
+        "value": "CUSTOM:PotMaltCooked"
+      },
+      {
+        "value": "CUSTOM:Malt"
+      },
+      {
+        "value": "CUSTOM:Beer"
+      },
+      {
+        "value": "CUSTOM:BananaTeaBeer"
+      },
+      {
+        "value": "CUSTOM:CherryCalcuimBeer"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholW"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholD"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholB"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholG"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholY"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholP"
+      },
+      {
+        "value": "CUSTOM:ApriAlcoholR"
+      },
+      {
+        "value": "CUSTOM:Brandy"
+      },
+      {
+        "value": "CUSTOM:Cidronade"
+      },
+      {
+        "value": "CUSTOM:Arceum"
+      },
+      {
+        "value": "CUSTOM:KegFunnel"
+      },
+      {
+        "value": "CUSTOM:KegFunnelUp"
+      },
+      {
+        "value": "CUSTOM:KegFunnelFront"
+      },
+      {
+        "value": "CUSTOM:IceCreamMaker"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtention"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriB"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriD"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriG"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriP"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriR"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriW"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionApriY"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionLemonade"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionTea"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionTeaB"
+      },
+      {
+        "value": "CUSTOM:IceCreamExtentionTeaR"
+      },
+      {
+        "value": "CUSTOM:CoffeeMaker"
+      },
+      {
+        "value": "CUSTOM:Coffee"
+      },
+      {
+        "value": "CUSTOM:CoffeeMakerCooking"
+      },
+      {
+        "value": "CUSTOM:CoffeeIced"
+      },
+      {
+        "value": "CUSTOM:Latte"
+      },
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs0"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs1"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs2"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs3"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs4"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs5"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs6"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs7"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs8"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs9"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs10"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs11"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs12"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs13"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePuffs14"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin0"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin1"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin2"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin3"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin4"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin5"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin6"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin7"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin8"
+      },
+      {
+        "value": "CUSTOM:DisplayCasePoffin9"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW7"
+      },
+      {
+        "value": "CUSTOM:BigBag"
+      },
+      {
+        "value": "CUSTOM:CoffeeMakerCooked"
+      },
+      {
+        "value": "CUSTOM:Heater"
+      },
+      {
+        "value": "CUSTOM:LeekStage0"
+      },
+      {
+        "value": "CUSTOM:LeekStage1"
+      },
+      {
+        "value": "CUSTOM:LeekStage2"
+      },
+      {
+        "value": "CUSTOM:LeekStage3"
+      },
+      {
+        "value": "CUSTOM:CherryInfusion"
+      },
+      {
+        "value": "CUSTOM:PotCherry"
+      },
+      {
+        "value": "CUSTOM:PotCherryFired"
+      },
+      {
+        "value": "CUSTOM:PotCherryCooked"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine7"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade1"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade2"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade3"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade4"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade5"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade6"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade7"
+      },
+      {
+        "value": "CUSTOM:CandyBox"
+      },
+      {
+        "value": "CUSTOM:CandyBoxEmpty"
+      },
+      {
+        "value": "CUSTOM:ConeDisplay"
+      },
+      {
+        "value": "CUSTOM:PackApriB"
+      },
+      {
+        "value": "CUSTOM:PackApriD"
+      },
+      {
+        "value": "CUSTOM:PackApriG"
+      },
+      {
+        "value": "CUSTOM:PackApriY"
+      },
+      {
+        "value": "CUSTOM:PackApriR"
+      },
+      {
+        "value": "CUSTOM:PackApriP"
+      },
+      {
+        "value": "CUSTOM:PackApriW"
+      },
+      {
+        "value": "CUSTOM:PackApriB4"
+      },
+      {
+        "value": "CUSTOM:PackApriD4"
+      },
+      {
+        "value": "CUSTOM:PackApriG4"
+      },
+      {
+        "value": "CUSTOM:PackApriY4"
+      },
+      {
+        "value": "CUSTOM:PackApriR4"
+      },
+      {
+        "value": "CUSTOM:PackApriP4"
+      },
+      {
+        "value": "CUSTOM:PackApriW4"
+      },
+      {
+        "value": "CUSTOM:PackApriB8"
+      },
+      {
+        "value": "CUSTOM:PackApriD8"
+      },
+      {
+        "value": "CUSTOM:PackApriG8"
+      },
+      {
+        "value": "CUSTOM:PackApriY8"
+      },
+      {
+        "value": "CUSTOM:PackApriR8"
+      },
+      {
+        "value": "CUSTOM:PackApriP8"
+      },
+      {
+        "value": "CUSTOM:PackApriW8"
+      },
+      {
+        "value": "CUSTOM:PackTea"
+      },
+      {
+        "value": "CUSTOM:PackTea4"
+      },
+      {
+        "value": "CUSTOM:PackTea8"
+      },
+      {
+        "value": "CUSTOM:PackTeaBlack"
+      },
+      {
+        "value": "CUSTOM:PackTeaBlack4"
+      },
+      {
+        "value": "CUSTOM:PackTeaBlack8"
+      },
+      {
+        "value": "CUSTOM:PackTeaRoserade"
+      },
+      {
+        "value": "CUSTOM:PackTeaRoserade4"
+      },
+      {
+        "value": "CUSTOM:PackTeaRoserade8"
+      },
+      {
+        "value": "CUSTOM:PackCherry"
+      },
+      {
+        "value": "CUSTOM:PackCherry4"
+      },
+      {
+        "value": "CUSTOM:PackCherry8"
+      },
+      {
+        "value": "CUSTOM:PackLemonade"
+      },
+      {
+        "value": "CUSTOM:PackLemonade4"
+      },
+      {
+        "value": "CUSTOM:PackLemonade8"
+      },
+      {
+        "value": "CUSTOM:PackPop"
+      },
+      {
+        "value": "CUSTOM:PackPop4"
+      },
+      {
+        "value": "CUSTOM:PackPop8"
+      },
+      {
+        "value": "CUSTOM:PackCoffee"
+      },
+      {
+        "value": "CUSTOM:PackCoffee4"
+      },
+      {
+        "value": "CUSTOM:PackCoffee8"
+      },
+      {
+        "value": "CUSTOM:PackLatte"
+      },
+      {
+        "value": "CUSTOM:PackLatte4"
+      },
+      {
+        "value": "CUSTOM:PackLatte8"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB0"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB1"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB2"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB3"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB4"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB5"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB6"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB7"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB8"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB9"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB10"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB11"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB12"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB13"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB14"
+      },
+      {
+        "value": "CUSTOM:CalcuimEmptyB15"
+      },
+      {
+        "value": "CUSTOM:CalcuimB0"
+      },
+      {
+        "value": "CUSTOM:CalcuimB1"
+      },
+      {
+        "value": "CUSTOM:CalcuimB2"
+      },
+      {
+        "value": "CUSTOM:CalcuimB3"
+      },
+      {
+        "value": "CUSTOM:CalcuimB4"
+      },
+      {
+        "value": "CUSTOM:CalcuimB5"
+      },
+      {
+        "value": "CUSTOM:CalcuimB6"
+      },
+      {
+        "value": "CUSTOM:CalcuimB7"
+      },
+      {
+        "value": "CUSTOM:CalcuimB8"
+      },
+      {
+        "value": "CUSTOM:CalcuimB9"
+      },
+      {
+        "value": "CUSTOM:CalcuimB10"
+      },
+      {
+        "value": "CUSTOM:CalcuimB11"
+      },
+      {
+        "value": "CUSTOM:CalcuimB12"
+      },
+      {
+        "value": "CUSTOM:CalcuimB13"
+      },
+      {
+        "value": "CUSTOM:CalcuimB14"
+      },
+      {
+        "value": "CUSTOM:CalcuimB15"
+      },
+      {
+        "value": "CUSTOM:PackEmpty"
+      },
+      {
+        "value": "CUSTOM:CoolerRed"
+      },
+      {
+        "value": "CUSTOM:CoolerPink"
+      },
+      {
+        "value": "CUSTOM:CoolerYellow"
+      },
+      {
+        "value": "CUSTOM:CoolerGreen"
+      },
+      {
+        "value": "CUSTOM:CoolerBlue"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable0"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable1"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable2"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable3"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable4"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable5"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable6"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable7"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable8"
+      },
+      {
+        "value": "CUSTOM:CoffeeTable10"
+      },
+      {
+        "value": "CUSTOM:Barstool0"
+      },
+      {
+        "value": "CUSTOM:Barstool1"
+      },
+      {
+        "value": "CUSTOM:Barstool2"
+      },
+      {
+        "value": "CUSTOM:Barstool3"
+      },
+      {
+        "value": "CUSTOM:Barstool4"
+      },
+      {
+        "value": "CUSTOM:Barstool5"
+      },
+      {
+        "value": "CUSTOM:Barstool6"
+      },
+      {
+        "value": "CUSTOM:Barstool7"
+      },
+      {
+        "value": "CUSTOM:Barstool8"
+      },
+      {
+        "value": "CUSTOM:Barstool9"
+      },
+      {
+        "value": "CUSTOM:Barstool10"
+      },
+      {
+        "value": "CUSTOM:Barstool11"
+      },
+      {
+        "value": "CUSTOM:Barstool12"
+      },
+      {
+        "value": "CUSTOM:Barstool13"
+      },
+      {
+        "value": "CUSTOM:Barstool14"
+      },
+      {
+        "value": "CUSTOM:Barstool15"
+      },
+      {
+        "value": "CUSTOM:CupBlock"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriD"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriB"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriG"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriY"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriR"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriP"
+      },
+      {
+        "value": "CUSTOM:CupBlockApriW"
+      },
+      {
+        "value": "CUSTOM:CupBlockTea"
+      },
+      {
+        "value": "CUSTOM:CupBlockBlackTea"
+      },
+      {
+        "value": "CUSTOM:CupBlockRoseradeTea"
+      },
+      {
+        "value": "CUSTOM:CupBlockLemonade"
+      },
+      {
+        "value": "CUSTOM:CupBlockFreshWater"
+      },
+      {
+        "value": "CUSTOM:CupBlockCoffee"
+      },
+      {
+        "value": "CUSTOM:CupBlockCoffeeIced"
+      },
+      {
+        "value": "CUSTOM:CupBlockLatte"
+      },
+      {
+        "value": "CUSTOM:CupBlockCherryInfusion"
+      },
+      {
+        "value": "CUSTOM:Lamp0Off"
+      },
+      {
+        "value": "CUSTOM:Lamp0On"
+      },
+      {
+        "value": "CUSTOM:Chair0"
+      },
+      {
+        "value": "CUSTOM:Chair1"
+      },
+      {
+        "value": "CUSTOM:CheeseMold"
+      },
+      {
+        "value": "CUSTOM:CheeseFull0"
+      },
+      {
+        "value": "CUSTOM:CheeseFull1"
+      },
+      {
+        "value": "CUSTOM:CheeseFull2"
+      },
+      {
+        "value": "CUSTOM:CheeseFull3"
+      },
+      {
+        "value": "CUSTOM:CheeseFull4"
+      },
+      {
+        "value": "CUSTOM:CheeseFull5"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ0"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ1"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ2"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ3"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ4"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ5"
+      },
+      {
+        "value": "CUSTOM:CheeseH0"
+      },
+      {
+        "value": "CUSTOM:CheeseH1"
+      },
+      {
+        "value": "CUSTOM:CheeseH2"
+      },
+      {
+        "value": "CUSTOM:CheeseH3"
+      },
+      {
+        "value": "CUSTOM:CheeseH4"
+      },
+      {
+        "value": "CUSTOM:CheeseH5"
+      },
+      {
+        "value": "CUSTOM:CheeseQ0"
+      },
+      {
+        "value": "CUSTOM:CheeseQ1"
+      },
+      {
+        "value": "CUSTOM:CheeseQ2"
+      },
+      {
+        "value": "CUSTOM:CheeseQ3"
+      },
+      {
+        "value": "CUSTOM:CheeseQ4"
+      },
+      {
+        "value": "CUSTOM:CheeseQ5"
+      },
+      {
+        "value": "CUSTOM:OnionStage0"
+      },
+      {
+        "value": "CUSTOM:OnionStage1"
+      },
+      {
+        "value": "CUSTOM:OnionStage2"
+      },
+      {
+        "value": "CUSTOM:OnionStage3"
+      },
+      {
+        "value": "CUSTOM:OnionStage4"
+      },
+      {
+        "value": "CUSTOM:OnionStage5"
+      },
+      {
+        "value": "CUSTOM:OnionStage6"
+      },
+      {
+        "value": "CUSTOM:Letuce0"
+      },
+      {
+        "value": "CUSTOM:Letuce1"
+      },
+      {
+        "value": "CUSTOM:Letuce2"
+      },
+      {
+        "value": "CUSTOM:Letuce3"
+      },
+      {
+        "value": "CUSTOM:LettuceWild"
+      },
+      {
+        "value": "CUSTOM:RiceStage0"
+      },
+      {
+        "value": "CUSTOM:RiceStage1"
+      },
+      {
+        "value": "CUSTOM:RiceStage2"
+      },
+      {
+        "value": "CUSTOM:RiceStage3"
+      },
+      {
+        "value": "CUSTOM:RiceStage4"
+      },
+      {
+        "value": "CUSTOM:RiceStage5"
+      },
+      {
+        "value": "CUSTOM:PlateBlock"
+      },
+      {
+        "value": "CUSTOM:CrepeMaker"
+      },
+      {
+        "value": "CUSTOM:PlateUncookedBlock"
+      },
+      {
+        "value": "CUSTOM:BananaButton"
+      },
+      {
+        "value": "Blocks.STONE_BUTTON"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BUTTON"
+      },
+      {
+        "value": "Blocks.WOODEN_BUTTON"
+      },
+      {
+        "value": "Blocks.SPRUCE_BUTTON"
+      },
+      {
+        "value": "Blocks.BIRCH_BUTTON"
+      },
+      {
+        "value": "Blocks.JUNGLE_BUTTON"
+      },
+      {
+        "value": "Blocks.ACACIA_BUTTON"
+      },
+      {
+        "value": "Blocks.DARK_OAK_BUTTON"
+      },
+      {
+        "value": "Blocks.CRIMSON_BUTTON"
+      },
+      {
+        "value": "Blocks.WARPED_BUTTON"
+      },
+      {
+        "value": "Blocks.MANGROVE_BUTTON"
+      },
+      {
+        "value": "Blocks.POINTED_DRIPSTONE"
+      },
+      {
+        "value": "Blocks.MOSS_CARPET"
+      },
+      {
+        "value": "Blocks.SAPLING#0"
+      },
+      {
+        "value": "Blocks.SAPLING#1"
+      },
+      {
+        "value": "Blocks.SAPLING#2"
+      },
+      {
+        "value": "Blocks.SAPLING#3"
+      },
+      {
+        "value": "Blocks.SAPLING#4"
+      },
+      {
+        "value": "Blocks.SAPLING#5"
+      },
+      {
+        "value": "Blocks.MANGROVE_PROPAGULE"
+      },
+      {
+        "value": "Blocks.REEDS"
+      },
+      {
+        "value": "Blocks.RAIL"
+      },
+      {
+        "value": "Blocks.GOLDEN_RAIL"
+      },
+      {
+        "value": "Blocks.DETECTOR_RAIL"
+      },
+      {
+        "value": "Blocks.ACTIVATOR_RAIL"
+      },
+      {
+        "value": "Blocks.WEB"
+      },
+      {
+        "value": "Blocks.DEADBUSH"
+      },
+      {
+        "value": "Blocks.LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#1"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#3"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#4"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#5"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "Blocks.WALL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.LANTERN"
+      },
+      {
+        "value": "Blocks.SOUL_LANTERN"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "Blocks.CAMPFIRE"
+      },
+      {
+        "value": "Blocks.SOUL_CAMPFIRE"
+      },
+      {
+        "value": "Blocks.CANDLE#0"
+      },
+      {
+        "value": "Blocks.CANDLE#1"
+      },
+      {
+        "value": "Blocks.CANDLE#2"
+      },
+      {
+        "value": "Blocks.CANDLE#3"
+      },
+      {
+        "value": "Blocks.CANDLE#4"
+      },
+      {
+        "value": "Blocks.CANDLE#5"
+      },
+      {
+        "value": "Blocks.CANDLE#6"
+      },
+      {
+        "value": "Blocks.CANDLE#7"
+      },
+      {
+        "value": "Blocks.CANDLE#8"
+      },
+      {
+        "value": "Blocks.CANDLE#9"
+      },
+      {
+        "value": "Blocks.CANDLE#10"
+      },
+      {
+        "value": "Blocks.CANDLE#11"
+      },
+      {
+        "value": "Blocks.CANDLE#12"
+      },
+      {
+        "value": "Blocks.CANDLE#13"
+      },
+      {
+        "value": "Blocks.CANDLE#14"
+      },
+      {
+        "value": "Blocks.CANDLE#15"
+      },
+      {
+        "value": "Blocks.CANDLE#16"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.STANDING_SIGN"
+      },
+      {
+        "value": "Blocks.SPRUCE_SIGN"
+      },
+      {
+        "value": "Blocks.BIRCH_SIGN"
+      },
+      {
+        "value": "Blocks.ACACIA_SIGN"
+      },
+      {
+        "value": "Blocks.JUNGLE_SIGN"
+      },
+      {
+        "value": "Blocks.DARK_OAK_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_SIGN"
+      },
+      {
+        "value": "Blocks.MANGROVE_SIGN"
+      },
+      {
+        "value": "Blocks.WALL_SIGN"
+      },
+      {
+        "value": "Blocks.SPRUCE_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.BIRCH_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.ACACIA_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.JUNGLE_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.DARK_OAK_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.MANGROVE_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.LADDER"
+      },
+      {
+        "value": "Blocks.LEVER"
+      },
+      {
+        "value": "Blocks.WOODEN_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.SPRUCE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.BIRCH_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.JUNGLE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.ACACIA_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.WARPED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.MANGROVE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.STONE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.TRIPWIRE_HOOK"
+      },
+      {
+        "value": "Blocks.TRIPWIRE"
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR"
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR_INVERTED"
+      },
+      {
+        "value": "Blocks.REDSTONE_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.UNLIT_REDSTONE_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_WIRE"
+      },
+      {
+        "value": "Blocks.UNPOWERED_REPEATER"
+      },
+      {
+        "value": "Blocks.POWERED_REPEATER"
+      },
+      {
+        "value": "Blocks.UNPOWERED_COMPARATOR"
+      },
+      {
+        "value": "Blocks.POWERED_COMPARATOR"
+      },
+      {
+        "value": "Blocks.HOPPER"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "Blocks.SNOW_LAYER"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": "Blocks.MELON_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_MELON_STEM"
+      },
+      {
+        "value": "Blocks.PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.BREWING_STAND"
+      },
+      {
+        "value": "Blocks.END_ROD"
+      },
+      {
+        "value": "Blocks.FLOWER_POT"
+      },
+      {
+        "value": "Blocks.POTTED_OAK_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_SPRUCE_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_BIRCH_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_JUNGLE_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_ACACIA_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_DARK_OAK_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_MANGROVE_PROPAGULE"
+      },
+      {
+        "value": "Blocks.POTTED_FERN"
+      },
+      {
+        "value": "Blocks.POTTED_DANDELION"
+      },
+      {
+        "value": "Blocks.POTTED_POPPY"
+      },
+      {
+        "value": "Blocks.POTTED_BLUE_ORCHID"
+      },
+      {
+        "value": "Blocks.POTTED_ALLIUM"
+      },
+      {
+        "value": "Blocks.POTTED_AZURE_BLUET"
+      },
+      {
+        "value": "Blocks.POTTED_RED_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_ORANGE_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_WHITE_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_PINK_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_OXEYE_DAISY"
+      },
+      {
+        "value": "Blocks.POTTED_CORNFLOWER"
+      },
+      {
+        "value": "Blocks.POTTED_LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.POTTED_WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.POTTED_RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.POTTED_BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.POTTED_DEAD_BUSH"
+      },
+      {
+        "value": "Blocks.POTTED_CACTUS"
+      },
+      {
+        "value": "Blocks.POTTED_BAMBOO"
+      },
+      {
+        "value": "Blocks.POTTED_CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.POTTED_WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.POTTED_CRIMSON_ROOTS"
+      },
+      {
+        "value": "Blocks.POTTED_WARPED_ROOTS"
+      },
+      {
+        "value": "Blocks.POTTED_AZALEA_BUSH"
+      },
+      {
+        "value": "Blocks.POTTED_FLOWERING_AZALEA_BUSH"
+      },
+      {
+        "value": "Blocks.CARROTS"
+      },
+      {
+        "value": "Blocks.POTATOES"
+      },
+      {
+        "value": "Blocks.SKULL#0"
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": "Blocks.SKULL#2"
+      },
+      {
+        "value": "Blocks.SKULL#3"
+      },
+      {
+        "value": "Blocks.SKULL#4"
+      },
+      {
+        "value": "Blocks.SKULL#5"
+      },
+      {
+        "value": "Blocks.SKELETON_WALL_SKULL"
+      },
+      {
+        "value": "Blocks.WITHER_SKELETON_WALL_SKULL"
+      },
+      {
+        "value": "Blocks.ZOMBIE_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.PLAYER_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.CREEPER_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.DRAGON_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.CARPET#0"
+      },
+      {
+        "value": "Blocks.CARPET#1"
+      },
+      {
+        "value": "Blocks.CARPET#2"
+      },
+      {
+        "value": "Blocks.CARPET#3"
+      },
+      {
+        "value": "Blocks.CARPET#4"
+      },
+      {
+        "value": "Blocks.CARPET#5"
+      },
+      {
+        "value": "Blocks.CARPET#6"
+      },
+      {
+        "value": "Blocks.CARPET#7"
+      },
+      {
+        "value": "Blocks.CARPET#8"
+      },
+      {
+        "value": "Blocks.CARPET#9"
+      },
+      {
+        "value": "Blocks.CARPET#10"
+      },
+      {
+        "value": "Blocks.CARPET#11"
+      },
+      {
+        "value": "Blocks.CARPET#12"
+      },
+      {
+        "value": "Blocks.CARPET#13"
+      },
+      {
+        "value": "Blocks.CARPET#14"
+      },
+      {
+        "value": "Blocks.CARPET#15"
+      },
+      {
+        "value": "Blocks.STANDING_BANNER"
+      },
+      {
+        "value": "Blocks.WHITE_BANNER"
+      },
+      {
+        "value": "Blocks.ORANGE_BANNER"
+      },
+      {
+        "value": "Blocks.MAGENTA_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_BANNER"
+      },
+      {
+        "value": "Blocks.YELLOW_BANNER"
+      },
+      {
+        "value": "Blocks.LIME_BANNER"
+      },
+      {
+        "value": "Blocks.PINK_BANNER"
+      },
+      {
+        "value": "Blocks.GRAY_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_BANNER"
+      },
+      {
+        "value": "Blocks.CYAN_BANNER"
+      },
+      {
+        "value": "Blocks.PURPLE_BANNER"
+      },
+      {
+        "value": "Blocks.BLUE_BANNER"
+      },
+      {
+        "value": "Blocks.BROWN_BANNER"
+      },
+      {
+        "value": "Blocks.GREEN_BANNER"
+      },
+      {
+        "value": "Blocks.RED_BANNER"
+      },
+      {
+        "value": "Blocks.BLACK_BANNER"
+      },
+      {
+        "value": "Blocks.WALL_BANNER"
+      },
+      {
+        "value": "Blocks.WHITE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.ORANGE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.MAGENTA_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.YELLOW_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIME_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.PINK_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.GRAY_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.CYAN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.PURPLE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BLUE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BROWN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.GREEN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.RED_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BLACK_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BARRIER"
+      },
+      {
+        "value": "Blocks.STRUCTURE_VOID"
+      },
+      {
+        "value": "Blocks.SEA_PICKLE"
+      },
+      {
+        "value": "Blocks.TURTLE_EGG"
+      },
+      {
+        "value": "Blocks.BAMBOO_SAPLING"
+      },
+      {
+        "value": "Blocks.BAMBOO"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL"
+      },
+      {
+        "value": "Blocks.HORN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.HORN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.HORN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.CONDUIT"
+      },
+      {
+        "value": "Blocks.SCAFFOLDING"
+      },
+      {
+        "value": "Blocks.BELL"
+      },
+      {
+        "value": "Blocks.GRINDSTONE"
+      },
+      {
+        "value": "Blocks.WARPED_ROOTS"
+      },
+      {
+        "value": "Blocks.NETHER_SPROUTS"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.CRIMSON_ROOTS"
+      },
+      {
+        "value": "Blocks.CAVE_VINES"
+      },
+      {
+        "value": "Blocks.CAVE_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.SPORE_BLOSSOM"
+      },
+      {
+        "value": "Blocks.BIG_DRIPLEAF"
+      },
+      {
+        "value": "Blocks.BIG_DRIPLEAF_STEM"
+      },
+      {
+        "value": "Blocks.SMALL_DRIPLEAF"
+      },
+      {
+        "value": "Blocks.HANGING_ROOTS"
+      },
+      {
+        "value": "Blocks.FROGSPAWN"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "grapes_can_grow_next_to",
+    "namespace": "mod"
+  }
+}

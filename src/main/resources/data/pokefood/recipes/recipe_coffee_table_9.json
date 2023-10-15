@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coffee_table",
+  "category": "misc",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cherry_slab"
+    },
+    "1": {
+      "item": "minecraft:cherry_fence"
+    }
+  },
+  "result": {
+    "item": "pokefood:coffee_table_9",
+    "count": 1
+  }
+}

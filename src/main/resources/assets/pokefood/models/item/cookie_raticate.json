@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/raticate"
+    "layer0": "pokefood:item/raticate"
   }
 }

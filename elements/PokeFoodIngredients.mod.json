@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood - Ingredients",
+    "icon": {
+      "value": "CUSTOM:SpicyJuice"
+    },
+    "showSearch": false
+  }
+}

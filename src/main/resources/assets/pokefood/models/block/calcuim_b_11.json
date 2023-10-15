@@ -1,9 +1,9 @@
 {
   "parent": "pokefood:custom/pop_calcuim_box",
   "textures": {
-    "all": "pokefood:blocks/poped_calcuim_box_11",
-    "particle": "pokefood:blocks/poped_calcuim_box_11",
-    "0": "pokefood:blocks/poped_calcuim_box_11"
+    "all": "pokefood:block/poped_calcuim_box_11",
+    "particle": "pokefood:block/poped_calcuim_box_11",
+    "0": "pokefood:block/poped_calcuim_box_11"
   },
   "render_type": "cutout"
 }

@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "pastry_book",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "pastry_book_item",
     "rarity": "EPIC",
     "creativeTab": {

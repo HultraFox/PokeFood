@@ -1,0 +1,86 @@
+{
+    "multipart": [
+        {
+			"when": { "facing": "north"},
+			"apply": { "model": "pokefood:block/candy_machine_0", "uvlock": false }
+        },
+        {
+			"when": { "facing": "east"},
+			"apply": { "model": "pokefood:block/candy_machine_0", "y": 90, "uvlock": false }
+        },
+        {
+			"when": { "facing": "south"},
+			"apply": { "model": "pokefood:block/candy_machine_0", "y": 180, "uvlock": false }
+        },
+        {
+			"when": { "facing": "west"},
+			"apply": { "model": "pokefood:block/candy_machine_0", "y": 270, "uvlock": false }
+        },
+
+        
+        {
+			"when": { "content": "1"},
+			"apply": { "model": "pokefood:block/candy_content_1", "uvlock": false }
+        },
+        {
+			"when": { "content": "2"},
+			"apply": { "model": "pokefood:block/candy_content_2", "uvlock": false }
+        },
+        {
+			"when": { "content": "3"},
+			"apply": { "model": "pokefood:block/candy_content_3", "uvlock": false }
+        },
+        {
+			"when": { "content": "4"},
+			"apply": { "model": "pokefood:block/candy_content_4", "uvlock": false }
+        },
+        {
+			"when": { "content": "5"},
+			"apply": { "model": "pokefood:block/candy_content_5", "uvlock": false }
+        },
+        {
+			"when": { "content": "6"},
+			"apply": { "model": "pokefood:block/candy_content_6", "uvlock": false }
+        },
+        {
+			"when": { "content": "7"},
+			"apply": { "model": "pokefood:block/candy_content_7", "uvlock": false }
+        },
+        {
+			"when": { "content": "8"},
+			"apply": { "model": "pokefood:block/candy_content_8", "uvlock": false }
+        },
+        {
+			"when": { "content": "9"},
+			"apply": { "model": "pokefood:block/candy_content_9", "uvlock": false }
+        },
+        {
+			"when": { "content": "10"},
+			"apply": { "model": "pokefood:block/candy_content_10", "uvlock": false }
+        },
+        {
+			"when": { "content": "11"},
+			"apply": { "model": "pokefood:block/candy_content_11", "uvlock": false }
+        },
+        {
+			"when": { "content": "12"},
+			"apply": { "model": "pokefood:block/candy_content_12", "uvlock": false }
+        },
+        {
+			"when": { "content": "13"},
+			"apply": { "model": "pokefood:block/candy_content_13", "uvlock": false }
+        },
+        {
+			"when": { "content": "14"},
+			"apply": { "model": "pokefood:block/candy_content_14", "uvlock": false }
+        },
+        {
+			"when": { "content": "15"},
+			"apply": { "model": "pokefood:block/candy_content_15", "uvlock": false }
+        },
+        {
+			"when": { "content": "16"},
+			"apply": { "model": "pokefood:block/candy_content_16", "uvlock": false }
+        }
+	]
+}

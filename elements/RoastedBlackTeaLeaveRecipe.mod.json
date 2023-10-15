@@ -1,0 +1,22 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "roasted_tea",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BlackTeaLeaf"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:RoastedBlackTeaLeave"
+    },
+    "name": "roasted_black_tea_leave_recipe",
+    "namespace": "mod"
+  }
+}

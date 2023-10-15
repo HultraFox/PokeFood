@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "pokefood:blocks/oven_bottom",
-    "up": "pokefood:blocks/oven_top",
-    "north": "pokefood:blocks/oven_front",
-    "east": "pokefood:blocks/oven_left",
-    "south": "pokefood:blocks/oven_back",
-    "west": "pokefood:blocks/oven_right",
-    "particle": "pokefood:blocks/oven_bottom"
+    "down": "pokefood:block/oven_bottom",
+    "up": "pokefood:block/oven_top",
+    "north": "pokefood:block/oven_front",
+    "east": "pokefood:block/oven_left",
+    "south": "pokefood:block/oven_back",
+    "west": "pokefood:block/oven_right",
+    "particle": "pokefood:block/oven_bottom"
   },
   "render_type": "cutout"
 }

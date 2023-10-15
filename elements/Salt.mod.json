@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "salt",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Salt",
     "rarity": "COMMON",
     "creativeTab": {
@@ -32,8 +34,8 @@
     "onFinishUsingItem": {
       "name": "SaltConsumed"
     },
-    "isFood": false,
-    "nutritionalValue": -2,
+    "isFood": true,
+    "nutritionalValue": -1,
     "saturation": -1.0,
     "eatResultItem": {
       "value": ""

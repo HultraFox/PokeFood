@@ -8,7 +8,7 @@ public class BananaPlantValidPlacementProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		boolean returned = false;
 		returned = false;
-		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK || (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DIRT) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.DIRT) {
 			returned = true;
 		}
 		return returned;

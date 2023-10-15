@@ -1,20 +1,20 @@
 {
   "parent": "pokefood:custom/heater",
   "textures": {
-    "all": "pokefood:blocks/heater_front",
-    "particle": "pokefood:blocks/heater_top",
-    "0": "pokefood:blocks/heater_front",
-    "1": "pokefood:blocks/heater_top",
-    "2": "pokefood:blocks/heater_side",
-    "3": "pokefood:blocks/heater_back",
-    "4": "pokefood:blocks/heater_bottom",
-    "5": "pokefood:blocks/heater_back_hot",
-    "6": "pokefood:blocks/heater_hot",
-    "7": "pokefood:blocks/heater_hot",
-    "8": "pokefood:blocks/heater_side_hot",
-    "missing": "pokefood:blocks/heater_top",
-    "9": "pokefood:blocks/heater_top_hot",
-    "10": "pokefood:blocks/heater_grid"
+    "all": "pokefood:block/heater_front",
+    "particle": "pokefood:block/heater_top",
+    "0": "pokefood:block/heater_front",
+    "1": "pokefood:block/heater_top",
+    "2": "pokefood:block/heater_side",
+    "3": "pokefood:block/heater_back",
+    "4": "pokefood:block/heater_bottom",
+    "5": "pokefood:block/heater_back_hot",
+    "6": "pokefood:block/heater_hot",
+    "7": "pokefood:block/heater_hot",
+    "8": "pokefood:block/heater_side_hot",
+    "missing": "pokefood:block/heater_top",
+    "9": "pokefood:block/heater_top_hot",
+    "10": "pokefood:block/heater_grid"
   },
   "render_type": "cutout"
 }

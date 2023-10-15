@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/coffee_bucket"
+    "layer0": "pokefood:item/coffee_bucket"
   }
 }

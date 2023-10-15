@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "pokefood:blocks/stripped_banana_log",
-    "particle": "pokefood:blocks/stripped_banana_log"
+    "all": "pokefood:block/stripped_banana_log",
+    "particle": "pokefood:block/stripped_banana_log"
   },
   "render_type": "solid"
 }

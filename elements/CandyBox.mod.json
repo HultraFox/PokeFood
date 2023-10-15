@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "block",
   "definition": {
     "texture": "candy_bag",
@@ -37,14 +37,14 @@
     "specialInfo": [],
     "hardness": 0.1,
     "resistance": 0.1,
-    "hasGravity": true,
+    "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CandyBoxItem"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -56,7 +56,7 @@
     "material": {
       "value": "WOOD"
     },
-    "tickRate": 0,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -65,7 +65,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:CandyBoxItem"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -99,12 +99,15 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
+    "placingCondition": {
+      "name": "IsBlockUnderneatSolid"
+    },
     "isBonemealable": false,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 1,
+    "hasInventory": true,
+    "guiBoundTo": "CandyPackager",
+    "openGUIOnRightClick": true,
+    "inventorySize": 17,
+    "inventoryStackSize": 4,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -118,7 +121,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "EmptyCandyBag"
+      "name": "TakeCandyBag"
+    },
+    "onTickUpdate": {
+      "name": "CandyBagCraft"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

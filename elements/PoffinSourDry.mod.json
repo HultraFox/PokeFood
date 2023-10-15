@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 1,
     "texture": "poffin_sour_dry",
     "customModelName": "poffin:default",
-    "name": "Sour and Dry Poffin",
+    "customProperties": {},
+    "states": [],
+    "name": "Sour and dry poffin",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

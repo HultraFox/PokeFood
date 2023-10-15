@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/frosted_mint",
-    "particle": "pokefood:items/frosted_mint"
+    "0": "pokefood:block/frosted_mint",
+    "particle": "pokefood:item/frosted_mint"
   }
 }

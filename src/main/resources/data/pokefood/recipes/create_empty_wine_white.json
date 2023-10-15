@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "pokefood:wine_glass_white"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "pokefood:white_wine",
+      "nbt": {}
+    },
+    {
+      "item": "pokefood:wine_glass"
+    }
+  ]
+}

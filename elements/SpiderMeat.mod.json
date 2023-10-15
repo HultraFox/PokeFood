@@ -1,11 +1,13 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "spider_meat",
     "customModelName": "Normal",
-    "name": "Spider Meat",
+    "customProperties": {},
+    "states": [],
+    "name": "Spider meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"

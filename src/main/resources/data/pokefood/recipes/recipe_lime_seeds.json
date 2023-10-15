@@ -1,6 +1,7 @@
 {
-  "group": "lemon_seeds",
   "type": "minecraft:crafting_shapeless",
+  "group": "lemon_seeds",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:lime_slice"

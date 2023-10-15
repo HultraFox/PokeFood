@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CookingbookItem extends Item {
 	public CookingbookItem() {
-		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

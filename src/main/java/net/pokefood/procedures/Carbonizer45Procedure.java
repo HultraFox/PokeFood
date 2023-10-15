@@ -14,7 +14,7 @@ public class Carbonizer45Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingTime")) / 50;
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) / 50;
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -22,14 +22,14 @@ public class Carbonizer45Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingProgress") > 44 * craftingTime && new Object() {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") > 44 * craftingTime && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "craftingProgress") <= 45 * craftingTime) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") <= 45 * craftingTime) {
 			return true;
 		}
 		return false;

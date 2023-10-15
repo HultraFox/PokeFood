@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/deluxe_spicy",
-    "particle": "pokefood:items/deluxe_spicy"
+    "0": "pokefood:block/deluxe_spicy",
+    "particle": "pokefood:item/deluxe_spicy"
   }
 }

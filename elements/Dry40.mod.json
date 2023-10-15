@@ -1,11 +1,14 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tag",
   "definition": {
     "type": "Items",
     "items": [
       {
         "value": "CUSTOM:DryRep4"
+      },
+      {
+        "value": "CUSTOM:CoffeePowder"
       }
     ],
     "blocks": [],

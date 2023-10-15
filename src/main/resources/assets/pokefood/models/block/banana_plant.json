@@ -1,10 +1,10 @@
 {
   "parent": "pokefood:custom/banana_plant",
   "textures": {
-    "all": "pokefood:blocks/banana_leaves",
-    "particle": "pokefood:blocks/banana_leaves",
-    "1": "pokefood:blocks/banana_log",
-    "3": "pokefood:blocks/banana_leaves"
+    "all": "pokefood:block/banana_leaves",
+    "particle": "pokefood:block/banana_leaves",
+    "1": "pokefood:block/banana_log",
+    "3": "pokefood:block/banana_leaves"
   },
   "render_type": "cutout"
 }

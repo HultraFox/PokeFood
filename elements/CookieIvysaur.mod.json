@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "ivysaur",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Ivysaur cookie",
     "rarity": "COMMON",
     "creativeTab": {

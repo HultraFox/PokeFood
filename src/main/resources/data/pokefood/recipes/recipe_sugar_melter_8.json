@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sugar_melter",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:red_nether_brick_slab"
+    },
+    "1": {
+      "item": "minecraft:red_nether_brick_slab"
+    },
+    "2": {
+      "item": "minecraft:red_nether_brick_slab"
+    },
+    "3": {
+      "item": "minecraft:red_nether_brick_slab"
+    },
+    "5": {
+      "item": "minecraft:red_nether_brick_slab"
+    }
+  },
+  "result": {
+    "item": "pokefood:sugar_melter_8",
+    "count": 1
+  }
+}

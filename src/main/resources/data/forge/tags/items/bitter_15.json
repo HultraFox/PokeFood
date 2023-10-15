@@ -4,6 +4,9 @@
     "pokefood:cup_black_tea",
     "pokefood:oil",
     "pokefood:cup_roserade_tea",
-    "minecraft:apple"
+    "minecraft:apple",
+	"cobblemon:aquav_berry",
+	"cobblemon:coba_berry",
+	"cobblemon:rindo_berry"
   ]
 }

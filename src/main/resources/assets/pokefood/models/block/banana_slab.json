@@ -1,9 +1,9 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "pokefood:blocks/banana_planks",
-    "top": "pokefood:blocks/banana_planks",
-    "side": "pokefood:blocks/banana_planks"
+    "bottom": "pokefood:block/banana_planks",
+    "top": "pokefood:block/banana_planks",
+    "side": "pokefood:block/banana_planks"
   },
   "render_type": "solid"
 }

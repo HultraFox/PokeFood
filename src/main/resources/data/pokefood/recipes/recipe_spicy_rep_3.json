@@ -1,6 +1,7 @@
 {
-  "group": "spicy_rep",
   "type": "minecraft:crafting_shapeless",
+  "group": "spicy_rep",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:spicy_juice"

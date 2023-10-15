@@ -26,7 +26,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == PokefoodModItems.CHERRY.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == PokefoodModItems.CHERRY.get()) {
 				nbCherry = nbCherry + 1;
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -36,7 +36,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == PokefoodModItems.CALCUIM.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == PokefoodModItems.CALCUIM.get()) {
 				nbCalcuim = nbCalcuim + 1;
 			}
 			if ((new Object() {
@@ -47,7 +47,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.CHERRY.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CHERRY.get()) {
 				nbCherry = nbCherry + 1;
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -57,7 +57,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.CALCUIM.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CALCUIM.get()) {
 				nbCalcuim = nbCalcuim + 1;
 			}
 			if ((new Object() {
@@ -68,7 +68,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == PokefoodModItems.CHERRY.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == PokefoodModItems.CHERRY.get()) {
 				nbCherry = nbCherry + 1;
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -78,7 +78,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == PokefoodModItems.CALCUIM.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == PokefoodModItems.CALCUIM.get()) {
 				nbCalcuim = nbCalcuim + 1;
 			}
 			if ((new Object() {
@@ -89,7 +89,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == PokefoodModItems.CHERRY.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == PokefoodModItems.CHERRY.get()) {
 				nbCherry = nbCherry + 1;
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -99,7 +99,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == PokefoodModItems.CALCUIM.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == PokefoodModItems.CALCUIM.get()) {
 				nbCalcuim = nbCalcuim + 1;
 			}
 			if ((new Object() {
@@ -110,7 +110,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == PokefoodModItems.CHERRY.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getItem() == PokefoodModItems.CHERRY.get()) {
 				nbCherry = nbCherry + 1;
 			} else if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -120,7 +120,7 @@ public class BreewCherryCalcuimBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == PokefoodModItems.CALCUIM.get()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getItem() == PokefoodModItems.CALCUIM.get()) {
 				nbCalcuim = nbCalcuim + 1;
 			}
 		}
@@ -132,7 +132,7 @@ public class BreewCherryCalcuimBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.MALT_BUCKET.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == PokefoodModItems.MALT_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -140,7 +140,7 @@ public class BreewCherryCalcuimBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos(x, y, z), 3) > 0 && nbCherry == 3 && nbCalcuim == 2) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 3) > 0 && nbCherry == 3 && nbCalcuim == 2) {
 			logic = true;
 		} else {
 			logic = false;

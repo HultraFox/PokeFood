@@ -1,6 +1,7 @@
 {
-  "group": "aprishake",
   "type": "minecraft:crafting_shapeless",
+  "group": "aprishake",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:cup_aprijuice_w"
@@ -19,7 +20,7 @@
     }
   ],
   "result": {
-    "item": "pokefood:apri_shake_w",
+    "item": "pokefood:aprishake_w",
     "count": 1
   }
 }

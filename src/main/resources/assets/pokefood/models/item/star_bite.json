@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/star_bit"
+    "layer0": "pokefood:item/star_bit"
   }
 }

@@ -2,7 +2,6 @@
 package net.pokefood.item;
 
 import net.pokefood.procedures.SodaUnlockAdvProcedure;
-import net.pokefood.init.PokefoodModTabs;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraft.world.level.Level;
@@ -17,9 +16,7 @@ import net.minecraft.world.entity.Entity;
 
 public class SodaRosineTeaItem extends Item {
 	public SodaRosineTeaItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.5f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.5f).alwaysEat().build()));
 	}
 
 	@Override

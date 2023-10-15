@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/crepe_9",
+  "textures": {
+    "all": "pokefood:block/plate",
+    "particle": "pokefood:block/plate",
+    "0": "pokefood:block/plate",
+    "1": "pokefood:block/plate_under",
+    "2": "pokefood:block/crepe_w_4",
+    "3": "pokefood:block/crepe_w_1"
+  },
+  "render_type": "cutout"
+}

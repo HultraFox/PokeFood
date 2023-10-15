@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/tea_bucket_classic"
+    "layer0": "pokefood:item/tea_bucket_classic"
   }
 }

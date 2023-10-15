@@ -2,13 +2,13 @@
   "type": "create:emptying",
   "ingredients": [
     {
-      "item": "pokefood:apri_juice_r_bucket"
+      "item": "pokefood:aprijuice_r_bucket"
     }
   ],
   "results": [
     {
       "amount": 1000,
-      "fluid": "pokefood:apri_juice_r",
+      "fluid": "pokefood:aprijuice_r",
       "nbt": {}
     },
     {

@@ -1,6 +1,7 @@
 {
-  "group": "coffee_table",
   "type": "minecraft:crafting_shaped",
+  "group": "coffee_table",
+  "category": "misc",
   "pattern": [
     "0",
     "1"

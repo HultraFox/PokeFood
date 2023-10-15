@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/sugar_melter_content1",
+  "textures": {
+    "all": "pokefood:block/sugar_12_still",
+    "particle": "pokefood:block/sugar_12_still",
+    "2": "pokefood:block/sugar_12_still"
+  },
+  "render_type": "cutout"
+}

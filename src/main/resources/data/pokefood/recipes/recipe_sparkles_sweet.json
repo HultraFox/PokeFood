@@ -1,6 +1,7 @@
 {
-  "group": "sprinkles",
   "type": "minecraft:crafting_shapeless",
+  "group": "sprinkles",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:poffin_dough_sweet"

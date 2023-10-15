@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/blue_fin"
+    "layer0": "pokefood:item/blue_fin"
   }
 }

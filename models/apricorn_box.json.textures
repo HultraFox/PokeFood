@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "apricorn_box_d"
+      },
+      "name": "default"
+    },
+    "blue": {
+      "map": {
+        "0": "apricorn_box_b"
+      },
+      "name": "blue"
+    },
+    "green": {
+      "map": {
+        "0": "apricorn_box_g"
+      },
+      "name": "green"
+    },
+    "yellow": {
+      "map": {
+        "0": "apricorn_box_y"
+      },
+      "name": "yellow"
+    },
+    "red": {
+      "map": {
+        "0": "apricorn_box_r"
+      },
+      "name": "red"
+    },
+    "pink": {
+      "map": {
+        "0": "apricorn_box_p"
+      },
+      "name": "pink"
+    },
+    "white": {
+      "map": {
+        "0": "apricorn_box_w"
+      },
+      "name": "white"
+    }
+  }
+}

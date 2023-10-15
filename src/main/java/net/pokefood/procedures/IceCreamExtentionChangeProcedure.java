@@ -41,11 +41,11 @@ public class IceCreamExtentionChangeProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PokefoodModBlocks.ICE_CREAM_EXTENTION.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.ICE_CREAM_EXTENTION.get()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BUCKET
-					&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip5 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip5) : -1) != 0) {
+					&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip5 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip5) : -1) != 0) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -54,7 +54,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -64,21 +64,21 @@ public class IceCreamExtentionChangeProcedure {
 				}
 				{
 					int _value = 0;
-					BlockPos _pos = new BlockPos(x, y, z);
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 				{
 					int _value = 0;
-					BlockPos _pos = new BlockPos(x, y, z);
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -86,13 +86,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.TEA_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip15 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip15) : -1) != 1
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip17 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip17) : -1) == 1
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip19
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip19)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip15 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip15) : -1) != 1
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip17
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip17)
+									: -1) == 1
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip19
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip19)
 											: -1) != 0)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -101,7 +103,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -111,21 +113,14 @@ public class IceCreamExtentionChangeProcedure {
 				}
 				{
 					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 0;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -133,13 +128,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.BLACK_TEA_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip29 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip29) : -1) != 1
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip31 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip31) : -1) == 1
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip33
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip33)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip28 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip28) : -1) != 1
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip30
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip30)
+									: -1) == 1
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip32
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip32)
 											: -1) != 1)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -148,7 +145,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -157,22 +154,15 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 2;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -180,13 +170,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.ROSERADE_TEA_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip43 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip43) : -1) != 1
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip45 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip45) : -1) == 1
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip47
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip47)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip41 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip41) : -1) != 1
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip43
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip43)
+									: -1) == 1
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip45
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip45)
 											: -1) != 2)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -195,7 +187,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -204,36 +196,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 3;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_D_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip57 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip57) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip59 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip59) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip61
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip61)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip54 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip54) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip56
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip56)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip58
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip58)
 											: -1) != 0)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -242,7 +229,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -251,36 +238,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 4;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 0;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip71 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip71) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip73 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip73) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip75
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip75)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip67 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip67) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip69
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip69)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip71
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip71)
 											: -1) != 1)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -289,7 +271,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -298,36 +280,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 5;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_G_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip85 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip85) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip87 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip87) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip89
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip89)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip80 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip80) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip82
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip82)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip84
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip84)
 											: -1) != 2)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -336,7 +313,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -345,36 +322,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 6;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_Y_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip99 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip99) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip101 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip101) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip103
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip103)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip93 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip93) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip95
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip95)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip97
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip97)
 											: -1) != 3)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -383,7 +355,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -392,36 +364,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 7;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 3;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_R_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip113 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip113) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip115 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip115) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip117
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip117)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip106 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip106) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip108
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip108)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip110
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip110)
 											: -1) != 4)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -430,7 +397,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -439,36 +406,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 8;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 4;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_P_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip127 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip127) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip129 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip129) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip131
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip131)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip119 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip119) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip121
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip121)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip123
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip123)
 											: -1) != 5)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -477,7 +439,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -486,36 +448,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 9;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 5;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRI_JUICE_W_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip141 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip141) : -1) != 2
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip143 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip143) : -1) == 2
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip145
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip145)
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get()
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip132 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip132) : -1) != 2
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip134
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip134)
+									: -1) == 2
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip136
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip136)
 											: -1) != 6)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -524,7 +481,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -533,22 +490,15 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 10;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 6;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -556,13 +506,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.COFFEE_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip155 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip155) : -1) != 3
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip157 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip157) : -1) == 3
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip159
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip159)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip145 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip145) : -1) != 3
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip147
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip147)
+									: -1) == 3
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip149
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip149)
 											: -1) != 0)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -571,7 +523,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -580,22 +532,15 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 3;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 11;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 0;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -603,13 +548,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.LATTE_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip169 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip169) : -1) != 3
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip171 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip171) : -1) == 3
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip173
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip173)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip158 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip158) : -1) != 3
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip160
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip160)
+									: -1) == 3
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip162
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip162)
 											: -1) != 1)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -618,7 +565,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -627,22 +574,15 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 3;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 12;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}
@@ -650,13 +590,15 @@ public class IceCreamExtentionChangeProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.LEMONADE_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip183 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip183) : -1) != 9
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip185 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip185) : -1) == 9
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip187
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip187)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip171 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip171) : -1) != 9
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip173
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip173)
+									: -1) == 9
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip175
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip175)
 											: -1) != 1)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -665,7 +607,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -674,36 +616,31 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 9;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 13;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 1;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.CHERRY_INFUSION_BUCKET.get()
-					&& (((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip197 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip197) : -1) != 9
-							|| ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip199 ? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip199) : -1) == 9
-									&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip201
-											? (world.getBlockState(new BlockPos(x, y, z))).getValue(_getip201)
+					&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip184 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip184) : -1) != 9
+							|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _getip186
+									? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip186)
+									: -1) == 9
+									&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _getip188
+											? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip188)
 											: -1) != 2)) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -712,7 +649,7 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -721,22 +658,15 @@ public class IceCreamExtentionChangeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 				{
-					int _value = 9;
-					BlockPos _pos = new BlockPos(x, y, z);
+					int _value = 14;
+					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("type") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				{
-					int _value = 2;
-					BlockPos _pos = new BlockPos(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("variation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1);
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, 1, 1, false);
 					}

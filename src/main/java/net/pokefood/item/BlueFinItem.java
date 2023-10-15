@@ -2,7 +2,6 @@
 package net.pokefood.item;
 
 import net.pokefood.procedures.HuntingUnlockAdvProcedure;
-import net.pokefood.init.PokefoodModTabs;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -13,9 +12,7 @@ import net.minecraft.world.entity.Entity;
 
 public class BlueFinItem extends Item {
 	public BlueFinItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_HUNT).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.5f)
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.5f).build()));
 	}
 
 	@Override

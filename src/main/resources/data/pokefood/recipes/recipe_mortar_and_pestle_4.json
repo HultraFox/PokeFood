@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mortar_and_pestle",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:acacia_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:acacia_planks"
+    },
+    "4": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "result": {
+    "item": "pokefood:mortar_and_pestle_4",
+    "count": 1
+  }
+}

@@ -16,7 +16,7 @@ public class IceTea34Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "tank_3_quantity");
+		}.getValue(world, BlockPos.containing(x, y, z), "tank_3_quantity");
 		fluid_name = new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -24,7 +24,7 @@ public class IceTea34Procedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, new BlockPos(x, y, z), "tank_3_name");
+		}.getValue(world, BlockPos.containing(x, y, z), "tank_3_name");
 		if ((fluid_name).equals("tea") && fluid_quantity == 4) {
 			return true;
 		}

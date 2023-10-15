@@ -1,12 +1,12 @@
 {
   "parent": "pokefood:custom/mixer_full",
   "textures": {
-    "all": "pokefood:blocks/mixer_2_yellow",
-    "particle": "pokefood:blocks/mixer_2_yellow",
-    "0": "pokefood:blocks/mixer_1_yellow",
-    "1": "pokefood:blocks/mixer_2_yellow",
-    "2": "pokefood:blocks/mixer_apri_g",
-    "missing": "pokefood:blocks/"
+    "all": "pokefood:block/mixer_2_yellow",
+    "particle": "pokefood:block/mixer_2_yellow",
+    "0": "pokefood:block/mixer_1_yellow",
+    "1": "pokefood:block/mixer_2_yellow",
+    "2": "pokefood:block/mixer_apri_g",
+    "missing": "pokefood:block/"
   },
   "render_type": "cutout"
 }

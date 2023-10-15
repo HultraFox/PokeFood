@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "candies_xl",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CandyXl0"
+    },
+    "name": "recipe_candy_xl_13",
+    "namespace": "mod"
+  }
+}

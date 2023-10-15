@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/apri_alcohol_w_bucket"
+    "layer0": "pokefood:item/apri_alcohol_w_bucket"
   }
 }

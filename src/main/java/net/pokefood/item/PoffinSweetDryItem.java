@@ -9,7 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class PoffinSweetDryItem extends Item {
 	public PoffinSweetDryItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.5f)
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.5f)
 
 				.build()));
 	}

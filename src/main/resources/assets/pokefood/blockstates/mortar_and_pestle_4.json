@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/mortar_and_pestle_4"
+    },
+    "facing=east": {
+      "model": "pokefood:block/mortar_and_pestle_4",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/mortar_and_pestle_4",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/mortar_and_pestle_4",
+      "y": 270
+    }
+  }
+}

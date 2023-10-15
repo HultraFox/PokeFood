@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "pokefood:arid_forest",
+  "features": "pokefood:banana_tree",
+  "step": "surface_structures"
+}

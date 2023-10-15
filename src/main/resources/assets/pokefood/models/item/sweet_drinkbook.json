@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/drink_book"
+    "layer0": "pokefood:item/drink_book"
   }
 }

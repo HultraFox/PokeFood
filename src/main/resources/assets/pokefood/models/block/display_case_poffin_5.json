@@ -1,15 +1,15 @@
 {
   "parent": "pokefood:custom/poffin_showcase",
   "textures": {
-    "all": "pokefood:blocks/case_poffin_6",
-    "particle": "pokefood:blocks/glass",
-    "0": "pokefood:blocks/poffin_spicy_dry",
-    "1": "pokefood:blocks/glass",
-    "2": "pokefood:blocks/poffin_spicy_sweet",
-    "3": "pokefood:blocks/poffin_spicy_bitter",
-    "5": "pokefood:blocks/poffin_spicy_sour",
-    "6": "pokefood:blocks/oak_planks",
-    "7": "pokefood:blocks/poffin_spicy"
+    "all": "pokefood:block/case_poffin_6",
+    "particle": "pokefood:block/glass",
+    "0": "pokefood:block/poffin_spicy_dry",
+    "1": "pokefood:block/glass",
+    "2": "pokefood:block/poffin_spicy_sweet",
+    "3": "pokefood:block/poffin_spicy_bitter",
+    "5": "pokefood:block/poffin_spicy_sour",
+    "6": "pokefood:block/oak_planks",
+    "7": "pokefood:block/poffin_spicy"
   },
   "render_type": "cutout"
 }

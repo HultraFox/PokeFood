@@ -1,6 +1,7 @@
 {
-  "group": "tea_cup",
   "type": "minecraft:crafting_shapeless",
+  "group": "tea_cup",
+  "category": "misc",
   "ingredients": [
     {
       "item": "pokefood:cup_tea"

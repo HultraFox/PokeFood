@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/persian"
+    "layer0": "pokefood:item/persian"
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/banana_door"
+    "layer0": "pokefood:item/banana_door"
   },
   "render_type": "translucent"
 }

@@ -1,7 +1,7 @@
 {
   "parent": "pokefood:custom/pokepuff",
   "textures": {
-    "0": "pokefood:blocks/frosted_ananas",
-    "particle": "pokefood:items/frosted_ananas"
+    "0": "pokefood:block/frosted_ananas",
+    "particle": "pokefood:item/frosted_ananas"
   }
 }

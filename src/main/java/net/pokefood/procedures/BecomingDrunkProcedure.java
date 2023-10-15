@@ -12,7 +12,7 @@ public class BecomingDrunkProcedure {
 		if (entity == null)
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, (int) 0.5, false, false));
 		}
 	}

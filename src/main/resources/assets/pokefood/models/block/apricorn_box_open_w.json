@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/apricorn_box_open",
+  "textures": {
+    "all": "pokefood:block/apricorn_box_w",
+    "particle": "pokefood:block/apricorn_box_w",
+    "0": "pokefood:block/apricorn_box_open_w",
+    "1": "pokefood:block/apricorn_box_w"
+  },
+  "render_type": "cutout"
+}

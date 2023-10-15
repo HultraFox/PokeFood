@@ -1,6 +1,7 @@
 {
-  "group": "coffee_cup",
   "type": "minecraft:crafting_shapeless",
+  "group": "coffee_cup",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:milk_bucket"

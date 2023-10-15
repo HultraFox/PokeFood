@@ -1,6 +1,7 @@
 {
-  "group": "coffee",
   "type": "minecraft:smoking",
+  "group": "coffee",
+  "category": "misc",
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {

@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/crepe_maker",
+  "textures": {
+    "all": "pokefood:block/cauldron_inner",
+    "particle": "pokefood:block/cauldron_inner",
+    "0": "pokefood:block/crepe_maker_top",
+    "1": "pokefood:block/crepe_maker",
+    "2": "pokefood:block/crepe_maker_under",
+    "missing": "pokefood:block/"
+  },
+  "render_type": "solid"
+}

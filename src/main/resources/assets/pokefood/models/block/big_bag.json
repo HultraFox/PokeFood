@@ -1,12 +1,12 @@
 {
   "parent": "pokefood:custom/big_bag",
   "textures": {
-    "all": "pokefood:blocks/big_bag",
-    "particle": "pokefood:blocks/big_bag",
-    "0": "pokefood:blocks/big_bag",
-    "1": "pokefood:blocks/big_bag_top",
-    "2": "pokefood:blocks/big_bag_detail",
-    "3": "pokefood:blocks/big_bag_bottom"
+    "all": "pokefood:block/big_bag",
+    "particle": "pokefood:block/big_bag",
+    "0": "pokefood:block/big_bag",
+    "1": "pokefood:block/big_bag_top",
+    "2": "pokefood:block/big_bag_detail",
+    "3": "pokefood:block/big_bag_bottom"
   },
   "render_type": "cutout"
 }

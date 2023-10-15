@@ -9,7 +9,7 @@ import net.minecraft.world.item.Item;
 
 public class CalcuimBoxEmpty3Item extends Item {
 	public CalcuimBoxEmpty3Item() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

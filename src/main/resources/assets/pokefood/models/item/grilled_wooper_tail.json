@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pokefood:items/grilled_wooper_tail"
+    "layer0": "pokefood:item/grilled_wooper_tail"
   }
 }

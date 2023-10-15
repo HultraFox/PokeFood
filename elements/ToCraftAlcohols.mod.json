@@ -1,96 +1,9 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tag",
   "definition": {
     "type": "Items",
     "items": [
-      {
-        "value": "CUSTOM:GlassBeer"
-      },
-      {
-        "value": "CUSTOM:GlassBananaTeaBeer"
-      },
-      {
-        "value": "CUSTOM:GlassCherryCalcuimBeer"
-      },
-      {
-        "value": "CUSTOM:GlassApriW"
-      },
-      {
-        "value": "CUSTOM:GlassApriD"
-      },
-      {
-        "value": "CUSTOM:GlassApriB"
-      },
-      {
-        "value": "CUSTOM:GlassApriG"
-      },
-      {
-        "value": "CUSTOM:GlassApriY"
-      },
-      {
-        "value": "CUSTOM:GlassApriP"
-      },
-      {
-        "value": "CUSTOM:GlassApriR"
-      },
-      {
-        "value": "CUSTOM:GlassBrandy"
-      },
-      {
-        "value": "CUSTOM:GlassCidronade"
-      },
-      {
-        "value": "CUSTOM:GlassArceum"
-      },
-      {
-        "value": "CUSTOM:BigGlass"
-      },
-      {
-        "value": "CUSTOM:WheatBag"
-      },
-      {
-        "value": "CUSTOM:Malt.bucket"
-      },
-      {
-        "value": "CUSTOM:Beer.bucket"
-      },
-      {
-        "value": "CUSTOM:BananaTeaBeer.bucket"
-      },
-      {
-        "value": "CUSTOM:CherryCalcuimBeer.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholW.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholD.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholB.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholG.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholY.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholP.bucket"
-      },
-      {
-        "value": "CUSTOM:ApriAlcoholR.bucket"
-      },
-      {
-        "value": "CUSTOM:Brandy.bucket"
-      },
-      {
-        "value": "CUSTOM:Cidronade.bucket"
-      },
-      {
-        "value": "CUSTOM:Arceum.bucket"
-      },
       {
         "value": "CUSTOM:TeaSeeds"
       },
@@ -104,13 +17,10 @@
         "value": "CUSTOM:CalcuimSeeds"
       },
       {
-        "value": "CUSTOM:CookieSeel"
-      },
-      {
-        "value": "CUSTOM:DisplayCaseEmpty"
-      },
-      {
         "value": "CUSTOM:LeekSeeds"
+      },
+      {
+        "value": "CUSTOM:OnionSeeds"
       },
       {
         "value": "Items.WHEAT_SEEDS"

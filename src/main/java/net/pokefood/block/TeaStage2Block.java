@@ -2,6 +2,7 @@
 package net.pokefood.block;
 
 import net.pokefood.procedures.TeaCollectingProcedure;
+import net.pokefood.procedures.PlantsValidPlacementProcedure;
 import net.pokefood.init.PokefoodModItems;
 import net.pokefood.block.entity.TeaStage2BlockEntity;
 
@@ -10,16 +11,16 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.material.MaterialColor;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -32,7 +33,8 @@ import net.minecraft.core.BlockPos;
 
 public class TeaStage2Block extends FlowerBlock implements EntityBlock {
 	public TeaStage2Block() {
-		super(MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().speedFactor(0.5f).noCollission());
+		super(() -> MobEffects.MOVEMENT_SPEED, 100,
+				BlockBehaviour.Properties.of().mapColor(MapColor.NONE).randomTicks().sound(SoundType.GRASS).instabreak().speedFactor(0.5f).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -63,7 +65,15 @@ public class TeaStage2Block extends FlowerBlock implements EntityBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT);
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = PlantsValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return additionalCondition;
 	}
 
 	@Override

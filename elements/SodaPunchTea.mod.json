@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "soda_high_blacktea",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Punch Tea",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodDrinks"
     },
     "stackSize": 64,
     "enchantability": 0,

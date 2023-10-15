@@ -1,9 +1,12 @@
 {
   "replace": false,
   "values": [
-    "pokefood:apri_juice_b_bucket",
+    "pokefood:aprijuice_b_bucket",
     "minecraft:carrot",
     "minecraft:egg",
-    "pokefood:cup_aprijuice_p"
+    "pokefood:cup_aprijuice_p",
+	"cobblemon:kebia_berry",
+	"cobblemon:passho_berry",
+	"cobblemon:wiki_berry"
   ]
 }

@@ -1,14 +1,16 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apricup_milkshake_w",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "White Aprishake",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodDrinks"
     },
     "stackSize": 64,
     "enchantability": 0,
