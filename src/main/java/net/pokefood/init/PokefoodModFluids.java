@@ -4,8 +4,11 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.fluid.WhiteWineFluid;
 import net.pokefood.fluid.TeaFluid;
 import net.pokefood.fluid.RoseradeTeaFluid;
+import net.pokefood.fluid.RoseWineFluid;
+import net.pokefood.fluid.RedWineFluid;
 import net.pokefood.fluid.MaltFluid;
 import net.pokefood.fluid.LemonadeFluid;
 import net.pokefood.fluid.LatteFluid;
@@ -69,20 +72,20 @@ public class PokefoodModFluids {
 	public static final RegistryObject<FlowingFluid> FLOWING_FRESH_WATER = REGISTRY.register("flowing_fresh_water", () -> new FreshWaterFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> CHERRY_INFUSION = REGISTRY.register("cherry_infusion", () -> new CherryInfusionFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_CHERRY_INFUSION = REGISTRY.register("flowing_cherry_infusion", () -> new CherryInfusionFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_D = REGISTRY.register("apri_juice_d", () -> new ApriJuiceDFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_D = REGISTRY.register("flowing_apri_juice_d", () -> new ApriJuiceDFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_B = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_B = REGISTRY.register("flowing_apri_juice_b", () -> new ApriJuiceBFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_G = REGISTRY.register("apri_juice_g", () -> new ApriJuiceGFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_G = REGISTRY.register("flowing_apri_juice_g", () -> new ApriJuiceGFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_Y = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_Y = REGISTRY.register("flowing_apri_juice_y", () -> new ApriJuiceYFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_R = REGISTRY.register("apri_juice_r", () -> new ApriJuiceRFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_R = REGISTRY.register("flowing_apri_juice_r", () -> new ApriJuiceRFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_P = REGISTRY.register("apri_juice_p", () -> new ApriJuicePFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_P = REGISTRY.register("flowing_apri_juice_p", () -> new ApriJuicePFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> APRI_JUICE_W = REGISTRY.register("apri_juice_w", () -> new ApriJuiceWFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_APRI_JUICE_W = REGISTRY.register("flowing_apri_juice_w", () -> new ApriJuiceWFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_D = REGISTRY.register("aprijuice_d", () -> new ApriJuiceDFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_D = REGISTRY.register("flowing_aprijuice_d", () -> new ApriJuiceDFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_B = REGISTRY.register("aprijuice_b", () -> new ApriJuiceBFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_B = REGISTRY.register("flowing_aprijuice_b", () -> new ApriJuiceBFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_G = REGISTRY.register("aprijuice_g", () -> new ApriJuiceGFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_G = REGISTRY.register("flowing_aprijuice_g", () -> new ApriJuiceGFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_Y = REGISTRY.register("aprijuice_y", () -> new ApriJuiceYFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_Y = REGISTRY.register("flowing_aprijuice_y", () -> new ApriJuiceYFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_R = REGISTRY.register("aprijuice_r", () -> new ApriJuiceRFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_R = REGISTRY.register("flowing_aprijuice_r", () -> new ApriJuiceRFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_P = REGISTRY.register("aprijuice_p", () -> new ApriJuicePFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_P = REGISTRY.register("flowing_aprijuice_p", () -> new ApriJuicePFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> APRIJUICE_W = REGISTRY.register("aprijuice_w", () -> new ApriJuiceWFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_APRIJUICE_W = REGISTRY.register("flowing_aprijuice_w", () -> new ApriJuiceWFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> MALT = REGISTRY.register("malt", () -> new MaltFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_MALT = REGISTRY.register("flowing_malt", () -> new MaltFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> BEER = REGISTRY.register("beer", () -> new BeerFluid.Source());
@@ -111,6 +114,12 @@ public class PokefoodModFluids {
 	public static final RegistryObject<FlowingFluid> FLOWING_APRI_ALCOHOL_P = REGISTRY.register("flowing_apri_alcohol_p", () -> new ApriAlcoholPFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> APRI_ALCOHOL_W = REGISTRY.register("apri_alcohol_w", () -> new ApriAlcoholWFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_APRI_ALCOHOL_W = REGISTRY.register("flowing_apri_alcohol_w", () -> new ApriAlcoholWFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> RED_WINE = REGISTRY.register("red_wine", () -> new RedWineFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_RED_WINE = REGISTRY.register("flowing_red_wine", () -> new RedWineFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> WHITE_WINE = REGISTRY.register("white_wine", () -> new WhiteWineFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_WHITE_WINE = REGISTRY.register("flowing_white_wine", () -> new WhiteWineFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> ROSE_WINE = REGISTRY.register("rose_wine", () -> new RoseWineFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_ROSE_WINE = REGISTRY.register("flowing_rose_wine", () -> new RoseWineFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -134,20 +143,20 @@ public class PokefoodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_FRESH_WATER.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(CHERRY_INFUSION.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_CHERRY_INFUSION.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_D.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_D.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_B.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_B.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_G.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_G.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_Y.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_Y.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_R.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_R.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_P.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_P.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(APRI_JUICE_W.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_JUICE_W.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_D.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_D.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_B.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_B.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_G.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_G.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_Y.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_Y.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_R.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_R.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_P.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_P.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(APRIJUICE_W.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRIJUICE_W.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(MALT.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_MALT.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(BEER.get(), RenderType.translucent());
@@ -176,6 +185,12 @@ public class PokefoodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_ALCOHOL_P.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(APRI_ALCOHOL_W.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_APRI_ALCOHOL_W.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(RED_WINE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_RED_WINE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(WHITE_WINE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_WHITE_WINE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(ROSE_WINE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_ROSE_WINE.get(), RenderType.translucent());
 		}
 	}
 }

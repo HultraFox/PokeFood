@@ -1,0 +1,8 @@
+{
+  "parent": "pokefood:custom/candy_apple",
+  "textures": {
+    "0": "pokefood:items/c_apple_8",
+    "1": "pokefood:items/stick",
+    "particle": "pokefood:items/c_apple_8"
+  }
+}

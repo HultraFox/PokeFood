@@ -23,6 +23,6 @@ public class PuffDeluxeMochaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A deluxe chocolate one !"));
+		list.add(Component.literal("§7A deluxe chocolate one !"));
 	}
 }

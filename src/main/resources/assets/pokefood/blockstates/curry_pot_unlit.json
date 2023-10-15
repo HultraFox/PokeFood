@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "facing=north,has_water=false,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit"
+    },
+    "facing=north,has_water=true,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit_water"
+    },
+    "facing=north,has_curry=true": {
+      "model": "pokefood:block/curry_pot_unlit_powder"
+    },
+
+    
+    "facing=east,has_water=false,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit",
+      "y": 90
+    },
+    "facing=east,has_water=true,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 90
+    },
+    "facing=east,has_curry=true": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 90
+    },
+
+    
+    "facing=south,has_water=false,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit",
+      "y": 180
+    },
+    "facing=south,has_water=true,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 180
+    },
+    "facing=south,has_curry=true": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 180
+    },
+
+    
+    "facing=west,has_water=false,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit",
+      "y": 270
+    },
+    "facing=west,has_water=true,has_curry=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 270
+    },
+    "facing=west,has_curry=true": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 270
+    }
+  }
+}

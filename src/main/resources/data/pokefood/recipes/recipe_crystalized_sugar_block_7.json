@@ -1,0 +1,42 @@
+{
+  "group": "crystalized_sugar_block",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "1": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "2": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "3": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "4": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "5": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "6": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "7": {
+      "item": "pokefood:crystalized_sugar_7"
+    },
+    "8": {
+      "item": "pokefood:crystalized_sugar_7"
+    }
+  },
+  "result": {
+    "item": "pokefood:crystalized_sugar_block_7",
+    "count": 1
+  }
+}

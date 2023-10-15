@@ -11,6 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CoffeeIcedItem extends BucketItem {
 	public CoffeeIcedItem() {
-		super(PokefoodModFluids.COFFEE_ICED, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
+		super(PokefoodModFluids.COFFEE_ICED, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS));
 	}
 }

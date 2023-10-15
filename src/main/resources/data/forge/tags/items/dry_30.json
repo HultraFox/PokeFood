@@ -3,6 +3,9 @@
   "values": [
     "pokefood:coffee_powder",
     "pokefood:dry_rep_3",
-    "pokefood:banana"
+    "pokefood:banana",
+	"cobblemon:apicot_berry",
+	"cobblemon:kee_berry",
+	"cobblemon:pamtre_berry"
   ]
 }

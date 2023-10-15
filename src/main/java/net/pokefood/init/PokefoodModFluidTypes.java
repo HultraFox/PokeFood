@@ -4,8 +4,11 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.fluid.types.WhiteWineFluidType;
 import net.pokefood.fluid.types.TeaFluidType;
 import net.pokefood.fluid.types.RoseradeTeaFluidType;
+import net.pokefood.fluid.types.RoseWineFluidType;
+import net.pokefood.fluid.types.RedWineFluidType;
 import net.pokefood.fluid.types.MaltFluidType;
 import net.pokefood.fluid.types.LemonadeFluidType;
 import net.pokefood.fluid.types.LatteFluidType;
@@ -52,13 +55,13 @@ public class PokefoodModFluidTypes {
 	public static final RegistryObject<FluidType> LEMONADE_TYPE = REGISTRY.register("lemonade", () -> new LemonadeFluidType());
 	public static final RegistryObject<FluidType> FRESH_WATER_TYPE = REGISTRY.register("fresh_water", () -> new FreshWaterFluidType());
 	public static final RegistryObject<FluidType> CHERRY_INFUSION_TYPE = REGISTRY.register("cherry_infusion", () -> new CherryInfusionFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_D_TYPE = REGISTRY.register("apri_juice_d", () -> new ApriJuiceDFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_B_TYPE = REGISTRY.register("apri_juice_b", () -> new ApriJuiceBFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_G_TYPE = REGISTRY.register("apri_juice_g", () -> new ApriJuiceGFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_Y_TYPE = REGISTRY.register("apri_juice_y", () -> new ApriJuiceYFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_R_TYPE = REGISTRY.register("apri_juice_r", () -> new ApriJuiceRFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_P_TYPE = REGISTRY.register("apri_juice_p", () -> new ApriJuicePFluidType());
-	public static final RegistryObject<FluidType> APRI_JUICE_W_TYPE = REGISTRY.register("apri_juice_w", () -> new ApriJuiceWFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_D_TYPE = REGISTRY.register("aprijuice_d", () -> new ApriJuiceDFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_B_TYPE = REGISTRY.register("aprijuice_b", () -> new ApriJuiceBFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_G_TYPE = REGISTRY.register("aprijuice_g", () -> new ApriJuiceGFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_Y_TYPE = REGISTRY.register("aprijuice_y", () -> new ApriJuiceYFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_R_TYPE = REGISTRY.register("aprijuice_r", () -> new ApriJuiceRFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_P_TYPE = REGISTRY.register("aprijuice_p", () -> new ApriJuicePFluidType());
+	public static final RegistryObject<FluidType> APRIJUICE_W_TYPE = REGISTRY.register("aprijuice_w", () -> new ApriJuiceWFluidType());
 	public static final RegistryObject<FluidType> MALT_TYPE = REGISTRY.register("malt", () -> new MaltFluidType());
 	public static final RegistryObject<FluidType> BEER_TYPE = REGISTRY.register("beer", () -> new BeerFluidType());
 	public static final RegistryObject<FluidType> BANANA_TEA_BEER_TYPE = REGISTRY.register("banana_tea_beer", () -> new BananaTeaBeerFluidType());
@@ -73,4 +76,7 @@ public class PokefoodModFluidTypes {
 	public static final RegistryObject<FluidType> APRI_ALCOHOL_R_TYPE = REGISTRY.register("apri_alcohol_r", () -> new ApriAlcoholRFluidType());
 	public static final RegistryObject<FluidType> APRI_ALCOHOL_P_TYPE = REGISTRY.register("apri_alcohol_p", () -> new ApriAlcoholPFluidType());
 	public static final RegistryObject<FluidType> APRI_ALCOHOL_W_TYPE = REGISTRY.register("apri_alcohol_w", () -> new ApriAlcoholWFluidType());
+	public static final RegistryObject<FluidType> RED_WINE_TYPE = REGISTRY.register("red_wine", () -> new RedWineFluidType());
+	public static final RegistryObject<FluidType> WHITE_WINE_TYPE = REGISTRY.register("white_wine", () -> new WhiteWineFluidType());
+	public static final RegistryObject<FluidType> ROSE_WINE_TYPE = REGISTRY.register("rose_wine", () -> new RoseWineFluidType());
 }

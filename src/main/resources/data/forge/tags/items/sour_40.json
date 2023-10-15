@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pokefood:sour_rep_4"
+    "pokefood:sour_rep_4",
+	"cobblemon:rowap_berry"
   ]
 }

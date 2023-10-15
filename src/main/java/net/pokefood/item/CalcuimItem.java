@@ -9,7 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class CalcuimItem extends Item {
 	public CalcuimItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.1f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.1f)
 
 				.build()));
 	}

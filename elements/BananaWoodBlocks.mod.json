@@ -1,0 +1,66 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BananaTeaBeer"
+      },
+      {
+        "value": "CUSTOM:BananaWood"
+      },
+      {
+        "value": "CUSTOM:BananaLog"
+      },
+      {
+        "value": "CUSTOM:BananaPlanks"
+      },
+      {
+        "value": "CUSTOM:BananaLeaves"
+      },
+      {
+        "value": "CUSTOM:BananaStairs"
+      },
+      {
+        "value": "CUSTOM:BananaSlab"
+      },
+      {
+        "value": "CUSTOM:BananaFence"
+      },
+      {
+        "value": "CUSTOM:BananaFenceGate"
+      },
+      {
+        "value": "CUSTOM:BananaPressurePlate"
+      },
+      {
+        "value": "CUSTOM:BananaButton"
+      },
+      {
+        "value": "CUSTOM:BananaTop"
+      },
+      {
+        "value": "CUSTOM:BananaLog2"
+      },
+      {
+        "value": "CUSTOM:BananaLog3"
+      },
+      {
+        "value": "CUSTOM:BananaWoodTreeControler"
+      },
+      {
+        "value": "CUSTOM:BananaLog2Controler"
+      },
+      {
+        "value": "CUSTOM:BananaPlant"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "banana_wood_blocks",
+    "namespace": "mod"
+  }
+}

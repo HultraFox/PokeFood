@@ -14,7 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class CookieDoughItem extends Item {
 	public CookieDoughItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(1.5f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(1.5f).alwaysEat()
 
 				.build()));
 	}

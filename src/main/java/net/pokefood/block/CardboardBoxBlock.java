@@ -2,6 +2,7 @@
 package net.pokefood.block;
 
 import net.pokefood.world.inventory.CardboardBoxGUIMenu;
+import net.pokefood.procedures.TakeCardboardBoxProcedure;
 import net.pokefood.block.entity.CardboardBoxBlockEntity;
 
 import net.minecraftforge.network.NetworkHooks;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -50,10 +52,11 @@ import io.netty.buffer.Unpooled;
 
 public class CardboardBoxBlock extends FallingBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final BooleanProperty OPEN = BooleanProperty.create("open");
 
 	public CardboardBoxBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.valueOf(false)));
 	}
 
 	@Override
@@ -79,7 +82,7 @@ public class CardboardBoxBlock extends FallingBlock implements EntityBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, OPEN);
 	}
 
 	@Override
@@ -119,6 +122,14 @@ public class CardboardBoxBlock extends FallingBlock implements EntityBlock {
 				}
 			}, pos);
 		}
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+		TakeCardboardBoxProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

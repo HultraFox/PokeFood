@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood - On The Go",
+    "icon": {
+      "value": "CUSTOM:CalcuimBox11"
+    },
+    "showSearch": false
+  }
+}

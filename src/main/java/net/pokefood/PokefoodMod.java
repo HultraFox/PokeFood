@@ -24,6 +24,7 @@ import net.pokefood.init.PokefoodModFluidTypes;
 import net.pokefood.init.PokefoodModFeatures;
 import net.pokefood.init.PokefoodModBlocks;
 import net.pokefood.init.PokefoodModBlockEntities;
+import net.pokefood.init.PokefoodModBiomes;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -64,6 +65,7 @@ public class PokefoodMod {
 		PokefoodModFeatures.REGISTRY.register(bus);
 
 		PokefoodModMenus.REGISTRY.register(bus);
+		PokefoodModBiomes.REGISTRY.register(bus);
 
 		PokefoodModFluids.REGISTRY.register(bus);
 		PokefoodModFluidTypes.REGISTRY.register(bus);

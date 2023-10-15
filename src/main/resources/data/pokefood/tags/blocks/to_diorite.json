@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "pokefood:apri_juice_p",
-    "pokefood:apri_juice_y",
-    "pokefood:apri_juice_w",
-    "pokefood:apri_juice_g",
-    "pokefood:apri_juice_d",
-    "pokefood:apri_juice_b",
-    "pokefood:apri_juice_r"
+    "pokefood:aprijuice_p",
+    "pokefood:aprijuice_y",
+    "pokefood:aprijuice_w",
+    "pokefood:aprijuice_g",
+    "pokefood:aprijuice_d",
+    "pokefood:aprijuice_b",
+    "pokefood:aprijuice_r"
   ]
 }

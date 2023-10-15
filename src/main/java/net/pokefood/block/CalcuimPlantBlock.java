@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.pokefood.procedures.PlantsValidPlacementProcedure;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -13,6 +14,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -31,7 +34,7 @@ public class CalcuimPlantBlock extends FlowerBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 13, 3, 13).move(offset.x, offset.y, offset.z);
+		return box(3, -1, 3, 13, 3, 13).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -60,5 +63,25 @@ public class CalcuimPlantBlock extends FlowerBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(PokefoodModItems.CALCUIM_SEEDS.get()));
+	}
+
+	@Override
+	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = PlantsValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return additionalCondition;
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
 }

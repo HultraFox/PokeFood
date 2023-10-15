@@ -4,6 +4,12 @@
     "pokefood:black_tea_bucket",
     "pokefood:whipped_cream",
     "pokefood:sweet_rep_3",
-    "minecraft:apple"
+    "minecraft:apple",
+	"cobblemon:lansat_berry",
+	"cobblemon:liechi_berry",
+	"cobblemon:maranga_berry",
+	"cobblemon:salac_berry",
+	"cobblemon:starf_berry",
+	"cobblemon:watmel_berry"
   ]
 }

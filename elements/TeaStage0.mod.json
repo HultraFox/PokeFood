@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Tea plant",
+    "name": "Tea Plant",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
@@ -78,14 +78,10 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 0.5,
-    "canBePlacedOn": [
-      {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      }
-    ],
+    "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "PlantsValidPlacement"
+    },
     "isBonemealable": false,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],

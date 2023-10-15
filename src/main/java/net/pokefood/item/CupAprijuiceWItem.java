@@ -17,7 +17,7 @@ import net.minecraft.world.entity.Entity;
 
 public class CupAprijuiceWItem extends Item {
 	public CupAprijuiceWItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.6f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_DRINKS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.6f).alwaysEat()
 
 				.build()));
 	}

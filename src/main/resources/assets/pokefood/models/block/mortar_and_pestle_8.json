@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/mortar_and_pestle",
+  "textures": {
+    "all": "pokefood:blocks/candy_pot_8",
+    "particle": "pokefood:blocks/candy_pot_8",
+    "0": "pokefood:blocks/candy_pot_8",
+    "missing": "pokefood:blocks/"
+  },
+  "render_type": "cutout"
+}

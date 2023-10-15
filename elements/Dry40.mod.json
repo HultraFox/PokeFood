@@ -6,6 +6,9 @@
     "items": [
       {
         "value": "CUSTOM:DryRep4"
+      },
+      {
+        "value": "CUSTOM:CoffeePowder"
       }
     ],
     "blocks": [],

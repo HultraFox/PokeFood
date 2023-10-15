@@ -17,239 +17,239 @@
     },
 
     
-    "facing=north,type=1,variation=0": {
+    "facing=north,type=1": {
       "model": "pokefood:block/ice_cream_extention_tea"
     },
-    "facing=east,type=1,variation=0": {
+    "facing=east,type=1": {
       "model": "pokefood:block/ice_cream_extention_tea",
       "y": 90
     },
-    "facing=south,type=1,variation=0": {
+    "facing=south,type=1": {
       "model": "pokefood:block/ice_cream_extention_tea",
       "y": 180
     },
-    "facing=west,type=1,variation=0": {
+    "facing=west,type=1": {
       "model": "pokefood:block/ice_cream_extention_tea",
       "y": 270
     },
 
     
-    "facing=north,type=1,variation=1": {
+    "facing=north,type=2": {
       "model": "pokefood:block/ice_cream_extention_tea_b"
     },
-    "facing=east,type=1,variation=1": {
+    "facing=east,type=2": {
       "model": "pokefood:block/ice_cream_extention_tea_b",
       "y": 90
     },
-    "facing=south,type=1,variation=1": {
+    "facing=south,type=2": {
       "model": "pokefood:block/ice_cream_extention_tea_b",
       "y": 180
     },
-    "facing=west,type=1,variation=1": {
+    "facing=west,type=2": {
       "model": "pokefood:block/ice_cream_extention_tea_b",
       "y": 270
     },
 
     
-    "facing=north,type=1,variation=2": {
+    "facing=north,type=3": {
       "model": "pokefood:block/ice_cream_extention_tea_r"
     },
-    "facing=east,type=1,variation=2": {
+    "facing=east,type=3": {
       "model": "pokefood:block/ice_cream_extention_tea_r",
       "y": 90
     },
-    "facing=south,type=1,variation=2": {
+    "facing=south,type=3": {
       "model": "pokefood:block/ice_cream_extention_tea_r",
       "y": 180
     },
-    "facing=west,type=1,variation=2": {
+    "facing=west,type=3": {
       "model": "pokefood:block/ice_cream_extention_tea_r",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=0": {
+    "facing=north,type=4": {
       "model": "pokefood:block/ice_cream_extention_apri_d"
     },
-    "facing=east,type=2,variation=0": {
+    "facing=east,type=4": {
       "model": "pokefood:block/ice_cream_extention_apri_d",
       "y": 90
     },
-    "facing=south,type=2,variation=0": {
+    "facing=south,type=4": {
       "model": "pokefood:block/ice_cream_extention_apri_d",
       "y": 180
     },
-    "facing=west,type=2,variation=0": {
+    "facing=west,type=4": {
       "model": "pokefood:block/ice_cream_extention_apri_d",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=1": {
+    "facing=north,type=5": {
       "model": "pokefood:block/ice_cream_extention_apri_b"
     },
-    "facing=east,type=2,variation=1": {
+    "facing=east,type=5": {
       "model": "pokefood:block/ice_cream_extention_apri_b",
       "y": 90
     },
-    "facing=south,type=2,variation=1": {
+    "facing=south,type=5": {
       "model": "pokefood:block/ice_cream_extention_apri_b",
       "y": 180
     },
-    "facing=west,type=2,variation=1": {
+    "facing=west,type=5": {
       "model": "pokefood:block/ice_cream_extention_apri_b",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=2": {
+    "facing=north,type=6": {
       "model": "pokefood:block/ice_cream_extention_apri_g"
     },
-    "facing=east,type=2,variation=2": {
+    "facing=east,type=6": {
       "model": "pokefood:block/ice_cream_extention_apri_g",
       "y": 90
     },
-    "facing=south,type=2,variation=2": {
+    "facing=south,type=6": {
       "model": "pokefood:block/ice_cream_extention_apri_g",
       "y": 180
     },
-    "facing=west,type=2,variation=2": {
+    "facing=west,type=6": {
       "model": "pokefood:block/ice_cream_extention_apri_g",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=3": {
+    "facing=north,type=7": {
       "model": "pokefood:block/ice_cream_extention_apri_y"
     },
-    "facing=east,type=2,variation=3": {
+    "facing=east,type=7": {
       "model": "pokefood:block/ice_cream_extention_apri_y",
       "y": 90
     },
-    "facing=south,type=2,variation=3": {
+    "facing=south,type=7": {
       "model": "pokefood:block/ice_cream_extention_apri_y",
       "y": 180
     },
-    "facing=west,type=2,variation=3": {
+    "facing=west,type=7": {
       "model": "pokefood:block/ice_cream_extention_apri_y",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=4": {
+    "facing=north,type=8": {
       "model": "pokefood:block/ice_cream_extention_apri_r"
     },
-    "facing=east,type=2,variation=4": {
+    "facing=east,type=8": {
       "model": "pokefood:block/ice_cream_extention_apri_r",
       "y": 90
     },
-    "facing=south,type=2,variation=4": {
+    "facing=south,type=8": {
       "model": "pokefood:block/ice_cream_extention_apri_r",
       "y": 180
     },
-    "facing=west,type=2,variation=4": {
+    "facing=west,type=8": {
       "model": "pokefood:block/ice_cream_extention_apri_r",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=5": {
+    "facing=north,type=9": {
       "model": "pokefood:block/ice_cream_extention_apri_p"
     },
-    "facing=east,type=2,variation=5": {
+    "facing=east,type=9": {
       "model": "pokefood:block/ice_cream_extention_apri_p",
       "y": 90
     },
-    "facing=south,type=2,variation=5": {
+    "facing=south,type=9": {
       "model": "pokefood:block/ice_cream_extention_apri_p",
       "y": 180
     },
-    "facing=west,type=2,variation=5": {
+    "facing=west,type=9": {
       "model": "pokefood:block/ice_cream_extention_apri_p",
       "y": 270
     },
 
     
-    "facing=north,type=2,variation=6": {
+    "facing=north,type=10": {
       "model": "pokefood:block/ice_cream_extention_apri_w"
     },
-    "facing=east,type=2,variation=6": {
+    "facing=east,type=10": {
       "model": "pokefood:block/ice_cream_extention_apri_w",
       "y": 90
     },
-    "facing=south,type=2,variation=6": {
+    "facing=south,type=10": {
       "model": "pokefood:block/ice_cream_extention_apri_w",
       "y": 180
     },
-    "facing=west,type=2,variation=6": {
+    "facing=west,type=10": {
       "model": "pokefood:block/ice_cream_extention_apri_w",
       "y": 270
     },
 
     
-    "facing=north,type=3,variation=0": {
+    "facing=north,type=11": {
       "model": "pokefood:block/ice_cream_extention_coffee"
     },
-    "facing=east,type=3,variation=0": {
+    "facing=east,type=11": {
       "model": "pokefood:block/ice_cream_extention_coffee",
       "y": 90
     },
-    "facing=south,type=3,variation=0": {
+    "facing=south,type=11": {
       "model": "pokefood:block/ice_cream_extention_coffee",
       "y": 180
     },
-    "facing=west,type=3,variation=0": {
+    "facing=west,type=11": {
       "model": "pokefood:block/ice_cream_extention_coffee",
       "y": 270
     },
 
     
-    "facing=north,type=3,variation=1": {
+    "facing=north,type=12": {
       "model": "pokefood:block/ice_cream_extention_latte"
     },
-    "facing=east,type=3,variation=1": {
+    "facing=east,type=12": {
       "model": "pokefood:block/ice_cream_extention_latte",
       "y": 90
     },
-    "facing=south,type=3,variation=1": {
+    "facing=south,type=12": {
       "model": "pokefood:block/ice_cream_extention_latte",
       "y": 180
     },
-    "facing=west,type=3,variation=1": {
+    "facing=west,type=12": {
       "model": "pokefood:block/ice_cream_extention_latte",
       "y": 270
     },
 
     
-    "facing=north,type=9,variation=1": {
+    "facing=north,type=13": {
       "model": "pokefood:block/ice_cream_extention_lemonade"
     },
-    "facing=east,type=9,variation=1": {
+    "facing=east,type=13": {
       "model": "pokefood:block/ice_cream_extention_lemonade",
       "y": 90
     },
-    "facing=south,type=9,variation=1": {
+    "facing=south,type=13": {
       "model": "pokefood:block/ice_cream_extention_lemonade",
       "y": 180
     },
-    "facing=west,type=9,variation=1": {
+    "facing=west,type=13": {
       "model": "pokefood:block/ice_cream_extention_lemonade",
       "y": 270
     },
 
     
-    "facing=north,type=9,variation=2": {
+    "facing=north,type=14": {
       "model": "pokefood:block/ice_cream_extention_cherry"
     },
-    "facing=east,type=9,variation=2": {
+    "facing=east,type=14": {
       "model": "pokefood:block/ice_cream_extention_cherry",
       "y": 90
     },
-    "facing=south,type=9,variation=2": {
+    "facing=south,type=14": {
       "model": "pokefood:block/ice_cream_extention_cherry",
       "y": 180
     },
-    "facing=west,type=9,variation=2": {
+    "facing=west,type=14": {
       "model": "pokefood:block/ice_cream_extention_cherry",
       "y": 270
     }

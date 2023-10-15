@@ -899,7 +899,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_W_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1069,7 +1069,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_D_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1239,7 +1239,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1409,7 +1409,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_G_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1579,7 +1579,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_Y_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1749,7 +1749,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_R_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1919,7 +1919,7 @@ public class CarbonizingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRI_JUICE_P_BUCKET.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);

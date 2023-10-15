@@ -11,6 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class RoseradeTeaItem extends BucketItem {
 	public RoseradeTeaItem() {
-		super(PokefoodModFluids.ROSERADE_TEA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
+		super(PokefoodModFluids.ROSERADE_TEA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS));
 	}
 }

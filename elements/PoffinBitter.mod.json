@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "poffin_bitter",
     "customModelName": "poffin:default",
-    "name": "Bitter Poffin",
+    "name": "Bitter poffin",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

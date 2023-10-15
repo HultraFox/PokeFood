@@ -5,10 +5,10 @@
     "renderType": 1,
     "texture": "poped_calcuim",
     "customModelName": "pop_calcuim_box:default",
-    "name": "Poped calcuim box",
+    "name": "Poped Calcuim Box",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodOnTheGo"
     },
     "stackSize": 1,
     "enchantability": 0,

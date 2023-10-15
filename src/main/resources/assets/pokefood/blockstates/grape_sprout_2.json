@@ -1,0 +1,70 @@
+{
+  "variants": {
+    "facing=north,grapes=0": {
+      "model": "pokefood:block/grape_sprout_2"
+    },
+    "facing=north,grapes=1": {
+      "model": "pokefood:block/grape_sprout_3"
+    },
+    "facing=north,grapes=2": {
+      "model": "pokefood:block/grape_sprout_4"
+    },
+    "facing=north,grapes=3": {
+      "model": "pokefood:block/grape_sprout_5"
+    },
+
+    
+    "facing=east,grapes=0": {
+      "model": "pokefood:block/grape_sprout_2",
+      "y": 90
+    },
+    "facing=east,grapes=1": {
+      "model": "pokefood:block/grape_sprout_3",
+      "y": 90
+    },
+    "facing=east,grapes=2": {
+      "model": "pokefood:block/grape_sprout_4",
+      "y": 90
+    },
+    "facing=east,grapes=3": {
+      "model": "pokefood:block/grape_sprout_5",
+      "y": 90
+    },
+
+    
+    "facing=south,grapes=0": {
+      "model": "pokefood:block/grape_sprout_2",
+      "y": 180
+    },
+    "facing=south,grapes=1": {
+      "model": "pokefood:block/grape_sprout_3",
+      "y": 180
+    },
+    "facing=south,grapes=2": {
+      "model": "pokefood:block/grape_sprout_4",
+      "y": 180
+    },
+    "facing=south,grapes=3": {
+      "model": "pokefood:block/grape_sprout_5",
+      "y": 180
+    },
+
+    
+    "facing=west,grapes=0": {
+      "model": "pokefood:block/grape_sprout_2",
+      "y": 270
+    },
+    "facing=west,grapes=1": {
+      "model": "pokefood:block/grape_sprout_3",
+      "y": 270
+    },
+    "facing=west,grapes=2": {
+      "model": "pokefood:block/grape_sprout_4",
+      "y": 270
+    },
+    "facing=west,grapes=3": {
+      "model": "pokefood:block/grape_sprout_5",
+      "y": 270
+    }
+  }
+}

@@ -24,7 +24,7 @@ public class BreewApriBProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get() && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);

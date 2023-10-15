@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/cup",
+  "textures": {
+    "all": "pokefood:blocks/cup_uncooked",
+    "particle": "pokefood:blocks/cup_uncooked",
+    "0": "pokefood:blocks/cup_uncooked",
+    "1": "pokefood:blocks/null"
+  },
+  "render_type": "translucent"
+}

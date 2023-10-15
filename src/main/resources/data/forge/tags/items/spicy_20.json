@@ -1,8 +1,11 @@
 {
   "replace": false,
   "values": [
-    "pokefood:apri_juice_r_bucket",
+    "pokefood:aprijuice_r_bucket",
     "pokefood:spicy_rep_2",
-    "pokefood:roserade_tea_bucket"
+    "pokefood:roserade_tea_bucket",
+	"cobblemon:babiri_berry",
+	"cobblemon:tamato_berry",
+	"cobblemon:tanga_berry"
   ]
 }

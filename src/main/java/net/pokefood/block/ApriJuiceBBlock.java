@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 public class ApriJuiceBBlock extends LiquidBlock {
 	public ApriJuiceBBlock() {
-		super(() -> PokefoodModFluids.APRI_JUICE_B.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_BLUE).strength(100f).noCollission().noLootTable());
+		super(() -> PokefoodModFluids.APRIJUICE_B.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_BLUE).strength(100f).noCollission().noLootTable());
 	}
 
 	@Override

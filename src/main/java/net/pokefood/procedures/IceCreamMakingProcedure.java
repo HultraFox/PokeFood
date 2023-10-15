@@ -274,7 +274,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get() && ((tank_1_name).equals("apri_b") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get() && ((tank_1_name).equals("apri_b") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -320,7 +320,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_D_BUCKET.get() && ((tank_1_name).equals("apri_d") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get() && ((tank_1_name).equals("apri_d") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -366,7 +366,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_G_BUCKET.get() && ((tank_1_name).equals("apri_g") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get() && ((tank_1_name).equals("apri_g") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -412,7 +412,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_P_BUCKET.get() && ((tank_1_name).equals("apri_p") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get() && ((tank_1_name).equals("apri_p") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -458,7 +458,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_R_BUCKET.get() && ((tank_1_name).equals("apri_r") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get() && ((tank_1_name).equals("apri_r") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -504,7 +504,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_W_BUCKET.get() && ((tank_1_name).equals("apri_w") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get() && ((tank_1_name).equals("apri_w") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -550,7 +550,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_Y_BUCKET.get() && ((tank_1_name).equals("apri_y") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get() && ((tank_1_name).equals("apri_y") && tank_1_quantity <= 2 || tank_1_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -920,7 +920,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get() && ((tank_2_name).equals("apri_b") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get() && ((tank_2_name).equals("apri_b") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -966,7 +966,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_D_BUCKET.get() && ((tank_2_name).equals("apri_d") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get() && ((tank_2_name).equals("apri_d") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1012,7 +1012,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_G_BUCKET.get() && ((tank_2_name).equals("apri_g") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get() && ((tank_2_name).equals("apri_g") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1058,7 +1058,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_P_BUCKET.get() && ((tank_2_name).equals("apri_p") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get() && ((tank_2_name).equals("apri_p") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1104,7 +1104,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_R_BUCKET.get() && ((tank_2_name).equals("apri_r") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get() && ((tank_2_name).equals("apri_r") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1150,7 +1150,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_W_BUCKET.get() && ((tank_2_name).equals("apri_w") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get() && ((tank_2_name).equals("apri_w") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1196,7 +1196,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_Y_BUCKET.get() && ((tank_2_name).equals("apri_y") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get() && ((tank_2_name).equals("apri_y") && tank_2_quantity <= 2 || tank_2_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1566,7 +1566,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_B_BUCKET.get() && ((tank_3_name).equals("apri_b") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get() && ((tank_3_name).equals("apri_b") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1612,7 +1612,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_D_BUCKET.get() && ((tank_3_name).equals("apri_d") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get() && ((tank_3_name).equals("apri_d") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1658,7 +1658,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_G_BUCKET.get() && ((tank_3_name).equals("apri_g") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get() && ((tank_3_name).equals("apri_g") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1704,7 +1704,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_P_BUCKET.get() && ((tank_3_name).equals("apri_p") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get() && ((tank_3_name).equals("apri_p") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1750,7 +1750,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_R_BUCKET.get() && ((tank_3_name).equals("apri_r") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get() && ((tank_3_name).equals("apri_r") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1796,7 +1796,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_W_BUCKET.get() && ((tank_3_name).equals("apri_w") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get() && ((tank_3_name).equals("apri_w") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
@@ -1842,7 +1842,7 @@ public class IceCreamMakingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRI_JUICE_Y_BUCKET.get() && ((tank_3_name).equals("apri_y") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
+				}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get() && ((tank_3_name).equals("apri_y") && tank_3_quantity <= 2 || tank_3_quantity == 0)) {
 					{
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {

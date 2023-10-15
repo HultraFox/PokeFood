@@ -1,0 +1,29 @@
+{
+  "group": "sugar_melter",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_slab"
+    },
+    "1": {
+      "item": "minecraft:quartz_slab"
+    },
+    "2": {
+      "item": "minecraft:quartz_slab"
+    },
+    "3": {
+      "item": "minecraft:quartz_slab"
+    },
+    "5": {
+      "item": "minecraft:quartz_slab"
+    }
+  },
+  "result": {
+    "item": "pokefood:sugar_melter_6",
+    "count": 1
+  }
+}

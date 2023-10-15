@@ -16,13 +16,13 @@ import java.util.List;
 
 public class SourRep2Item extends Item {
 	public SourRep2Item() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A small quantity"));
+		list.add(Component.literal("\u00A77A small quantity"));
 	}
 
 	@Override

@@ -93,13 +93,13 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
-					   PokefoodModItems.APRI_JUICE_W_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_D_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_B_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_G_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_Y_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_P_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRI_JUICE_R_BUCKET.get() == stack.getItem()
+					   PokefoodModItems.APRIJUICE_W_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_D_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_B_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_G_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_Y_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_P_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_R_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.TEA_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.BLACK_TEA_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.ROSERADE_TEA_BUCKET.get() == stack.getItem()
@@ -119,7 +119,7 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 133, 54) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.GLASS_BALL.get() == stack.getItem();
+				return PokefoodModItems.POP_BALL.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 54) {

@@ -1,0 +1,29 @@
+{
+  "group": "sugar_melter",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "1": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "2": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "3": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "5": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "result": {
+    "item": "pokefood:sugar_melter_1",
+    "count": 1
+  }
+}

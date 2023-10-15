@@ -7,6 +7,15 @@
     "blocks": [
       {
         "value": "CUSTOM:Lemonade"
+      },
+      {
+        "value": "CUSTOM:RedWine"
+      },
+      {
+        "value": "CUSTOM:WhiteWine"
+      },
+      {
+        "value": "CUSTOM:RoseWine"
       }
     ],
     "functions": [],

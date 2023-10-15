@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/lamp_0",
+  "textures": {
+    "all": "pokefood:blocks/lamp_0_off",
+    "particle": "pokefood:blocks/lamp_0_off",
+    "0": "pokefood:blocks/lamp_0_off",
+    "missing": "pokefood:blocks/"
+  },
+  "render_type": "solid"
+}

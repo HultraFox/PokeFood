@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "pokefood:sour_rep_3",
-    "pokefood:tea_bucket"
+    "pokefood:tea_bucket",
+	"cobblemon:aguav_berry",
+	"cobblemon:belue_berry",,
+	"cobblemon:lansat_berry"
+	"cobblemon:salac_berry",
+	"cobblemon:starf_berry"
   ]
 }

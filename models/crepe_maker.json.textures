@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "crepe_maker_top",
+        "1": "crepe_maker",
+        "2": "crepe_maker_under",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pokefood:apri_juice_b_bucket",
+    "pokefood:aprijuice_b_bucket",
     "pokefood:cup_aprijuice_y",
     "pokefood:cup_cherry_infusion",
     "pokefood:sparkles_sweet",
@@ -9,6 +9,25 @@
     "minecraft:carrot",
     "pokefood:sweet_rep_1",
     "minecraft:sweet_berries",
-    "pokefood:cup_roserade_tea"
+    "pokefood:cup_roserade_tea",
+	"cobblemon:bluk_berry",
+	"cobblemon:chilan_berry",
+	"cobblemon:cornn_berry",
+	"cobblemon:ganlon_berry",
+	"cobblemon:grepa_berry",
+	"cobblemon:haban_berry",
+	"cobblemon:kee_berry",
+	"cobblemon:leppa_berry",
+	"cobblemon:lum_berry",
+	"cobblemon:micle_berry",
+	"cobblemon:nanab_berry",
+	"cobblemon:occa_berry",
+	"cobblemon:pamtre_berry",
+	"cobblemon:payapa_berry",
+	"cobblemon:pecha_berry",
+	"cobblemon:perism_berry",
+	"cobblemon:pomeg_berry",
+	"cobblemon:qualot_berry",
+	"cobblemon:sitrus_berry"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "group": "candies_s",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:crystalized_sugar_1"
+    },
+    {
+      "item": "pokefood:crystalized_sugar_1"
+    },
+    {
+      "item": "pokefood:crystalized_sugar_1"
+    }
+  ],
+  "result": {
+    "item": "pokefood:candy_s_1",
+    "count": 5
+  }
+}

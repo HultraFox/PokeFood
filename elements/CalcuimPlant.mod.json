@@ -22,7 +22,7 @@
     "boundingBoxes": [
       {
         "mx": 3.0,
-        "my": 0.0,
+        "my": -1.0,
         "mz": 3.0,
         "Mx": 13.0,
         "My": 3.0,
@@ -79,6 +79,9 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "PlantsValidPlacement"
+    },
     "isBonemealable": false,
     "frequencyOnChunks": 10,
     "spawnWorldTypes": [

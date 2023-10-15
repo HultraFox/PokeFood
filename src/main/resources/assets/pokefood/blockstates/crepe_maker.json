@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "facing=north,cooking=0": {
+      "model": "pokefood:block/crepe_maker"
+    },
+    "facing=north,cooking=1": {
+      "model": "pokefood:block/crepe_maker_0"
+    },
+    "facing=north,,cooking=2": {
+      "model": "pokefood:block/crepe_maker_1"
+    },
+
+    
+    "facing=east,cooking=0": {
+      "model": "pokefood:block/crepe_maker",
+      "y": 90
+    },
+    "facing=east,cooking=1": {
+      "model": "pokefood:block/crepe_maker_0",
+      "y": 90
+    },
+    "facing=east,cooking=2": {
+      "model": "pokefood:block/crepe_maker_1",
+      "y": 90
+    },
+
+    
+    "facing=south,cooking=0": {
+      "model": "pokefood:block/crepe_maker",
+      "y": 180
+    },
+    "facing=south,cooking=1": {
+      "model": "pokefood:block/crepe_maker_0",
+      "y": 180
+    },
+    "facing=south,cooking=2": {
+      "model": "pokefood:block/crepe_maker_1",
+      "y": 180
+    },
+
+    
+    "facing=west,cooking=0": {
+      "model": "pokefood:block/crepe_maker",
+      "y": 270
+    },
+    "facing=west,cooking=1": {
+      "model": "pokefood:block/crepe_maker_0",
+      "y": 270
+    },
+    "facing=west,cooking=2": {
+      "model": "pokefood:block/crepe_maker_1",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cheese_mold",
+        "1": "cheese_0"
+      },
+      "name": "default"
+    }
+  }
+}

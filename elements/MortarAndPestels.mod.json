@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MortarAndPestle0"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle1"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle2"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle3"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle4"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle5"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle6"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle7"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle8"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle9"
+      },
+      {
+        "value": "CUSTOM:MortarAndPestle10"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "mortar_and_pestels",
+    "namespace": "mod"
+  }
+}

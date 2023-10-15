@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 public class ApriJuiceWBlock extends LiquidBlock {
 	public ApriJuiceWBlock() {
-		super(() -> PokefoodModFluids.APRI_JUICE_W.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.SNOW).strength(100f).noCollission().noLootTable());
+		super(() -> PokefoodModFluids.APRIJUICE_W.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.SNOW).strength(100f).noCollission().noLootTable());
 	}
 
 	@Override

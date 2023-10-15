@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "pokefood:apri_juice_d_bucket",
-    "pokefood:sour_rep_2"
+    "pokefood:aprijuice_d_bucket",
+    "pokefood:sour_rep_2",
+	"cobblemon:colbur_berry",
+	"cobblemon:nomel_berry"
   ]
 }

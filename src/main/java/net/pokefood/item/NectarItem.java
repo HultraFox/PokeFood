@@ -10,7 +10,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class NectarItem extends Item {
 	public NectarItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.3f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.3f)
 
 				.build()));
 	}

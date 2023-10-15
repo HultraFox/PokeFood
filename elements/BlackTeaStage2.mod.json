@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Tea plant",
+    "name": "Tea Plant",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
@@ -86,6 +86,9 @@
         "value": "Blocks.DIRT#0"
       }
     ],
+    "placingCondition": {
+      "name": "PlantsValidPlacement"
+    },
     "isBonemealable": false,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],

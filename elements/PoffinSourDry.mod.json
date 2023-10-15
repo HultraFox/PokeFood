@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "poffin_sour_dry",
     "customModelName": "poffin:default",
-    "name": "Sour and Dry Poffin",
+    "name": "Sour and dry poffin",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

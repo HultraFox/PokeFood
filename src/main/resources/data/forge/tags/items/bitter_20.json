@@ -2,9 +2,12 @@
   "replace": false,
   "values": [
     "pokefood:calcuim",
-    "pokefood:apri_juice_g_bucket",
+    "pokefood:aprijuice_g_bucket",
     "pokefood:lemonade_bucket",
     "pokefood:bitter_rep_2",
-    "pokefood:roserade_tea_bucket"
+    "pokefood:roserade_tea_bucket",
+	"cobblemon:haban_berry",
+	"cobblemon:hopo_berry",
+	"cobblemon:rabuta_berry"
   ]
 }

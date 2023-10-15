@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/letuce_3",
+  "textures": {
+    "all": "pokefood:blocks/letuce",
+    "particle": "pokefood:blocks/letuce_3",
+    "0": "pokefood:blocks/letuce_3",
+    "1": "pokefood:blocks/letuce_middle_3"
+  },
+  "render_type": "cutout"
+}

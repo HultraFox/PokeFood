@@ -30,6 +30,15 @@
       },
       {
         "value": "CUSTOM:LeekSeeds"
+      },
+      {
+        "value": "CUSTOM:OnionSeeds"
+      },
+      {
+        "value": "CUSTOM:LetuceSeeds"
+      },
+      {
+        "value": "CUSTOM:RiceSeeds"
       }
     ],
     "blocks": [],

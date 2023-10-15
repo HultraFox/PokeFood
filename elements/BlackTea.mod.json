@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "blacktea_bucket_classic",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "emptySound": {
       "value": ""

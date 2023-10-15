@@ -1,0 +1,146 @@
+{
+  "variants": {
+    "cheese_type=0": {
+      "model": "pokefood:block/cheese_mold"
+    },
+    
+    "age=0,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=0,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=0,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=0,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=0,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=0,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    
+    
+    "age=1,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=1,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=1,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=1,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=1,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=1,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    
+    
+    "age=2,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=2,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=2,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=2,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=2,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=2,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+
+    
+    "age=3,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=3,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=3,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=3,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=3,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=3,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+
+    
+    "age=4,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=4,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=4,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=4,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=4,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=4,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+
+    
+    "age=5,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=5,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=5,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=5,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=5,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+    "age=5,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_curd"
+    },
+
+    
+    "age=6,cheese_type=1": {
+      "model": "pokefood:block/cheese_mold_0"
+    },
+    "age=6,cheese_type=2": {
+      "model": "pokefood:block/cheese_mold_1"
+    },
+    "age=6,cheese_type=3": {
+      "model": "pokefood:block/cheese_mold_2"
+    },
+    "age=6,cheese_type=4": {
+      "model": "pokefood:block/cheese_mold_3"
+    },
+    "age=6,cheese_type=5": {
+      "model": "pokefood:block/cheese_mold_4"
+    },
+    "age=6,cheese_type=6": {
+      "model": "pokefood:block/cheese_mold_5"
+    }
+  }
+}

@@ -6,7 +6,7 @@
 			"amount": 50
         },
 		{
-			"fluid": "pokefood:apri_juice_p",
+			"fluid": "pokefood:aprijuice_p",
 			"amount": 50
         },
 		{
@@ -21,7 +21,7 @@
     ], 
         "results": [
 		{
-			"item": "pokefood:apri_shake_p",
+			"item": "pokefood:aprishake_p",
 			"count": 1
         }
     ],

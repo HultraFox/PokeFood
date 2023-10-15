@@ -18,7 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 public class GlassArceumItem extends Item {
 	public GlassArceumItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(15).saturationMod(0.35f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_DRINKS).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(15).saturationMod(0.35f).alwaysEat()
 
 				.build()));
 	}

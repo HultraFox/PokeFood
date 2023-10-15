@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/candy_machine",
+  "textures": {
+    "all": "pokefood:blocks/candy_machine_9",
+    "particle": "pokefood:blocks/candy_machine_9",
+    "0": "pokefood:blocks/candy_machine_9",
+    "1": "pokefood:blocks/candy_machine_glass"
+  },
+  "render_type": "cutout"
+}

@@ -8,7 +8,7 @@
     "name": "Yellow Aprishake",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodDrinks"
     },
     "stackSize": 64,
     "enchantability": 0,

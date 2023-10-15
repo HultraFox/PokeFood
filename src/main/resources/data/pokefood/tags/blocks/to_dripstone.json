@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "pokefood:lemonade"
+    "pokefood:red_wine",
+    "pokefood:lemonade",
+    "pokefood:rose_wine",
+    "pokefood:white_wine"
   ]
 }

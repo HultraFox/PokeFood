@@ -79,6 +79,14 @@
         "2": "table_coffee_bottom_10"
       },
       "name": "banana"
+    },
+    "cherry": {
+      "map": {
+        "0": "table_coffee_top_9",
+        "1": "table_coffee_side_9",
+        "2": "table_coffee_bottom_9"
+      },
+      "name": "cherry"
     }
   }
 }

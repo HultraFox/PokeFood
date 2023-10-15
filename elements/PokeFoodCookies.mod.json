@@ -2,10 +2,10 @@
   "_fv": 43,
   "_type": "tab",
   "definition": {
-    "name": "PF - Cookies",
+    "name": "PokeFood - Cookies",
     "icon": {
-      "value": "CUSTOM:CookieBulbasaur"
+      "value": "CUSTOM:CookieIvysaur"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

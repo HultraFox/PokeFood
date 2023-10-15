@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 8,
+    "recipeRetstackSize": 1,
     "group": "candies",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,19 +12,19 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
+        "value": "CUSTOM:CrystalizedSugar3"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.DYE#16"
+        "value": ""
       },
       {
-        "value": "Items.SUGAR"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""

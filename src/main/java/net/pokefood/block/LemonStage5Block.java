@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.pokefood.procedures.LemonValidPlacementProcedure;
 import net.pokefood.procedures.LemonStageChangerProcedure;
 import net.pokefood.procedures.LemonCollectingProcedure;
 import net.pokefood.init.PokefoodModItems;
@@ -21,6 +22,7 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -66,7 +68,15 @@ public class LemonStage5Block extends FlowerBlock implements EntityBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT);
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = LemonValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return (groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT)) && additionalCondition;
 	}
 
 	@Override

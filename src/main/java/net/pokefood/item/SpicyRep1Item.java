@@ -16,13 +16,13 @@ import java.util.List;
 
 public class SpicyRep1Item extends Item {
 	public SpicyRep1Item() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("The smallest quantity"));
+		list.add(Component.literal("\u00A77The smallest quantity"));
 	}
 
 	@Override

@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "restaurant_sofas_0",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#15"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WOOL#15"
+      },
+      {
+        "value": "Blocks.WOOL#15"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#5"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#5"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RestaurantSofa3"
+    },
+    "name": "recipe_res_sofa_3",
+    "namespace": "mod"
+  }
+}

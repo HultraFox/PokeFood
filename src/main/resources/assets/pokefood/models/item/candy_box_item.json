@@ -1,0 +1,15 @@
+{
+  "parent": "pokefood:custom/candy_bag",
+  "textures": {
+    "0": "pokefood:blocks/candy_bag",
+    "particle": "pokefood:blocks/candy_bag"
+  },
+  "overrides": [
+    
+		{"predicate": {"custom_model_data":0}, "model":	"pokefood:item/candy_box_item_empty"},
+  		{"predicate": {"custom_model_data":1}, "model":	"pokefood:item/candy_box_item"},
+		{"predicate": {"custom_model_data":2}, "model":	"pokefood:item/candy_box_item_1"},
+		{"predicate": {"custom_model_data":2}, "model":	"pokefood:item/candy_box_item_2"},
+		{"predicate": {"custom_model_data":4}, "model":	"pokefood:item/candy_box_item_3"}
+  ]
+}

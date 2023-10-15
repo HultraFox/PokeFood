@@ -1,0 +1,13 @@
+{
+  "group": "cheese_slice",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:cheese_q_1"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cheese_s_1",
+    "count": 4
+  }
+}

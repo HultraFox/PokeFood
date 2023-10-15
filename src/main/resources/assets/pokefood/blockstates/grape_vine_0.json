@@ -1,0 +1,175 @@
+{
+  "variants": {
+    "fence=0,facing=north": {
+      "model": "pokefood:block/grape_vine_0"
+    },
+    "fence=1,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f1"
+    },
+    "fence=2,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f2"
+    },
+    "fence=3,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f3"
+    },
+    "fence=4,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f4"
+    },
+    "fence=5,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f5"
+    },
+    "fence=6,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f6"
+    },
+    "fence=7,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f7"
+    },
+    "fence=8,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f8"
+    },
+    "fence=9,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f9"
+    },
+    "fence=10,facing=north": {
+      "model": "pokefood:block/grape_vine_0_f10"
+    },
+
+    
+    "fence=0,facing=east": {
+      "model": "pokefood:block/grape_vine_0",
+      "y": 90
+    },
+    "fence=1,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f1",
+      "y": 90
+    },
+    "fence=2,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f2",
+      "y": 90
+    },
+    "fence=3,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f3",
+      "y": 90
+    },
+    "fence=4,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f4",
+      "y": 90
+    },
+    "fence=5,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f5",
+      "y": 90
+    },
+    "fence=6,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f6",
+      "y": 90
+    },
+    "fence=7,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f7",
+      "y": 90
+    },
+    "fence=8,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f8",
+      "y": 90
+    },
+    "fence=9,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f9",
+      "y": 90
+    },
+    "fence=10,facing=east": {
+      "model": "pokefood:block/grape_vine_0_f10",
+      "y": 90
+    },
+
+    
+    "fence=0,facing=south": {
+      "model": "pokefood:block/grape_vine_0",
+      "y": 180
+    },
+    "fence=1,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f1",
+      "y": 180
+    },
+    "fence=2,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f2",
+      "y": 180
+    },
+    "fence=3,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f3",
+      "y": 180
+    },
+    "fence=4,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f4",
+      "y": 180
+    },
+    "fence=5,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f5",
+      "y": 180
+    },
+    "fence=6,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f6",
+      "y": 180
+    },
+    "fence=7,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f7",
+      "y": 180
+    },
+    "fence=8,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f8",
+      "y": 180
+    },
+    "fence=9,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f9",
+      "y": 180
+    },
+    "fence=10,facing=south": {
+      "model": "pokefood:block/grape_vine_0_f10",
+      "y": 180
+    },
+
+    
+    "fence=0,facing=west": {
+      "model": "pokefood:block/grape_vine_0",
+      "y": 270
+    },
+    "fence=1,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f1",
+      "y": 270
+    },
+    "fence=2,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f2",
+      "y": 270
+    },
+    "fence=3,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f3",
+      "y": 270
+    },
+    "fence=4,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f4",
+      "y": 270
+    },
+    "fence=5,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f5",
+      "y": 270
+    },
+    "fence=6,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f6",
+      "y": 270
+    },
+    "fence=7,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f7",
+      "y": 270
+    },
+    "fence=8,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f8",
+      "y": 270
+    },
+    "fence=9,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f9",
+      "y": 270
+    },
+    "fence=10,facing=west": {
+      "model": "pokefood:block/grape_vine_0_f10",
+      "y": 270
+    }
+  }
+}

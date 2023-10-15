@@ -2,7 +2,10 @@
   "replace": false,
   "values": [
     "pokefood:calcuim",
-    "pokefood:apri_juice_p_bucket",
-    "pokefood:fresh_water_bucket"
+    "pokefood:aprijuice_p_bucket",
+    "pokefood:fresh_water_bucket",
+	"cobblemon:chople_berry",
+	"cobblemon:figy_berry",
+	"cobblemon:occa_berry"
   ]
 }

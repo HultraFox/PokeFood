@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "crystalized_sugar_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      },
+      {
+        "value": "CUSTOM:CrystalizedSugar9"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrystalizedSugarBlock9"
+    },
+    "name": "recipe_crystalized_sugar_block_9",
+    "namespace": "mod"
+  }
+}

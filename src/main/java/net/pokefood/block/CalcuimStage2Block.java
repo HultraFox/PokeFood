@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.pokefood.procedures.CropsValidPlacementProcedure;
 import net.pokefood.procedures.CalcuimStageChangerProcedure;
 import net.pokefood.init.PokefoodModItems;
 import net.pokefood.block.entity.CalcuimStage2BlockEntity;
@@ -20,6 +21,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -41,7 +44,7 @@ public class CalcuimStage2Block extends FlowerBlock implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 13, 3, 13).move(offset.x, offset.y, offset.z);
+		return box(3, -1, 3, 13, 3, 13).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -70,6 +73,26 @@ public class CalcuimStage2Block extends FlowerBlock implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(PokefoodModItems.CALCUIM_SEEDS.get()));
+	}
+
+	@Override
+	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = CropsValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return additionalCondition;
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
 
 	@Override

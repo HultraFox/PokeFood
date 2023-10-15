@@ -8,6 +8,6 @@ import net.minecraft.world.item.Item;
 
 public class SpicyJuiceItem extends Item {
 	public SpicyJuiceItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(16).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(16).rarity(Rarity.COMMON));
 	}
 }

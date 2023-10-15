@@ -21,5 +21,6 @@ public class SodaUnlockAdvProcedure {
 					_player.getAdvancements().award(_adv, (String) _iterator.next());
 			}
 		}
+		ReplaceSodaPopProcedure.execute();
 	}
 }

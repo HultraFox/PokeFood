@@ -22,7 +22,7 @@
     "boundingBoxes": [
       {
         "mx": 6.0,
-        "my": 0.0,
+        "my": -1.0,
         "mz": 6.0,
         "Mx": 10.0,
         "My": 8.0,
@@ -79,6 +79,9 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "CropsValidPlacement"
+    },
     "isBonemealable": false,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],

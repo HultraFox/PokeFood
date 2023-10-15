@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/sugar_melter_content0",
+  "textures": {
+    "all": "pokefood:blocks/candy_pot_sugar_0",
+    "particle": "pokefood:blocks/candy_pot_sugar_0",
+    "2": "pokefood:blocks/candy_pot_sugar_0"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,195 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PuffBasicSweet"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSweet"
+      },
+      {
+        "value": "CUSTOM:PuffFancySweet"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSweet"
+      },
+      {
+        "value": "CUSTOM:PuffBasicMint"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedMint"
+      },
+      {
+        "value": "CUSTOM:PuffFancyMint"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeMint"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCitrus"
+      },
+      {
+        "value": "CUSTOM:PuffBasicMocha"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedMocha"
+      },
+      {
+        "value": "CUSTOM:PuffFancyMocha"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeMocha"
+      },
+      {
+        "value": "CUSTOM:PuffBasicSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffFancySpicy"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSpicy"
+      },
+      {
+        "value": "CUSTOM:PuffBasicHoney"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedHoney"
+      },
+      {
+        "value": "CUSTOM:PuffFancyHoney"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeHoney"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCalm"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCalm"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCalm"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCalm"
+      },
+      {
+        "value": "CUSTOM:PuffBasicCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedCandy"
+      },
+      {
+        "value": "CUSTOM:PuffFancyCandy"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeCandy"
+      },
+      {
+        "value": "CUSTOM:PuffBasicStiff"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStiff"
+      },
+      {
+        "value": "CUSTOM:PuffFancyStiff"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeStiff"
+      },
+      {
+        "value": "CUSTOM:PuffBasicStrong"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedStrong"
+      },
+      {
+        "value": "CUSTOM:PuffFancyStrong"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeStrong"
+      },
+      {
+        "value": "CUSTOM:PuffBasicToast"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedToast"
+      },
+      {
+        "value": "CUSTOM:PuffFancyToast"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeToast"
+      },
+      {
+        "value": "CUSTOM:PuffBasicSalty"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedSalty"
+      },
+      {
+        "value": "CUSTOM:PuffFancySalty"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeSalty"
+      },
+      {
+        "value": "CUSTOM:PuffBasicAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffFancyAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeAnanas"
+      },
+      {
+        "value": "CUSTOM:PuffBasicHigh"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedHigh"
+      },
+      {
+        "value": "CUSTOM:PuffFancyHigh"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxeHigh"
+      },
+      {
+        "value": "CUSTOM:PuffBasicPepper"
+      },
+      {
+        "value": "CUSTOM:PuffFrostedPepper"
+      },
+      {
+        "value": "CUSTOM:PuffFancyPepper"
+      },
+      {
+        "value": "CUSTOM:PuffDeluxePepper"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pokepuffs",
+    "namespace": "mod"
+  }
+}

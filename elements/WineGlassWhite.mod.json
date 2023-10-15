@@ -1,0 +1,51 @@
+{
+  "_fv": 43,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "wine_glass_white",
+    "customModelName": "Normal",
+    "name": "Glass of White Wine",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:PokeFoodDrinks"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": "CUSTOM:WineGlass"
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "AlcoholUnlockAdv"
+    },
+    "onEntitySwing": {
+      "name": "CalcuimPlanting"
+    },
+    "onFinishUsingItem": {
+      "name": "BecomingDrunk"
+    },
+    "isFood": true,
+    "nutritionalValue": 6,
+    "saturation": 0.5,
+    "eatResultItem": {
+      "value": "CUSTOM:WineGlass"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "drink"
+  }
+}

@@ -54,12 +54,11 @@ import io.netty.buffer.Unpooled;
 
 public class IceCreamExtentionBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	public static final IntegerProperty TYPE = IntegerProperty.create("type", 0, 9);
-	public static final IntegerProperty VARIATION = IntegerProperty.create("variation", 0, 9);
+	public static final IntegerProperty TYPE = IntegerProperty.create("type", 0, 14);
 
 	public IceCreamExtentionBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TYPE, Integer.valueOf(0)).setValue(VARIATION, Integer.valueOf(0)));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TYPE, Integer.valueOf(0)));
 	}
 
 	@Override
@@ -96,7 +95,7 @@ public class IceCreamExtentionBlock extends Block implements EntityBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING,TYPE, VARIATION);
+		builder.add(FACING,TYPE);
 	}
 
 	@Override

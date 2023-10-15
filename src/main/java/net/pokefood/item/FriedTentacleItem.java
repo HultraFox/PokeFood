@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 
 public class FriedTentacleItem extends Item {
 	public FriedTentacleItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.15f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_ON_THE_GO).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.15f)
 
 				.meat().build()));
 	}

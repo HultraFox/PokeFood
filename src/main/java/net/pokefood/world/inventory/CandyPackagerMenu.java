@@ -1,12 +1,15 @@
 
 package net.pokefood.world.inventory;
 
+import net.pokefood.procedures.CandyPackagerUpdateProcedure;
 import net.pokefood.init.PokefoodModMenus;
-import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -17,7 +20,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -25,6 +30,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class CandyPackagerMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -79,97 +85,97 @@ public class CandyPackagerMenu extends AbstractContainerMenu implements Supplier
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 52, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_0.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 70, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_1.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 52, 44) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 88, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_2.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 52, 62) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 106, 8) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_3.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 70, 8) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 52, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_4.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 70, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_5.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 70, 44) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 88, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_6.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 70, 62) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 106, 26) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_7.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 88, 8) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 52, 44) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_8.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 88, 26) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 70, 44) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_9.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 88, 44) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_10.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 88, 62) {
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 106, 44) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_11.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 106, 8) {
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 52, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_12.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 106, 26) {
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 70, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_13.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
-		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 106, 44) {
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 88, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_14.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 106, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.CANDY_15.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:candy")));
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
@@ -310,5 +316,17 @@ public class CandyPackagerMenu extends AbstractContainerMenu implements Supplier
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof CandyPackagerMenu) {
+			Level world = entity.level;
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			CandyPackagerUpdateProcedure.execute(entity);
+		}
 	}
 }

@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 
 public class FriedHeracrossHornItem extends Item {
 	public FriedHeracrossHornItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.5f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_ON_THE_GO).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.5f)
 
 				.meat().build()));
 	}

@@ -2,10 +2,10 @@
   "_fv": 43,
   "_type": "tab",
   "definition": {
-    "name": "PokeFood",
+    "name": "PokeFood - Sweets",
     "icon": {
       "value": "CUSTOM:PuffFancyPepper"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

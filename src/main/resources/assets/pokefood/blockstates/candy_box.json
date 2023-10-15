@@ -1,18 +1,82 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,content=0": {
+      "model": "pokefood:block/candy_box_empty"
+    },
+    "facing=east,content=0": {
+      "model": "pokefood:block/candy_box_empty",
+      "y": 90
+    },
+    "facing=south,content=0": {
+      "model": "pokefood:block/candy_box_empty",
+      "y": 180
+    },
+    "facing=west,content=0": {
+      "model": "pokefood:block/candy_box_empty",
+      "y": 270
+    },
+    
+    "facing=north,content=1": {
       "model": "pokefood:block/candy_box"
     },
-    "facing=east": {
+    "facing=east,content=1": {
       "model": "pokefood:block/candy_box",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,content=1": {
       "model": "pokefood:block/candy_box",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,content=1": {
       "model": "pokefood:block/candy_box",
+      "y": 270
+    },
+    
+    "facing=north,content=2": {
+      "model": "pokefood:block/candy_box_1"
+    },
+    "facing=east,content=2": {
+      "model": "pokefood:block/candy_box_1",
+      "y": 90
+    },
+    "facing=south,content=2": {
+      "model": "pokefood:block/candy_box_1",
+      "y": 180
+    },
+    "facing=west,content=2": {
+      "model": "pokefood:block/candy_box_1",
+      "y": 270
+    },
+    
+    "facing=north,content=3": {
+      "model": "pokefood:block/candy_box_2"
+    },
+    "facing=east,content=3": {
+      "model": "pokefood:block/candy_box_2",
+      "y": 90
+    },
+    "facing=south,content=3": {
+      "model": "pokefood:block/candy_box_2",
+      "y": 180
+    },
+    "facing=west,content=3": {
+      "model": "pokefood:block/candy_box_2",
+      "y": 270
+    },
+    
+    "facing=north,content=4": {
+      "model": "pokefood:block/candy_box_3"
+    },
+    "facing=east,content=4": {
+      "model": "pokefood:block/candy_box_3",
+      "y": 90
+    },
+    "facing=south,content=4": {
+      "model": "pokefood:block/candy_box_3",
+      "y": 180
+    },
+    "facing=west,content=4": {
+      "model": "pokefood:block/candy_box_3",
       "y": 270
     }
   }

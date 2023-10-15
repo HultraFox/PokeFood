@@ -23,6 +23,6 @@ public class PuffFrostedCandyItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("A frosted candied one"));
+		list.add(Component.literal("§7A frosted candied one"));
 	}
 }

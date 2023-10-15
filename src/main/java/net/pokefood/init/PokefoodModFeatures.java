@@ -4,11 +4,13 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.world.features.plants.LettuceWildFeature;
 import net.pokefood.world.features.plants.LemonStage3Feature;
 import net.pokefood.world.features.plants.LemonStage2Feature;
 import net.pokefood.world.features.plants.LemonStage1Feature;
 import net.pokefood.world.features.plants.LemonStage0Feature;
 import net.pokefood.world.features.plants.CalcuimPlantFeature;
+import net.pokefood.world.features.BananaTreeFeature;
 import net.pokefood.PokefoodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -26,4 +28,6 @@ public class PokefoodModFeatures {
 	public static final RegistryObject<Feature<?>> LEMON_STAGE_2 = REGISTRY.register("lemon_stage_2", LemonStage2Feature::feature);
 	public static final RegistryObject<Feature<?>> LEMON_STAGE_3 = REGISTRY.register("lemon_stage_3", LemonStage3Feature::feature);
 	public static final RegistryObject<Feature<?>> CALCUIM_PLANT = REGISTRY.register("calcuim_plant", CalcuimPlantFeature::feature);
+	public static final RegistryObject<Feature<?>> LETTUCE_WILD = REGISTRY.register("lettuce_wild", LettuceWildFeature::feature);
+	public static final RegistryObject<Feature<?>> BANANA_TREE = REGISTRY.register("banana_tree", BananaTreeFeature::feature);
 }

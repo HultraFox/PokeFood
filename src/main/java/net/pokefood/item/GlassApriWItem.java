@@ -18,7 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 public class GlassApriWItem extends Item {
 	public GlassApriWItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(13).saturationMod(0.3f).alwaysEat()
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_DRINKS).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(13).saturationMod(0.3f).alwaysEat()
 
 				.build()));
 	}

@@ -1,0 +1,25 @@
+{
+  "group": "wine",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pokefood:wine_glass"
+    },
+    {
+      "item": "pokefood:wine_glass"
+    },
+    {
+      "item": "pokefood:red_wine_bucket"
+    },
+    {
+      "item": "pokefood:wine_glass"
+    },
+    {
+      "item": "pokefood:wine_glass"
+    }
+  ],
+  "result": {
+    "item": "pokefood:wine_glass_red",
+    "count": 4
+  }
+}

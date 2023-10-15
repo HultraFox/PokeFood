@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=north,open=false": {
+      "model": "pokefood:block/apricorn_box_g"
+    },
+    "facing=east,open=false": {
+      "model": "pokefood:block/apricorn_box_g",
+      "y": 90
+    },
+    "facing=south,open=false": {
+      "model": "pokefood:block/apricorn_box_g",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "pokefood:block/apricorn_box_g",
+      "y": 270
+    },
+	
+	"facing=north,open=true": {
+      "model": "pokefood:block/apricorn_box_open_g"
+    },
+    "facing=east,open=true": {
+      "model": "pokefood:block/apricorn_box_open_g",
+      "y": 90
+    },
+    "facing=south,open=true": {
+      "model": "pokefood:block/apricorn_box_open_g",
+      "y": 180
+    },
+    "facing=west,open=true": {
+      "model": "pokefood:block/apricorn_box_open_g",
+      "y": 270
+    }
+  }
+}

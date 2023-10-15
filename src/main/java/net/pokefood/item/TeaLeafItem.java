@@ -8,6 +8,6 @@ import net.minecraft.world.item.Item;
 
 public class TeaLeafItem extends Item {
 	public TeaLeafItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

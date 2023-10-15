@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "cherry_bucket",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "emptySound": {
       "value": ""

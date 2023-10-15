@@ -31,7 +31,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class CardboardBoxBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(15, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(10, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public CardboardBoxBlockEntity(BlockPos position, BlockState state) {
@@ -143,17 +143,7 @@ public class CardboardBoxBlockEntity extends RandomizableContainerBlockEntity im
 		if (index == 8)
 			return false;
 		if (index == 9)
-			return false;
-		if (index == 10)
-			return false;
-		if (index == 11)
-			return false;
-		if (index == 12)
-			return false;
-		if (index == 13)
-			return false;
-		if (index == 14)
-			return false;
+			return false;
 		return true;
 	}
 

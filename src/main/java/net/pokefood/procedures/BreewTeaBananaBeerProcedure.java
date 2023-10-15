@@ -59,7 +59,7 @@ public class BreewTeaBananaBeerProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 1)).is(ItemTags.create(new ResourceLocation("forge:tea_leaves")))) {
+			}.getItemStack(world, new BlockPos(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("forge:tea_leaves")))) {
 				nbTea = nbTea + 1;
 			}
 			if ((new Object() {
@@ -142,7 +142,7 @@ public class BreewTeaBananaBeerProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos(x, y, z), 0) > 0 && nbBanana == 3 && nbTea == 2) {
+		}.getAmount(world, new BlockPos(x, y, z), 3) > 0 && nbBanana == 3 && nbTea == 2) {
 			logic = true;
 		} else {
 			logic = false;

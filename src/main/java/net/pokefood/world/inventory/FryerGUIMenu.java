@@ -2,6 +2,7 @@
 package net.pokefood.world.inventory;
 
 import net.pokefood.init.PokefoodModMenus;
+import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -75,19 +76,24 @@ public class FryerGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 17) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 17) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return PokefoodModItems.GREASE.get() == stack.getItem()
+					|| PokefoodModItems.OIL.get() == stack.getItem();
+			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 35) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 17) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 53) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 35) {
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 17) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 53) {
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 61, 35) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 61, 17) {
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 61, 53) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 61, 35) {
 		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 16, 17) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 53) {
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 16, 35) {
 			@Override
@@ -101,37 +107,37 @@ public class FryerGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				return false;
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 97, 17) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 97, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 97, 35) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 97, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 97, 53) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 97, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 115, 17) {
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 115, 17) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 115, 35) {
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 115, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 115, 53) {
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 115, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

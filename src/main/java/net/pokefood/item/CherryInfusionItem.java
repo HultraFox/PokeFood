@@ -11,6 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CherryInfusionItem extends BucketItem {
 	public CherryInfusionItem() {
-		super(PokefoodModFluids.CHERRY_INFUSION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_OTHERS));
+		super(PokefoodModFluids.CHERRY_INFUSION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(PokefoodModTabs.TAB_POKE_FOOD_INGREDIENTS));
 	}
 }

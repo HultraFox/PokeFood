@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "candy_7",
     "customModelName": "Normal",
-    "name": "Yellow Candy",
+    "name": "Candy",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFood"

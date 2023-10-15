@@ -1511,8 +1511,8 @@ public class KegFunnelTransferProcedure {
 			X = x;
 			Y = y;
 			Z = z + 1;
-			CheckItem = new ItemStack(PokefoodModBlocks.APRI_JUICE_W.get());
-			if (CheckItem.getItem() == PokefoodModBlocks.APRI_JUICE_W.get().asItem()) {
+			CheckItem = new ItemStack(PokefoodModBlocks.APRIJUICE_W.get());
+			if (CheckItem.getItem() == PokefoodModBlocks.APRIJUICE_W.get().asItem()) {
 				Slot = 0;
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -2112,8 +2112,8 @@ public class KegFunnelTransferProcedure {
 			X = x;
 			Y = y;
 			Z = z - 1;
-			CheckItem = new ItemStack(PokefoodModBlocks.APRI_JUICE_W.get());
-			if (CheckItem.getItem() == PokefoodModBlocks.APRI_JUICE_W.get().asItem()) {
+			CheckItem = new ItemStack(PokefoodModBlocks.APRIJUICE_W.get());
+			if (CheckItem.getItem() == PokefoodModBlocks.APRIJUICE_W.get().asItem()) {
 				Slot = 0;
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -2713,8 +2713,8 @@ public class KegFunnelTransferProcedure {
 			X = x + 1;
 			Y = y;
 			Z = z;
-			CheckItem = new ItemStack(PokefoodModBlocks.APRI_JUICE_W.get());
-			if (CheckItem.getItem() == PokefoodModBlocks.APRI_JUICE_W.get().asItem()) {
+			CheckItem = new ItemStack(PokefoodModBlocks.APRIJUICE_W.get());
+			if (CheckItem.getItem() == PokefoodModBlocks.APRIJUICE_W.get().asItem()) {
 				Slot = 0;
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -3314,8 +3314,8 @@ public class KegFunnelTransferProcedure {
 			X = x - 1;
 			Y = y;
 			Z = z;
-			CheckItem = new ItemStack(PokefoodModBlocks.APRI_JUICE_W.get());
-			if (CheckItem.getItem() == PokefoodModBlocks.APRI_JUICE_W.get().asItem()) {
+			CheckItem = new ItemStack(PokefoodModBlocks.APRIJUICE_W.get());
+			if (CheckItem.getItem() == PokefoodModBlocks.APRIJUICE_W.get().asItem()) {
 				Slot = 0;
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {

@@ -8,7 +8,7 @@
     "name": "Cookie Dough",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodIngredients"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "plate",
+        "1": "plate_under",
+        "2": "crepe_4",
+        "3": "crepe_1"
+      },
+      "name": "default"
+    }
+  }
+}

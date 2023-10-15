@@ -1,0 +1,14 @@
+{
+  "parent": "pokefood:custom/restaurant_sofa_0",
+  "textures": {
+    "all": "pokefood:blocks/res_sofa_front_13",
+    "particle": "pokefood:blocks/res_sofa_front_13",
+    "0": "pokefood:blocks/res_sofa_front_13",
+    "1": "pokefood:blocks/res_sofa_up_13",
+    "2": "pokefood:blocks/res_sofa_side_13",
+    "3": "pokefood:blocks/res_sofa_back_13",
+    "4": "pokefood:blocks/res_sofa_under",
+    "missing": "pokefood:blocks/"
+  },
+  "render_type": "solid"
+}

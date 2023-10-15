@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "glass",
+        "5": "oak_planks"
+      },
+      "name": "default"
+    }
+  }
+}

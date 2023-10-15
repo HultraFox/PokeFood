@@ -1,0 +1,30 @@
+{
+  "group": "restaurant_sofas_0",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cyan_wool"
+    },
+    "2": {
+      "item": "minecraft:cyan_wool"
+    },
+    "3": {
+      "item": "minecraft:cyan_wool"
+    },
+    "4": {
+      "item": "minecraft:dark_oak_slab"
+    },
+    "5": {
+      "item": "minecraft:dark_oak_slab"
+    }
+  },
+  "result": {
+    "item": "pokefood:restaurant_sofa_10",
+    "count": 1
+  }
+}

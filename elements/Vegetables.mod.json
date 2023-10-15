@@ -6,6 +6,12 @@
     "items": [
       {
         "value": "CUSTOM:Leek"
+      },
+      {
+        "value": "CUSTOM:Onion"
+      },
+      {
+        "value": "CUSTOM:Letuce"
       }
     ],
     "blocks": [],

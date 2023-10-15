@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "pokefood:dry_rep_4"
+    "pokefood:dry_rep_4",
+    "pokefood:coffee_powder"
+	"cobblemon:micle_berry"
   ]
 }

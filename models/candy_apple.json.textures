@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "c_apple",
+        "1": "stick"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -33,14 +33,6 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
-			}
 		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -73,14 +65,15 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem())) && (new Object() {
-			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getBoolean(tag);
-				return false;
+		}.getItemStack(world, new BlockPos(x, y, z), 5)).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
 			}
-		}.getValue(world, new BlockPos(x, y, z), "slot0_sameOrNul")) == true && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 6)).getItem() == ItemStack.EMPTY.getItem())) && (new Object() {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
@@ -115,7 +108,14 @@ public class FryingProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "slot5_sameOrNul")) == true) {
+		}.getValue(world, new BlockPos(x, y, z), "slot5_sameOrNul")) == true && (new Object() {
+			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getBoolean(tag);
+				return false;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "slot6_sameOrNul")) == true) {
 			cook = true;
 		} else {
 			cook = false;
@@ -128,7 +128,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == PokefoodModItems.GREASE.get() || (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.GREASE.get() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -136,7 +136,7 @@ public class FryingProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == PokefoodModItems.OIL.get()) && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.OIL.get()) && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -185,7 +185,7 @@ public class FryingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == PokefoodModItems.GREASE.get()) {
+			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.GREASE.get()) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -209,7 +209,7 @@ public class FryingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 12;
+						final int _slotid = 0;
 						final int _amount = 1;
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
@@ -228,7 +228,7 @@ public class FryingProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(x, y, z), 12)).getItem() == PokefoodModItems.OIL.get()) {
+			}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PokefoodModItems.OIL.get()) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
@@ -252,7 +252,7 @@ public class FryingProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
-						final int _slotid = 12;
+						final int _slotid = 0;
 						final int _amount = 1;
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
@@ -343,16 +343,6 @@ public class FryingProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("slot", 6);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				FryingResultProcedure.execute(world, x, y, z);
-				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
 						_blockEntity.getPersistentData().putDouble("slot", 7);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
@@ -373,7 +363,7 @@ public class FryingProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("slot", 9);
+						_blockEntity.getPersistentData().putDouble("slot", 6);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -394,6 +384,16 @@ public class FryingProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getPersistentData().putDouble("slot", 11);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				FryingResultProcedure.execute(world, x, y, z);
+				if (!world.isClientSide()) {
+					BlockPos _bp = new BlockPos(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("slot", 12);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

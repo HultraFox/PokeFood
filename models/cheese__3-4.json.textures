@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cheese_0"
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "0": "cheese_1"
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "0": "cheese_2"
+      },
+      "name": "_2"
+    },
+    "_3": {
+      "map": {
+        "0": "cheese_3"
+      },
+      "name": "_3"
+    },
+    "_4": {
+      "map": {
+        "0": "cheese_4"
+      },
+      "name": "_4"
+    },
+    "_5": {
+      "map": {
+        "0": "cheese_5"
+      },
+      "name": "_5"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "windswept_hills",
+    "windswept_forest",
+    "windswept_gravelly_hills"
+  ],
+  "features": "pokefood:lettuce_wild",
+  "step": "vegetal_decoration"
+}

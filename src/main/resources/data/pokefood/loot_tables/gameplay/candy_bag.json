@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pokefood:candy_box_empty",
+          "name": "pokefood:deleted_mod_element",
           "weight": 1,
           "functions": [
             {

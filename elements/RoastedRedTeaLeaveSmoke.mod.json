@@ -1,0 +1,22 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "roasted_tea",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:RoseradeTeaLeaf"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:RoastedRedTeaLeave"
+    },
+    "name": "roasted_red_tea_leave_smoke",
+    "namespace": "mod"
+  }
+}

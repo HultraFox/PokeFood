@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/plate",
+  "textures": {
+    "all": "pokefood:blocks/plate",
+    "particle": "pokefood:blocks/plate",
+    "0": "pokefood:blocks/plate",
+    "1": "pokefood:blocks/plate_under"
+  },
+  "render_type": "cutout"
+}

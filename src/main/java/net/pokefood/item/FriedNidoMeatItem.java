@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 
 public class FriedNidoMeatItem extends Item {
 	public FriedNidoMeatItem() {
-		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.55f)
+		super(new Item.Properties().tab(PokefoodModTabs.TAB_POKE_FOOD_ON_THE_GO).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.55f)
 
 				.meat().build()));
 	}

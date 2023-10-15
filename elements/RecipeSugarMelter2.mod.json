@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "sugar_melter",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SugarMelter2"
+    },
+    "name": "recipe_sugar_melter_2",
+    "namespace": "mod"
+  }
+}

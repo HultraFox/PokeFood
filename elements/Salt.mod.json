@@ -32,8 +32,8 @@
     "onFinishUsingItem": {
       "name": "SaltConsumed"
     },
-    "isFood": false,
-    "nutritionalValue": -2,
+    "isFood": true,
+    "nutritionalValue": -1,
     "saturation": -1.0,
     "eatResultItem": {
       "value": ""

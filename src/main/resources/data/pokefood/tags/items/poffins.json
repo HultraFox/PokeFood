@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:poffin_dry_spicy",
+    "pokefood:poffin_bitter_spicy",
+    "pokefood:poffin_bitter_dry",
+    "pokefood:poffin_spicy_sour",
+    "pokefood:poffin_dry",
+    "pokefood:poffin_bitter_sweet",
+    "pokefood:poffin_sour_sweet",
+    "pokefood:poffin_bitter_sour",
+    "pokefood:poffin_spicy",
+    "pokefood:poffin_dry_bitter",
+    "pokefood:poffin_dry_sweet",
+    "pokefood:poffin_sour_dry",
+    "pokefood:poffin_spicy_sweet",
+    "pokefood:poffin_sour_bitter",
+    "pokefood:poffin_sweet_sour",
+    "pokefood:poffin_sweet_spicy",
+    "pokefood:poffin_bitter",
+    "pokefood:poffin_spicy_bitter",
+    "pokefood:poffin_dry_sour",
+    "pokefood:poffin_sweet",
+    "pokefood:poffin_spicy_dry",
+    "pokefood:poffin_sour",
+    "pokefood:poffin_sweet_bitter",
+    "pokefood:poffin_sweet_dry",
+    "pokefood:poffin_sour_spicy"
+  ]
+}

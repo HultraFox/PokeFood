@@ -1,0 +1,351 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Candy0"
+      },
+      {
+        "value": "CUSTOM:Candy1"
+      },
+      {
+        "value": "CUSTOM:Candy2"
+      },
+      {
+        "value": "CUSTOM:Candy3"
+      },
+      {
+        "value": "CUSTOM:Candy4"
+      },
+      {
+        "value": "CUSTOM:Candy5"
+      },
+      {
+        "value": "CUSTOM:Candy6"
+      },
+      {
+        "value": "CUSTOM:Candy7"
+      },
+      {
+        "value": "CUSTOM:Candy8"
+      },
+      {
+        "value": "CUSTOM:Candy9"
+      },
+      {
+        "value": "CUSTOM:Candy10"
+      },
+      {
+        "value": "CUSTOM:Candy11"
+      },
+      {
+        "value": "CUSTOM:Candy12"
+      },
+      {
+        "value": "CUSTOM:Candy13"
+      },
+      {
+        "value": "CUSTOM:Candy14"
+      },
+      {
+        "value": "CUSTOM:Candy15"
+      },
+      {
+        "value": "CUSTOM:CandyXs0"
+      },
+      {
+        "value": "CUSTOM:CandyXs1"
+      },
+      {
+        "value": "CUSTOM:CandyXs2"
+      },
+      {
+        "value": "CUSTOM:CandyXs3"
+      },
+      {
+        "value": "CUSTOM:CandyXs4"
+      },
+      {
+        "value": "CUSTOM:CandyXs5"
+      },
+      {
+        "value": "CUSTOM:CandyXs6"
+      },
+      {
+        "value": "CUSTOM:CandyXs7"
+      },
+      {
+        "value": "CUSTOM:CandyXs8"
+      },
+      {
+        "value": "CUSTOM:CandyXs9"
+      },
+      {
+        "value": "CUSTOM:CandyXs10"
+      },
+      {
+        "value": "CUSTOM:CandyXs11"
+      },
+      {
+        "value": "CUSTOM:CandyXs12"
+      },
+      {
+        "value": "CUSTOM:CandyXs13"
+      },
+      {
+        "value": "CUSTOM:CandyXs14"
+      },
+      {
+        "value": "CUSTOM:CandyXs15"
+      },
+      {
+        "value": "CUSTOM:CandyS0"
+      },
+      {
+        "value": "CUSTOM:CandyS1"
+      },
+      {
+        "value": "CUSTOM:CandyS2"
+      },
+      {
+        "value": "CUSTOM:CandyS3"
+      },
+      {
+        "value": "CUSTOM:CandyS4"
+      },
+      {
+        "value": "CUSTOM:CandyS5"
+      },
+      {
+        "value": "CUSTOM:CandyS6"
+      },
+      {
+        "value": "CUSTOM:CandyS7"
+      },
+      {
+        "value": "CUSTOM:CandyS8"
+      },
+      {
+        "value": "CUSTOM:CandyS9"
+      },
+      {
+        "value": "CUSTOM:CandyS10"
+      },
+      {
+        "value": "CUSTOM:CandyS11"
+      },
+      {
+        "value": "CUSTOM:CandyS12"
+      },
+      {
+        "value": "CUSTOM:CandyS13"
+      },
+      {
+        "value": "CUSTOM:CandyS14"
+      },
+      {
+        "value": "CUSTOM:CandyS15"
+      },
+      {
+        "value": "CUSTOM:CandyM0"
+      },
+      {
+        "value": "CUSTOM:CandyM1"
+      },
+      {
+        "value": "CUSTOM:CandyM2"
+      },
+      {
+        "value": "CUSTOM:CandyM3"
+      },
+      {
+        "value": "CUSTOM:CandyM4"
+      },
+      {
+        "value": "CUSTOM:CandyM5"
+      },
+      {
+        "value": "CUSTOM:CandyM6"
+      },
+      {
+        "value": "CUSTOM:CandyM7"
+      },
+      {
+        "value": "CUSTOM:CandyM8"
+      },
+      {
+        "value": "CUSTOM:CandyM9"
+      },
+      {
+        "value": "CUSTOM:CandyM10"
+      },
+      {
+        "value": "CUSTOM:CandyM11"
+      },
+      {
+        "value": "CUSTOM:CandyM12"
+      },
+      {
+        "value": "CUSTOM:CandyM13"
+      },
+      {
+        "value": "CUSTOM:CandyM14"
+      },
+      {
+        "value": "CUSTOM:CandyM15"
+      },
+      {
+        "value": "CUSTOM:CandyL0"
+      },
+      {
+        "value": "CUSTOM:CandyL1"
+      },
+      {
+        "value": "CUSTOM:CandyL2"
+      },
+      {
+        "value": "CUSTOM:CandyL3"
+      },
+      {
+        "value": "CUSTOM:CandyL4"
+      },
+      {
+        "value": "CUSTOM:CandyL5"
+      },
+      {
+        "value": "CUSTOM:CandyL6"
+      },
+      {
+        "value": "CUSTOM:CandyL7"
+      },
+      {
+        "value": "CUSTOM:CandyL8"
+      },
+      {
+        "value": "CUSTOM:CandyL9"
+      },
+      {
+        "value": "CUSTOM:CandyL10"
+      },
+      {
+        "value": "CUSTOM:CandyL11"
+      },
+      {
+        "value": "CUSTOM:CandyL12"
+      },
+      {
+        "value": "CUSTOM:CandyL13"
+      },
+      {
+        "value": "CUSTOM:CandyL14"
+      },
+      {
+        "value": "CUSTOM:CandyL15"
+      },
+      {
+        "value": "CUSTOM:CandyXl0"
+      },
+      {
+        "value": "CUSTOM:CandyXl1"
+      },
+      {
+        "value": "CUSTOM:CandyXl2"
+      },
+      {
+        "value": "CUSTOM:CandyXl3"
+      },
+      {
+        "value": "CUSTOM:CandyXl4"
+      },
+      {
+        "value": "CUSTOM:CandyXl5"
+      },
+      {
+        "value": "CUSTOM:CandyXl6"
+      },
+      {
+        "value": "CUSTOM:CandyXl7"
+      },
+      {
+        "value": "CUSTOM:CandyXl8"
+      },
+      {
+        "value": "CUSTOM:CandyXl9"
+      },
+      {
+        "value": "CUSTOM:CandyXl10"
+      },
+      {
+        "value": "CUSTOM:CandyXl11"
+      },
+      {
+        "value": "CUSTOM:CandyXl12"
+      },
+      {
+        "value": "CUSTOM:CandyXl13"
+      },
+      {
+        "value": "CUSTOM:CandyXl14"
+      },
+      {
+        "value": "CUSTOM:CandyXl15"
+      },
+      {
+        "value": "CUSTOM:CandyR0"
+      },
+      {
+        "value": "CUSTOM:CandyR1"
+      },
+      {
+        "value": "CUSTOM:CandyR2"
+      },
+      {
+        "value": "CUSTOM:CandyR3"
+      },
+      {
+        "value": "CUSTOM:CandyR4"
+      },
+      {
+        "value": "CUSTOM:CandyR5"
+      },
+      {
+        "value": "CUSTOM:CandyR6"
+      },
+      {
+        "value": "CUSTOM:CandyR7"
+      },
+      {
+        "value": "CUSTOM:CandyR8"
+      },
+      {
+        "value": "CUSTOM:CandyR9"
+      },
+      {
+        "value": "CUSTOM:CandyR10"
+      },
+      {
+        "value": "CUSTOM:CandyR11"
+      },
+      {
+        "value": "CUSTOM:CandyR12"
+      },
+      {
+        "value": "CUSTOM:CandyR13"
+      },
+      {
+        "value": "CUSTOM:CandyR14"
+      },
+      {
+        "value": "CUSTOM:CandyR15"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "candy",
+    "namespace": "forge"
+  }
+}
