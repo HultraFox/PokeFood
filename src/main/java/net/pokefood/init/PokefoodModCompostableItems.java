@@ -25,7 +25,7 @@ public class PokefoodModCompostableItems {
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.LEMON_SLICE.get(), 0.15f);
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.LIME_SLICE.get(), 0.15f);
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.CALCUIM_SEEDS.get(), 0.3f);
-		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.CALCUIM.get(), 0.5f);
+		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.CALCUIM.get(), 0.1f);
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.BANANA.get(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.CHERRY.get(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(PokefoodModItems.COFFEE_BEANS.get(), 0.3f);

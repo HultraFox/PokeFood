@@ -31,7 +31,7 @@
     ],
     "rewardFunction": "No function",
     "rewardXP": 75,
-    "achievementType": "challenge",
+    "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:AdvFrying"
     },

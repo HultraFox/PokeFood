@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.adv_frying_vegan.descr"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

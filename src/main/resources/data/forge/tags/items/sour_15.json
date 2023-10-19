@@ -4,9 +4,6 @@
     "minecraft:glow_berries",
     "minecraft:cocoa_beans",
     "pokefood:cup_aprijuice_y",
-    "pokefood:cup_tea",
-	"cobblemon:iapapa_berry",
-	"cobblemon:payapa_berry",
-	"cobblemon:yache_berry"
+    "pokefood:cup_tea"
   ]
 }

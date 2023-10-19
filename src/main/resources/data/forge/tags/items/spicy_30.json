@@ -2,12 +2,6 @@
   "replace": false,
   "values": [
     "pokefood:aprijuice_r_bucket",
-    "pokefood:spicy_rep_3",
-	"cobblemon:kee_berry",
-	"cobblemon:lansat_berry",
-	"cobblemon:liechi_berry",
-	"cobblemon:petaya_berry",
-	"cobblemon:spelon_berry",
-	"cobblemon:starf_berry"
+    "pokefood:spicy_rep_3"
   ]
 }

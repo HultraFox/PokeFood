@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "pokefood:spicy_juice",
-    "pokefood:spicy_rep_4",
-	"cobblemon:enigma_berry",
-	"cobblemon:touga_berry"
+    "pokefood:spicy_rep_4"
   ]
 }

@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Crunchy !",
-    "achievementDescription": "Fry some pokemon and show how sorry you aren't",
+    "achievementDescription": "Just fry something already !",
     "achievementIcon": {
       "value": "CUSTOM:FriedTail"
     },

@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CardboardBox"
+      "value": "CUSTOM:CardboardBoxItem"
     },
     "name": "recipe_cardboard_box",
     "namespace": "mod"

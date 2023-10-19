@@ -3,9 +3,6 @@
   "values": [
     "pokefood:calcuim",
     "pokefood:aprijuice_p_bucket",
-    "pokefood:fresh_water_bucket",
-	"cobblemon:chople_berry",
-	"cobblemon:figy_berry",
-	"cobblemon:occa_berry"
+    "pokefood:fresh_water_bucket"
   ]
 }
