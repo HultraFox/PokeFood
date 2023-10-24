@@ -33,7 +33,7 @@ public class DisplayCaseEmptyBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public DisplayCaseEmptyBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.WOOD)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.fall"))))

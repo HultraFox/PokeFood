@@ -10,7 +10,7 @@
     "name": "Sweet Berries Curry",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodCurries"
     },
     "stackSize": 1,
     "enchantability": 0,

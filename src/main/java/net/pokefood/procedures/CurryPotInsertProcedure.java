@@ -219,15 +219,16 @@ public class CurryPotInsertProcedure {
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.CURRY_POT_LIT.get()
 				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _getip62 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip62) : -1) == 1
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:berries")))
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip66
-						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip66)
+				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:berries")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("cobblemon:berries"))))
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip68
+						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip68)
 						: -1) < 6) {
 			{
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
-					final int _slotid = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip68
-							? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip68)
+					final int _slotid = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip70
+							? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip70)
 							: -1) + 1);
 					final ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 					_setstack.setCount(1);
@@ -238,8 +239,8 @@ public class CurryPotInsertProcedure {
 				}
 			}
 			{
-				int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip72
-						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip72)
+				int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("nb_berries") instanceof IntegerProperty _getip74
+						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip74)
 						: -1) + 1);
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
@@ -270,7 +271,7 @@ public class CurryPotInsertProcedure {
 				}
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PokefoodModBlocks.CURRY_POT_LIT.get()
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _getip81 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip81) : -1) == 2) {
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _getip83 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip83) : -1) == 2) {
 			CurryResultProcedure.execute(world, x, y, z, entity);
 		}
 	}

@@ -10,7 +10,7 @@
     "name": "Fried Static Curry",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFood"
+      "value": "CUSTOM:PokeFoodCurries"
     },
     "stackSize": 1,
     "enchantability": 0,

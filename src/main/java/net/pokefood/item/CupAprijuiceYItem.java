@@ -25,16 +25,6 @@ public class CupAprijuiceYItem extends Item {
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem() {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(PokefoodModItems.CUP.get());
-	}
-
-	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(PokefoodModItems.CUP.get());
 		super.finishUsingItem(itemstack, world, entity);

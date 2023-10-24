@@ -1,7 +1,6 @@
 
 package net.pokefood.item;
 
-import net.pokefood.init.PokefoodModTabs;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraft.world.level.Level;
@@ -14,9 +13,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class CurryRabbitItem extends Item {
 	public CurryRabbitItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(1f)
-
-				.meat().build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(1f).meat().build()));
 	}
 
 	@Override
