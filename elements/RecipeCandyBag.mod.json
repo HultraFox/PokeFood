@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CandyBoxEmpty"
+      "value": "CUSTOM:CandyBoxItem"
     },
     "name": "recipe_candy_bag",
     "namespace": "mod"

@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 
 public class CreamedLatteItem extends Item {
 	public CreamedLatteItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.5f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.333f).alwaysEat().build()));
 	}
 
 	@Override

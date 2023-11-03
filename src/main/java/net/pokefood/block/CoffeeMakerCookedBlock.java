@@ -131,7 +131,7 @@ public class CoffeeMakerCookedBlock extends Block implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		CoffeeMakerLootProcedure.execute(world, x, y, z, entity);
+		CoffeeMakerLootProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
 

@@ -35,8 +35,8 @@
       "name": "AprishakeUnlockAdv"
     },
     "isFood": true,
-    "nutritionalValue": 3,
-    "saturation": 1.5,
+    "nutritionalValue": 6,
+    "saturation": 0.333,
     "eatResultItem": {
       "value": "CUSTOM:Cup"
     },

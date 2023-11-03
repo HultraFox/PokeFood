@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "candy_pot_1",
-		"particle": "candy_pot_1"
+		"0": "Minecraft Modding/custom/PokeFood/blocks/FESTIVITIES/Candy Pots/candy_pot_0",
+		"particle": "Minecraft Modding/custom/PokeFood/blocks/FESTIVITIES/Candy Pots/candy_pot_0"
 	},
 	"elements": [
 		{
@@ -68,7 +68,7 @@
 				"south": {"uv": [0, 11, 8, 14], "texture": "#0"},
 				"west": {"uv": [0, 11, 1, 14], "texture": "#0"},
 				"up": {"uv": [16, 0, 8, 1], "texture": "#0"},
-				"down": {"uv": [0, 7, 8, 8], "texture": "#0"}
+				"down": {"uv": [8, 15, 16, 16], "texture": "#0"}
 			}
 		},
 		{

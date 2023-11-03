@@ -344,6 +344,19 @@ public class SugarMelterUpdateVisualProcedure {
 								});
 							}
 						}
+					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModBlocks.MORTAR_AND_PESTLE_11.get().asItem()) {
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final ItemStack _setstack = new ItemStack(PokefoodModBlocks.MORTAR_AND_PESTLE_11.get());
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
 					}
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -519,6 +532,19 @@ public class SugarMelterUpdateVisualProcedure {
 							if (_ent != null) {
 								final int _slotid = 1;
 								final ItemStack _setstack = new ItemStack(PokefoodModBlocks.MORTAR_AND_PESTLE_10.get());
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModBlocks.MORTAR_AND_PESTLE_11.get().asItem()) {
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final ItemStack _setstack = new ItemStack(PokefoodModBlocks.MORTAR_AND_PESTLE_11.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -741,7 +767,7 @@ public class SugarMelterUpdateVisualProcedure {
 				}
 			} else if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.FLINT_AND_STEEL
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.FIRE_CHARGE)
-					&& (blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp169 && blockstate.getValue(_getbp169)) == false && new Object() {
+					&& (blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp175 && blockstate.getValue(_getbp175)) == false && new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);
 							BlockEntity _ent = world.getBlockEntity(pos);
@@ -833,7 +859,7 @@ public class SugarMelterUpdateVisualProcedure {
 					return _retval.get();
 				}
 			}.getAmount(world, BlockPos.containing(x, y, z), 1) != 0) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp188 && blockstate.getValue(_getbp188)) == false) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp194 && blockstate.getValue(_getbp194)) == false) {
 					if (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);
@@ -1282,7 +1308,7 @@ public class SugarMelterUpdateVisualProcedure {
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 				}
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp283 && blockstate.getValue(_getbp283)) == true) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp289 && blockstate.getValue(_getbp289)) == true) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 1);
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);

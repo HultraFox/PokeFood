@@ -32,8 +32,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 3,
-    "saturation": 1.5,
+    "nutritionalValue": 6,
+    "saturation": 0.3333,
     "eatResultItem": {
       "value": "CUSTOM:Cup"
     },

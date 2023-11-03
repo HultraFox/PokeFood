@@ -35,8 +35,8 @@
       "name": "CoffeeUnlockAdv"
     },
     "isFood": true,
-    "nutritionalValue": 10,
-    "saturation": 0.3,
+    "nutritionalValue": 5,
+    "saturation": 0.6,
     "eatResultItem": {
       "value": "CUSTOM:Cup"
     },

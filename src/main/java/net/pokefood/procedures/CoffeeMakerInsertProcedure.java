@@ -204,6 +204,8 @@ public class CoffeeMakerInsertProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+			CoffeeMakerLootProcedure.execute(world, x, y, z);
 		}
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -261,6 +263,5 @@ public class CoffeeMakerInsertProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CLOUD, (x + 0.5), (y + 1), (z + 0.5), 3, 0, 0.5, 0, 0.05);
 		}
-		CoffeeMakerLootProcedure.execute(world, x, y, z, entity);
 	}
 }

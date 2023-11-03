@@ -30,6 +30,9 @@ public class PokefoodModTrades {
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD),
 
 				new ItemStack(PokefoodModItems.LEEK_SEEDS.get(), 2), 10, 5, 0.05f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD),
+
+				new ItemStack(PokefoodModItems.RICE_SEEDS.get()), 10, 5, 0.05f));
 	}
 
 	@SubscribeEvent
@@ -56,6 +59,9 @@ public class PokefoodModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
 
 					new ItemStack(PokefoodModItems.LEEK_SEEDS.get(), 2), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
+
+					new ItemStack(PokefoodModItems.RICE_SEEDS.get()), 10, 5, 0.05f));
 		}
 		if (event.getType() == VillagerProfession.BUTCHER) {
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(PokefoodModItems.SPIDER_MEAT.get()),

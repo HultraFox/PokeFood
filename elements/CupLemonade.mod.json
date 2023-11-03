@@ -35,8 +35,8 @@
       "name": "LemoWaterUnlockAdv"
     },
     "isFood": true,
-    "nutritionalValue": 10,
-    "saturation": 0.3,
+    "nutritionalValue": 4,
+    "saturation": 0.5,
     "eatResultItem": {
       "value": "CUSTOM:Cup"
     },

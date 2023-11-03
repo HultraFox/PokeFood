@@ -2243,6 +2243,8 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> APRICORN_BOX_R = block(PokefoodModBlocks.APRICORN_BOX_R);
 	public static final RegistryObject<Item> APRICORN_BOX_P = block(PokefoodModBlocks.APRICORN_BOX_P);
 	public static final RegistryObject<Item> APRICORN_BOX_W = block(PokefoodModBlocks.APRICORN_BOX_W);
+	public static final RegistryObject<Item> COFFEE_TABLE_11 = block(PokefoodModBlocks.COFFEE_TABLE_11);
+	public static final RegistryObject<Item> MORTAR_AND_PESTLE_11 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_11);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

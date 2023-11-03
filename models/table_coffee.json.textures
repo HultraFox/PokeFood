@@ -87,6 +87,14 @@
         "2": "table_coffee_bottom_9"
       },
       "name": "cherry"
+    },
+    "bamboo": {
+      "map": {
+        "0": "table_coffee_top_11",
+        "1": "table_coffee_side_11",
+        "2": "table_coffee_bottom_11"
+      },
+      "name": "bamboo"
     }
   }
 }

@@ -686,6 +686,7 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_13.get().asItem());
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_14.get().asItem());
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_15.get().asItem());
+				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_11.get().asItem());
 			})
 
 					.build());
@@ -753,6 +754,7 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModBlocks.CANDY_MACHINE_13.get().asItem());
 				tabData.accept(PokefoodModBlocks.CANDY_MACHINE_14.get().asItem());
 				tabData.accept(PokefoodModBlocks.CANDY_MACHINE_15.get().asItem());
+				tabData.accept(PokefoodModBlocks.COFFEE_TABLE_11.get().asItem());
 			})
 
 					.build());

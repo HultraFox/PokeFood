@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 
 public class CupCoffeeItem extends Item {
 	public CupCoffeeItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.3f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.6f).alwaysEat().build()));
 	}
 
 	@Override

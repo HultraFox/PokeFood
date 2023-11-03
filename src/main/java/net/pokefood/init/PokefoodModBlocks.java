@@ -147,6 +147,7 @@ import net.pokefood.block.MortarAndPestle4Block;
 import net.pokefood.block.MortarAndPestle3Block;
 import net.pokefood.block.MortarAndPestle2Block;
 import net.pokefood.block.MortarAndPestle1Block;
+import net.pokefood.block.MortarAndPestle11Block;
 import net.pokefood.block.MortarAndPestle10Block;
 import net.pokefood.block.MortarAndPestle0Block;
 import net.pokefood.block.MixerYellowBlock;
@@ -390,6 +391,7 @@ import net.pokefood.block.CoffeeTable4Block;
 import net.pokefood.block.CoffeeTable3Block;
 import net.pokefood.block.CoffeeTable2Block;
 import net.pokefood.block.CoffeeTable1Block;
+import net.pokefood.block.CoffeeTable11Block;
 import net.pokefood.block.CoffeeTable10Block;
 import net.pokefood.block.CoffeeTable0Block;
 import net.pokefood.block.CoffeeMakerCookingBlock;
@@ -1116,4 +1118,6 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> APRICORN_BOX_R = REGISTRY.register("apricorn_box_r", () -> new ApricornBoxRBlock());
 	public static final RegistryObject<Block> APRICORN_BOX_P = REGISTRY.register("apricorn_box_p", () -> new ApricornBoxPBlock());
 	public static final RegistryObject<Block> APRICORN_BOX_W = REGISTRY.register("apricorn_box_w", () -> new ApricornBoxWBlock());
+	public static final RegistryObject<Block> COFFEE_TABLE_11 = REGISTRY.register("coffee_table_11", () -> new CoffeeTable11Block());
+	public static final RegistryObject<Block> MORTAR_AND_PESTLE_11 = REGISTRY.register("mortar_and_pestle_11", () -> new MortarAndPestle11Block());
 }

@@ -45,7 +45,7 @@ public class SugarMelter2Block extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty LIT = BlockStateProperties.LIT;
 	public static final BooleanProperty HAS_BOWL = BooleanProperty.create("has_bowl");
-	public static final IntegerProperty BOWL = IntegerProperty.create("bowl", 0, 10);
+	public static final IntegerProperty BOWL = IntegerProperty.create("bowl", 0, 11);
 	public static final IntegerProperty CONTENT = IntegerProperty.create("content", 0, 2);
 	public static final IntegerProperty COLOR = IntegerProperty.create("color", 0, 16);
 
