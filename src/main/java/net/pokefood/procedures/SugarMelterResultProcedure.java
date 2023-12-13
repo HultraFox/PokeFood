@@ -3,6 +3,7 @@ package net.pokefood.procedures;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
@@ -17,7 +18,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -40,12 +40,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_0.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_0.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -56,12 +58,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_1.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_1.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -72,12 +76,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_2.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_2.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -88,12 +94,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_3.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_3.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -104,12 +112,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_4.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_4.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -120,12 +130,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_5.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_5.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -136,12 +148,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_6.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_6.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -152,12 +166,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_7.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_7.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -168,12 +184,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_8.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_8.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -184,12 +202,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_9.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_9.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -200,12 +220,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_10.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_10.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -216,12 +238,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_11.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_11.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -232,12 +256,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_12.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_12.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -248,12 +274,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_13.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_13.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -264,12 +292,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_14.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_14.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -280,12 +310,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_15.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CANDY_APPLE_15.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				}
 				{
@@ -319,12 +351,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_0.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_0.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -335,12 +369,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_1.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_1.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -351,12 +387,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_2.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_2.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -367,12 +405,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_3.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_3.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -383,12 +423,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_4.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_4.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -399,12 +441,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_5.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_5.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -415,12 +459,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_6.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_6.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -431,12 +477,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_7.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_7.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -447,12 +495,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_8.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_8.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -463,12 +513,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_9.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_9.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -479,12 +531,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_10.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_10.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -495,12 +549,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_11.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_11.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -511,12 +567,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_12.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_12.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -527,12 +585,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_13.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_13.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -543,12 +603,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_14.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_14.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -559,12 +621,14 @@ public class SugarMelterResultProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CRYSTALIZED_SUGAR_15.get()) {
-					if (entity instanceof LivingEntity _entity) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.COTTON_CANDY_15.get());
 						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				}
 				{

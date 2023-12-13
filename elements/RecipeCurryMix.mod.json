@@ -12,37 +12,37 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.WHEAT"
+        "value": "TAG:forge:roasted_leaves"
       },
       {
-        "value": "Items.WHEAT"
+        "value": "TAG:forge:roasted_leaves"
       },
       {
-        "value": "Items.WHEAT"
+        "value": "CUSTOM:CalcuimSeeds"
       },
       {
-        "value": "Items.WHEAT"
+        "value": "CUSTOM:Salt"
       },
       {
-        "value": "CUSTOM:SmallBag"
+        "value": "CUSTOM:SpicyJuice"
       },
       {
-        "value": "Items.WHEAT"
+        "value": ""
       },
       {
-        "value": "Items.WHEAT"
+        "value": ""
       },
       {
-        "value": "Items.WHEAT"
+        "value": ""
       },
       {
-        "value": "Items.WHEAT"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:WheatBag"
+      "value": "CUSTOM:CurryMix"
     },
-    "name": "recipe_wheat_bag",
+    "name": "recipe_curry_mix",
     "namespace": "mod"
   }
 }

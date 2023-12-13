@@ -1,6 +1,7 @@
 {
-  "group": "aprijuice_bucket",
   "type": "minecraft:crafting_shapeless",
+  "group": "aprijuice_bucket",
+  "category": "misc",
   "ingredients": [
     {
       "item": "cobblemon:yellow_apricorn"
@@ -19,7 +20,7 @@
     }
   ],
   "result": {
-    "item": "pokefood:apri_juice_y_bucket",
+    "item": "pokefood:aprijuice_y_bucket",
     "count": 1
   }
 }

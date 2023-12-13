@@ -628,6 +628,7 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> MORTAR_AND_PESTLE_9 = REGISTRY.register("mortar_and_pestle_9", () -> new MortarAndPestle9Block());
 	public static final RegistryObject<Block> MORTAR_AND_PESTLE_8 = REGISTRY.register("mortar_and_pestle_8", () -> new MortarAndPestle8Block());
 	public static final RegistryObject<Block> MORTAR_AND_PESTLE_10 = REGISTRY.register("mortar_and_pestle_10", () -> new MortarAndPestle10Block());
+	public static final RegistryObject<Block> MORTAR_AND_PESTLE_11 = REGISTRY.register("mortar_and_pestle_11", () -> new MortarAndPestle11Block());
 	public static final RegistryObject<Block> HEATER = REGISTRY.register("heater", () -> new HeaterBlock());
 	public static final RegistryObject<Block> COOLER_BLUE = REGISTRY.register("cooler_blue", () -> new CoolerBlueBlock());
 	public static final RegistryObject<Block> COOLER_GREEN = REGISTRY.register("cooler_green", () -> new CoolerGreenBlock());
@@ -748,6 +749,7 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> CANDY_MACHINE_13 = REGISTRY.register("candy_machine_13", () -> new CandyMachine13Block());
 	public static final RegistryObject<Block> CANDY_MACHINE_14 = REGISTRY.register("candy_machine_14", () -> new CandyMachine14Block());
 	public static final RegistryObject<Block> CANDY_MACHINE_15 = REGISTRY.register("candy_machine_15", () -> new CandyMachine15Block());
+	public static final RegistryObject<Block> COFFEE_TABLE_11 = REGISTRY.register("coffee_table_11", () -> new CoffeeTable11Block());
 	public static final RegistryObject<Block> BANANA_WOOD = REGISTRY.register("banana_wood", () -> new BananaWoodBlock());
 	public static final RegistryObject<Block> BANANA_LOG = REGISTRY.register("banana_log", () -> new BananaLogBlock());
 	public static final RegistryObject<Block> BANANA_LOG_2 = REGISTRY.register("banana_log_2", () -> new BananaLog2Block());
@@ -1118,6 +1120,4 @@ public class PokefoodModBlocks {
 	public static final RegistryObject<Block> APRICORN_BOX_R = REGISTRY.register("apricorn_box_r", () -> new ApricornBoxRBlock());
 	public static final RegistryObject<Block> APRICORN_BOX_P = REGISTRY.register("apricorn_box_p", () -> new ApricornBoxPBlock());
 	public static final RegistryObject<Block> APRICORN_BOX_W = REGISTRY.register("apricorn_box_w", () -> new ApricornBoxWBlock());
-	public static final RegistryObject<Block> COFFEE_TABLE_11 = REGISTRY.register("coffee_table_11", () -> new CoffeeTable11Block());
-	public static final RegistryObject<Block> MORTAR_AND_PESTLE_11 = REGISTRY.register("mortar_and_pestle_11", () -> new MortarAndPestle11Block());
 }

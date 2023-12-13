@@ -17,6 +17,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -59,7 +60,8 @@ public class GrapeSproutBlock extends Block implements SimpleWaterloggedBlock, E
 	public static final IntegerProperty FENCE = IntegerProperty.create("fence", 0, 10);
 
 	public GrapeSproutBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.WOOD).strength(0.5f, 1f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.PLANT).sound(SoundType.WOOD).strength(0.5f, 1f).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY)
+				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false).setValue(FENCE, Integer.valueOf(0)));
 	}
 
@@ -139,11 +141,6 @@ public class GrapeSproutBlock extends Block implements SimpleWaterloggedBlock, E
 	@Override
 	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.BLOCKED;
-	}
-
-	@Override
-	public PushReaction getPistonPushReaction(BlockState state) {
-		return PushReaction.DESTROY;
 	}
 
 	@Override

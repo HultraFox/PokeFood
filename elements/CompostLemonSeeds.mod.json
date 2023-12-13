@@ -10,6 +10,6 @@
       "fixedValue": 1600.0
     },
     "hasDispenseBehavior": false,
-    "compostLayerChance": 0.3
+    "compostLayerChance": 0.1
   }
 }

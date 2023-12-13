@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:roasted_leaves"
+    },
+    {
+      "tag": "forge:roasted_leaves"
+    },
+    {
+      "item": "pokefood:calcuim_seeds"
+    },
+    {
+      "item": "pokefood:salt"
+    },
+    {
+      "item": "pokefood:spicy_juice"
+    }
+  ],
+  "result": {
+    "item": "pokefood:curry_mix",
+    "count": 1
+  }
+}

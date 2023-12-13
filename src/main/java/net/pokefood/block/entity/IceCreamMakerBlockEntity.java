@@ -109,6 +109,14 @@ public class IceCreamMakerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 1)
+			return false;
+		if (index == 3)
+			return false;
+		if (index == 4)
+			return false;
+		if (index == 5)
+			return false;
 		return true;
 	}
 

@@ -1,41 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "tea_bag",
   "category": "misc",
-  "pattern": [
-    "012",
-    "345",
-    "678"
-  ],
-  "key": {
-    "0": {
+  "ingredients": [
+    {
       "item": "pokefood:tea_leaf"
     },
-    "1": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "2": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "3": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "4": {
+    {
       "item": "pokefood:small_bag"
     },
-    "5": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "6": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "7": {
+    {
       "item": "pokefood:tea_leaf"
     },
-    "8": {
+    {
       "item": "pokefood:tea_leaf"
     }
-  },
+  ],
   "result": {
     "item": "pokefood:bag_tea",
     "count": 1

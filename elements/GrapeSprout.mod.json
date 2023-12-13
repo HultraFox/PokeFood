@@ -133,13 +133,26 @@
     "onStartToDestroy": {
       "name": "GrapeVineUpdateFence"
     },
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
-    "generationShape": "UNIFORM",
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "generationShape": "TRIANGLE",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": 100,
+    "maxGenerateHeight": 256,
+    "generateCondition": {
+      "name": "PlantsValidPlacement"
+    }
   }
 }

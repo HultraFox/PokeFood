@@ -23,6 +23,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 @Mod.EventBusSubscriber
 public class PokefoodModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, PokefoodMod.MODID);
+	public static final RegistryObject<Feature<?>> GRAPE_SPROUT = REGISTRY.register("grape_sprout", GrapeSproutFeature::new);
 	public static final RegistryObject<Feature<?>> LEMON_STAGE_0 = REGISTRY.register("lemon_stage_0", LemonStage0Feature::new);
 	public static final RegistryObject<Feature<?>> LEMON_STAGE_1 = REGISTRY.register("lemon_stage_1", LemonStage1Feature::new);
 	public static final RegistryObject<Feature<?>> LEMON_STAGE_2 = REGISTRY.register("lemon_stage_2", LemonStage2Feature::new);

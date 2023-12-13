@@ -549,7 +549,6 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModItems.WHEAT_BAG.get());
 				tabData.accept(PokefoodModItems.BAG_CURD.get());
 				tabData.accept(PokefoodModItems.BURNT_BAG.get());
-				tabData.accept(PokefoodModItems.SALT.get());
 				tabData.accept(PokefoodModItems.CARBON_POWDER.get());
 				tabData.accept(PokefoodModItems.OIL.get());
 				tabData.accept(PokefoodModItems.GREASE.get());
@@ -603,6 +602,7 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_9.get().asItem());
 				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_8.get().asItem());
 				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_10.get().asItem());
+				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_11.get().asItem());
 				tabData.accept(PokefoodModBlocks.HEATER.get().asItem());
 				tabData.accept(PokefoodModBlocks.COOLER_BLUE.get().asItem());
 				tabData.accept(PokefoodModBlocks.COOLER_GREEN.get().asItem());
@@ -686,7 +686,6 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_13.get().asItem());
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_14.get().asItem());
 				tabData.accept(PokefoodModBlocks.CRYSTALIZED_SUGAR_BLOCK_15.get().asItem());
-				tabData.accept(PokefoodModBlocks.MORTAR_AND_PESTLE_11.get().asItem());
 			})
 
 					.build());
@@ -865,6 +864,7 @@ public class PokefoodModTabs {
 				tabData.accept(PokefoodModItems.APRIJUICE_R_BUCKET.get());
 				tabData.accept(PokefoodModItems.APRIJUICE_P_BUCKET.get());
 				tabData.accept(PokefoodModItems.APRIJUICE_W_BUCKET.get());
+				tabData.accept(PokefoodModItems.SALT.get());
 			})
 
 					.build());

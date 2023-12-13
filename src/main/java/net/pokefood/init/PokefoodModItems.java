@@ -976,6 +976,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> APRIJUICE_R_BUCKET = REGISTRY.register("aprijuice_r_bucket", () -> new ApriJuiceRItem());
 	public static final RegistryObject<Item> APRIJUICE_P_BUCKET = REGISTRY.register("aprijuice_p_bucket", () -> new ApriJuicePItem());
 	public static final RegistryObject<Item> APRIJUICE_W_BUCKET = REGISTRY.register("aprijuice_w_bucket", () -> new ApriJuiceWItem());
+	public static final RegistryObject<Item> SALT = REGISTRY.register("salt", () -> new SaltItem());
 	public static final RegistryObject<Item> CACTUS_CUBES = REGISTRY.register("cactus_cubes", () -> new CactusCubesItem());
 	public static final RegistryObject<Item> CREPE = REGISTRY.register("crepe", () -> new CrepeItem());
 	public static final RegistryObject<Item> CREPE_SUGAR = REGISTRY.register("crepe_sugar", () -> new CrepeSugarItem());
@@ -1048,7 +1049,6 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> WHEAT_BAG = REGISTRY.register("wheat_bag", () -> new WheatBagItem());
 	public static final RegistryObject<Item> BAG_CURD = REGISTRY.register("bag_curd", () -> new BagCurdItem());
 	public static final RegistryObject<Item> BURNT_BAG = REGISTRY.register("burnt_bag", () -> new BurntBagItem());
-	public static final RegistryObject<Item> SALT = REGISTRY.register("salt", () -> new SaltItem());
 	public static final RegistryObject<Item> CARBON_POWDER = REGISTRY.register("carbon_powder", () -> new CarbonPowderItem());
 	public static final RegistryObject<Item> OIL = REGISTRY.register("oil", () -> new OilItem());
 	public static final RegistryObject<Item> GREASE = REGISTRY.register("grease", () -> new GreaseItem());
@@ -1102,6 +1102,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> MORTAR_AND_PESTLE_9 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_9);
 	public static final RegistryObject<Item> MORTAR_AND_PESTLE_8 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_8);
 	public static final RegistryObject<Item> MORTAR_AND_PESTLE_10 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_10);
+	public static final RegistryObject<Item> MORTAR_AND_PESTLE_11 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_11);
 	public static final RegistryObject<Item> HEATER = block(PokefoodModBlocks.HEATER);
 	public static final RegistryObject<Item> COOLER_BLUE = block(PokefoodModBlocks.COOLER_BLUE);
 	public static final RegistryObject<Item> COOLER_GREEN = block(PokefoodModBlocks.COOLER_GREEN);
@@ -1247,6 +1248,7 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> CANDY_MACHINE_13 = block(PokefoodModBlocks.CANDY_MACHINE_13);
 	public static final RegistryObject<Item> CANDY_MACHINE_14 = block(PokefoodModBlocks.CANDY_MACHINE_14);
 	public static final RegistryObject<Item> CANDY_MACHINE_15 = block(PokefoodModBlocks.CANDY_MACHINE_15);
+	public static final RegistryObject<Item> COFFEE_TABLE_11 = block(PokefoodModBlocks.COFFEE_TABLE_11);
 	public static final RegistryObject<Item> CUP_TEA = REGISTRY.register("cup_tea", () -> new CupTeaItem());
 	public static final RegistryObject<Item> CUP_BLACK_TEA = REGISTRY.register("cup_black_tea", () -> new CupBlackTeaItem());
 	public static final RegistryObject<Item> CUP_ROSERADE_TEA = REGISTRY.register("cup_roserade_tea", () -> new CupRoseradeTeaItem());
@@ -2243,8 +2245,6 @@ public class PokefoodModItems {
 	public static final RegistryObject<Item> APRICORN_BOX_R = block(PokefoodModBlocks.APRICORN_BOX_R);
 	public static final RegistryObject<Item> APRICORN_BOX_P = block(PokefoodModBlocks.APRICORN_BOX_P);
 	public static final RegistryObject<Item> APRICORN_BOX_W = block(PokefoodModBlocks.APRICORN_BOX_W);
-	public static final RegistryObject<Item> COFFEE_TABLE_11 = block(PokefoodModBlocks.COFFEE_TABLE_11);
-	public static final RegistryObject<Item> MORTAR_AND_PESTLE_11 = block(PokefoodModBlocks.MORTAR_AND_PESTLE_11);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
