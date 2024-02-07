@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "fryer_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:Fryer"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:Fryer"
+    },
+    "enableCraftingtable": true,
+    "title": "Frying",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 43,
+        "y": 17,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 97,
+        "y": 17,
+        "slotid": 0
+      }
+    ]
+  }
+}

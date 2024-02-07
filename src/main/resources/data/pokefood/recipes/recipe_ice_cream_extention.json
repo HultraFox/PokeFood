@@ -2,17 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    " 3"
+    "aa",
+    " b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:glass"
     },
-    "1": {
-      "item": "minecraft:glass"
-    },
-    "3": {
+    "b": {
       "item": "minecraft:iron_ingot"
     }
   },

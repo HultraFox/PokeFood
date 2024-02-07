@@ -1,5 +1,5 @@
 {
-  "parent": "pokefood:custom/pot",
+  "parent": "pokefood:custom/potfired",
   "textures": {
     "all": "pokefood:block/cauldron_inner",
     "particle": "pokefood:block/cauldron_inner",

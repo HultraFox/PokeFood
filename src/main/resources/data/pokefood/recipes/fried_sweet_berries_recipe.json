@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_sweet_berries",
+    "count": 1
+  }
+}

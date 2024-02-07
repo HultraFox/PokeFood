@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "icecream",
+    "result": {
+      "value": "CUSTOM:IceCreamCoffee"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:IceCreamCone"
+      },
+      {
+        "value": "CUSTOM:Coffee.bucket"
+      }
+    ]
+  }
+}

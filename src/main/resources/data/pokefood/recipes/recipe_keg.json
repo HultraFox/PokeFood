@@ -2,24 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    "6  "
+    " a ",
+    "bcd",
+    "e  "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:oak_button"
     },
-    "3": {
+    "b": {
       "tag": "minecraft:wooden_slabs"
     },
-    "4": {
+    "c": {
       "item": "minecraft:barrel"
     },
-    "5": {
+    "d": {
       "item": "minecraft:iron_ingot"
     },
-    "6": {
+    "e": {
       "item": "minecraft:stick"
     }
   },

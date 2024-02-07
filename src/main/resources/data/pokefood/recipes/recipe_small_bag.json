@@ -2,21 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "3 5",
-    " 7 "
+    " a ",
+    "b b",
+    " b "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:string"
     },
-    "3": {
-      "item": "pokefood:cloth"
-    },
-    "5": {
-      "item": "pokefood:cloth"
-    },
-    "7": {
+    "b": {
       "item": "pokefood:cloth"
     }
   },

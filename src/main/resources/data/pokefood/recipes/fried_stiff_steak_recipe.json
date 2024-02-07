@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:stiff_steak"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_stiff_steak",
+    "count": 1
+  }
+}

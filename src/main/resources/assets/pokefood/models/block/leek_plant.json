@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pokefood:block/leek_0",
+    "particle": "pokefood:block/leek_0"
+  },
+  "render_type": "cutout"
+}

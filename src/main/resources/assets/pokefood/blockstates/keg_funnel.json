@@ -1,18 +1,52 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,appearance=0": {
       "model": "pokefood:block/keg_funnel"
     },
-    "facing=east": {
+    "facing=east,appearance=0": {
       "model": "pokefood:block/keg_funnel",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,appearance=0": {
       "model": "pokefood:block/keg_funnel",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,appearance=0": {
       "model": "pokefood:block/keg_funnel",
+      "y": 270
+    },
+
+
+    "facing=north,appearance=1": {
+      "model": "pokefood:block/keg_funnel_up"
+    },
+    "facing=east,appearance=1": {
+      "model": "pokefood:block/keg_funnel_up",
+      "y": 90
+    },
+    "facing=south,appearance=1": {
+      "model": "pokefood:block/keg_funnel_up",
+      "y": 180
+    },
+    "facing=west,appearance=1": {
+      "model": "pokefood:block/keg_funnel_up",
+      "y": 270
+    },
+
+
+    "facing=north,appearance=2": {
+      "model": "pokefood:block/keg_funnel_front"
+    },
+    "facing=east,appearance=2": {
+      "model": "pokefood:block/keg_funnel_front",
+      "y": 90
+    },
+    "facing=south,appearance=2": {
+      "model": "pokefood:block/keg_funnel_front",
+      "y": 180
+    },
+    "facing=west,appearance=2": {
+      "model": "pokefood:block/keg_funnel_front",
       "y": 270
     }
   }

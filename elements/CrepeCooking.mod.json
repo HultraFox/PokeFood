@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "crepe_maker_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:CrepeMaker"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:CrepeMaker"
+    },
+    "enableCraftingtable": true,
+    "title": "Crepe Cooking",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 79,
+        "y": 35,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 137,
+        "y": 35,
+        "slotid": 0
+      }
+    ]
+  }
+}

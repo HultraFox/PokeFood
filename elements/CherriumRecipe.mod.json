@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:CherryCalcuimBeer.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Malt.bucket"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      }
+    ]
+  }
+}

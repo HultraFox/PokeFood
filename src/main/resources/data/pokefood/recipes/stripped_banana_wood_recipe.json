@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "pokefood:banana_log_stripped"
-    },
-    "1": {
-      "item": "pokefood:banana_log_stripped"
-    },
-    "2": {
-      "item": "pokefood:banana_log_stripped"
-    },
-    "3": {
+    "a": {
       "item": "pokefood:banana_log_stripped"
     }
   },

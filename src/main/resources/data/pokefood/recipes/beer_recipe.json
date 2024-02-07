@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:malt_bucket"
+    },
+    {
+      "tag": "forge:seeds"
+    },
+    {
+      "tag": "forge:seeds"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "tag": "forge:seeds"
+    },
+    {
+      "tag": "forge:seeds"
+    },
+    {
+      "tag": "forge:seeds"
+    }
+  ],
+  "output": {
+    "item": "pokefood:beer_bucket",
+    "count": 1
+  }
+}

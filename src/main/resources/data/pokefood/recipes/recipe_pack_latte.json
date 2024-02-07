@@ -3,36 +3,21 @@
   "group": "soda_packs",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "abc",
+    "ddd",
+    "ddd"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "pokefood:pack_empty"
     },
-    "1": {
+    "b": {
       "item": "minecraft:brown_dye"
     },
-    "2": {
+    "c": {
       "item": "minecraft:black_dye"
     },
-    "3": {
-      "item": "pokefood:soda_sombrade"
-    },
-    "4": {
-      "item": "pokefood:soda_sombrade"
-    },
-    "5": {
-      "item": "pokefood:soda_sombrade"
-    },
-    "6": {
-      "item": "pokefood:soda_sombrade"
-    },
-    "7": {
-      "item": "pokefood:soda_sombrade"
-    },
-    "8": {
+    "d": {
       "item": "pokefood:soda_sombrade"
     }
   },

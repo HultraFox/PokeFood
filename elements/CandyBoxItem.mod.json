@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 1,
@@ -26,16 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Shift right click a block to place it, same to take it without droping the items in it"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "Shift right click a block to place it, same to take it without droping the items in it"
+      ]
+    },
     "guiBoundTo": "CandyPackager",
     "inventorySize": 16,
     "inventoryStackSize": 4,
     "onItemInInventoryTick": {
       "name": "CandyBoxItemUpdate"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

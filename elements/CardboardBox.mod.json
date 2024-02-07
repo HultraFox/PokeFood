@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "cardbox_bottom",
@@ -34,9 +34,11 @@
       }
     ],
     "name": "Cardboard Box",
-    "specialInfo": [
-      "§cWill drop the items in it if broken !"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§cWill drop the items in it if broken !"
+      ]
+    },
     "hardness": 1.0,
     "resistance": 1.0,
     "hasGravity": true,
@@ -139,7 +141,7 @@
     "onRightClicked": {
       "name": "TakeCardboardBox"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

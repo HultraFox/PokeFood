@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "linked_infuse_or_boil",
+    "result": {
+      "value": "CUSTOM:Lemonade.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CookingPot"
+      },
+      {
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "Items.SUGAR"
+      }
+    ]
+  }
+}

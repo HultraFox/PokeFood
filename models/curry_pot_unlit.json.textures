@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cauldron_inner",
+        "2": "cauldron_side",
+        "3": "cauldron_top",
+        "4": "oak_planks",
+        "5": "waterpot",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

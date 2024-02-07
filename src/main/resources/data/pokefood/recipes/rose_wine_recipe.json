@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "pokefood:black_grapes"
+    },
+    {
+      "item": "pokefood:black_grapes"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "pokefood:black_grapes"
+    },
+    {
+      "item": "pokefood:green_grapes"
+    },
+    {
+      "item": "pokefood:green_grapes"
+    }
+  ],
+  "output": {
+    "item": "pokefood:rose_wine_bucket",
+    "count": 1
+  }
+}

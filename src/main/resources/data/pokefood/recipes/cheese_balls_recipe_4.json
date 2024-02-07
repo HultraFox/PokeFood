@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:cheese_s_4"
+    }
+  ],
+  "output": {
+    "item": "pokefood:cheese_balls",
+    "count": 1
+  }
+}

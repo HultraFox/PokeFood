@@ -2,23 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    "345"
+    "a a",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:clay_ball"
-    },
-    "2": {
-      "item": "minecraft:clay_ball"
-    },
-    "3": {
-      "item": "minecraft:clay_ball"
-    },
-    "4": {
-      "item": "minecraft:clay_ball"
-    },
-    "5": {
+    "a": {
       "item": "minecraft:clay_ball"
     }
   },

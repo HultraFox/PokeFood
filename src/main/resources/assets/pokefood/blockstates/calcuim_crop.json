@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "pokefood:block/calcuim_crop"
+    },
+    "age=1": {
+      "model": "pokefood:block/calcuim_crop_1"
+    },
+    "age=2": {
+      "model": "pokefood:block/calcuim_crop_2"
+    },
+    "age=3": {
+      "model": "pokefood:block/calcuim_crop_3"
+    }
+  }
+}

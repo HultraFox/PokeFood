@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:plusle_ear"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_pm_ear",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:flaming_rib"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_flaming_rib",
+    "count": 1
+  }
+}

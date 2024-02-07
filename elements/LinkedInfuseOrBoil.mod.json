@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "linked_cooking_pot_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:CookingPot"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:CookingPot"
+    },
+    "enableCraftingtable": true,
+    "title": "Infuse or Boil",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 35,
+        "y": 11,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 71,
+        "y": 11,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 107,
+        "y": 11,
+        "slotid": 2
+      },
+      {
+        "type": "INPUT",
+        "x": 143,
+        "y": 11,
+        "slotid": 3
+      },
+      {
+        "type": "OUTPUT",
+        "x": 89,
+        "y": 36,
+        "slotid": 0
+      }
+    ]
+  }
+}

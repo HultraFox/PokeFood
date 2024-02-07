@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:caterpie_on_a_stick"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_caterpie",
+    "count": 1
+  }
+}

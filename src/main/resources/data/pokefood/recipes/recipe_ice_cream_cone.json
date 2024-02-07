@@ -2,21 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    " 4 "
+    "aba",
+    " a "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:wheat"
     },
-    "1": {
+    "b": {
       "item": "minecraft:milk_bucket"
-    },
-    "2": {
-      "item": "minecraft:wheat"
-    },
-    "4": {
-      "item": "minecraft:wheat"
     }
   },
   "result": {

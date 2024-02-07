@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "pokefood:coffee",
     "pokefood:coffee_iced",
-    "pokefood:latte",
-    "pokefood:coffee"
+    "pokefood:latte"
   ]
 }

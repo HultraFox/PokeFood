@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:chicken_leg"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_chicken_leg",
+    "count": 1
+  }
+}

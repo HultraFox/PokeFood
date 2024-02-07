@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:Cidronade.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Brandy.bucket"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      }
+    ]
+  }
+}

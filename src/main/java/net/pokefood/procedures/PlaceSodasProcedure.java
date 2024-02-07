@@ -49,11 +49,12 @@ public class PlaceSodasProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.isShiftKeyDown() == true && (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))) {
+		if (entity.isShiftKeyDown() == true && (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("forge:replaceable_blocks")))
+				&& world.getBlockState(BlockPos.containing(x, y, z)).isFaceSturdy(world, BlockPos.containing(x, y, z), Direction.UP)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_POP.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("cobblemon:soda_pop"))
 							&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_POP_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_POP.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -99,7 +100,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_HIGH_TEA.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -145,7 +146,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_PUNCH_TEA.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA_BLACK_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA_BLACK.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -191,7 +192,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_ROSINE_TEA.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA_ROSERADE_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_TEA_ROSERADE.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -237,7 +238,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_POWER_LEMON.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_LEMONADE_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_LEMONADE.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -283,7 +284,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_D.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_D_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_D.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -329,7 +330,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_B.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_B_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_B.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -375,7 +376,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_G.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_G_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_G.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -421,7 +422,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_Y.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_Y_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_Y.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -467,7 +468,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_R.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_R_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_R.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -513,7 +514,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_P.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_P_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_P.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -559,7 +560,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_APRI_W.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_W_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_APRI_W.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -605,7 +606,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_CHERRISH.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_CHERRY_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_CHERRY.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -651,7 +652,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_SOMBRINE.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_SOMBRINE_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_SOMBRINE.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
@@ -697,7 +698,7 @@ public class PlaceSodasProcedure {
 					}
 				}
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PokefoodModItems.SODA_SOMBRADE.get()) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_SOMBRADE_1.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), PokefoodModBlocks.DISPLAY_SODA_SOMBRADE.get().defaultBlockState(), 3);
 				{
 					Direction _dir = ((entity.getDirection()).getOpposite());
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);

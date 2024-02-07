@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "banana_leaves",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Banana Plant",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.2,
     "resistance": 0.2,
     "hasGravity": false,
@@ -123,7 +125,7 @@
     "onTickUpdate": {
       "name": "BananaWoodTreeControl"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "TRIANGLE",

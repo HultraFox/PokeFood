@@ -2,33 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "3 5",
-    "678"
+    "aaa",
+    "a a",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "pokefood:cardboard"
-    },
-    "1": {
-      "item": "pokefood:cardboard"
-    },
-    "2": {
-      "item": "pokefood:cardboard"
-    },
-    "3": {
-      "item": "pokefood:cardboard"
-    },
-    "5": {
-      "item": "pokefood:cardboard"
-    },
-    "6": {
-      "item": "pokefood:cardboard"
-    },
-    "7": {
-      "item": "pokefood:cardboard"
-    },
-    "8": {
+    "a": {
       "item": "pokefood:cardboard"
     }
   },

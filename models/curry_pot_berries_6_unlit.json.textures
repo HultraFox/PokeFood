@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cauldron_inner",
+        "2": "cauldron_side",
+        "3": "cauldron_top",
+        "4": "oak_planks",
+        "5": "curry_cooked_still",
+        "6": "berries_cooked_still",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

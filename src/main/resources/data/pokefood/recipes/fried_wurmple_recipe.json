@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:wurmple_on_a_stick"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_wurmple",
+    "count": 1
+  }
+}

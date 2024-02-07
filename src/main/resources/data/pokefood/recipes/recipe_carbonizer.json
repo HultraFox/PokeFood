@@ -2,36 +2,33 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "abc",
+    "def",
+    "dgh"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:iron_trapdoor"
     },
-    "1": {
+    "b": {
       "item": "minecraft:iron_block"
     },
-    "2": {
+    "c": {
       "item": "minecraft:stone_button"
     },
-    "3": {
+    "d": {
       "item": "minecraft:bucket"
     },
-    "4": {
+    "e": {
       "item": "minecraft:hopper"
     },
-    "5": {
+    "f": {
       "item": "minecraft:glass_bottle"
     },
-    "6": {
-      "item": "minecraft:bucket"
-    },
-    "7": {
+    "g": {
       "item": "minecraft:heavy_weighted_pressure_plate"
     },
-    "8": {
+    "h": {
       "item": "minecraft:paper"
     }
   },

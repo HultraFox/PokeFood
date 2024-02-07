@@ -2,34 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 12",
-    "345",
-    "678"
+    " aa",
+    "bca",
+    "daa"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:iron_ingot"
     },
-    "2": {
-      "item": "minecraft:iron_ingot"
-    },
-    "3": {
+    "b": {
       "item": "minecraft:lever"
     },
-    "4": {
+    "c": {
       "item": "minecraft:bucket"
     },
-    "5": {
-      "item": "minecraft:iron_ingot"
-    },
-    "6": {
+    "d": {
       "item": "minecraft:heavy_weighted_pressure_plate"
-    },
-    "7": {
-      "item": "minecraft:iron_ingot"
-    },
-    "8": {
-      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

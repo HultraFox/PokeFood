@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "apricorn_box_r",
@@ -61,7 +61,9 @@
       }
     ],
     "name": "Apricorn Box",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.5,
     "resistance": 0.5,
     "hasGravity": false,
@@ -147,7 +149,7 @@
     "onRightClicked": {
       "name": "TakeApricornBox"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

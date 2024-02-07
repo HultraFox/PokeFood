@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Did... Did you just ..?",
+    "achievementDescription": "Put your whole hand into liquid sugar",
+    "achievementIcon": {
+      "value": "CUSTOM:CrystalizedSugar5"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 100,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:AdvPokefood"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"19\" y=\"69\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,21 +1,21 @@
 {
   "replace": false,
   "values": [
-    "pokefood:latte_bucket",
-    "pokefood:lemonade_bucket",
-    "pokefood:fresh_water_bucket",
-    "pokefood:tea_bucket",
-    "pokefood:roserade_tea_bucket",
-    "pokefood:aprijuice_r_bucket",
+    "pokefood:aprijuice_w_bucket",
     "pokefood:aprijuice_d_bucket",
     "pokefood:aprijuice_b_bucket",
-    "pokefood:black_tea_bucket",
-    "pokefood:coffee_iced_bucket",
     "pokefood:aprijuice_g_bucket",
-    "pokefood:coffee_bucket",
+    "pokefood:aprijuice_y_bucket",
+    "pokefood:aprijuice_r_bucket",
     "pokefood:aprijuice_p_bucket",
-    "pokefood:cherry_infusion_bucket",
-    "pokefood:aprijuice_w_bucket",
-    "pokefood:aprijuice_y_bucket"
+    "pokefood:tea_bucket",
+    "pokefood:black_tea_bucket",
+    "pokefood:lemonade_bucket",
+    "pokefood:fresh_water_bucket",
+    "pokefood:roserade_tea_bucket",
+    "pokefood:coffee_bucket",
+    "pokefood:coffee_iced_bucket",
+    "pokefood:latte_bucket",
+    "pokefood:cherry_infusion_bucket"
   ]
 }

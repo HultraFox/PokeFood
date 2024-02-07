@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "6_pack_tea_roserade",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Pack of soda bottles",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 2.0,
     "hasGravity": true,
@@ -120,7 +122,7 @@
     "onRightClicked": {
       "name": "AddPacks"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:watery_meat"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_watery_meat",
+    "count": 1
+  }
+}

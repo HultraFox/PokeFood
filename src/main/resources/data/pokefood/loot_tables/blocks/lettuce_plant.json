@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pokefood:lettuce_seeds",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "pokefood:lettuce_plant",
+              "properties": {
+                "age": "0"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pokefood:lettuce_seeds",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "pokefood:lettuce_plant",
+              "properties": {
+                "age": "1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pokefood:lettuce_seeds",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "pokefood:lettuce_plant",
+              "properties": {
+                "age": "2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pokefood:lettuce",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "pokefood:lettuce_plant",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

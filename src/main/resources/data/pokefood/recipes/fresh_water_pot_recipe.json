@@ -1,0 +1,21 @@
+{
+  "type": "pokefood:infuse_or_boil",
+  "ingredients": [
+    {
+      "item": "pokefood:cooking_pot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "tag": "pokefood:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fresh_water_bucket",
+    "count": 1
+  }
+}

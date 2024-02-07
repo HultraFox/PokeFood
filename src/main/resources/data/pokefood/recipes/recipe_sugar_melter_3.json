@@ -3,23 +3,11 @@
   "group": "sugar_melter",
   "category": "misc",
   "pattern": [
-    "012",
-    "3 5"
+    "aaa",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:polished_blackstone_brick_slab"
-    },
-    "1": {
-      "item": "minecraft:polished_blackstone_brick_slab"
-    },
-    "2": {
-      "item": "minecraft:polished_blackstone_brick_slab"
-    },
-    "3": {
-      "item": "minecraft:polished_blackstone_brick_slab"
-    },
-    "5": {
+    "a": {
       "item": "minecraft:polished_blackstone_brick_slab"
     }
   },

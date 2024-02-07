@@ -3,14 +3,14 @@
   "group": "coffee_table",
   "category": "misc",
   "pattern": [
-    "0",
-    "1"
+    "a",
+    "b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:jungle_slab"
     },
-    "1": {
+    "b": {
       "item": "minecraft:jungle_fence"
     }
   },

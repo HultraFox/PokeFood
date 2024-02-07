@@ -1,0 +1,7 @@
+{
+  "type": "pokefood:banana_tree_feature",
+  "config": {
+    "structure": "pokefood:banana_tree_world",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

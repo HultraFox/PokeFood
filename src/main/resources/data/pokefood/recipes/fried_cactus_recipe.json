@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:cactus_cubes"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_cactus_cubes",
+    "count": 1
+  }
+}

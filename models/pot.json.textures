@@ -2,13 +2,12 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "fire",
         "1": "cauldron_inner",
         "2": "cauldron_side",
         "3": "cauldron_top",
         "4": "oak_planks",
-        "5": "waterpot",
-        "missing": "null"
+        "5": "fire",
+        "missing": ""
       },
       "name": "default"
     }

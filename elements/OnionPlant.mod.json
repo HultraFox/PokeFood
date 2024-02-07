@@ -1,0 +1,105 @@
+{
+  "_fv": 57,
+  "_type": "plant",
+  "definition": {
+    "renderType": 13,
+    "texture": "onion_0",
+    "textureBottom": "",
+    "customModelName": "Crop model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": -1.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 4.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Onion Crop",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": true,
+    "customDrop": {
+      "value": "CUSTOM:TeaSeeds"
+    },
+    "dropAmount": 1,
+    "forceTicking": true,
+    "emissiveRendering": false,
+    "hasTileEntity": true,
+    "isReplaceable": false,
+    "colorOnMap": "AIR",
+    "creativePickItem": {
+      "value": "CUSTOM:LeekSeeds"
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 0.5,
+    "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "CropsValidPlacement"
+    },
+    "isBonemealable": true,
+    "isBonemealTargetCondition": {
+      "name": "PlantsCanBoneMealed"
+    },
+    "bonemealSuccessCondition": {
+      "name": "PlantBoneMealSuccessCondition"
+    },
+    "onBonemealSuccess": {
+      "name": "PlantOnBoneMealSuccess"
+    },
+    "frequencyOnChunks": 0,
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "generationType": "Grass",
+    "patchSize": 1,
+    "generateAtAnyHeight": false,
+    "onTickUpdate": {
+      "name": "OnionStageChanger"
+    }
+  }
+}

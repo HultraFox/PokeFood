@@ -1,0 +1,207 @@
+{
+  "variants": {
+    "facing=north,progress=0": {
+      "model": "pokefood:block/curry_pot"
+    },
+    "facing=north,progress=1,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_water"
+    },
+    "facing=north,progress=1,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_water"
+    },
+    "facing=north,progress=2,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_powder"
+    },
+    "facing=north,progress=2,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_powder"
+    },
+    "facing=north,progress=3": {
+      "model": "pokefood:block/curry_pot_lit_berrie_0"
+    },
+    "facing=north,progress=4": {
+      "model": "pokefood:block/curry_pot_lit_berrie_1"
+    },
+    "facing=north,progress=5": {
+      "model": "pokefood:block/curry_pot_lit_berrie_2"
+    },
+    "facing=north,progress=6": {
+      "model": "pokefood:block/curry_pot_lit_berrie_3"
+    },
+    "facing=north,progress=7": {
+      "model": "pokefood:block/curry_pot_lit_berrie_4"
+    },
+    "facing=north,progress=8": {
+      "model": "pokefood:block/curry_pot_lit_berrie_5"
+    },
+    "facing=north,progress=9": {
+      "model": "pokefood:block/curry_pot_lit_berrie_6"
+    },
+    "facing=north,progress=10": {
+      "model": "pokefood:block/curry_pot_cooked"
+    },
+
+    
+    "facing=east,progress=0": {
+      "model": "pokefood:block/curry_pot",
+      "y": 90
+    },
+    "facing=east,progress=1,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 90
+    },
+    "facing=east,progress=1,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_water",
+      "y": 90
+    },
+    "facing=east,progress=2,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 90
+    },
+    "facing=east,progress=2,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_powder",
+      "y": 90
+    },
+    "facing=east,progress=3": {
+      "model": "pokefood:block/curry_pot_lit_berrie_0",
+      "y": 90
+    },
+    "facing=east,progress=4": {
+      "model": "pokefood:block/curry_pot_lit_berrie_1",
+      "y": 90
+    },
+    "facing=east,progress=5": {
+      "model": "pokefood:block/curry_pot_lit_berrie_2",
+      "y": 90
+    },
+    "facing=east,progress=6": {
+      "model": "pokefood:block/curry_pot_lit_berrie_3",
+      "y": 90
+    },
+    "facing=east,progress=7": {
+      "model": "pokefood:block/curry_pot_lit_berrie_4",
+      "y": 90
+    },
+    "facing=east,progress=8": {
+      "model": "pokefood:block/curry_pot_lit_berrie_5",
+      "y": 90
+    },
+    "facing=east,progress=9": {
+      "model": "pokefood:block/curry_pot_lit_berrie_6",
+      "y": 90
+    },
+    "facing=east,progress=10": {
+      "model": "pokefood:block/curry_pot_cooked",
+      "y": 90
+    },
+    
+
+    
+    "facing=south,progress=0": {
+      "model": "pokefood:block/curry_pot",
+      "y": 180
+    },
+    "facing=south,progress=1,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 180
+    },
+    "facing=south,progress=1,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_water",
+      "y": 180
+    },
+    "facing=south,progress=2,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 180
+    },
+    "facing=south,progress=2,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_powder",
+      "y": 180
+    },
+    "facing=south,progress=3": {
+      "model": "pokefood:block/curry_pot_lit_berrie_0",
+      "y": 180
+    },
+    "facing=south,progress=4": {
+      "model": "pokefood:block/curry_pot_lit_berrie_1",
+      "y": 180
+    },
+    "facing=south,progress=5": {
+      "model": "pokefood:block/curry_pot_lit_berrie_2",
+      "y": 180
+    },
+    "facing=south,progress=6": {
+      "model": "pokefood:block/curry_pot_lit_berrie_3",
+      "y": 180
+    },
+    "facing=south,progress=7": {
+      "model": "pokefood:block/curry_pot_lit_berrie_4",
+      "y": 180
+    },
+    "facing=south,progress=8": {
+      "model": "pokefood:block/curry_pot_lit_berrie_5",
+      "y": 180
+    },
+    "facing=south,progress=9": {
+      "model": "pokefood:block/curry_pot_lit_berrie_6",
+      "y": 180
+    },
+    "facing=south,progress=10": {
+      "model": "pokefood:block/curry_pot_cooked",
+      "y": 180
+    },
+    
+
+    
+    "facing=west,progress=0": {
+      "model": "pokefood:block/curry_pot",
+      "y": 270
+    },
+    "facing=west,progress=1,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_water",
+      "y": 270
+    },
+    "facing=west,progress=1,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_water",
+      "y": 270
+    },
+    "facing=west,progress=2,lit=false": {
+      "model": "pokefood:block/curry_pot_unlit_powder",
+      "y": 270
+    },
+    "facing=west,progress=2,lit=true": {
+      "model": "pokefood:block/curry_pot_lit_powder",
+      "y": 270
+    },
+    "facing=west,progress=3": {
+      "model": "pokefood:block/curry_pot_lit_berrie_0",
+      "y": 270
+    },
+    "facing=west,progress=4": {
+      "model": "pokefood:block/curry_pot_lit_berrie_1",
+      "y": 270
+    },
+    "facing=west,progress=5": {
+      "model": "pokefood:block/curry_pot_lit_berrie_2",
+      "y": 270
+    },
+    "facing=west,progress=6": {
+      "model": "pokefood:block/curry_pot_lit_berrie_3",
+      "y": 270
+    },
+    "facing=west,progress=7": {
+      "model": "pokefood:block/curry_pot_lit_berrie_4",
+      "y": 270
+    },
+    "facing=west,progress=8": {
+      "model": "pokefood:block/curry_pot_lit_berrie_5",
+      "y": 270
+    },
+    "facing=west,progress=9": {
+      "model": "pokefood:block/curry_pot_lit_berrie_6",
+      "y": 270
+    },
+    "facing=west,progress=10": {
+      "model": "pokefood:block/curry_pot_cooked",
+      "y": 270
+    }
+  }
+}

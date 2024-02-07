@@ -1,0 +1,55 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "carbonizing_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:CarbonizerBottle"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:CarbonizerBottle"
+    },
+    "enableCraftingtable": true,
+    "title": "Carbonizing",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 25,
+        "y": 17,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 79,
+        "y": 17,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 133,
+        "y": 17,
+        "slotid": 2
+      },
+      {
+        "type": "INPUT",
+        "x": 25,
+        "y": 53,
+        "slotid": 3
+      },
+      {
+        "type": "INPUT",
+        "x": 133,
+        "y": 53,
+        "slotid": 4
+      },
+      {
+        "type": "OUTPUT",
+        "x": 79,
+        "y": 53,
+        "slotid": 5
+      }
+    ]
+  }
+}

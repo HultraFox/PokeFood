@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "carbonization",
+    "result": {
+      "value": "CUSTOM:SodaPopTemp"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CarbonPowder"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "CUSTOM:FreshWater.bucket"
+      },
+      {
+        "value": "CUSTOM:SodaBottle"
+      },
+      {
+        "value": "CUSTOM:PopBall"
+      }
+    ]
+  }
+}

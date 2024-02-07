@@ -27,10 +27,10 @@ public class PokefoodModTrades {
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 6),
 
 				new ItemStack(PokefoodModItems.CHERRY.get()), 10, 5, 0.05f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD),
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 2),
 
 				new ItemStack(PokefoodModItems.LEEK_SEEDS.get(), 2), 10, 5, 0.05f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD),
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 4),
 
 				new ItemStack(PokefoodModItems.RICE_SEEDS.get()), 10, 5, 0.05f));
 	}
@@ -56,10 +56,10 @@ public class PokefoodModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 6),
 
 					new ItemStack(PokefoodModItems.CHERRY.get()), 10, 5, 0.2f));
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 2),
 
 					new ItemStack(PokefoodModItems.LEEK_SEEDS.get(), 2), 10, 5, 0.05f));
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4),
 
 					new ItemStack(PokefoodModItems.RICE_SEEDS.get()), 10, 5, 0.05f));
 		}

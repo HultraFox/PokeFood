@@ -3,36 +3,12 @@
   "group": "crystalized_sugar_block",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "1": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "2": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "3": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "4": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "5": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "6": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "7": {
-      "item": "pokefood:crystalized_sugar_11"
-    },
-    "8": {
+    "a": {
       "item": "pokefood:crystalized_sugar_11"
     }
   },

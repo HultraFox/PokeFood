@@ -48,7 +48,7 @@ import io.netty.buffer.Unpooled;
 
 public class PlateBlockBlock extends Block implements EntityBlock {
 	public static final IntegerProperty FOOD_TYPE = IntegerProperty.create("food_type", 0, 5);
-	public static final IntegerProperty NUMBER_OF_ITEM = IntegerProperty.create("number_of_item", 0, 16);
+	public static final IntegerProperty NUMBER_OF_ITEM = IntegerProperty.create("number_of_item", 0, 8);
 	
 	public PlateBlockBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).sound(SoundType.STONE).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -82,7 +82,7 @@ public class PlateBlockBlock extends Block implements EntityBlock {
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PokefoodModItems.PLATE.get());
+		return new ItemStack(PokefoodModItems.TRAY.get());
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class PlateBlockBlock extends Block implements EntityBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PokefoodModItems.PLATE.get()));
+		return Collections.singletonList(new ItemStack(PokefoodModItems.TRAY.get()));
 	}
 
 	@Override
@@ -121,7 +121,7 @@ public class PlateBlockBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Plate");
+					return Component.literal("Tray");
 				}
 
 				@Override

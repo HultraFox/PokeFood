@@ -32,7 +32,7 @@ public class SugarMelter9BlockEntity extends RandomizableContainerBlockEntity im
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public SugarMelter9BlockEntity(BlockPos position, BlockState state) {
-		super(PokefoodModBlockEntities.SUGAR_MELTER_9.get(), position, state);
+		super(PokefoodModBlockEntities.SUGAR_MELTER_5.get(), position, state);
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class SugarMelter9BlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("sugar_melter_9");
+		return Component.literal("sugar_melter_5");
 	}
 
 	@Override

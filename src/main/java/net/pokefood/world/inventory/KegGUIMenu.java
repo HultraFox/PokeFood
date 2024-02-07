@@ -1,8 +1,12 @@
 
 package net.pokefood.world.inventory;
 
+import net.pokefood.procedures.KegGUIOpenedProcedure;
+import net.pokefood.procedures.KegGUIClosedProcedure;
+import net.pokefood.network.KegGUISlotMessage;
 import net.pokefood.init.PokefoodModMenus;
 import net.pokefood.init.PokefoodModItems;
+import net.pokefood.PokefoodMod;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -83,6 +87,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private final int slot = 0;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
 					   PokefoodModItems.MALT_BUCKET.get() == stack.getItem()
@@ -101,6 +111,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 17) {
 			private final int slot = 1;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -130,6 +146,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private final int slot = 2;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
 					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
@@ -157,6 +179,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private final int slot = 3;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(3, 1, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
 					   Items.SUGAR == stack.getItem()
@@ -166,6 +194,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 52, 53) {
 			private final int slot = 4;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(4, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -195,6 +229,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private final int slot = 5;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(5, 1, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
 					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
@@ -220,6 +260,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 106, 53) {
 			private final int slot = 6;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(6, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -249,6 +295,12 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private final int slot = 7;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(7, 1, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -258,6 +310,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+		KegGUIOpenedProcedure.execute(world, x, y, z);
 	}
 
 	@Override
@@ -384,6 +437,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		KegGUIClosedProcedure.execute(world, x, y, z);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -394,6 +448,13 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			PokefoodMod.PACKET_HANDLER.sendToServer(new KegGUISlotMessage(slotid, x, y, z, ctype, meta));
+			KegGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

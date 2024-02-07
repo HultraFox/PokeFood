@@ -1,5 +1,5 @@
 {
-  "parent": "pokefood:custom/sugarpot",
+  "parent": "pokefood:custom/lemonpot",
   "textures": {
     "all": "pokefood:block/cauldron_inner",
     "particle": "pokefood:block/cauldron_inner",
@@ -9,6 +9,7 @@
     "3": "pokefood:block/cauldron_top",
     "4": "pokefood:block/oak_planks",
     "5": "pokefood:block/waterpot",
+    "6": "pokefood:block/null",
     "7": "pokefood:block/sugar_cauldron",
     "missing": "pokefood:block/null"
   },

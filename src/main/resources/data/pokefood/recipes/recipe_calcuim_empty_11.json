@@ -3,21 +3,15 @@
   "group": "calcuim_box_empty",
   "category": "misc",
   "pattern": [
-    "012",
-    " 4 "
+    "aba",
+    " a "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "pokefood:cardboard"
     },
-    "1": {
+    "b": {
       "item": "minecraft:light_blue_dye"
-    },
-    "2": {
-      "item": "pokefood:cardboard"
-    },
-    "4": {
-      "item": "pokefood:cardboard"
     }
   },
   "result": {

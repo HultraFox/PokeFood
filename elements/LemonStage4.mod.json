@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Lemon tree",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -89,7 +91,7 @@
     },
     "isBonemealable": false,
     "frequencyOnChunks": 0,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "generationType": "Grass",
     "patchSize": 4,

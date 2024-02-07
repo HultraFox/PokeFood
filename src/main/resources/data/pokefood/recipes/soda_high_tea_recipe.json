@@ -1,0 +1,24 @@
+{
+  "type": "pokefood:carbonization",
+  "ingredients": [
+    {
+      "item": "pokefood:carbon_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "pokefood:tea_bucket"
+    },
+    {
+      "item": "pokefood:soda_bottle"
+    },
+    {
+      "item": "pokefood:pop_ball"
+    }
+  ],
+  "output": {
+    "item": "pokefood:soda_high_tea",
+    "count": 1
+  }
+}

@@ -2,21 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23"
+    "ab",
+    "cb"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:oak_pressure_plate"
     },
-    "1": {
+    "b": {
       "item": "minecraft:stick"
     },
-    "2": {
+    "c": {
       "item": "minecraft:glass_pane"
-    },
-    "3": {
-      "item": "minecraft:stick"
     }
   },
   "result": {

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "pokefood:roserade_tea_leaf",
     "pokefood:tea_leaf",
-    "pokefood:black_tea_leaf"
+    "pokefood:black_tea_leaf",
+    "pokefood:roserade_tea_leaf"
   ]
 }

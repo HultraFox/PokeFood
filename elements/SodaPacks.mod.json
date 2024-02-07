@@ -1,0 +1,64 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PackApriB"
+      },
+      {
+        "value": "CUSTOM:PackApriD"
+      },
+      {
+        "value": "CUSTOM:PackApriG"
+      },
+      {
+        "value": "CUSTOM:PackApriY"
+      },
+      {
+        "value": "CUSTOM:PackApriR"
+      },
+      {
+        "value": "CUSTOM:PackApriP"
+      },
+      {
+        "value": "CUSTOM:PackApriW"
+      },
+      {
+        "value": "CUSTOM:PackTea"
+      },
+      {
+        "value": "CUSTOM:PackTeaBlack"
+      },
+      {
+        "value": "CUSTOM:PackTeaRoserade"
+      },
+      {
+        "value": "CUSTOM:PackCherry"
+      },
+      {
+        "value": "CUSTOM:PackLemonade"
+      },
+      {
+        "value": "CUSTOM:PackPop"
+      },
+      {
+        "value": "CUSTOM:PackCoffee"
+      },
+      {
+        "value": "CUSTOM:PackLatte"
+      },
+      {
+        "value": "CUSTOM:PackEmpty"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "soda_packs",
+    "namespace": "mod"
+  }
+}

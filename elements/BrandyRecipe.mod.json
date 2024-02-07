@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:Brandy.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:FreshWater.bucket"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      }
+    ]
+  }
+}

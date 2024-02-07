@@ -1,18 +1,18 @@
 {
   "replace": false,
   "values": [
-    "pokefood:calcuim",
-    "pokefood:cherry",
-    "pokefood:lime",
-    "pokefood:lemon",
-    "minecraft:apple",
-    "minecraft:glow_berries",
-    "pokefood:roserade_tea_leaf",
-    "minecraft:melon_slice",
-    "minecraft:honey_bottle",
     "pokefood:tea_leaf",
     "pokefood:black_tea_leaf",
+    "pokefood:lemon",
+    "pokefood:lime",
+    "pokefood:calcuim",
+    "pokefood:roserade_tea_leaf",
+    "pokefood:banana",
+    "pokefood:cherry",
+    "minecraft:apple",
+    "minecraft:melon_slice",
     "minecraft:sweet_berries",
-    "pokefood:banana"
+    "minecraft:glow_berries",
+    "minecraft:honey_bottle"
   ]
 }

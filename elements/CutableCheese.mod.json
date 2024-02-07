@@ -1,0 +1,70 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CheeseFull0"
+      },
+      {
+        "value": "CUSTOM:CheeseFull1"
+      },
+      {
+        "value": "CUSTOM:CheeseFull2"
+      },
+      {
+        "value": "CUSTOM:CheeseFull3"
+      },
+      {
+        "value": "CUSTOM:CheeseFull4"
+      },
+      {
+        "value": "CUSTOM:CheeseFull5"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ0"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ1"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ2"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ3"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ4"
+      },
+      {
+        "value": "CUSTOM:CheeseTQ5"
+      },
+      {
+        "value": "CUSTOM:CheeseH0"
+      },
+      {
+        "value": "CUSTOM:CheeseH1"
+      },
+      {
+        "value": "CUSTOM:CheeseH2"
+      },
+      {
+        "value": "CUSTOM:CheeseH3"
+      },
+      {
+        "value": "CUSTOM:CheeseH4"
+      },
+      {
+        "value": "CUSTOM:CheeseH5"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "cutable_cheese",
+    "namespace": "mod"
+  }
+}

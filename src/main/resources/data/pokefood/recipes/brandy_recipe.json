@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:fresh_water_bucket"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "output": {
+    "item": "pokefood:brandy_bucket",
+    "count": 1
+  }
+}

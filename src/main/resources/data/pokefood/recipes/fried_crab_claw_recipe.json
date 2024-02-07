@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:crab_claw"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_claw",
+    "count": 1
+  }
+}

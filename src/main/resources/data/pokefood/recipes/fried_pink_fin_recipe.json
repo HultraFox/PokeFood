@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:pink_fin"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_fin",
+    "count": 1
+  }
+}

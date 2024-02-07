@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:malt_bucket"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "tag": "forge:tea_leaves"
+    },
+    {
+      "tag": "forge:tea_leaves"
+    }
+  ],
+  "output": {
+    "item": "pokefood:banana_tea_beer_bucket",
+    "count": 1
+  }
+}

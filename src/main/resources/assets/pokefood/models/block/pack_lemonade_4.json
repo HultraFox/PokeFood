@@ -1,5 +1,5 @@
 {
-  "parent": "pokefood:custom/bottle_pack_1",
+  "parent": "pokefood:custom/bottle_pack_4",
   "textures": {
     "all": "pokefood:block/6_pack_lemonade",
     "particle": "pokefood:block/6_pack_lemonade",

@@ -2,27 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23",
-    "45"
+    "ab",
+    "bb",
+    "bb"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:bucket"
     },
-    "1": {
-      "item": "pokefood:cup_cherry_infusion"
-    },
-    "2": {
-      "item": "pokefood:cup_cherry_infusion"
-    },
-    "3": {
-      "item": "pokefood:cup_cherry_infusion"
-    },
-    "4": {
-      "item": "pokefood:cup_cherry_infusion"
-    },
-    "5": {
+    "b": {
       "item": "pokefood:cup_cherry_infusion"
     }
   },

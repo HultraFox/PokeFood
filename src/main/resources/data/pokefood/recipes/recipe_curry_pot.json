@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "pokefood:pot_empty"
+    "a": {
+      "item": "pokefood:deleted_mod_element"
     }
   },
   "result": {
-    "item": "pokefood:curry_pot_unlit",
+    "item": "pokefood:deleted_mod_element",
     "count": 1
   }
 }

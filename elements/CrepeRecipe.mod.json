@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "crepe_cooking",
+    "result": {
+      "value": "CUSTOM:Crepe"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CrepeDoughBucket"
+      }
+    ]
+  }
+}

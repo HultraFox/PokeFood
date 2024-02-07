@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "candy_pot_bottom_4",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Sugar Melter",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 1.0,
     "hasGravity": false,
@@ -130,7 +132,7 @@
     "onTickUpdate": {
       "name": "SugarMelterCooking"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

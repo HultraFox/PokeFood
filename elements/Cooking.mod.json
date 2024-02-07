@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "oven_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:BigOven"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:BigOven"
+    },
+    "enableCraftingtable": true,
+    "title": "Cooking",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 34,
+        "y": 8,
+        "slotid": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:aprijuice_y_bucket"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "output": {
+    "item": "pokefood:apri_alcohol_y_bucket",
+    "count": 1
+  }
+}

@@ -2,26 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345"
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:string"
-    },
-    "1": {
-      "item": "minecraft:string"
-    },
-    "2": {
-      "item": "minecraft:string"
-    },
-    "3": {
-      "item": "minecraft:string"
-    },
-    "4": {
-      "item": "minecraft:string"
-    },
-    "5": {
+    "a": {
       "item": "minecraft:string"
     }
   },

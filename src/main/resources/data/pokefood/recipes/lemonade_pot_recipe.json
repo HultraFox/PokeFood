@@ -1,0 +1,21 @@
+{
+  "type": "pokefood:linked_infuse_or_boil",
+  "ingredients": [
+    {
+      "item": "pokefood:cooking_pot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "output": {
+    "item": "pokefood:lemonade_bucket",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "letuce_0",
+        "1": "letuce_middle_0_1"
+      },
+      "name": "default"
+    }
+  }
+}

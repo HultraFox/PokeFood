@@ -1,16 +1,13 @@
 package net.pokefood.procedures;
 
 import net.pokefood.init.PokefoodModItems;
-import net.pokefood.init.PokefoodModBlocks;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -25,7 +22,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.Map;
 
 public class CurryResult2Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -120,44 +116,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_CARROT.get());
@@ -257,44 +230,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_APPLE.get());
@@ -394,44 +344,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_PORK.get());
@@ -531,44 +458,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_CLAW_F.get());
@@ -668,44 +572,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_PEARL.get());
@@ -805,44 +686,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_DUCK_F.get());
@@ -942,44 +800,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_NIDO.get());
@@ -1079,44 +914,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_DUCK.get());
@@ -1216,44 +1028,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_FRIED_CHICKEN.get());
@@ -1353,44 +1142,21 @@ public class CurryResult2Procedure {
 						}
 					}
 					{
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = PokefoodModBlocks.CURRY_POT_UNLIT.get().defaultBlockState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-							if (_property != null && _bs.getValue(_property) != null)
-								try {
-									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-								} catch (Exception e) {
-								}
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 7;
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, ItemStack.EMPTY);
+							});
 						}
-						world.setBlock(_bp, _bs, 3);
 					}
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						if (_bs.getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						int _value = 0;
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("cooking_time") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_water") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-					}
-					{
-						BlockPos _pos = BlockPos.containing(x, y, z);
-						BlockState _bs = world.getBlockState(_pos);
-						if (_bs.getBlock().getStateDefinition().getProperty("has_curry") instanceof BooleanProperty _booleanProp)
-							world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PokefoodModItems.CURRY_BLUE_FIN.get());

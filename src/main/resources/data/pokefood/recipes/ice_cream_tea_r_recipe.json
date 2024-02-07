@@ -1,0 +1,15 @@
+{
+  "type": "pokefood:icecream",
+  "ingredients": [
+    {
+      "item": "pokefood:ice_cream_cone"
+    },
+    {
+      "item": "pokefood:roserade_tea_bucket"
+    }
+  ],
+  "output": {
+    "item": "pokefood:ice_cream_tea_r",
+    "count": 1
+  }
+}

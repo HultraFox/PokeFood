@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:leek"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_leek",
+    "count": 1
+  }
+}

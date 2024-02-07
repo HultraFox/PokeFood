@@ -1,14 +1,14 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "vanilla/blocks/fire_1",
-		"1": "blocks/cauldron_inner",
-		"2": "blocks/cauldron_side",
-		"3": "blocks/cauldron_top",
-		"4": "vanilla/blocks/oak_planks",
-		"5": "blocks/water_still_cauldron",
-		"7": "blocks/tea_bag",
-		"particle": "vanilla/blocks/fire_1"
+		"0": "fire_1",
+		"1": "cauldron_inner",
+		"2": "cauldron_side",
+		"3": "cauldron_top",
+		"4": "oak_planks",
+		"5": "water_still_cauldron",
+		"7": "tea_bag",
+		"particle": "fire_1"
 	},
 	"elements": [
 		{
@@ -254,8 +254,8 @@
 		},
 		{
 			"name": "stick 1",
-			"from": [5.5, 0, 6],
-			"to": [10.5, 1, 7],
+			"from": [5.5, 1, 6],
+			"to": [10.5, 2, 7],
 			"faces": {
 				"north": {"uv": [0, 0, 5, 1], "texture": "#4"},
 				"east": {"uv": [5, 0, 6, 1], "texture": "#4"},
@@ -267,8 +267,8 @@
 		},
 		{
 			"name": "stick 2",
-			"from": [5.5, 0, 9],
-			"to": [10.5, 1, 10],
+			"from": [5.5, 1, 9],
+			"to": [10.5, 2, 10],
 			"faces": {
 				"north": {"uv": [0, 6, 5, 7], "texture": "#4"},
 				"east": {"uv": [5, 5, 6, 6], "texture": "#4"},
@@ -306,8 +306,8 @@
 		},
 		{
 			"name": "fire 1",
-			"from": [6, 1, 6],
-			"to": [10, 5, 6],
+			"from": [6, 1, 6.5],
+			"to": [10, 5, 6.5],
 			"rotation": {"angle": 22.5, "axis": "x", "origin": [0, 0, 6]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
@@ -316,8 +316,8 @@
 		},
 		{
 			"name": "fire 2",
-			"from": [6, 1, 10],
-			"to": [10, 5, 10],
+			"from": [6, 1, 9.5],
+			"to": [10, 5, 9.5],
 			"rotation": {"angle": -22.5, "axis": "x", "origin": [0, 0, 10]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
@@ -326,8 +326,8 @@
 		},
 		{
 			"name": "fire 3",
-			"from": [6, 1, 6],
-			"to": [6, 5, 10],
+			"from": [6.5, 1, 6],
+			"to": [6.5, 5, 10],
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [6, 0, 0]},
 			"faces": {
 				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
@@ -336,8 +336,8 @@
 		},
 		{
 			"name": "fire 4",
-			"from": [10, 1, 6],
-			"to": [10, 5, 10],
+			"from": [9.5, 1, 6],
+			"to": [9.5, 5, 10],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [10, 0, 0]},
 			"faces": {
 				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},

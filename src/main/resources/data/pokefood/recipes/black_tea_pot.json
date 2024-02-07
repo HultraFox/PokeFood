@@ -1,0 +1,21 @@
+{
+  "type": "pokefood:infuse_or_boil",
+  "ingredients": [
+    {
+      "item": "pokefood:cooking_pot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "pokefood:bag_black_tea"
+    }
+  ],
+  "output": {
+    "item": "pokefood:black_tea_bucket",
+    "count": 1
+  }
+}

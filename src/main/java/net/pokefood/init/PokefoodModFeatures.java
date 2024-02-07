@@ -4,13 +4,9 @@
  */
 package net.pokefood.init;
 
-import net.pokefood.world.features.plants.LettuceWildFeature;
-import net.pokefood.world.features.plants.LemonStage3Feature;
-import net.pokefood.world.features.plants.LemonStage2Feature;
-import net.pokefood.world.features.plants.LemonStage1Feature;
-import net.pokefood.world.features.plants.LemonStage0Feature;
-import net.pokefood.world.features.plants.CalcuimPlantFeature;
-import net.pokefood.world.features.BananaTreeFeature;
+import net.pokefood.world.features.LettuceWildFeatureFeature;
+import net.pokefood.world.features.GrapeSproutFeatureFeature;
+import net.pokefood.world.features.BananaTreeFeatureFeature;
 import net.pokefood.PokefoodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -23,12 +19,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 @Mod.EventBusSubscriber
 public class PokefoodModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, PokefoodMod.MODID);
-	public static final RegistryObject<Feature<?>> GRAPE_SPROUT = REGISTRY.register("grape_sprout", GrapeSproutFeature::new);
-	public static final RegistryObject<Feature<?>> LEMON_STAGE_0 = REGISTRY.register("lemon_stage_0", LemonStage0Feature::new);
-	public static final RegistryObject<Feature<?>> LEMON_STAGE_1 = REGISTRY.register("lemon_stage_1", LemonStage1Feature::new);
-	public static final RegistryObject<Feature<?>> LEMON_STAGE_2 = REGISTRY.register("lemon_stage_2", LemonStage2Feature::new);
-	public static final RegistryObject<Feature<?>> LEMON_STAGE_3 = REGISTRY.register("lemon_stage_3", LemonStage3Feature::new);
-	public static final RegistryObject<Feature<?>> CALCUIM_PLANT = REGISTRY.register("calcuim_plant", CalcuimPlantFeature::new);
-	public static final RegistryObject<Feature<?>> LETTUCE_WILD = REGISTRY.register("lettuce_wild", LettuceWildFeature::new);
-	public static final RegistryObject<Feature<?>> BANANA_TREE = REGISTRY.register("banana_tree", BananaTreeFeature::new);
+	public static final RegistryObject<Feature<?>> LETTUCE_WILD_FEATURE = REGISTRY.register("lettuce_wild_feature", LettuceWildFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> BANANA_TREE_FEATURE = REGISTRY.register("banana_tree_feature", BananaTreeFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> GRAPE_SPROUT_FEATURE = REGISTRY.register("grape_sprout_feature", GrapeSproutFeatureFeature::new);
 }

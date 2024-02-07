@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:static_steak"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_static_meat",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "sugar_melting",
+    "result": {
+      "value": "CUSTOM:CrystalizedSugar0"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "TAG:pokefood:mortar_and_pestels"
+      },
+      {
+        "value": "TAG:forge:fuel"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.DYE#19"
+      }
+    ]
+  }
+}

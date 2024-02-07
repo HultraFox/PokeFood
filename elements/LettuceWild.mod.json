@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 2,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Letuce Crop",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -79,9 +81,7 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 10,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "mountains"
@@ -93,9 +93,6 @@
         "value": "mutated_extreme_hills"
       }
     ],
-    "generateCondition": {
-      "name": "LettuceWildValidPlacement"
-    },
     "generationType": "Grass",
     "patchSize": 3,
     "generateAtAnyHeight": true

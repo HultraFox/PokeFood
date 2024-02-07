@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:PotEmpty"
+      "value": "CUSTOM:CookingPot"
     },
     "name": "recipe_pot",
     "namespace": "mod"

@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:bibarel_tail"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_tail",
+    "count": 1
+  }
+}

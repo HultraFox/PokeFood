@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:raw_chips"
+    }
+  ],
+  "output": {
+    "item": "pokefood:chips",
+    "count": 1
+  }
+}

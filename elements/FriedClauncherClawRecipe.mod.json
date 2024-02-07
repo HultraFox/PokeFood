@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fry",
+    "result": {
+      "value": "CUSTOM:ClauncherClaw"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:FriedClaw"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "sugar_melter_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:SugarMelter0"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:SugarMelter0"
+    },
+    "enableCraftingtable": true,
+    "title": "Sugar Melting",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 21,
+        "y": 17,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 21,
+        "y": 53,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 57,
+        "y": 24,
+        "slotid": 2
+      },
+      {
+        "type": "INPUT",
+        "x": 93,
+        "y": 35,
+        "slotid": 3
+      },
+      {
+        "type": "OUTPUT",
+        "x": 139,
+        "y": 35,
+        "slotid": 0
+      }
+    ]
+  }
+}

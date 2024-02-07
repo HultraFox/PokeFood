@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "pokefood:block/calcuim_stage_2",
-    "particle": "pokefood:block/calcuim_stage_2"
-  },
-  "render_type": "cutout"
-}

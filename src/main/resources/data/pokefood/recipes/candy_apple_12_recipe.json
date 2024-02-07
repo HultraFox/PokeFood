@@ -1,0 +1,21 @@
+{
+  "type": "pokefood:sugar_melting",
+  "ingredients": [
+    {
+      "tag": "pokefood:mortar_and_pestels"
+    },
+    {
+      "tag": "forge:fuel"
+    },
+    {
+      "item": "pokefood:crystalized_sugar_12"
+    },
+    {
+      "item": "pokefood:apple_on_a_stick"
+    }
+  ],
+  "output": {
+    "item": "pokefood:candy_apple_12",
+    "count": 1
+  }
+}

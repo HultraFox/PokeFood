@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:brandy_bucket"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    },
+    {
+      "item": "pokefood:lemon_slice"
+    }
+  ],
+  "output": {
+    "item": "pokefood:cidronade_bucket",
+    "count": 1
+  }
+}

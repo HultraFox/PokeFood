@@ -3,8 +3,8 @@
   "values": [
     "pokefood:banana_wood",
     "pokefood:banana_log",
-    "pokefood:banana_wood_tree_controler",
+    "pokefood:banana_log_stripped",
     "pokefood:banana_wood_stripped",
-    "pokefood:banana_log_stripped"
+    "pokefood:banana_wood_tree_controler"
   ]
 }

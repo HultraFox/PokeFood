@@ -236,19 +236,17 @@ public class SugarMelterChangeBlockstatesProcedure {
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) > 0) {
 			{
-				int _value = 2;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("content") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+				if (_bs.getBlock().getStateDefinition().getProperty("content") instanceof BooleanProperty _booleanProp)
+					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 			}
 		} else {
 			{
-				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("content") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+				if (_bs.getBlock().getStateDefinition().getProperty("content") instanceof BooleanProperty _booleanProp)
+					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 			}
 			{
 				int _value = 0;

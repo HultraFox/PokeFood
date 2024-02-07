@@ -16,6 +16,7 @@ package net.pokefood;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.pokefood.world.features.StructureFeature;
 import net.pokefood.init.PokefoodModTabs;
 import net.pokefood.init.PokefoodModMenus;
 import net.pokefood.init.PokefoodModItems;
@@ -62,6 +63,7 @@ public class PokefoodMod {
 
 		PokefoodModTabs.REGISTRY.register(bus);
 		PokefoodModFeatures.REGISTRY.register(bus);
+		StructureFeature.REGISTRY.register(bus);
 
 		PokefoodModMenus.REGISTRY.register(bus);
 		PokefoodModFluids.REGISTRY.register(bus);

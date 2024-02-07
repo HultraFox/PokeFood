@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -228,25 +228,7 @@
         "value": "CUSTOM:Tea"
       },
       {
-        "value": "CUSTOM:TeaStage0"
-      },
-      {
-        "value": "CUSTOM:TeaStage1"
-      },
-      {
-        "value": "CUSTOM:TeaStage2"
-      },
-      {
         "value": "CUSTOM:BlackTea"
-      },
-      {
-        "value": "CUSTOM:BlackTeaStage0"
-      },
-      {
-        "value": "CUSTOM:BlackTeaStage1"
-      },
-      {
-        "value": "CUSTOM:BlackTeaStage2"
       },
       {
         "value": "CUSTOM:Lemonade"
@@ -273,63 +255,6 @@
         "value": "CUSTOM:LemonStage6"
       },
       {
-        "value": "CUSTOM:CalcuimStage0"
-      },
-      {
-        "value": "CUSTOM:CalcuimStage1"
-      },
-      {
-        "value": "CUSTOM:CalcuimStage2"
-      },
-      {
-        "value": "CUSTOM:CalcuimStage3"
-      },
-      {
-        "value": "CUSTOM:CalcuimPlant"
-      },
-      {
-        "value": "CUSTOM:PotEmpty"
-      },
-      {
-        "value": "CUSTOM:PotWater"
-      },
-      {
-        "value": "CUSTOM:PotWaterFired"
-      },
-      {
-        "value": "CUSTOM:PotTea"
-      },
-      {
-        "value": "CUSTOM:PotTeaFired"
-      },
-      {
-        "value": "CUSTOM:PotBlackTea"
-      },
-      {
-        "value": "CUSTOM:PotBlackTeaFired"
-      },
-      {
-        "value": "CUSTOM:PotTeaCooked"
-      },
-      {
-        "value": "CUSTOM:PotBlackTeaCooked"
-      },
-      {
-        "value": "CUSTOM:PotFreshWater"
-      },
-      {
-        "value": "CUSTOM:PotWaterSugar"
-      },
-      {
-        "value": "CUSTOM:PotWaterLemon"
-      },
-      {
-        "value": "CUSTOM:PotLemonade"
-      },
-      {
-        "value": "CUSTOM:PotLemonadeCooked"
-      },
-      {
         "value": "CUSTOM:CarbonizerBottle"
       },
       {
@@ -351,43 +276,7 @@
         "value": "CUSTOM:RoseradeTea"
       },
       {
-        "value": "CUSTOM:PotRoseradeTea"
-      },
-      {
-        "value": "CUSTOM:PotRoseradeTeaFired"
-      },
-      {
-        "value": "CUSTOM:PotRoseradeTeaCooked"
-      },
-      {
         "value": "CUSTOM:Keg"
-      },
-      {
-        "value": "CUSTOM:Keg2"
-      },
-      {
-        "value": "CUSTOM:Keg3"
-      },
-      {
-        "value": "CUSTOM:Keg4"
-      },
-      {
-        "value": "CUSTOM:Keg5"
-      },
-      {
-        "value": "CUSTOM:Keg6"
-      },
-      {
-        "value": "CUSTOM:Keg7"
-      },
-      {
-        "value": "CUSTOM:PotMalt"
-      },
-      {
-        "value": "CUSTOM:PotMaltFired"
-      },
-      {
-        "value": "CUSTOM:PotMaltCooked"
       },
       {
         "value": "CUSTOM:Malt"
@@ -435,49 +324,10 @@
         "value": "CUSTOM:KegFunnel"
       },
       {
-        "value": "CUSTOM:KegFunnelUp"
-      },
-      {
-        "value": "CUSTOM:KegFunnelFront"
-      },
-      {
         "value": "CUSTOM:IceCreamMaker"
       },
       {
         "value": "CUSTOM:IceCreamExtention"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriB"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriD"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriG"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriP"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriR"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriW"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionApriY"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionLemonade"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionTea"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionTeaB"
-      },
-      {
-        "value": "CUSTOM:IceCreamExtentionTeaR"
       },
       {
         "value": "CUSTOM:CoffeeMaker"
@@ -573,258 +423,6 @@
         "value": "CUSTOM:DisplayCasePoffin9"
       },
       {
-        "value": "CUSTOM:DisplaySodaPop1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaPop7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTea7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaBlack7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaTeaRoserade7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaLemonade7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriD7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriB7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriG7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriY7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriR7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriP7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaApriW7"
-      },
-      {
         "value": "CUSTOM:BigBag"
       },
       {
@@ -834,97 +432,10 @@
         "value": "CUSTOM:Heater"
       },
       {
-        "value": "CUSTOM:LeekStage0"
-      },
-      {
-        "value": "CUSTOM:LeekStage1"
-      },
-      {
-        "value": "CUSTOM:LeekStage2"
-      },
-      {
-        "value": "CUSTOM:LeekStage3"
-      },
-      {
         "value": "CUSTOM:CherryInfusion"
       },
       {
-        "value": "CUSTOM:PotCherry"
-      },
-      {
-        "value": "CUSTOM:PotCherryFired"
-      },
-      {
-        "value": "CUSTOM:PotCherryCooked"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaCherry7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrine7"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade1"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade2"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade3"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade4"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade5"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade6"
-      },
-      {
-        "value": "CUSTOM:DisplaySodaSombrade7"
-      },
-      {
         "value": "CUSTOM:CandyBox"
-      },
-      {
-        "value": "CUSTOM:CandyBoxEmpty"
       },
       {
         "value": "CUSTOM:ConeDisplay"
@@ -951,118 +462,28 @@
         "value": "CUSTOM:PackApriW"
       },
       {
-        "value": "CUSTOM:PackApriB4"
-      },
-      {
-        "value": "CUSTOM:PackApriD4"
-      },
-      {
-        "value": "CUSTOM:PackApriG4"
-      },
-      {
-        "value": "CUSTOM:PackApriY4"
-      },
-      {
-        "value": "CUSTOM:PackApriR4"
-      },
-      {
-        "value": "CUSTOM:PackApriP4"
-      },
-      {
-        "value": "CUSTOM:PackApriW4"
-      },
-      {
-        "value": "CUSTOM:PackApriB8"
-      },
-      {
-        "value": "CUSTOM:PackApriD8"
-      },
-      {
-        "value": "CUSTOM:PackApriG8"
-      },
-      {
-        "value": "CUSTOM:PackApriY8"
-      },
-      {
-        "value": "CUSTOM:PackApriR8"
-      },
-      {
-        "value": "CUSTOM:PackApriP8"
-      },
-      {
-        "value": "CUSTOM:PackApriW8"
-      },
-      {
         "value": "CUSTOM:PackTea"
-      },
-      {
-        "value": "CUSTOM:PackTea4"
-      },
-      {
-        "value": "CUSTOM:PackTea8"
       },
       {
         "value": "CUSTOM:PackTeaBlack"
       },
       {
-        "value": "CUSTOM:PackTeaBlack4"
-      },
-      {
-        "value": "CUSTOM:PackTeaBlack8"
-      },
-      {
         "value": "CUSTOM:PackTeaRoserade"
-      },
-      {
-        "value": "CUSTOM:PackTeaRoserade4"
-      },
-      {
-        "value": "CUSTOM:PackTeaRoserade8"
       },
       {
         "value": "CUSTOM:PackCherry"
       },
       {
-        "value": "CUSTOM:PackCherry4"
-      },
-      {
-        "value": "CUSTOM:PackCherry8"
-      },
-      {
         "value": "CUSTOM:PackLemonade"
-      },
-      {
-        "value": "CUSTOM:PackLemonade4"
-      },
-      {
-        "value": "CUSTOM:PackLemonade8"
       },
       {
         "value": "CUSTOM:PackPop"
       },
       {
-        "value": "CUSTOM:PackPop4"
-      },
-      {
-        "value": "CUSTOM:PackPop8"
-      },
-      {
         "value": "CUSTOM:PackCoffee"
       },
       {
-        "value": "CUSTOM:PackCoffee4"
-      },
-      {
-        "value": "CUSTOM:PackCoffee8"
-      },
-      {
         "value": "CUSTOM:PackLatte"
-      },
-      {
-        "value": "CUSTOM:PackLatte4"
-      },
-      {
-        "value": "CUSTOM:PackLatte8"
       },
       {
         "value": "CUSTOM:CalcuimEmptyB0"
@@ -1395,39 +816,6 @@
         "value": "CUSTOM:CheeseQ5"
       },
       {
-        "value": "CUSTOM:OnionStage0"
-      },
-      {
-        "value": "CUSTOM:OnionStage1"
-      },
-      {
-        "value": "CUSTOM:OnionStage2"
-      },
-      {
-        "value": "CUSTOM:OnionStage3"
-      },
-      {
-        "value": "CUSTOM:OnionStage4"
-      },
-      {
-        "value": "CUSTOM:OnionStage5"
-      },
-      {
-        "value": "CUSTOM:OnionStage6"
-      },
-      {
-        "value": "CUSTOM:Letuce0"
-      },
-      {
-        "value": "CUSTOM:Letuce1"
-      },
-      {
-        "value": "CUSTOM:Letuce2"
-      },
-      {
-        "value": "CUSTOM:Letuce3"
-      },
-      {
         "value": "CUSTOM:LettuceWild"
       },
       {
@@ -1453,9 +841,6 @@
       },
       {
         "value": "CUSTOM:CrepeMaker"
-      },
-      {
-        "value": "CUSTOM:PlateUncookedBlock"
       },
       {
         "value": "CUSTOM:BananaButton"
@@ -2272,11 +1657,75 @@
       },
       {
         "value": "Blocks.FROGSPAWN"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaPop"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTea"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaBlack"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaTeaRoserade"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaLemonade"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriD"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriB"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriG"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriY"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriR"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriP"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaApriW"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaCherry"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrine"
+      },
+      {
+        "value": "CUSTOM:DisplaySodaSombrade"
+      },
+      {
+        "value": "CUSTOM:BlackTeaPlant"
+      },
+      {
+        "value": "CUSTOM:GreenTeaPlant"
+      },
+      {
+        "value": "CUSTOM:CalcuimCrop"
+      },
+      {
+        "value": "CUSTOM:LeekPlant"
+      },
+      {
+        "value": "CUSTOM:OnionPlant"
+      },
+      {
+        "value": "CUSTOM:LettucePlant"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "grapes_can_grow_next_to",
     "namespace": "mod"
   }

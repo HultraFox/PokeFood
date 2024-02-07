@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0",
-    "1"
+    "a",
+    "b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:cauldron"
     },
-    "1": {
+    "b": {
       "tag": "minecraft:planks"
     }
   },
   "result": {
-    "item": "pokefood:pot_empty",
+    "item": "pokefood:cooking_pot",
     "count": 1
   }
 }

@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    "345",
-    "678"
+    "a a",
+    "bbb",
+    "bbb"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:bucket"
     },
-    "2": {
-      "item": "minecraft:bucket"
-    },
-    "3": {
-      "item": "minecraft:iron_ingot"
-    },
-    "4": {
-      "item": "minecraft:iron_ingot"
-    },
-    "5": {
-      "item": "minecraft:iron_ingot"
-    },
-    "6": {
-      "item": "minecraft:iron_ingot"
-    },
-    "7": {
-      "item": "minecraft:iron_ingot"
-    },
-    "8": {
+    "b": {
       "item": "minecraft:iron_ingot"
     }
   },

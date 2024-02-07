@@ -126,6 +126,7 @@ public class CheeseMakingProcedure {
 					}
 				}
 			}
+			time = 0;
 		}
 	}
 }

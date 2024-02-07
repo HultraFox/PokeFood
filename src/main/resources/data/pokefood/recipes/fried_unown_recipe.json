@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:unown_piece"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_unown",
+    "count": 1
+  }
+}

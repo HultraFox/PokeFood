@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,22 +21,22 @@
         "value": ""
       },
       {
-        "value": "Blocks.STONE_SLAB#7"
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
       },
       {
-        "value": "Blocks.STONE_SLAB#7"
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
       },
       {
-        "value": "Blocks.STONE_SLAB#7"
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
       },
       {
-        "value": "Blocks.STONE_SLAB#7"
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.STONE_SLAB#7"
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
       }
     ],
     "recipeReturnStack": {

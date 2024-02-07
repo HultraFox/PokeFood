@@ -3,37 +3,25 @@
   "group": "mixers",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aab",
+    "cde",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:iron_ingot"
     },
-    "1": {
-      "item": "minecraft:iron_ingot"
-    },
-    "2": {
+    "b": {
       "item": "minecraft:heavy_weighted_pressure_plate"
     },
-    "3": {
+    "c": {
       "item": "minecraft:bucket"
     },
-    "4": {
+    "d": {
       "item": "minecraft:yellow_dye"
     },
-    "5": {
+    "e": {
       "item": "minecraft:stone_button"
-    },
-    "6": {
-      "item": "minecraft:iron_ingot"
-    },
-    "7": {
-      "item": "minecraft:iron_ingot"
-    },
-    "8": {
-      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

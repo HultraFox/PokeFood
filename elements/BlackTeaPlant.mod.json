@@ -1,0 +1,105 @@
+{
+  "_fv": 57,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "crops_blacktea_1",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 4.0,
+        "my": 0.0,
+        "mz": 4.0,
+        "Mx": 12.0,
+        "My": 6.0,
+        "Mz": 12.0,
+        "subtract": false
+      }
+    ],
+    "name": "Tea Plant",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": true,
+    "customDrop": {
+      "value": "CUSTOM:TeaSeeds"
+    },
+    "dropAmount": 1,
+    "forceTicking": true,
+    "emissiveRendering": false,
+    "hasTileEntity": true,
+    "isReplaceable": false,
+    "colorOnMap": "AIR",
+    "creativePickItem": {
+      "value": "CUSTOM:TeaSeeds"
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 0.5,
+    "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "PlantsValidPlacement"
+    },
+    "isBonemealable": true,
+    "isBonemealTargetCondition": {
+      "name": "PlantsCanBoneMealed"
+    },
+    "bonemealSuccessCondition": {
+      "name": "PlantBoneMealSuccessCondition"
+    },
+    "onBonemealSuccess": {
+      "name": "TeaPlantOnBoneMealSuccess"
+    },
+    "frequencyOnChunks": 0,
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "generationType": "Grass",
+    "patchSize": 1,
+    "generateAtAnyHeight": false,
+    "onTickUpdate": {
+      "name": "TeaStateChanger"
+    }
+  }
+}

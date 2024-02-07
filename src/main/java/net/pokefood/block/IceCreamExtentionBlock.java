@@ -2,7 +2,6 @@
 package net.pokefood.block;
 
 import net.pokefood.world.inventory.IceCreamExtentionGUIMenu;
-import net.pokefood.procedures.IceCreamExtendingProcedure;
 import net.pokefood.init.PokefoodModBlocks;
 import net.pokefood.block.entity.IceCreamExtentionBlockEntity;
 
@@ -116,23 +115,6 @@ public class IceCreamExtentionBlock extends Block implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(PokefoodModBlocks.ICE_CREAM_EXTENTION.get()));
-	}
-
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 20);
-		IceCreamExtendingProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		IceCreamExtendingProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override

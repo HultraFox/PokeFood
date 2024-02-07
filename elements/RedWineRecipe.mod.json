@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:RedWine.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.BUCKET"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      }
+    ]
+  }
+}

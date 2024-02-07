@@ -1,14 +1,14 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "vanilla/blocks/fire_0",
+		"0": "Pot/fire_1",
 		"1": "Pot/cauldron_inner",
 		"2": "Pot/cauldron_side",
 		"3": "Pot/cauldron_top",
-		"4": "vanilla/blocks/oak_planks",
-		"5": "curry_uncooked_still",
+		"4": "Pot/oak_planks",
+		"5": "curry_cooked_still",
 		"6": "berries_6",
-		"particle": "vanilla/blocks/fire_0"
+		"particle": "Pot/fire_1"
 	},
 	"elements": [
 		{
@@ -254,8 +254,8 @@
 		},
 		{
 			"name": "stick 1",
-			"from": [5.5, 0, 6],
-			"to": [10.5, 1, 7],
+			"from": [5.5, 1, 6],
+			"to": [10.5, 2, 7],
 			"faces": {
 				"north": {"uv": [0, 0, 5, 1], "texture": "#4"},
 				"east": {"uv": [5, 0, 6, 1], "texture": "#4"},
@@ -267,8 +267,8 @@
 		},
 		{
 			"name": "stick 2",
-			"from": [5.5, 0, 9],
-			"to": [10.5, 1, 10],
+			"from": [5.5, 1, 9],
+			"to": [10.5, 2, 10],
 			"faces": {
 				"north": {"uv": [0, 6, 5, 7], "texture": "#4"},
 				"east": {"uv": [5, 5, 6, 6], "texture": "#4"},

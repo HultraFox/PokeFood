@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:pack_apri_b",
+    "pokefood:pack_apri_d",
+    "pokefood:pack_apri_g",
+    "pokefood:pack_apri_y",
+    "pokefood:pack_apri_r",
+    "pokefood:pack_apri_p",
+    "pokefood:pack_apri_w",
+    "pokefood:pack_tea",
+    "pokefood:pack_tea_black",
+    "pokefood:pack_tea_roserade",
+    "pokefood:pack_cherry",
+    "pokefood:pack_lemonade",
+    "pokefood:pack_pop",
+    "pokefood:pack_coffee",
+    "pokefood:pack_latte",
+    "pokefood:pack_empty"
+  ]
+}

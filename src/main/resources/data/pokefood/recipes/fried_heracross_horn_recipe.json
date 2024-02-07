@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:cooked_heracross_horn"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_heracross_horn",
+    "count": 1
+  }
+}

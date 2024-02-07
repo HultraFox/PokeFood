@@ -1,18 +1,137 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,visual=0": {
       "model": "pokefood:block/pack_apri_p"
     },
-    "facing=east": {
+    "facing=east,visual=0": {
       "model": "pokefood:block/pack_apri_p",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,visual=0": {
       "model": "pokefood:block/pack_apri_p",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,visual=0": {
       "model": "pokefood:block/pack_apri_p",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=1": {
+      "model": "pokefood:block/pack_apri_p1"
+    },
+    "facing=east,visual=1": {
+      "model": "pokefood:block/pack_apri_p1",
+      "y": 90
+    },
+    "facing=south,visual=1": {
+      "model": "pokefood:block/pack_apri_p1",
+      "y": 180
+    },
+    "facing=west,visual=1": {
+      "model": "pokefood:block/pack_apri_p1",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=2": {
+      "model": "pokefood:block/pack_apri_p2"
+    },
+    "facing=east,visual=2": {
+      "model": "pokefood:block/pack_apri_p2",
+      "y": 90
+    },
+    "facing=south,visual=2": {
+      "model": "pokefood:block/pack_apri_p2",
+      "y": 180
+    },
+    "facing=west,visual=2": {
+      "model": "pokefood:block/pack_apri_p2",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=3": {
+      "model": "pokefood:block/pack_apri_p3"
+    },
+    "facing=east,visual=3": {
+      "model": "pokefood:block/pack_apri_p3",
+      "y": 90
+    },
+    "facing=south,visual=3": {
+      "model": "pokefood:block/pack_apri_p3",
+      "y": 180
+    },
+    "facing=west,visual=3": {
+      "model": "pokefood:block/pack_apri_p3",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=4": {
+      "model": "pokefood:block/pack_apri_p4"
+    },
+    "facing=east,visual=4": {
+      "model": "pokefood:block/pack_apri_p4",
+      "y": 90
+    },
+    "facing=south,visual=4": {
+      "model": "pokefood:block/pack_apri_p4",
+      "y": 180
+    },
+    "facing=west,visual=4": {
+      "model": "pokefood:block/pack_apri_p4",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=5": {
+      "model": "pokefood:block/pack_apri_p5"
+    },
+    "facing=east,visual=5": {
+      "model": "pokefood:block/pack_apri_p5",
+      "y": 90
+    },
+    "facing=south,visual=5": {
+      "model": "pokefood:block/pack_apri_p5",
+      "y": 180
+    },
+    "facing=west,visual=5": {
+      "model": "pokefood:block/pack_apri_p5",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=6": {
+      "model": "pokefood:block/pack_apri_p6"
+    },
+    "facing=east,visual=6": {
+      "model": "pokefood:block/pack_apri_p6",
+      "y": 90
+    },
+    "facing=south,visual=6": {
+      "model": "pokefood:block/pack_apri_p6",
+      "y": 180
+    },
+    "facing=west,visual=6": {
+      "model": "pokefood:block/pack_apri_p6",
+      "y": 270
+    },
+
+    
+    "facing=north,visual=7": {
+      "model": "pokefood:block/pack_apri_p7"
+    },
+    "facing=east,visual=7": {
+      "model": "pokefood:block/pack_apri_p7",
+      "y": 90
+    },
+    "facing=south,visual=7": {
+      "model": "pokefood:block/pack_apri_p7",
+      "y": 180
+    },
+    "facing=west,visual=7": {
+      "model": "pokefood:block/pack_apri_p7",
       "y": 270
     }
   }

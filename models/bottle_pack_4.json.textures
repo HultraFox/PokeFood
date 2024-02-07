@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "soda_apri_g",
+        "2": "6_pack_apri_r"
+      },
+      "name": "default"
+    }
+  }
+}

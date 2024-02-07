@@ -2,20 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "bb"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:heavy_weighted_pressure_plate"
     },
-    "1": {
-      "item": "minecraft:heavy_weighted_pressure_plate"
-    },
-    "2": {
-      "item": "minecraft:iron_bars"
-    },
-    "3": {
+    "b": {
       "item": "minecraft:iron_bars"
     }
   },

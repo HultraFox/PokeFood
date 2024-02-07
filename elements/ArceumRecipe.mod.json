@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing_recipe_type",
+    "result": {
+      "value": "CUSTOM:Arceum.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Malt.bucket"
+      },
+      {
+        "value": "CUSTOM:Nectar"
+      },
+      {
+        "value": "CUSTOM:Nectar"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "CUSTOM:Nectar"
+      },
+      {
+        "value": "CUSTOM:Nectar"
+      },
+      {
+        "value": "CUSTOM:Nectar"
+      }
+    ]
+  }
+}

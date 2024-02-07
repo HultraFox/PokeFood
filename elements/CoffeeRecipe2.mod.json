@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "coffee_making",
+    "result": {
+      "value": "CUSTOM:Coffee.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CoffeePowder"
+      },
+      {
+        "value": "Items.WATER_BUCKET"
+      }
+    ]
+  }
+}

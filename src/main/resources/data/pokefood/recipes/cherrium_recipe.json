@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:malt_bucket"
+    },
+    {
+      "item": "pokefood:cherry"
+    },
+    {
+      "item": "pokefood:cherry"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "pokefood:cherry"
+    },
+    {
+      "item": "pokefood:calcuim"
+    },
+    {
+      "item": "pokefood:calcuim"
+    }
+  ],
+  "output": {
+    "item": "pokefood:cherry_calcuim_beer_bucket",
+    "count": 1
+  }
+}

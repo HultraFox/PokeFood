@@ -242,7 +242,7 @@
 
         
         {
-			"when": { "color": "0", "content": "2"}, 
+			"when": { "color": "0", "content": "true"}, 
 			"apply": [
 			{ "model": "pokefood:block/sugar_melter_sugar_0", "uvlock": false },
 			{ "model": "pokefood:block/sugar_melter_sugar_1", "uvlock": false },
@@ -252,134 +252,134 @@
 
         
         {
-			"when": { "color":"1", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_0_1", "uvlock": false }
+			"when": { "color":"1", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_0", "uvlock": false }
         },
         {
-			"when": { "color":"2", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_1_1", "uvlock": false }
+			"when": { "color":"2", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_1", "uvlock": false }
         },
         {
-			"when": { "color":"3", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_2_1", "uvlock": false }
+			"when": { "color":"3", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_2", "uvlock": false }
         },
         {
-			"when": { "color":"4", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_3_1", "uvlock": false }
+			"when": { "color":"4", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_3", "uvlock": false }
         },
         {
-			"when": { "color":"5", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_4_1", "uvlock": false }
+			"when": { "color":"5", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_4", "uvlock": false }
         },
         {
-			"when": { "color":"6", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_5_1", "uvlock": false }
+			"when": { "color":"6", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_5", "uvlock": false }
         },
         {
-			"when": { "color":"7", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_6_1", "uvlock": false }
+			"when": { "color":"7", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_6", "uvlock": false }
         },
         {
-			"when": { "color":"8", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_7_1", "uvlock": false }
+			"when": { "color":"8", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_7", "uvlock": false }
         },
         {
-			"when": { "color":"9", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_8_1", "uvlock": false }
+			"when": { "color":"9", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_8", "uvlock": false }
         },
         {
-			"when": { "color":"10", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_9_1", "uvlock": false }
+			"when": { "color":"10", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_9", "uvlock": false }
         },
         {
-			"when": { "color":"11", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_10_1", "uvlock": false }
+			"when": { "color":"11", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_10", "uvlock": false }
         },
         {
-			"when": { "color":"12", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_11_1", "uvlock": false }
+			"when": { "color":"12", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_11", "uvlock": false }
         },
         {
-			"when": { "color":"13", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_12_1", "uvlock": false }
+			"when": { "color":"13", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_12", "uvlock": false }
         },
         {
-			"when": { "color":"14", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_13_1", "uvlock": false }
+			"when": { "color":"14", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_13", "uvlock": false }
         },
         {
-			"when": { "color":"15", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_14_1", "uvlock": false }
+			"when": { "color":"15", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_14", "uvlock": false }
         },
         {
-			"when": { "color":"16", "content": "2", "lit": "true"},
-			"apply": { "model": "pokefood:block/sugar_melter_liquid_15_1", "uvlock": false }
+			"when": { "color":"16", "content": "true", "lit": "true"},
+			"apply": { "model": "pokefood:block/sugar_melter_liquid_15", "uvlock": false }
         },
 
 
         
         {
-			"when":{ "color": "1",  "content": "2", "lit": "false"}, 
+			"when":{ "color": "1",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_0", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "2",  "content": "2", "lit": "false"}, 
+			"when": { "color": "2",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_1", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "3",  "content": "2", "lit": "false"}, 
+			"when": { "color": "3",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_2", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "4",  "content": "2", "lit": "false"}, 
+			"when": { "color": "4",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_3", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "5",  "content": "2", "lit": "false"}, 
+			"when": { "color": "5",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_4", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "6",  "content": "2", "lit": "false"}, 
+			"when": { "color": "6",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_5", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "7",  "content": "2", "lit": "false"}, 
+			"when": { "color": "7",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_6", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "8",  "content": "2", "lit": "false"}, 
+			"when": { "color": "8",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_7", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "9",  "content": "2", "lit": "false"}, 
+			"when": { "color": "9",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_8", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "10",  "content": "2", "lit": "false"}, 
+			"when": { "color": "10",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_9", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "11",  "content": "2", "lit": "false"}, 
+			"when": { "color": "11",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_10", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "12",  "content": "2", "lit": "false"}, 
+			"when": { "color": "12",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_11", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "13",  "content": "2", "lit": "false"}, 
+			"when": { "color": "13",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_12", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "14",  "content": "2", "lit": "false"}, 
+			"when": { "color": "14",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_13", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "15",  "content": "2", "lit": "false"}, 
+			"when": { "color": "15",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_14", "y": 180, "uvlock": false }
         },
         {
-			"when": { "color": "16",  "content": "2", "lit": "false"}, 
+			"when": { "color": "16",  "content": "true", "lit": "false"}, 
 			"apply": { "model": "pokefood:block/sugar_melter_crystal_15", "y": 180, "uvlock": false }
         }
   ]

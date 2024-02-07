@@ -1,6 +1,7 @@
 
 package net.pokefood.block;
 
+import net.pokefood.procedures.FluidNoFallDamageProcedure;
 import net.pokefood.procedures.CheckIfLavaOrNetherProcedure;
 import net.pokefood.init.PokefoodModFluids;
 
@@ -11,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
@@ -32,5 +34,11 @@ public class ApriJuicePBlock extends LiquidBlock {
 		super.tick(blockstate, world, pos, random);
 		CheckIfLavaOrNetherProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 10);
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		FluidNoFallDamageProcedure.execute(entity);
 	}
 }

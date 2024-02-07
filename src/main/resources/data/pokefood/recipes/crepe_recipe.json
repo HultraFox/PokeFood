@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:crepe_cooking",
+  "ingredients": [
+    {
+      "item": "pokefood:crepe_dough_bucket"
+    }
+  ],
+  "output": {
+    "item": "pokefood:crepe",
+    "count": 1
+  }
+}

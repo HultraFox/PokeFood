@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/bottle_pack_5",
+  "textures": {
+    "all": "pokefood:block/6_pack_apri_w",
+    "particle": "pokefood:block/6_pack_apri_w",
+    "1": "pokefood:block/soda_apri_w",
+    "2": "pokefood:block/6_pack_apri_w"
+  },
+  "render_type": "cutout"
+}

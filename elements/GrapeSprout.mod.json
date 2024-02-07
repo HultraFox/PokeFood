@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "grapes_leaves",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Grape Sprout",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.5,
     "resistance": 1.0,
     "hasGravity": false,
@@ -133,26 +135,13 @@
     "onStartToDestroy": {
       "name": "GrapeVineUpdateFence"
     },
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "plains"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.AIR"
-      }
-    ],
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "TRIANGLE",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 100,
-    "maxGenerateHeight": 256,
-    "generateCondition": {
-      "name": "PlantsValidPlacement"
-    }
+    "maxGenerateHeight": 256
   }
 }

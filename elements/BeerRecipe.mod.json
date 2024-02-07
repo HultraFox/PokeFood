@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:Beer.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Malt.bucket"
+      },
+      {
+        "value": "TAG:forge:seeds"
+      },
+      {
+        "value": "TAG:forge:seeds"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "TAG:forge:seeds"
+      },
+      {
+        "value": "TAG:forge:seeds"
+      },
+      {
+        "value": "TAG:forge:seeds"
+      }
+    ]
+  }
+}

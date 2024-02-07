@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:nido_meat"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_nido_meat",
+    "count": 1
+  }
+}

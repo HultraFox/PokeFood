@@ -1,0 +1,353 @@
+{
+  "variants": {
+    "facing=north,fluid_type=0": {
+      "model": "pokefood:block/cooking_pot"
+    },
+    "facing=east,fluid_type=0": {
+      "model": "pokefood:block/cooking_pot",
+      "y": 90
+    },
+    "facing=south,fluid_type=0": {
+      "model": "pokefood:block/cooking_pot",
+      "y": 180
+    },
+    "facing=west,fluid_type=0": {
+      "model": "pokefood:block/cooking_pot",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=1,processed=false,lit=false": {
+      "model": "pokefood:block/pot_water"
+    },
+    "facing=east,fluid_type=1,processed=false,lit=false": {
+      "model": "pokefood:block/pot_water",
+      "y": 90
+    },
+    "facing=south,fluid_type=1,processed=false,lit=false": {
+      "model": "pokefood:block/pot_water",
+      "y": 180
+    },
+    "facing=west,fluid_type=1,processed=false,lit=false": {
+      "model": "pokefood:block/pot_water",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=1,processed=false,lit=true": {
+      "model": "pokefood:block/pot_water_fired"
+    },
+    "facing=east,fluid_type=1,processed=false,lit=true": {
+      "model": "pokefood:block/pot_water_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=1,processed=false,lit=true": {
+      "model": "pokefood:block/pot_water_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=1,processed=false,lit=true": {
+      "model": "pokefood:block/pot_water_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=1,processed=true": {
+      "model": "pokefood:block/pot_fresh_water"
+    },
+    "facing=east,fluid_type=1,processed=true": {
+      "model": "pokefood:block/pot_fresh_water",
+      "y": 90
+    },
+    "facing=south,fluid_type=1,processed=true": {
+      "model": "pokefood:block/pot_fresh_water",
+      "y": 180
+    },
+    "facing=west,fluid_type=1,processed=true": {
+      "model": "pokefood:block/pot_fresh_water",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=2,processed=false": {
+      "model": "pokefood:block/pot_lemonade"
+    },
+    "facing=east,fluid_type=2,processed=false": {
+      "model": "pokefood:block/pot_lemonade",
+      "y": 90
+    },
+    "facing=south,fluid_type=2,processed=false": {
+      "model": "pokefood:block/pot_lemonade",
+      "y": 180
+    },
+    "facing=west,fluid_type=2,processed=false": {
+      "model": "pokefood:block/pot_lemonade",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=2,processed=true": {
+      "model": "pokefood:block/pot_lemonade_cooked"
+    },
+    "facing=east,fluid_type=2,processed=true": {
+      "model": "pokefood:block/pot_lemonade_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=2,processed=true": {
+      "model": "pokefood:block/pot_lemonade_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=2,processed=true": {
+      "model": "pokefood:block/pot_lemonade_cooked",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=3,processed=false,lit=false": {
+      "model": "pokefood:block/pot_tea"
+    },
+    "facing=east,fluid_type=3,processed=false,lit=false": {
+      "model": "pokefood:block/pot_tea",
+      "y": 90
+    },
+    "facing=south,fluid_type=3,processed=false,lit=false": {
+      "model": "pokefood:block/pot_tea",
+      "y": 180
+    },
+    "facing=west,fluid_type=3,processed=false,lit=false": {
+      "model": "pokefood:block/pot_tea",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=3,processed=false,lit=true": {
+      "model": "pokefood:block/pot_tea_fired"
+    },
+    "facing=east,fluid_type=3,processed=false,lit=true": {
+      "model": "pokefood:block/pot_tea_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=3,processed=false,lit=true": {
+      "model": "pokefood:block/pot_tea_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=3,processed=false,lit=true": {
+      "model": "pokefood:block/pot_tea_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=3,processed=true": {
+      "model": "pokefood:block/pot_tea_cooked"
+    },
+    "facing=east,fluid_type=3,processed=true": {
+      "model": "pokefood:block/pot_tea_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=3,processed=true": {
+      "model": "pokefood:block/pot_tea_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=3,processed=true": {
+      "model": "pokefood:block/pot_tea_cooked",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=4,processed=false,lit=false": {
+      "model": "pokefood:block/pot_black_tea"
+    },
+    "facing=east,fluid_type=4,processed=false,lit=false": {
+      "model": "pokefood:block/pot_black_tea",
+      "y": 90
+    },
+    "facing=south,fluid_type=4,processed=false,lit=false": {
+      "model": "pokefood:block/pot_black_tea",
+      "y": 180
+    },
+    "facing=west,fluid_type=4,processed=false,lit=false": {
+      "model": "pokefood:block/pot_black_tea",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=4,processed=false,lit=true": {
+      "model": "pokefood:block/pot_black_tea_fired"
+    },
+    "facing=east,fluid_type=4,processed=false,lit=true": {
+      "model": "pokefood:block/pot_black_tea_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=4,processed=false,lit=true": {
+      "model": "pokefood:block/pot_black_tea_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=4,processed=false,lit=true": {
+      "model": "pokefood:block/pot_black_tea_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=4,processed=true": {
+      "model": "pokefood:block/pot_black_tea_cooked"
+    },
+    "facing=east,fluid_type=4,processed=true": {
+      "model": "pokefood:block/pot_black_tea_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=4,processed=true": {
+      "model": "pokefood:block/pot_black_tea_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=4,processed=true": {
+      "model": "pokefood:block/pot_black_tea_cooked",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=5,processed=false,lit=false": {
+      "model": "pokefood:block/pot_roserade_tea"
+    },
+    "facing=east,fluid_type=5,processed=false,lit=false": {
+      "model": "pokefood:block/pot_roserade_tea",
+      "y": 90
+    },
+    "facing=south,fluid_type=5,processed=false,lit=false": {
+      "model": "pokefood:block/pot_roserade_tea",
+      "y": 180
+    },
+    "facing=west,fluid_type=5,processed=false,lit=false": {
+      "model": "pokefood:block/pot_roserade_tea",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=5,processed=false,lit=true": {
+      "model": "pokefood:block/pot_roserade_tea_fired"
+    },
+    "facing=east,fluid_type=5,processed=false,lit=true": {
+      "model": "pokefood:block/pot_roserade_tea_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=5,processed=false,lit=true": {
+      "model": "pokefood:block/pot_roserade_tea_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=5,processed=false,lit=true": {
+      "model": "pokefood:block/pot_roserade_tea_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=5,processed=true": {
+      "model": "pokefood:block/pot_roserade_tea_cooked"
+    },
+    "facing=east,fluid_type=5,processed=true": {
+      "model": "pokefood:block/pot_roserade_tea_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=5,processed=true": {
+      "model": "pokefood:block/pot_roserade_tea_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=5,processed=true": {
+      "model": "pokefood:block/pot_roserade_tea_cooked",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=6,processed=false,lit=false": {
+      "model": "pokefood:block/pot_malt"
+    },
+    "facing=east,fluid_type=6,processed=false,lit=false": {
+      "model": "pokefood:block/pot_malt",
+      "y": 90
+    },
+    "facing=south,fluid_type=6,processed=false,lit=false": {
+      "model": "pokefood:block/pot_malt",
+      "y": 180
+    },
+    "facing=west,fluid_type=6,processed=false,lit=false": {
+      "model": "pokefood:block/pot_malt",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=6,processed=false,lit=true": {
+      "model": "pokefood:block/pot_malt_fired"
+    },
+    "facing=east,fluid_type=6,processed=false,lit=true": {
+      "model": "pokefood:block/pot_malt_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=6,processed=false,lit=true": {
+      "model": "pokefood:block/pot_malt_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=6,processed=false,lit=true": {
+      "model": "pokefood:block/pot_malt_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=6,processed=true": {
+      "model": "pokefood:block/pot_malt_cooked"
+    },
+    "facing=east,fluid_type=6,processed=true": {
+      "model": "pokefood:block/pot_malt_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=6,processed=true": {
+      "model": "pokefood:block/pot_malt_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=6,processed=true": {
+      "model": "pokefood:block/pot_malt_cooked",
+      "y": 270
+    },
+
+
+    
+    "facing=north,fluid_type=7,processed=false,lit=false": {
+      "model": "pokefood:block/pot_cherry"
+    },
+    "facing=east,fluid_type=7,processed=false,lit=false": {
+      "model": "pokefood:block/pot_cherry",
+      "y": 90
+    },
+    "facing=south,fluid_type=7,processed=false,lit=false": {
+      "model": "pokefood:block/pot_cherry",
+      "y": 180
+    },
+    "facing=west,fluid_type=7,processed=false,lit=false": {
+      "model": "pokefood:block/pot_cherry",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=7,processed=false,lit=true": {
+      "model": "pokefood:block/pot_cherry_fired"
+    },
+    "facing=east,fluid_type=7,processed=false,lit=true": {
+      "model": "pokefood:block/pot_cherry_fired",
+      "y": 90
+    },
+    "facing=south,fluid_type=7,processed=false,lit=true": {
+      "model": "pokefood:block/pot_cherry_fired",
+      "y": 180
+    },
+    "facing=west,fluid_type=7,processed=false,lit=true": {
+      "model": "pokefood:block/pot_cherry_fired",
+      "y": 270
+    },
+    
+    "facing=north,fluid_type=7,processed=true": {
+      "model": "pokefood:block/pot_cherry_cooked"
+    },
+    "facing=east,fluid_type=7,processed=true": {
+      "model": "pokefood:block/pot_cherry_cooked",
+      "y": 90
+    },
+    "facing=south,fluid_type=7,processed=true": {
+      "model": "pokefood:block/pot_cherry_cooked",
+      "y": 180
+    },
+    "facing=west,fluid_type=7,processed=true": {
+      "model": "pokefood:block/pot_cherry_cooked",
+      "y": 270
+    }    
+  }
+}

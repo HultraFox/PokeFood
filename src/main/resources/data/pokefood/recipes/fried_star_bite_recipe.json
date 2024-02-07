@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:fry",
+  "ingredients": [
+    {
+      "item": "pokefood:star_bite"
+    }
+  ],
+  "output": {
+    "item": "pokefood:fried_star_bite",
+    "count": 1
+  }
+}

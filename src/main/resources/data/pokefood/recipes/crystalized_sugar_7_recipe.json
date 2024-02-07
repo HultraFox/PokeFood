@@ -1,0 +1,21 @@
+{
+  "type": "pokefood:sugar_melting",
+  "ingredients": [
+    {
+      "tag": "pokefood:mortar_and_pestels"
+    },
+    {
+      "tag": "forge:fuel"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "output": {
+    "item": "pokefood:crystalized_sugar_7",
+    "count": 1
+  }
+}

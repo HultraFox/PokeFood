@@ -101,7 +101,8 @@ public class CarbonizerGUIMenu extends AbstractContainerMenu implements Supplier
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (
-					   PokefoodModItems.APRIJUICE_W_BUCKET.get() == stack.getItem()
+					   PokefoodModItems.FRESH_WATER_BUCKET.get() == stack.getItem()
+					|| PokefoodModItems.APRIJUICE_W_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.APRIJUICE_D_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.APRIJUICE_B_BUCKET.get() == stack.getItem()
 					|| PokefoodModItems.APRIJUICE_G_BUCKET.get() == stack.getItem()

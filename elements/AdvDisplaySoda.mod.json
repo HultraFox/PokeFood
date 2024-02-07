@@ -1,11 +1,11 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "achievement",
   "definition": {
     "achievementName": "Gonna finish this later...",
     "achievementDescription": "Display a soda bottle in the world",
     "achievementIcon": {
-      "value": "CUSTOM:DisplaySodaTeaRoserade7"
+      "value": "CUSTOM:DisplaySodaCherry"
     },
     "background": "Default",
     "disableDisplay": false,

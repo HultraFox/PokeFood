@@ -1,0 +1,30 @@
+{
+  "type": "pokefood:brewing",
+  "ingredients": [
+    {
+      "item": "pokefood:beer_bucket"
+    },
+    {
+      "item": "pokefood:nectar"
+    },
+    {
+      "item": "pokefood:nectar"
+    },
+    {
+      "tag": "pokefood:keg_sugar"
+    },
+    {
+      "item": "pokefood:nectar"
+    },
+    {
+      "item": "pokefood:nectar"
+    },
+    {
+      "item": "pokefood:nectar"
+    }
+  ],
+  "output": {
+    "item": "pokefood:arceum_bucket",
+    "count": 1
+  }
+}

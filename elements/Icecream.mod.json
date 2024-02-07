@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "icecream_maker_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:IceCreamMaker"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:IceCreamMaker"
+    },
+    "enableCraftingtable": true,
+    "title": "Ice-cream Making",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 16,
+        "y": 8,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 142,
+        "y": 8,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 52,
+        "y": 62,
+        "slotid": 0
+      }
+    ]
+  }
+}

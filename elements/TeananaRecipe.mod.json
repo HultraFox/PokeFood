@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "brewing",
+    "result": {
+      "value": "CUSTOM:BananaTeaBeer.bucket"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Malt.bucket"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "TAG:pokefood:keg_sugar"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "TAG:forge:tea_leaves"
+      },
+      {
+        "value": "TAG:forge:tea_leaves"
+      }
+    ]
+  }
+}

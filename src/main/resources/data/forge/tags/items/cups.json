@@ -2,20 +2,20 @@
   "replace": false,
   "values": [
     "pokefood:cup_aprijuice_w",
-    "pokefood:cup_aprijuice_y",
-    "pokefood:cup_black_tea",
-    "pokefood:cup_iced_coffee",
-    "pokefood:cup_aprijuice_b",
-    "pokefood:cup_roserade_tea",
     "pokefood:cup_aprijuice_d",
+    "pokefood:cup_aprijuice_b",
     "pokefood:cup_aprijuice_g",
-    "pokefood:cup_lemonade",
-    "pokefood:cup_cherry_infusion",
-    "pokefood:cup_tea",
-    "pokefood:cup_aprijuice_p",
-    "pokefood:cup_coffee",
+    "pokefood:cup_aprijuice_y",
     "pokefood:cup_aprijuice_r",
+    "pokefood:cup_aprijuice_p",
+    "pokefood:cup_tea",
+    "pokefood:cup_black_tea",
+    "pokefood:cup_lemonade",
     "pokefood:cup_fresh_water",
-    "pokefood:cup_latte"
+    "pokefood:cup_roserade_tea",
+    "pokefood:cup_coffee",
+    "pokefood:cup_latte",
+    "pokefood:cup_iced_coffee",
+    "pokefood:cup_cherry_infusion"
   ]
 }
