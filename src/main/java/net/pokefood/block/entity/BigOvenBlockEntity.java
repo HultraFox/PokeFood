@@ -31,7 +31,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class BigOvenBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(10, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(19, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public BigOvenBlockEntity(BlockPos position, BlockState state) {
@@ -84,7 +84,7 @@ public class BigOvenBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public int getMaxStackSize() {
-		return 1;
+		return 64;
 	}
 
 	@Override

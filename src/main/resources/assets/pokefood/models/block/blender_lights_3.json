@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/blender_light",
+  "textures": {
+    "all": "pokefood:block/blender_lights_3",
+    "particle": "pokefood:block/blender_lights_3",
+    "5": "pokefood:block/blender_lights_3"
+  },
+  "render_type": "cutout_mipped"
+}

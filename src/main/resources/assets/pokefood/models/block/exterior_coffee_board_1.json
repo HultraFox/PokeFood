@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/coffee_sign_ext",
+  "textures": {
+    "all": "pokefood:block/coffee_sign_ext_1",
+    "particle": "pokefood:block/coffee_sign_ext_1",
+    "0": "pokefood:block/coffee_sign_ext_1",
+    "1": "pokefood:block/spruce_planks"
+  },
+  "render_type": "solid"
+}

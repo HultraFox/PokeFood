@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "donut_case",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:display_case_empty"
+    },
+    {
+      "item": "pokefood:donut_banana"
+    },
+    {
+      "item": "pokefood:donut_apple"
+    },
+    {
+      "item": "pokefood:donut_glow_berries"
+    },
+    {
+      "item": "pokefood:donut_melon"
+    }
+  ],
+  "result": {
+    "item": "pokefood:display_case_donuts_1",
+    "count": 1
+  }
+}

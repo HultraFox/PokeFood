@@ -2,6 +2,6 @@
   "parent": "pokefood:custom/poffin",
   "textures": {
     "0": "pokefood:block/poffin_sweet_bitter",
-    "particle": "pokefood:item/poffin_sweet_bitter"
+    "particle": "pokefood:block/poffin_sweet_bitter"
   }
 }

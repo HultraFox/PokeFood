@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/warped_burger",
+  "textures": {
+    "0": "pokefood:block/warped_burger_cheesy_1",
+    "particle": "pokefood:item/warped_burger_empty"
+  }
+}

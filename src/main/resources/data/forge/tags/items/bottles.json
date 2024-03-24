@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:potion",
-    "minecraft:honey_bottle",
-    "pokefood:oil",
-    "pokefood:spicy_juice"
-  ]
-}

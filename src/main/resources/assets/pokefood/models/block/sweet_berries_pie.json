@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/pie",
+  "textures": {
+    "all": "pokefood:block/sweet_berries_pie_side",
+    "particle": "pokefood:block/sweet_berries_pie_side",
+    "side": "pokefood:block/sweet_berries_pie_side",
+    "top": "pokefood:block/sweet_berries_pie_top",
+    "bottom": "pokefood:block/sweet_berries_pie_bottom"
+  },
+  "render_type": "cutout"
+}

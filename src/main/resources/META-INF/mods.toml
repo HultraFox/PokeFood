@@ -4,7 +4,7 @@ license="Mozilla Public License 2.0"
 
 [[mods]]
 modId="pokefood"
-version="1.2.3"
+version="1.2.4"
 displayName="PokeFood"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/pokefood"
 logoFile="logo.png"

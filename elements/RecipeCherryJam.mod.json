@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "fruit_jams",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jar"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CherryJam"
+    },
+    "name": "recipe_cherry_jam",
+    "namespace": "mod"
+  }
+}

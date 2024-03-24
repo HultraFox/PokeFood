@@ -219,7 +219,7 @@ public class MixingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("forge:cups")))) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("pokefood:cups")))) {
 					{
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
@@ -240,12 +240,33 @@ public class MixingProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("forge:bottles")))) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("pokefood_ingredients:mixer_ingredients_bottled")))) {
 					{
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if ((new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						BlockEntity _ent = world.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+						return _retval.get();
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(new ResourceLocation("pokefood_ingredients:mixer_ingredients_bottled_thin")))) {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PokefoodModItems.THIN_BOTTLE.get());
 							_setstack.setCount(1);
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)

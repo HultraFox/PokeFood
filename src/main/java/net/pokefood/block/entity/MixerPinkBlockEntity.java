@@ -94,7 +94,7 @@ public class MixerPinkBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Pink mixer");
+		return Component.literal("Mixer");
 	}
 
 	@Override

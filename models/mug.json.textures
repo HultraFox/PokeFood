@@ -1,0 +1,116 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "liquid": "null",
+        "foam": "null",
+        "mug": "mug"
+      },
+      "name": "default"
+    },
+    "apri_b": {
+      "map": {
+        "liquid": "apri_b",
+        "foam": "apri_b_2",
+        "mug": "mug"
+      },
+      "name": "apri_b"
+    },
+    "apri_d": {
+      "map": {
+        "liquid": "apri_d",
+        "foam": "apri_d_2",
+        "mug": "mug"
+      },
+      "name": "apri_d"
+    },
+    "apri_g": {
+      "map": {
+        "liquid": "apri_g",
+        "foam": "apri_g_2",
+        "mug": "mug"
+      },
+      "name": "apri_g"
+    },
+    "apri_p": {
+      "map": {
+        "liquid": "apri_p",
+        "foam": "apri_p_2",
+        "mug": "mug"
+      },
+      "name": "apri_p"
+    },
+    "apri_r": {
+      "map": {
+        "liquid": "apri_r",
+        "foam": "apri_r_2",
+        "mug": "mug"
+      },
+      "name": "apri_r"
+    },
+    "apri_y": {
+      "map": {
+        "liquid": "apri_y",
+        "foam": "apri_y_2",
+        "mug": "mug"
+      },
+      "name": "apri_y"
+    },
+    "apri_w": {
+      "map": {
+        "liquid": "apri_w",
+        "foam": "apri_w_2",
+        "mug": "mug"
+      },
+      "name": "apri_w"
+    },
+    "beer": {
+      "map": {
+        "liquid": "beer",
+        "foam": "beer_2",
+        "mug": "mug"
+      },
+      "name": "beer"
+    },
+    "cherium": {
+      "map": {
+        "liquid": "cherium_beer",
+        "foam": "cherium_beer_2",
+        "mug": "mug"
+      },
+      "name": "cherium"
+    },
+    "teanana": {
+      "map": {
+        "liquid": "teanana_beer",
+        "foam": "teanana_beer_2",
+        "mug": "mug"
+      },
+      "name": "teanana"
+    },
+    "brandy": {
+      "map": {
+        "liquid": "brandy",
+        "foam": "null",
+        "mug": "mug"
+      },
+      "name": "brandy"
+    },
+    "cidronade": {
+      "map": {
+        "liquid": "cidronade",
+        "foam": "null",
+        "mug": "mug"
+      },
+      "name": "cidronade"
+    },
+    "arceum": {
+      "map": {
+        "liquid": "arceum",
+        "foam": "null",
+        "mug": "mug"
+      },
+      "name": "arceum"
+    }
+  }
+}

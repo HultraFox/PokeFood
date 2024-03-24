@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Feebass Curry",
+    "name": "Feebas Curry",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodCurries"
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": true,
     "nutritionalValue": 7,
     "saturation": 1.2,

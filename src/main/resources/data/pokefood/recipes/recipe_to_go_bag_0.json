@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "to_go_bag",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "pokefood:cardboard"
+    }
+  },
+  "result": {
+    "item": "pokefood:to_go_bag_b_0",
+    "count": 1
+  }
+}

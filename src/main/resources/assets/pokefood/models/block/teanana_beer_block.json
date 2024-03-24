@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/mug",
+  "textures": {
+    "all": "pokefood:block/teanana_beer",
+    "particle": "pokefood:block/mug",
+    "liquid": "pokefood:block/teanana_beer",
+    "foam": "pokefood:block/teanana_beer_2",
+    "mug": "pokefood:block/mug"
+  },
+  "render_type": "cutout_mipped"
+}

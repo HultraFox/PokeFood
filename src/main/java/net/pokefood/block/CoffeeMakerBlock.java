@@ -2,6 +2,7 @@
 package net.pokefood.block;
 
 import net.pokefood.procedures.CoffeeMakerInsertProcedure;
+import net.pokefood.procedures.CoffeeCookingProcedure;
 import net.pokefood.block.entity.CoffeeMakerBlockEntity;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -10,6 +11,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -31,6 +33,8 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -40,10 +44,11 @@ import java.util.Collections;
 
 public class CoffeeMakerBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final BooleanProperty COOKING = BooleanProperty.create("cooking");
 
 	public CoffeeMakerBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(COOKING, Boolean.valueOf(false)));
 	}
 
 	@Override
@@ -78,7 +83,7 @@ public class CoffeeMakerBlock extends Block implements EntityBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, COOKING);
 	}
 
 	@Override
@@ -100,6 +105,22 @@ public class CoffeeMakerBlock extends Block implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		CoffeeCookingProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override

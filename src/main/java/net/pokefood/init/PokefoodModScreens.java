@@ -4,6 +4,9 @@
  */
 package net.pokefood.init;
 
+import net.pokefood.client.gui.WarpedBurgerGUIScreen;
+import net.pokefood.client.gui.ToGoBagGUIScreen;
+import net.pokefood.client.gui.PokeBowlGUIScreen;
 import net.pokefood.client.gui.PlateGUIScreen;
 import net.pokefood.client.gui.MixingGUIScreen;
 import net.pokefood.client.gui.KegGUIScreen;
@@ -17,6 +20,7 @@ import net.pokefood.client.gui.CardboardBoxGUIScreen;
 import net.pokefood.client.gui.CarbonizerGUIScreen;
 import net.pokefood.client.gui.CandyPackagerScreen;
 import net.pokefood.client.gui.CandyMachineGUIScreen;
+import net.pokefood.client.gui.BlenderGUIScreen;
 import net.pokefood.client.gui.BigOvenGUIScreen;
 import net.pokefood.client.gui.BigBagGUIScreen;
 import net.pokefood.client.gui.ApricornBoxGUIScreen;
@@ -49,6 +53,10 @@ public class PokefoodModScreens {
 			MenuScreens.register(PokefoodModMenus.CANDY_MACHINE_GUI.get(), CandyMachineGUIScreen::new);
 			MenuScreens.register(PokefoodModMenus.APRICORN_BOX_GUI.get(), ApricornBoxGUIScreen::new);
 			MenuScreens.register(PokefoodModMenus.CARDBOARD_BOX_ITEM_GUI.get(), CardboardBoxItemGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.POKE_BOWL_GUI.get(), PokeBowlGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.BLENDER_GUI.get(), BlenderGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.WARPED_BURGER_GUI.get(), WarpedBurgerGUIScreen::new);
+			MenuScreens.register(PokefoodModMenus.TO_GO_BAG_GUI.get(), ToGoBagGUIScreen::new);
 		});
 	}
 }

@@ -1,0 +1,100 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SweetBerriesToGo0"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo1"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo2"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo3"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo4"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo5"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesToGo6"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo0"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo1"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo2"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo3"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo4"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo5"
+      },
+      {
+        "value": "CUSTOM:CheeseBallsToGo6"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo0"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo1"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo2"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo3"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo4"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo5"
+      },
+      {
+        "value": "CUSTOM:BeetrootToGo6"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo0"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo1"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo2"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo3"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo4"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo5"
+      },
+      {
+        "value": "CUSTOM:CactusCubesToGo6"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "long_to_go_boxes",
+    "namespace": "mod"
+  }
+}

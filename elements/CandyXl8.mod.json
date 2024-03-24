@@ -10,7 +10,7 @@
     "name": "Incredibly Big Candy",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOnTheGo"
+      "value": "CUSTOM:PokeFood"
     },
     "stackSize": 64,
     "enchantability": 0,

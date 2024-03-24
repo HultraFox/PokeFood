@@ -1,0 +1,310 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 195,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 195,
+          "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 249,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 230,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender1"
+          },
+          "x": 230,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender2"
+          },
+          "x": 230,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 240,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender2"
+          },
+          "x": 240,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender3"
+          },
+          "x": 240,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 250,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender3"
+          },
+          "x": 250,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender4"
+          },
+          "x": 250,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender4"
+          },
+          "x": 260,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender5"
+          },
+          "x": 260,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 270,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender5"
+          },
+          "x": 270,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender6"
+          },
+          "x": 270,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_0.png",
+          "use1Xscale": false,
+          "x": 280,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender6"
+          },
+          "x": 280,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blender_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Blender7"
+          },
+          "x": 280,
+          "y": 57
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "BlenderOpened"
+    },
+    "onClosed": {
+      "name": "BlenderClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 17,
+      "ox": 18,
+      "oy": 11,
+      "snapOnGrid": true
+    }
+  }
+}

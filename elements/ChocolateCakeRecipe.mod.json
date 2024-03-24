@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "cakes",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": "Items.WHEAT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChocolateCake"
+    },
+    "name": "chocolate_cake_recipe",
+    "namespace": "mod"
+  }
+}

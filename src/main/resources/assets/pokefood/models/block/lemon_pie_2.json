@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/pie_half",
+  "textures": {
+    "all": "pokefood:block/lemon_pie_side",
+    "particle": "pokefood:block/lemon_pie_side",
+    "side": "pokefood:block/lemon_pie_side",
+    "top": "pokefood:block/lemon_pie_top",
+    "bottom": "pokefood:block/lemon_pie_bottom",
+	"inner": "pokefood:block/lemon_pie_inner"
+  },
+  "render_type": "cutout"
+}

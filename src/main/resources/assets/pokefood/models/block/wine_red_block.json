@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/wine_glass",
+  "textures": {
+    "all": "pokefood:block/wine_red",
+    "particle": "pokefood:block/wine_red",
+    "0": "pokefood:block/wine_red"
+  },
+  "render_type": "cutout"
+}

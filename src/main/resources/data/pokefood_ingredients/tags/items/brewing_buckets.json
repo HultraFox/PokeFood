@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:malt_bucket",
+    "pokefood:aprijuice_w_bucket",
+    "pokefood:aprijuice_d_bucket",
+    "pokefood:aprijuice_b_bucket",
+    "pokefood:aprijuice_g_bucket",
+    "pokefood:aprijuice_y_bucket",
+    "pokefood:aprijuice_r_bucket",
+    "pokefood:aprijuice_p_bucket",
+    "pokefood:fresh_water_bucket",
+    "pokefood:brandy_bucket",
+    "minecraft:bucket"
+  ]
+}

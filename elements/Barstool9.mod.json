@@ -46,14 +46,14 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 3.0,
-    "resistance": 3.0,
+    "hardness": 1.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:PokeFoodBuilding"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },

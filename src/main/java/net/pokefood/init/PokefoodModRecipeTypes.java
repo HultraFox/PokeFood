@@ -5,6 +5,7 @@ import net.pokefood.jei_recipes.LinkedInfuseOrBoilRecipe;
 import net.pokefood.jei_recipes.InfuseOrBoilRecipe;
 import net.pokefood.jei_recipes.IcecreamRecipe;
 import net.pokefood.jei_recipes.FryRecipe;
+import net.pokefood.jei_recipes.CurryCookingRecipe;
 import net.pokefood.jei_recipes.CrepeCookingRecipe;
 import net.pokefood.jei_recipes.CookingRecipe;
 import net.pokefood.jei_recipes.CoffeeMakingRecipe;
@@ -41,6 +42,7 @@ public class PokefoodModRecipeTypes {
 			SERIALIZERS.register("linked_infuse_or_boil", () -> LinkedInfuseOrBoilRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("coffee_making", () -> CoffeeMakingRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("sugar_melting", () -> SugarMeltingRecipe.Serializer.INSTANCE);
+			SERIALIZERS.register("curry_cooking", () -> CurryCookingRecipe.Serializer.INSTANCE);
 		});
 	}
 }

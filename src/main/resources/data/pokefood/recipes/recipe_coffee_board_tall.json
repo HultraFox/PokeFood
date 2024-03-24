@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "pokefood:coffee_board"
+    }
+  },
+  "result": {
+    "item": "pokefood:coffee_board_tall",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "chocolate_cake_side",
+        "top": "chocolate_cake_top",
+        "bottom": "chocolate_cake_bottom",
+        "inner": "chocolate_cake_inner"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/mug",
+  "textures": {
+    "all": "pokefood:block/arceum",
+    "particle": "pokefood:block/mug",
+    "liquid": "pokefood:block/arceum",
+    "foam": "pokefood:block/null",
+    "mug": "pokefood:block/mug"
+  },
+  "render_type": "cutout_mipped"
+}

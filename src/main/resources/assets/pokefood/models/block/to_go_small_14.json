@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/to_go_small",
+  "textures": {
+    "all": "pokefood:block/to_go_small_14",
+    "particle": "pokefood:block/to_go_small_14",
+    "0": "pokefood:block/to_go_small_14"
+  },
+  "render_type": "cutout"
+}

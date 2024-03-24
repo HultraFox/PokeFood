@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ApricornBoxD"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxB"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxG"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxY"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxR"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxP"
+      },
+      {
+        "value": "CUSTOM:ApricornBoxW"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "apricorn_boxes_recolor",
+    "namespace": "mod"
+  }
+}

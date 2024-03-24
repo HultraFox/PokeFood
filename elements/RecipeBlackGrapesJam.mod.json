@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "fruit_jams",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jar"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackGrapesJam"
+    },
+    "name": "recipe_black_grapes_jam",
+    "namespace": "mod"
+  }
+}

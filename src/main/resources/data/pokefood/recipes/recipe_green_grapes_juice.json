@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruit_juices",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:thin_bottle"
+    },
+    {
+      "item": "pokefood:green_grapes"
+    },
+    {
+      "item": "pokefood:green_grapes"
+    }
+  ],
+  "result": {
+    "item": "pokefood:green_grapes_juice",
+    "count": 1
+  }
+}

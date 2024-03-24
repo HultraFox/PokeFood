@@ -1,0 +1,68 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bowl_0",
+        "1": "bowl_out_0",
+        "2": "null"
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "0": "bowl_1",
+        "1": "bowl_out_1",
+        "2": "null"
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "0": "bowl_2",
+        "1": "bowl_out_2",
+        "2": "null"
+      },
+      "name": "_2"
+    },
+    "_3": {
+      "map": {
+        "0": "bowl_3",
+        "1": "bowl_out_3",
+        "2": "null"
+      },
+      "name": "_3"
+    },
+    "_4": {
+      "map": {
+        "0": "bowl_4",
+        "1": "bowl_out_4",
+        "2": "null"
+      },
+      "name": "_4"
+    },
+    "_5": {
+      "map": {
+        "0": "bowl_5",
+        "1": "bowl_out_5",
+        "2": "null"
+      },
+      "name": "_5"
+    },
+    "_6": {
+      "map": {
+        "0": "bowl_6",
+        "1": "bowl_out_6",
+        "2": "null"
+      },
+      "name": "_6"
+    },
+    "_7": {
+      "map": {
+        "0": "bowl_7",
+        "1": "bowl_out_7",
+        "2": "null"
+      },
+      "name": "_7"
+    }
+  }
+}

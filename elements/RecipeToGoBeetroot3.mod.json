@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "leek_to_go",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ToGoSmall0"
+      },
+      {
+        "value": "CUSTOM:FriedLeek"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:FriedLeek"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ToGoLeek0"
+    },
+    "name": "recipe_to_go_beetroot_3",
+    "namespace": "mod"
+  }
+}

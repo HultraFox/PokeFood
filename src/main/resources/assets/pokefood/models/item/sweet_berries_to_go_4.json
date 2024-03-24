@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/to_go_medium",
+  "textures": {
+    "0": "pokefood:block/to_go_berris_4",
+    "particle": "pokefood:item/fried_berries"
+  }
+}

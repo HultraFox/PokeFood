@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "pokefood:coffee_board"
+    }
+  },
+  "result": {
+    "item": "pokefood:exterior_coffee_board",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Bun"
+    },
+    "name": "recipe_bun",
+    "namespace": "mod"
+  }
+}

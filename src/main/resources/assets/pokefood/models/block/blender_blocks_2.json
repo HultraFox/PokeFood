@@ -1,0 +1,9 @@
+{
+  "parent": "pokefood:custom/blender_cubes",
+  "textures": {
+    "all": "pokefood:block/blender_blocks_2",
+    "particle": "pokefood:block/blender_blocks_2",
+    "1": "pokefood:block/blender_blocks_2"
+  },
+  "render_type": "cutout_mipped"
+}

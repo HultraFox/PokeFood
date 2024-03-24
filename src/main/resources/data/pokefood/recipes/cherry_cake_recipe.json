@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cakes",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "pokefood:cherry"
+    },
+    "b": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "c": {
+      "item": "minecraft:sugar"
+    },
+    "d": {
+      "item": "minecraft:egg"
+    },
+    "e": {
+      "item": "minecraft:wheat"
+    },
+    "f": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "pokefood:cherry_cake",
+    "count": 1
+  }
+}

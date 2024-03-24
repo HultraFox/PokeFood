@@ -1,0 +1,53 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Blender"
+      },
+      {
+        "value": "CUSTOM:PokeblockRed"
+      },
+      {
+        "value": "CUSTOM:PokeblockBlue"
+      },
+      {
+        "value": "CUSTOM:PokeblockPink"
+      },
+      {
+        "value": "CUSTOM:PokeblockGreen"
+      },
+      {
+        "value": "CUSTOM:PokeblockYellow"
+      },
+      {
+        "value": "CUSTOM:PokeblockWhite"
+      },
+      {
+        "value": "CUSTOM:PokeblockRedPlus"
+      },
+      {
+        "value": "CUSTOM:PokeblockBluePlus"
+      },
+      {
+        "value": "CUSTOM:PokeblockGreenPlus"
+      },
+      {
+        "value": "CUSTOM:PokeblockYellowPlus"
+      },
+      {
+        "value": "CUSTOM:PokeblockWhitePlus"
+      },
+      {
+        "value": "CUSTOM:PokeblockPinkPlus"
+      }
+    ],
+    "information": [
+      "Pokéblocks are made in a blender, the color will change based on the flavors of the berries used.",
+      "",
+      "To make some poképuffs, just add 4 berries into the 4 different slots.",
+      "\"Replacement powders\" can also be used"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:glass_beer",
+    "pokefood:glass_banana_tea_beer",
+    "pokefood:glass_cherry_calcuim_beer",
+    "pokefood:glass_apri_w",
+    "pokefood:glass_apri_d",
+    "pokefood:glass_apri_b",
+    "pokefood:glass_apri_g",
+    "pokefood:glass_apri_y",
+    "pokefood:glass_apri_p",
+    "pokefood:glass_apri_r",
+    "pokefood:glass_brandy",
+    "pokefood:glass_cidronade",
+    "pokefood:glass_arceum",
+    "pokefood:wine_glass_red",
+    "pokefood:wine_glass_white",
+    "pokefood:wine_glass_rose"
+  ]
+}

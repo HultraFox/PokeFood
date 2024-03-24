@@ -2,7 +2,6 @@
 package net.pokefood.world.inventory;
 
 import net.pokefood.init.PokefoodModMenus;
-import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -18,7 +17,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -43,7 +44,7 @@ public class BigOvenGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		super(PokefoodModMenus.BIG_OVEN_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(10);
+		this.internal = new ItemStackHandler(19);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,80 +79,112 @@ public class BigOvenGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 8) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 35) {
 			private final int slot = 0;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("forge:fuel")));
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 8) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 34, 8) {
 			private final int slot = 1;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 124, 8) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 8) {
 			private final int slot = 2;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 34, 35) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 124, 8) {
 			private final int slot = 3;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 35) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 34, 35) {
 			private final int slot = 4;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 124, 35) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 35) {
 			private final int slot = 5;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 34, 62) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 124, 35) {
 			private final int slot = 6;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 79, 62) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 34, 62) {
 			private final int slot = 7;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 124, 62) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 79, 62) {
 			private final int slot = 8;
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 124, 62) {
+			private final int slot = 9;
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 53, 8) {
+			private final int slot = 10;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return PokefoodModItems.COOKIE_DOUGH.get() == stack.getItem();
+				return false;
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 35) {
-			private final int slot = 9;
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 98, 8) {
+			private final int slot = 11;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 143, 8) {
+			private final int slot = 12;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 53, 35) {
+			private final int slot = 13;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 98, 35) {
+			private final int slot = 14;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 143, 35) {
+			private final int slot = 15;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 53, 62) {
+			private final int slot = 16;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 98, 62) {
+			private final int slot = 17;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 143, 62) {
+			private final int slot = 18;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -180,16 +213,16 @@ public class BigOvenGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 10) {
-				if (!this.moveItemStackTo(itemstack1, 10, this.slots.size(), true))
+			if (index < 19) {
+				if (!this.moveItemStackTo(itemstack1, 19, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 10, false)) {
-				if (index < 10 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 10 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 19, false)) {
+				if (index < 19 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 19 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 10, 10 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 19, 19 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

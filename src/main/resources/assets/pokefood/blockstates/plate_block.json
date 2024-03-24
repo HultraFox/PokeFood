@@ -1,143 +1,28 @@
 {
   "variants": {
-    "food_type=0": {
+    "pile=0": {
       "model": "pokefood:block/plate_block"
     },
-
-    
-    "food_type=1,number_of_item=1": {
-      "model": "pokefood:block/plate_block_c_1"
+    "pile=1": {
+      "model": "pokefood:block/plate_block_1"
     },
-    "food_type=2,number_of_item=1": {
-      "model": "pokefood:block/plate_block_c_s_1"
+    "pile=2": {
+      "model": "pokefood:block/plate_block_2"
     },
-    "food_type=3,number_of_item=1": {
-      "model": "pokefood:block/plate_block_c_c_1"
+    "pile=3": {
+      "model": "pokefood:block/plate_block_3"
     },
-    "food_type=4,number_of_item=1": {
-      "model": "pokefood:block/plate_block_c_w_1"
+    "pile=4": {
+      "model": "pokefood:block/plate_block_4"
     },
-    "food_type=5,number_of_item=1": {
-      "model": "pokefood:block/plate_block_c_p_1"
+    "pile=5": {
+      "model": "pokefood:block/plate_block_5"
     },
-
-    
-    "food_type=1,number_of_item=2": {
-      "model": "pokefood:block/plate_block_c_2"
+    "pile=6": {
+      "model": "pokefood:block/plate_block_6"
     },
-    "food_type=2,number_of_item=2": {
-      "model": "pokefood:block/plate_block_c_s_2"
-    },
-    "food_type=3,number_of_item=2": {
-      "model": "pokefood:block/plate_block_c_c_2"
-    },
-    "food_type=4,number_of_item=2": {
-      "model": "pokefood:block/plate_block_c_w_2"
-    },
-    "food_type=5,number_of_item=2": {
-      "model": "pokefood:block/plate_block_c_p_2"
-    },
-
-    
-    "food_type=1,number_of_item=3": {
-      "model": "pokefood:block/plate_block_c_3"
-    },
-    "food_type=2,number_of_item=3": {
-      "model": "pokefood:block/plate_block_c_s_3"
-    },
-    "food_type=3,number_of_item=3": {
-      "model": "pokefood:block/plate_block_c_c_3"
-    },
-    "food_type=4,number_of_item=3": {
-      "model": "pokefood:block/plate_block_c_w_3"
-    },
-    "food_type=5,number_of_item=3": {
-      "model": "pokefood:block/plate_block_c_p_3"
-    },
-
-    
-    "food_type=1,number_of_item=4": {
-      "model": "pokefood:block/plate_block_c_4"
-    },
-    "food_type=2,number_of_item=4": {
-      "model": "pokefood:block/plate_block_c_s_4"
-    },
-    "food_type=3,number_of_item=4": {
-      "model": "pokefood:block/plate_block_c_c_4"
-    },
-    "food_type=4,number_of_item=4": {
-      "model": "pokefood:block/plate_block_c_w_4"
-    },
-    "food_type=5,number_of_item=4": {
-      "model": "pokefood:block/plate_block_c_p_4"
-    },
-
-    
-    "food_type=1,number_of_item=5": {
-      "model": "pokefood:block/plate_block_c_5"
-    },
-    "food_type=2,number_of_item=5": {
-      "model": "pokefood:block/plate_block_c_s_5"
-    },
-    "food_type=3,number_of_item=5": {
-      "model": "pokefood:block/plate_block_c_c_5"
-    },
-    "food_type=4,number_of_item=5": {
-      "model": "pokefood:block/plate_block_c_w_5"
-    },
-    "food_type=5,number_of_item=5": {
-      "model": "pokefood:block/plate_block_c_p_5"
-    },
-
-    
-    "food_type=1,number_of_item=6": {
-      "model": "pokefood:block/plate_block_c_6"
-    },
-    "food_type=2,number_of_item=6": {
-      "model": "pokefood:block/plate_block_c_s_6"
-    },
-    "food_type=3,number_of_item=6": {
-      "model": "pokefood:block/plate_block_c_c_6"
-    },
-    "food_type=4,number_of_item=6": {
-      "model": "pokefood:block/plate_block_c_w_6"
-    },
-    "food_type=5,number_of_item=6": {
-      "model": "pokefood:block/plate_block_c_p_6"
-    },
-
-    
-    "food_type=1,number_of_item=7": {
-      "model": "pokefood:block/plate_block_c_7"
-    },
-    "food_type=2,number_of_item=7": {
-      "model": "pokefood:block/plate_block_c_s_7"
-    },
-    "food_type=3,number_of_item=7": {
-      "model": "pokefood:block/plate_block_c_c_7"
-    },
-    "food_type=4,number_of_item=7": {
-      "model": "pokefood:block/plate_block_c_w_7"
-    },
-    "food_type=5,number_of_item=7": {
-      "model": "pokefood:block/plate_block_c_p_7"
-    },
-
-    
-    "food_type=1,number_of_item=8": {
-      "model": "pokefood:block/plate_block_c_8"
-    },
-    "food_type=2,number_of_item=8": {
-      "model": "pokefood:block/plate_block_c_s_8"
-    },
-    "food_type=3,number_of_item=8": {
-      "model": "pokefood:block/plate_block_c_c_8"
-    },
-    "food_type=4,number_of_item=8": {
-      "model": "pokefood:block/plate_block_c_w_8"
-    },
-    "food_type=5,number_of_item=8": {
-      "model": "pokefood:block/plate_block_c_p_8"
+    "pile=7": {
+      "model": "pokefood:block/plate_block_7"
     }
   }
 }

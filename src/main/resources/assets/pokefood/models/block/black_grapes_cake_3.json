@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/cake_1_quarter",
+  "textures": {
+    "all": "pokefood:block/black_grapes_cake_top",
+    "particle": "pokefood:block/black_grapes_cake_top",
+    "side": "pokefood:block/black_grapes_cake_side",
+    "top": "pokefood:block/black_grapes_cake_top",
+    "bottom": "pokefood:block/black_grapes_cake_bottom",
+	"inner": "pokefood:block/black_grapes_cake_inner"
+  },
+  "render_type": "solid"
+}

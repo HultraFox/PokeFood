@@ -2,7 +2,7 @@
   "type": "pokefood:fry",
   "ingredients": [
     {
-      "item": "pokefood:cheese_s_4"
+      "item": "pokefood:cheese_q_4"
     }
   ],
   "output": {

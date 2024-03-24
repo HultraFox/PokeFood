@@ -2,7 +2,7 @@
   "type": "pokefood:brewing",
   "ingredients": [
     {
-      "item": "pokefood:beer_bucket"
+      "item": "pokefood:malt_bucket"
     },
     {
       "item": "pokefood:nectar"
@@ -11,7 +11,7 @@
       "item": "pokefood:nectar"
     },
     {
-      "tag": "pokefood:keg_sugar"
+      "tag": "pokefood_ingredients:brewing_sugar"
     },
     {
       "item": "pokefood:nectar"

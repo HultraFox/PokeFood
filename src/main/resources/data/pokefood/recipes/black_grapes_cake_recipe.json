@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cakes",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "pokefood:black_grapes"
+    },
+    "b": {
+      "item": "minecraft:sugar"
+    },
+    "c": {
+      "item": "minecraft:egg"
+    },
+    "d": {
+      "item": "minecraft:wheat"
+    },
+    "e": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "pokefood:black_grapes_cake",
+    "count": 1
+  }
+}

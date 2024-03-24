@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "donut",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "pokefood:donut",
+    "count": 8
+  }
+}

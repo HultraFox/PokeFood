@@ -1,8 +1,9 @@
 {
-  "parent": "pokefood:custom/curry_pot_unlit",
+  "parent": "pokefood:custom/curry_pot",
   "textures": {
-    "all": "pokefood:block/cauldron_water",
+    "all": "pokefood:block/cauldron_side",
     "particle": "pokefood:block/cauldron_inner",
+    "0": "pokefood:block/null",
     "1": "pokefood:block/cauldron_inner",
     "2": "pokefood:block/cauldron_side",
     "3": "pokefood:block/cauldron_top",

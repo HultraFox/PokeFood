@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.POTIONITEM"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "mixer_ingredients_bottled",
+    "namespace": "pokefood_ingredients"
+  }
+}

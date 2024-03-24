@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/to_go_medium",
+  "textures": {
+    "0": "pokefood:block/to_go_beetroot_2",
+    "particle": "pokefood:item/fried_beetroot"
+  }
+}

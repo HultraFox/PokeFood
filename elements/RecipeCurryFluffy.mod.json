@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "curry_cooking",
+    "result": {
+      "value": "CUSTOM:CurrySweetBerries"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CurryPot"
+      },
+      {
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": "Items.FLINT_AND_STEEL"
+      },
+      {
+        "value": "CUSTOM:CurryMix"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      }
+    ]
+  }
+}

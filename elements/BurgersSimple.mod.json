@@ -1,0 +1,61 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurgerBeef"
+      },
+      {
+        "value": "CUSTOM:BurgerPork"
+      },
+      {
+        "value": "CUSTOM:BurgerMutton"
+      },
+      {
+        "value": "CUSTOM:BurgerGreen"
+      },
+      {
+        "value": "CUSTOM:BurgerFairy"
+      },
+      {
+        "value": "CUSTOM:BurgerFluffy"
+      },
+      {
+        "value": "CUSTOM:BurgerNido"
+      },
+      {
+        "value": "CUSTOM:BurgerBlue"
+      },
+      {
+        "value": "CUSTOM:BurgerHorse"
+      },
+      {
+        "value": "CUSTOM:BurgerLuv"
+      },
+      {
+        "value": "CUSTOM:BurgerBas"
+      },
+      {
+        "value": "CUSTOM:BurgerKarp"
+      },
+      {
+        "value": "CUSTOM:BurgerKing"
+      },
+      {
+        "value": "CUSTOM:BurgerDeen"
+      },
+      {
+        "value": "CUSTOM:BurgerFried"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "burgers_simple",
+    "namespace": "mod"
+  }
+}

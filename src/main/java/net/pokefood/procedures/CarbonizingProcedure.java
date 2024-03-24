@@ -1,5 +1,6 @@
 package net.pokefood.procedures;
 
+import net.pokefood.jei_recipes.CarbonizationRecipe;
 import net.pokefood.init.PokefoodModItems;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,20 +13,24 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.BlockPos;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.List;
 
 public class CarbonizingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double fluid_type = 0;
+		ItemStack result = ItemStack.EMPTY;
 		if (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -67,93 +72,73 @@ public class CarbonizingProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 5) == 0) {
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
+			result = (new Object() {
+				public ItemStack getResult() {
+					if (world instanceof Level _lvl) {
+						net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+						List<CarbonizationRecipe> recipes = rm.getAllRecipesFor(CarbonizationRecipe.Type.INSTANCE);
+						for (CarbonizationRecipe recipe : recipes) {
+							NonNullList<Ingredient> ingredients = recipe.getIngredients();
+							if (!ingredients.get(0).test(new ItemStack(PokefoodModItems.CARBON_POWDER.get())))
+								continue;
+							if (!ingredients.get(1).test(new ItemStack(Items.SUGAR)))
+								continue;
+							if (!ingredients.get(2).test((new Object() {
+								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+									BlockEntity _ent = world.getBlockEntity(pos);
+									if (_ent != null)
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									return _retval.get();
+								}
+							}.getItemStack(world, BlockPos.containing(x, y, z), 2))))
+								continue;
+							if (!ingredients.get(3).test(new ItemStack(PokefoodModItems.SODA_BOTTLE.get())))
+								continue;
+							if (!ingredients.get(4).test(new ItemStack(PokefoodModItems.POP_BALL.get())))
+								continue;
+							return recipe.getResultItem(null);
+						}
+					}
+					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.FRESH_WATER_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 1;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.LEMONADE_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 2;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.TEA_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}.getResult());
+			if (!(result.getItem() == ItemStack.EMPTY.getItem())) {
+				if (!(new Object() {
+					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getString(tag);
+						return "";
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "selectedResult")).equals(ForgeRegistries.ITEMS.getKey(result.getItem()).toString())) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("selectedResult", (ForgeRegistries.ITEMS.getKey(result.getItem()).toString()));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingTime", 51);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 				}
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -171,427 +156,6 @@ public class CarbonizingProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				fluid_type = 3;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.BLACK_TEA_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 4;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.ROSERADE_TEA_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 5;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_W_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 6;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_D_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 7;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_B_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 8;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_G_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 9;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_Y_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 10;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_R_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 11;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.APRIJUICE_P_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 12;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.CHERRY_INFUSION_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 13;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.COFFEE_ICED_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 14;
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					BlockEntity _ent = world.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-					return _retval.get();
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == PokefoodModItems.LATTE_BUCKET.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingTime", 51);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("craftingProgress", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") + 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				fluid_type = 15;
 			}
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -631,6 +195,15 @@ public class CarbonizingProcedure {
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
 							_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putString("selectedResult", "");
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -702,200 +275,16 @@ public class CarbonizingProcedure {
 							});
 						}
 					}
-					if (fluid_type == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_POP.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 2) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_POWER_LEMON.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 3) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_HIGH_TEA.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 4) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_PUNCH_TEA.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 5) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_ROSINE_TEA.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 6) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_W.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 7) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_D.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 8) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_B.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 9) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_G.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 10) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_Y.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 11) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_R.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 12) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_APRI_P.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 13) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_CHERRISH.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 14) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_SOMBRINE.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (fluid_type == 15) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 5;
-								final ItemStack _setstack = new ItemStack(PokefoodModItems.SODA_SOMBRADE.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 5;
+							final ItemStack _setstack = result;
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
 						}
 					}
 					fluid_type = 0;

@@ -1,0 +1,37 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "glass": "glass",
+        "oak": "oak_planks",
+        "donut_3": "donut_green_grapes",
+        "donut_4": "donut_lemon",
+        "donut_1": "donut",
+        "donut_2": "donut_lime"
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "glass": "glass",
+        "oak": "oak_planks",
+        "donut_3": "donut_glow_berries",
+        "donut_4": "donut_melon",
+        "donut_1": "donut_banana",
+        "donut_2": "donut_apple"
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "glass": "glass",
+        "oak": "oak_planks",
+        "donut_3": "donut_cherry",
+        "donut_4": "donut_black_grapes",
+        "donut_1": "donut_sweet_berries",
+        "donut_2": "donut"
+      },
+      "name": "_2"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruit_juices",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:thin_bottle"
+    },
+    {
+      "item": "pokefood:cherry"
+    },
+    {
+      "item": "pokefood:cherry"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cherry_juice",
+    "count": 1
+  }
+}

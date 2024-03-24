@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/donuts",
+  "textures": {
+    "0": "pokefood:block/donut_cherry",
+    "particle": "pokefood:item/donut_cherry"
+  }
+}

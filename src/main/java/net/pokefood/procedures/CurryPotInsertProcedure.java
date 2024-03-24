@@ -1,6 +1,8 @@
 package net.pokefood.procedures;
 
+import net.pokefood.jei_recipes.CurryCookingRecipe;
 import net.pokefood.init.PokefoodModItems;
+import net.pokefood.init.PokefoodModBlocks;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.IItemHandlerModifiable;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -26,10 +29,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.List;
 
 public class CurryPotInsertProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -115,10 +120,7 @@ public class CurryPotInsertProcedure {
 				}
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.FLINT_AND_STEEL
-				&& (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip20 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip20) : -1) == 1
-						|| ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip22
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip22)
-								: -1) == 2)) {
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp20 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp20)) == false) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
@@ -144,16 +146,38 @@ public class CurryPotInsertProcedure {
 				}
 			}.checkGamemode(entity))) {
 				{
-					ItemStack _ist = ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy());
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 					if (_ist.hurt(1, RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
 				}
 			}
-		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip30 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip30) : -1) >= 3
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip32 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip32) : -1) <= 9
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:ingredients"))) && (new Object() {
+		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip27 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip27) : -1) >= 3
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip29 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip29) : -1) <= 9
+				&& !((new Object() {
+					public ItemStack getResult() {
+						if (world instanceof Level _lvl) {
+							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+							List<CurryCookingRecipe> recipes = rm.getAllRecipesFor(CurryCookingRecipe.Type.INSTANCE);
+							for (CurryCookingRecipe recipe : recipes) {
+								NonNullList<Ingredient> ingredients = recipe.getIngredients();
+								if (!ingredients.get(0).test(new ItemStack(PokefoodModBlocks.CURRY_POT.get())))
+									continue;
+								if (!ingredients.get(1).test(new ItemStack(Items.WATER_BUCKET)))
+									continue;
+								if (!ingredients.get(2).test(new ItemStack(Items.FLINT_AND_STEEL)))
+									continue;
+								if (!ingredients.get(3).test(new ItemStack(PokefoodModItems.CURRY_MIX.get())))
+									continue;
+								if (!ingredients.get(4).test((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
+									continue;
+								return recipe.getResultItem(null);
+							}
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getResult()).getItem() == ItemStack.EMPTY.getItem()) && (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
@@ -197,8 +221,8 @@ public class CurryPotInsertProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
-		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip47 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip47) : -1) >= 3
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip49 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip49) : -1) < 9
+		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip46 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip46) : -1) >= 3
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip48 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip48) : -1) < 9
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:berries")))
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("cobblemon:berries"))))
 				&& new Object() {
@@ -229,8 +253,8 @@ public class CurryPotInsertProcedure {
 				}
 			}
 			{
-				int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip60
-						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip60)
+				int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip59
+						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip59)
 						: -1) + 1);
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
@@ -276,14 +300,14 @@ public class CurryPotInsertProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
-		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip70
-				? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip70)
+		} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip69
+				? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip69)
 				: -1) == 10) {
 			CurryResultProcedure.execute(world, x, y, z, entity);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BUCKET
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip74 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip74) : -1) != 0
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip76
-						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip76)
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip73 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip73) : -1) != 0
+				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("progress") instanceof IntegerProperty _getip75
+						? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip75)
 						: -1) != 10) {
 			{
 				int _value = 0;

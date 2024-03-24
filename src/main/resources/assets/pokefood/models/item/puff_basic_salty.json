@@ -2,6 +2,6 @@
   "parent": "pokefood:custom/pokepuff",
   "textures": {
     "0": "pokefood:block/basic_salty",
-    "particle": "pokefood:item/basic_salty"
+    "particle": "pokefood:block/basic_salty"
   }
 }

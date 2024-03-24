@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "fruit_jams",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jar"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BananaJam"
+    },
+    "name": "recipe_banana_jam",
+    "namespace": "mod"
+  }
+}

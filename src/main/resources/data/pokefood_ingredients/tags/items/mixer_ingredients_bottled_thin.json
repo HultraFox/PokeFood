@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:oil",
+    "pokefood:spicy_juice",
+    "pokefood:lemon_juice",
+    "pokefood:lime_juice",
+    "pokefood:green_grapes_juice",
+    "pokefood:black_grapes_juice",
+    "pokefood:banana_juice",
+    "pokefood:cherry_juice",
+    "pokefood:apple_juice",
+    "pokefood:melon_juice",
+    "pokefood:sweet_berries_juice",
+    "pokefood:glow_berries_juice"
+  ]
+}

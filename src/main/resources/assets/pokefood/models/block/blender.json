@@ -1,0 +1,14 @@
+{
+  "parent": "pokefood:custom/blender",
+  "textures": {
+    "all": "pokefood:block/blender_particles",
+    "particle": "pokefood:block/blender_particles",
+    "bottom": "pokefood:block/blender_4",
+    "missing": "pokefood:block/",
+    "back": "pokefood:block/blender_1",
+    "main": "pokefood:block/blender_0",
+    "back_2": "pokefood:block/blender_2",
+    "front": "pokefood:block/blender_3"
+  },
+  "render_type": "cutout_mipped"
+}

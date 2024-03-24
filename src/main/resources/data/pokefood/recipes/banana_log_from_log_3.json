@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "group": "banana_log",
-  "category": "misc",
+  "category": "building",
   "ingredients": [
     {
       "item": "pokefood:banana_log_3"

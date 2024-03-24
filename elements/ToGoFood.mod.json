@@ -1,0 +1,190 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty0"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty1"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty2"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty3"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty4"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty5"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty6"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty7"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty8"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty9"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty10"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty11"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty12"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty13"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty14"
+      },
+      {
+        "value": "CUSTOM:CalcuimBoxEmpty15"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox0"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox1"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox2"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox3"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox4"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox5"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox6"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox7"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox8"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox9"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox10"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox11"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox12"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox13"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox14"
+      },
+      {
+        "value": "CUSTOM:CalcuimBox15"
+      },
+      {
+        "value": "CUSTOM:WarpedBurger"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall0"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall1"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall2"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall3"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall4"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall5"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall6"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall7"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall8"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall9"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall10"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall11"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall12"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall13"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall14"
+      },
+      {
+        "value": "CUSTOM:ToGoSmall15"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium0"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium1"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium2"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium3"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium4"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium5"
+      },
+      {
+        "value": "CUSTOM:ToGoMedium6"
+      },
+      {
+        "value": "TAG:pokefood:small_to_go_boxes"
+      },
+      {
+        "value": "TAG:pokefood:long_to_go_boxes"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "to_go_food",
+    "namespace": "mod"
+  }
+}

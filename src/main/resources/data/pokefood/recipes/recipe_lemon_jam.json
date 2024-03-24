@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruit_jams",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:jar"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    },
+    {
+      "item": "pokefood:lemon"
+    }
+  ],
+  "result": {
+    "item": "pokefood:lemon_jar",
+    "count": 1
+  }
+}

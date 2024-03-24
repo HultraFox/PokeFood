@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Jar"
+      },
+      {
+        "value": "CUSTOM:LemonJam"
+      },
+      {
+        "value": "CUSTOM:LimeJam"
+      },
+      {
+        "value": "CUSTOM:GreenGrapesJam"
+      },
+      {
+        "value": "CUSTOM:BlackGrapesJam"
+      },
+      {
+        "value": "CUSTOM:BananaJam"
+      },
+      {
+        "value": "CUSTOM:CherryJam"
+      },
+      {
+        "value": "CUSTOM:AppleJam"
+      },
+      {
+        "value": "CUSTOM:MelonJam"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesJam"
+      },
+      {
+        "value": "CUSTOM:GlowBerriesJam"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "jars",
+    "namespace": "mod"
+  }
+}

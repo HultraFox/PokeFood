@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruit_jams",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:jar"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    },
+    {
+      "item": "pokefood:banana"
+    }
+  ],
+  "result": {
+    "item": "pokefood:banana_jam",
+    "count": 1
+  }
+}

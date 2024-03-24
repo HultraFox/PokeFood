@@ -39,14 +39,14 @@
         "§cWill drop the items in it if broken !"
       ]
     },
-    "hardness": 1.0,
-    "resistance": 1.0,
+    "hardness": 0.5,
+    "resistance": 0.5,
     "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -102,7 +102,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "CardboardBoxGUI",

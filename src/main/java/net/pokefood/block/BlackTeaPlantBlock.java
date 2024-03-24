@@ -84,7 +84,7 @@ public class BlackTeaPlantBlock extends FlowerBlock implements EntityBlock, Bone
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PokefoodModItems.TEA_SEEDS.get());
+		return new ItemStack(PokefoodModItems.BLACK_TEA_SEEDS.get());
 	}
 
 	@Override

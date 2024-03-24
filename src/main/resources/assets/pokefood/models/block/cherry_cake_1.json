@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/cake_3_quarter",
+  "textures": {
+    "all": "pokefood:block/cherry_cake_top",
+    "particle": "pokefood:block/cherry_cake_top",
+    "side": "pokefood:block/cherry_cake_side",
+    "top": "pokefood:block/cherry_cake_top",
+    "bottom": "pokefood:block/cherry_cake_bottom",
+	"inner": "pokefood:block/cherry_cake_inner"
+  },
+  "render_type": "solid"
+}

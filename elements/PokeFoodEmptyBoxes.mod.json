@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "PokeFood - Empty Boxes",
+    "icon": {
+      "value": "CUSTOM:CalcuimBoxEmpty6"
+    },
+    "showSearch": false
+  }
+}

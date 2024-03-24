@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:fried_chicken_leg",
+    "pokefood:fried_duck_leg",
+    "pokefood:fried_flaming_rib",
+    "pokefood:fried_fairy_meat",
+    "pokefood:fried_nido_meat",
+    "pokefood:fried_static_meat",
+    "pokefood:fried_tentacle",
+    "pokefood:fried_horse_meat",
+    "pokefood:fried_caterpie",
+    "pokefood:fried_stiff_steak",
+    "pokefood:fried_fin",
+    "pokefood:fried_watery_meat",
+    "pokefood:fried_spider_meat",
+    "pokefood:fried_unown",
+    "pokefood:fried_heracross_horn",
+    "pokefood:fried_wurmple",
+    "pokefood:fried_pm_ear",
+    "pokefood:fried_fluffy_meat",
+    "pokefood:fried_claw",
+    "pokefood:fried_tail",
+    "pokefood:fried_star_bite"
+  ]
+}

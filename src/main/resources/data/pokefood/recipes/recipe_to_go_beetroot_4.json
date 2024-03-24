@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "beetroot_to_go",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_medium_4"
+    },
+    {
+      "item": "pokefood:fried_beetroot"
+    },
+    {
+      "item": "pokefood:fried_beetroot"
+    },
+    {
+      "item": "pokefood:lettuce"
+    }
+  ],
+  "result": {
+    "item": "pokefood:beetroot_to_go_4",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cheese_balls_to_go",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_medium_5"
+    },
+    {
+      "item": "pokefood:cheese_balls"
+    },
+    {
+      "item": "pokefood:cheese_balls"
+    },
+    {
+      "item": "pokefood:lettuce"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cheese_balls_to_go_5",
+    "count": 1
+  }
+}

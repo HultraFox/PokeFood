@@ -7,12 +7,12 @@
     "customModelName": "pop_calcuim_box_empty:default",
     "customProperties": {},
     "states": [],
-    "name": "Empty poped calcuim box",
+    "name": "Empty Calcuim Box",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:PokeFoodOthers"
+      "value": "CUSTOM:PokeFoodEmptyBoxes"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 1.5,

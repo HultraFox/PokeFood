@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Oil"
+      },
+      {
+        "value": "CUSTOM:SpicyJuice"
+      },
+      {
+        "value": "CUSTOM:LemonJuice"
+      },
+      {
+        "value": "CUSTOM:LimeJuice"
+      },
+      {
+        "value": "CUSTOM:GreenGrapesJuice"
+      },
+      {
+        "value": "CUSTOM:BlackGrapesJuice"
+      },
+      {
+        "value": "CUSTOM:BananaJuice"
+      },
+      {
+        "value": "CUSTOM:CherryJuice"
+      },
+      {
+        "value": "CUSTOM:AppleJuice"
+      },
+      {
+        "value": "CUSTOM:MelonJuice"
+      },
+      {
+        "value": "CUSTOM:SweetBerriesJuice"
+      },
+      {
+        "value": "CUSTOM:GlowBerriesJuice"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "mixer_ingredients_bottled_thin",
+    "namespace": "pokefood_ingredients"
+  }
+}

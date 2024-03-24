@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "apricorn_box",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pokefood:apricorn_boxes_recolor"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    }
+  ],
+  "result": {
+    "item": "pokefood:apricorn_box_item_g",
+    "count": 1
+  }
+}

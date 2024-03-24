@@ -50,5 +50,6 @@ public class CookingRecipeCategory implements IRecipeCategory<CookingRecipe> {
 	@Override
 	public void setRecipe(IRecipeLayoutBuilder builder, CookingRecipe recipe, IFocusGroup focuses) {
 		builder.addSlot(RecipeIngredientRole.INPUT, 34, 8).addIngredients(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 53, 8).addItemStack(recipe.getResultItem(null));
 	}
 }

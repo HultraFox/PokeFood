@@ -5,7 +5,6 @@ import net.pokefood.procedures.KegGUIOpenedProcedure;
 import net.pokefood.procedures.KegGUIClosedProcedure;
 import net.pokefood.network.KegGUISlotMessage;
 import net.pokefood.init.PokefoodModMenus;
-import net.pokefood.init.PokefoodModItems;
 import net.pokefood.PokefoodMod;
 
 import net.minecraftforge.items.SlotItemHandler;
@@ -15,7 +14,6 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -23,7 +21,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -94,19 +94,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.MALT_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_W_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_D_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_B_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_G_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_Y_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_R_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.APRIJUICE_P_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.FRESH_WATER_BUCKET.get() == stack.getItem()
-					|| PokefoodModItems.BRANDY_BUCKET.get() == stack.getItem()
-					|| Items.BUCKET == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_buckets")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 17) {
@@ -120,26 +108,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM.get() == stack.getItem()
-					|| PokefoodModItems.BANANA.get() == stack.getItem()
-					|| PokefoodModItems.CHERRY.get() == stack.getItem()
-					|| PokefoodModItems.TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.ROSERADE_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SLICE.get() == stack.getItem()
-					|| PokefoodModItems.GREEN_GRAPES.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_GRAPES.get() == stack.getItem()
-					|| Items.WHEAT == stack.getItem()
-					|| Items.WHEAT_SEEDS == stack.getItem()
-					|| Items.PUMPKIN_SEEDS == stack.getItem()
-					|| Items.MELON_SEEDS == stack.getItem()
-					|| Items.BEETROOT_SEEDS == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_ingredients")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 8) {
@@ -153,26 +122,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM.get() == stack.getItem()
-					|| PokefoodModItems.BANANA.get() == stack.getItem()
-					|| PokefoodModItems.CHERRY.get() == stack.getItem()
-					|| PokefoodModItems.TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.ROSERADE_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SLICE.get() == stack.getItem()
-					|| PokefoodModItems.GREEN_GRAPES.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_GRAPES.get() == stack.getItem()
-					|| Items.WHEAT == stack.getItem()
-					|| Items.WHEAT_SEEDS == stack.getItem()
-					|| Items.PUMPKIN_SEEDS == stack.getItem()
-					|| Items.MELON_SEEDS == stack.getItem()
-					|| Items.BEETROOT_SEEDS == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_ingredients")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 106, 17) {
@@ -186,10 +136,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   Items.SUGAR == stack.getItem()
-					|| Items.HONEY_BOTTLE == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_sugar")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 52, 53) {
@@ -203,26 +150,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM.get() == stack.getItem()
-					|| PokefoodModItems.BANANA.get() == stack.getItem()
-					|| PokefoodModItems.CHERRY.get() == stack.getItem()
-					|| PokefoodModItems.TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.ROSERADE_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SLICE.get() == stack.getItem()
-					|| PokefoodModItems.GREEN_GRAPES.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_GRAPES.get() == stack.getItem()
-					|| Items.WHEAT == stack.getItem()
-					|| Items.WHEAT_SEEDS == stack.getItem()
-					|| Items.PUMPKIN_SEEDS == stack.getItem()
-					|| Items.MELON_SEEDS == stack.getItem()
-					|| Items.BEETROOT_SEEDS == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_ingredients")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 62) {
@@ -236,26 +164,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM.get() == stack.getItem()
-					|| PokefoodModItems.BANANA.get() == stack.getItem()
-					|| PokefoodModItems.CHERRY.get() == stack.getItem()
-					|| PokefoodModItems.TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.ROSERADE_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SLICE.get() == stack.getItem()
-					|| PokefoodModItems.GREEN_GRAPES.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_GRAPES.get() == stack.getItem()
-					|| Items.WHEAT == stack.getItem()
-					|| Items.WHEAT_SEEDS == stack.getItem()
-					|| Items.PUMPKIN_SEEDS == stack.getItem()
-					|| Items.MELON_SEEDS == stack.getItem()
-					|| Items.BEETROOT_SEEDS == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_ingredients")));
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 106, 53) {
@@ -269,26 +178,7 @@ public class KegGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (
-					   PokefoodModItems.TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM_SEEDS.get() == stack.getItem()
-					|| PokefoodModItems.CALCUIM.get() == stack.getItem()
-					|| PokefoodModItems.BANANA.get() == stack.getItem()
-					|| PokefoodModItems.CHERRY.get() == stack.getItem()
-					|| PokefoodModItems.TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.ROSERADE_TEA_LEAF.get() == stack.getItem()
-					|| PokefoodModItems.LEMON_SLICE.get() == stack.getItem()
-					|| PokefoodModItems.GREEN_GRAPES.get() == stack.getItem()
-					|| PokefoodModItems.BLACK_GRAPES.get() == stack.getItem()
-					|| Items.WHEAT == stack.getItem()
-					|| Items.WHEAT_SEEDS == stack.getItem()
-					|| Items.PUMPKIN_SEEDS == stack.getItem()
-					|| Items.MELON_SEEDS == stack.getItem()
-					|| Items.BEETROOT_SEEDS == stack.getItem()
-					);
+				return stack.is(ItemTags.create(new ResourceLocation("pokefood_ingredients:brewing_ingredients")));
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 142, 35) {

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "burger",
+        "1": "hamburger"
+      },
+      "name": "default"
+    }
+  }
+}

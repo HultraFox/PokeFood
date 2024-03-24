@@ -1,0 +1,79 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FriedChickenLeg"
+      },
+      {
+        "value": "CUSTOM:FriedDuckLeg"
+      },
+      {
+        "value": "CUSTOM:FriedFlamingRib"
+      },
+      {
+        "value": "CUSTOM:FriedFairyMeat"
+      },
+      {
+        "value": "CUSTOM:FriedNidoMeat"
+      },
+      {
+        "value": "CUSTOM:FriedStaticMeat"
+      },
+      {
+        "value": "CUSTOM:FriedTentacle"
+      },
+      {
+        "value": "CUSTOM:FriedHorseMeat"
+      },
+      {
+        "value": "CUSTOM:FriedCaterpie"
+      },
+      {
+        "value": "CUSTOM:FriedStiffSteak"
+      },
+      {
+        "value": "CUSTOM:FriedFin"
+      },
+      {
+        "value": "CUSTOM:FriedWateryMeat"
+      },
+      {
+        "value": "CUSTOM:FriedSpiderMeat"
+      },
+      {
+        "value": "CUSTOM:FriedUnown"
+      },
+      {
+        "value": "CUSTOM:FriedHeracrossHorn"
+      },
+      {
+        "value": "CUSTOM:FriedWurmple"
+      },
+      {
+        "value": "CUSTOM:FriedPmEar"
+      },
+      {
+        "value": "CUSTOM:FriedFluffyMeat"
+      },
+      {
+        "value": "CUSTOM:FriedClaw"
+      },
+      {
+        "value": "CUSTOM:FriedTail"
+      },
+      {
+        "value": "CUSTOM:FriedStarBite"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "fried_meat",
+    "namespace": "forge"
+  }
+}

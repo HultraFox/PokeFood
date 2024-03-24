@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burgers",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:bun"
+    },
+    {
+      "item": "pokefood:grilled_magikarp"
+    },
+    {
+      "item": "pokefood:cheese_s_1"
+    }
+  ],
+  "result": {
+    "item": "pokefood:burger_karp_cheese",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "top": "plate",
+        "under": "plate_under"
+      },
+      "name": "default"
+    }
+  }
+}

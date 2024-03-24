@@ -1,0 +1,91 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TeaSeeds"
+      },
+      {
+        "value": "CUSTOM:BlackTeaSeeds"
+      },
+      {
+        "value": "CUSTOM:LemonSeeds"
+      },
+      {
+        "value": "CUSTOM:CalcuimSeeds"
+      },
+      {
+        "value": "CUSTOM:LeekSeeds"
+      },
+      {
+        "value": "CUSTOM:OnionSeeds"
+      },
+      {
+        "value": "CUSTOM:LetuceSeeds"
+      },
+      {
+        "value": "CUSTOM:RiceSeeds"
+      },
+      {
+        "value": "Items.WHEAT_SEEDS"
+      },
+      {
+        "value": "Items.PUMPKIN_SEEDS"
+      },
+      {
+        "value": "Items.TORCHFLOWER_SEEDS"
+      },
+      {
+        "value": "Items.MELON_SEEDS"
+      },
+      {
+        "value": "Items.BEETROOT_SEEDS"
+      },
+      {
+        "value": "CUSTOM:LemonSlice"
+      },
+      {
+        "value": "CUSTOM:LimeSlice"
+      },
+      {
+        "value": "CUSTOM:Banana"
+      },
+      {
+        "value": "CUSTOM:Cherry"
+      },
+      {
+        "value": "CUSTOM:Calcuim"
+      },
+      {
+        "value": "CUSTOM:TeaLeaf"
+      },
+      {
+        "value": "CUSTOM:BlackTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:RoseradeTeaLeaf"
+      },
+      {
+        "value": "CUSTOM:WhiteGrapes"
+      },
+      {
+        "value": "CUSTOM:BlackGrapes"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.PITCHER_POD"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "brewing_ingredients",
+    "namespace": "pokefood_ingredients"
+  }
+}

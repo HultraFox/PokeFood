@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pokefood:block/cherium_beer_block"
+    },
+    "facing=east": {
+      "model": "pokefood:block/cherium_beer_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokefood:block/cherium_beer_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokefood:block/cherium_beer_block",
+      "y": 270
+    }
+  }
+}

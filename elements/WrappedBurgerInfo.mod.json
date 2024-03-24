@@ -1,0 +1,154 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "CUSTOM:BurgerBeef"
+      },
+      {
+        "value": "CUSTOM:BurgerBeefCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerBeefSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerPork"
+      },
+      {
+        "value": "CUSTOM:BurgerPorkCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerPorkSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerMutton"
+      },
+      {
+        "value": "CUSTOM:BurgerMuttonCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerMuttonSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerGreen"
+      },
+      {
+        "value": "CUSTOM:BurgerGreenCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerGreenSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFairy"
+      },
+      {
+        "value": "CUSTOM:BurgerFairyCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerFairySpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFluffy"
+      },
+      {
+        "value": "CUSTOM:BurgerFluffyCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerFluffySpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerNido"
+      },
+      {
+        "value": "CUSTOM:BurgerNidoCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerNidoSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerBlue"
+      },
+      {
+        "value": "CUSTOM:BurgerBlueCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerBlueSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerHorse"
+      },
+      {
+        "value": "CUSTOM:BurgerHorseCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerHorseSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerLuv"
+      },
+      {
+        "value": "CUSTOM:BurgerLuvCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerLuvSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerBas"
+      },
+      {
+        "value": "CUSTOM:BurgerBasCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerBasSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerKarp"
+      },
+      {
+        "value": "CUSTOM:BurgerKarpCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerKarpSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerKing"
+      },
+      {
+        "value": "CUSTOM:BurgerKingCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerKingSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerDeen"
+      },
+      {
+        "value": "CUSTOM:BurgerDeenCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerDeenSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFried"
+      },
+      {
+        "value": "CUSTOM:BurgerFriedCheese"
+      },
+      {
+        "value": "CUSTOM:BurgerFriedSpicy"
+      },
+      {
+        "value": "CUSTOM:WarpedBurger"
+      }
+    ],
+    "information": [
+      "A burger can be wrapped by having paper in one hand and a burger in the other and right clicking. ",
+      "",
+      "To open a wrapped burger, just right click with it in hand, you'll also get the paper back."
+    ]
+  }
+}

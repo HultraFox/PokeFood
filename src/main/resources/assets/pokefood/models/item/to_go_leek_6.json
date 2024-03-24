@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/to_go_small",
+  "textures": {
+    "0": "pokefood:block/to_go_leek_6",
+    "particle": "pokefood:item/fried_leek"
+  }
+}

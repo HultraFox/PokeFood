@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "lemon_pie_side",
+        "top": "lemon_pie_top",
+        "bottom": "lemon_pie_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

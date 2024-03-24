@@ -1,0 +1,64 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GlassBeer"
+      },
+      {
+        "value": "CUSTOM:GlassBananaTeaBeer"
+      },
+      {
+        "value": "CUSTOM:GlassCherryCalcuimBeer"
+      },
+      {
+        "value": "CUSTOM:GlassApriW"
+      },
+      {
+        "value": "CUSTOM:GlassApriD"
+      },
+      {
+        "value": "CUSTOM:GlassApriB"
+      },
+      {
+        "value": "CUSTOM:GlassApriG"
+      },
+      {
+        "value": "CUSTOM:GlassApriY"
+      },
+      {
+        "value": "CUSTOM:GlassApriP"
+      },
+      {
+        "value": "CUSTOM:GlassApriR"
+      },
+      {
+        "value": "CUSTOM:GlassBrandy"
+      },
+      {
+        "value": "CUSTOM:GlassCidronade"
+      },
+      {
+        "value": "CUSTOM:GlassArceum"
+      },
+      {
+        "value": "CUSTOM:WineGlassRed"
+      },
+      {
+        "value": "CUSTOM:WineGlassWhite"
+      },
+      {
+        "value": "CUSTOM:WineGlassRose"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "alcohol",
+    "namespace": "mod"
+  }
+}

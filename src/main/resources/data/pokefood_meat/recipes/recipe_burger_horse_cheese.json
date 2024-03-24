@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burgers",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:bun"
+    },
+    {
+      "item": "pokefood:cooked_hose_meat"
+    },
+    {
+      "item": "pokefood:cheese_s_2"
+    }
+  ],
+  "result": {
+    "item": "pokefood:burger_horse_cheese",
+    "count": 1
+  }
+}

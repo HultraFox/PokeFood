@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "0": "wine_red"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "0": "wine_glass"
+      },
+      "name": "default"
+    },
+    "white": {
+      "map": {
+        "0": "wine_white"
+      },
+      "name": "white"
+    },
+    "rose": {
+      "map": {
+        "0": "wine_rose"
+      },
+      "name": "rose"
+    }
+  }
+}

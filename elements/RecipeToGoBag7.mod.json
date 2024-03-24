@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "to_go_bag",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ToGoBagB0"
+      },
+      {
+        "value": "Items.DYE#12"
+      },
+      {
+        "value": "Items.DYE#11"
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ToGoBagB7"
+    },
+    "name": "recipe_to_go_bag_7",
+    "namespace": "mod"
+  }
+}

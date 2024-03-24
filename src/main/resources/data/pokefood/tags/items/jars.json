@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:jar",
+    "pokefood:lemon_jam",
+    "pokefood:lime_jam",
+    "pokefood:green_grapes_jam",
+    "pokefood:black_grapes_jam",
+    "pokefood:banana_jam",
+    "pokefood:cherry_jam",
+    "pokefood:apple_jam",
+    "pokefood:melon_jam",
+    "pokefood:sweet_berries_jam",
+    "pokefood:glow_berries_jam"
+  ]
+}

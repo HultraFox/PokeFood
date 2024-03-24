@@ -1,0 +1,14 @@
+{
+  "parent": "pokefood:custom/donut_showcase",
+  "textures": {
+    "all": "pokefood:block/case_puff_0",
+    "particle": "pokefood:block/glass",
+    "glass": "pokefood:block/glass",
+    "oak": "pokefood:block/oak_planks",
+    "donut_3": "pokefood:block/donut_glow_berries",
+    "donut_4": "pokefood:block/donut_melon",
+    "donut_1": "pokefood:block/donut_banana",
+    "donut_2": "pokefood:block/donut_apple"
+  },
+  "render_type": "cutout"
+}

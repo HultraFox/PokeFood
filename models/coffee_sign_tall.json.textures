@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "coffee_sign_1_0",
+        "1": "spruce_planks",
+        "2": "coffee_sign_2_0"
+      },
+      "name": "default"
+    }
+  }
+}

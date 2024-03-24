@@ -1,0 +1,105 @@
+{
+  "variants": {
+    "facing=north,shape=0,texture=0": {
+      "model": "pokefood:block/coffee_board_1_0"
+    },
+    "facing=east,shape=0,texture=0": {
+      "model": "pokefood:block/coffee_board_1_0",
+      "y": 90
+    },
+    "facing=south,shape=0,texture=0": {
+      "model": "pokefood:block/coffee_board_1_0",
+      "y": 180
+    },
+    "facing=west,shape=0,texture=0": {
+      "model": "pokefood:block/coffee_board_1_0",
+      "y": 270
+    },
+
+
+    "facing=north,shape=0,texture=1": {
+      "model": "pokefood:block/coffee_board_1_1"
+    },
+    "facing=east,shape=0,texture=1": {
+      "model": "pokefood:block/coffee_board_1_1",
+      "y": 90
+    },
+    "facing=south,shape=0,texture=1": {
+      "model": "pokefood:block/coffee_board_1_1",
+      "y": 180
+    },
+    "facing=west,shape=0,texture=1": {
+      "model": "pokefood:block/coffee_board_1_1",
+      "y": 270
+    },
+
+
+    "facing=north,shape=0,texture=2": {
+      "model": "pokefood:block/coffee_board_1_2"
+    },
+    "facing=east,shape=0,texture=2": {
+      "model": "pokefood:block/coffee_board_1_2",
+      "y": 90
+    },
+    "facing=south,shape=0,texture=2": {
+      "model": "pokefood:block/coffee_board_1_2",
+      "y": 180
+    },
+    "facing=west,shape=0,texture=2": {
+      "model": "pokefood:block/coffee_board_1_2",
+      "y": 270
+    },
+
+
+
+    "facing=north,shape=1,texture=0": {
+      "model": "pokefood:block/coffee_board_2_0"
+    },
+    "facing=east,shape=1,texture=0": {
+      "model": "pokefood:block/coffee_board_2_0",
+      "y": 90
+    },
+    "facing=south,shape=1,texture=0": {
+      "model": "pokefood:block/coffee_board_2_0",
+      "y": 180
+    },
+    "facing=west,shape=1,texture=0": {
+      "model": "pokefood:block/coffee_board_2_0",
+      "y": 270
+    },
+
+
+    "facing=north,shape=1,texture=1": {
+      "model": "pokefood:block/coffee_board_2_1"
+    },
+    "facing=east,shape=1,texture=1": {
+      "model": "pokefood:block/coffee_board_2_1",
+      "y": 90
+    },
+    "facing=south,shape=1,texture=1": {
+      "model": "pokefood:block/coffee_board_2_1",
+      "y": 180
+    },
+    "facing=west,shape=1,texture=1": {
+      "model": "pokefood:block/coffee_board_2_1",
+      "y": 270
+    },
+
+
+    "facing=north,shape=1,texture=2": {
+      "model": "pokefood:block/coffee_board_2_2"
+    },
+    "facing=east,shape=1,texture=2": {
+      "model": "pokefood:block/coffee_board_2_2",
+      "y": 90
+    },
+    "facing=south,shape=1,texture=2": {
+      "model": "pokefood:block/coffee_board_2_2",
+      "y": 180
+    },
+    "facing=west,shape=1,texture=2": {
+      "model": "pokefood:block/coffee_board_2_2",
+      "y": 270
+    }
+  }
+}

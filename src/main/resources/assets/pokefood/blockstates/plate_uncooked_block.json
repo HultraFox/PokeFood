@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "pile=0": {
+      "model": "pokefood:block/plate_uncooked_block"
+    },
+    "pile=1": {
+      "model": "pokefood:block/plate_uncooked_block_1"
+    },
+    "pile=2": {
+      "model": "pokefood:block/plate_uncooked_block_2"
+    },
+    "pile=3": {
+      "model": "pokefood:block/plate_uncooked_block_3"
+    },
+    "pile=4": {
+      "model": "pokefood:block/plate_uncooked_block_4"
+    },
+    "pile=5": {
+      "model": "pokefood:block/plate_uncooked_block_5"
+    },
+    "pile=6": {
+      "model": "pokefood:block/plate_uncooked_block_6"
+    },
+    "pile=7": {
+      "model": "pokefood:block/plate_uncooked_block_7"
+    }
+  }
+}

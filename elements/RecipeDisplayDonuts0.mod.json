@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "donut_case",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DisplayCaseEmpty"
+      },
+      {
+        "value": "CUSTOM:Donut"
+      },
+      {
+        "value": "CUSTOM:DonutLime"
+      },
+      {
+        "value": "CUSTOM:DonutGreenGrapes"
+      },
+      {
+        "value": "CUSTOM:DonutLemon"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DisplayCaseDonuts0"
+    },
+    "name": "recipe_display_donuts_0",
+    "namespace": "mod"
+  }
+}

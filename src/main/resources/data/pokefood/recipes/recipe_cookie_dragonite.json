@@ -1,0 +1,12 @@
+{
+  "type": "pokefood:cooking",
+  "ingredients": [
+    {
+      "item": "pokefood:cookie_dough"
+    }
+  ],
+  "output": {
+    "item": "pokefood:cookie_dragonite",
+    "count": 1
+  }
+}

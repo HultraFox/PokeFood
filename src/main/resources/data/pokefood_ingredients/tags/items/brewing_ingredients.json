@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "pokefood:tea_seeds",
+    "pokefood:black_tea_seeds",
+    "pokefood:lemon_seeds",
+    "pokefood:calcuim_seeds",
+    "pokefood:leek_seeds",
+    "pokefood:onion_seeds",
+    "pokefood:lettuce_seeds",
+    "pokefood:rice_seeds",
+    "minecraft:wheat_seeds",
+    "minecraft:pumpkin_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:melon_seeds",
+    "minecraft:beetroot_seeds",
+    "pokefood:lemon_slice",
+    "pokefood:lime_slice",
+    "pokefood:banana",
+    "pokefood:cherry",
+    "pokefood:calcuim",
+    "pokefood:tea_leaf",
+    "pokefood:black_tea_leaf",
+    "pokefood:roserade_tea_leaf",
+    "pokefood:green_grapes",
+    "pokefood:black_grapes",
+    "minecraft:wheat",
+    "minecraft:pitcher_pod"
+  ]
+}

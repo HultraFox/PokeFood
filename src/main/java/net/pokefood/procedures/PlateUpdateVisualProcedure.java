@@ -144,7 +144,7 @@ public class PlateUpdateVisualProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 0) == 16) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 0) == 8) {
 			{
 				int _value = 16;
 				BlockPos _pos = BlockPos.containing(x, y, z);

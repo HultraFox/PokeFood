@@ -1,0 +1,61 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurgerBeefSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerPorkSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerMuttonSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerGreenSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFairySpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFluffySpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerNidoSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerBlueSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerHorseSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerLuvSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerBasSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerKarpSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerKingSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerDeenSpicy"
+      },
+      {
+        "value": "CUSTOM:BurgerFriedSpicy"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "burgers_spicy",
+    "namespace": "mod"
+  }
+}

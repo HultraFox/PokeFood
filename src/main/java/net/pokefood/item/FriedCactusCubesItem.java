@@ -16,7 +16,7 @@ import java.util.List;
 
 public class FriedCactusCubesItem extends Item {
 	public FriedCactusCubesItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(7).saturationMod(1f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1f).build()));
 	}
 
 	@Override

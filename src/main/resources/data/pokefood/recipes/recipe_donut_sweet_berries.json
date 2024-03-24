@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "donuts",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:sweet_berries_jar"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    }
+  ],
+  "result": {
+    "item": "pokefood:donut_sweet_berries",
+    "count": 8
+  }
+}

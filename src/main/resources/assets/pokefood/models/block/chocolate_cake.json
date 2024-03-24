@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/cake",
+  "textures": {
+    "all": "pokefood:block/chocolate_cake_top",
+    "particle": "pokefood:block/chocolate_cake_top",
+    "side": "pokefood:block/chocolate_cake_side",
+    "top": "pokefood:block/chocolate_cake_top",
+    "bottom": "pokefood:block/chocolate_cake_bottom"
+  },
+  "render_type": "solid"
+}

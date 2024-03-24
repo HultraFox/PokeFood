@@ -3,12 +3,18 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "a a",
-    "aaa"
+    "aba",
+    "aca"
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:iron_block"
     }
   },
   "result": {

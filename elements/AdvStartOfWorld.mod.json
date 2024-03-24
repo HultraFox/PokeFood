@@ -17,11 +17,7 @@
       "RecipeCupUncooked",
       "RecipeSmallBag",
       "RecipeSodaBottle",
-      "RecipeGlass",
-      "RecipePastryBook",
-      "RecipeSweetDrinkBook",
-      "RecipeAlcoholBook",
-      "RecipeOtherBook"
+      "RecipeGlass"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,

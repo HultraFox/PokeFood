@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruit_juices",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:thin_bottle"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    }
+  ],
+  "result": {
+    "item": "pokefood:glow_berries_juice",
+    "count": 1
+  }
+}

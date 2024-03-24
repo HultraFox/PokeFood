@@ -15,6 +15,7 @@
       "model": "pokefood:block/oven",
       "y": 270
     },
+    
     "facing=north,lit=true": {
       "model": "pokefood:block/oven_on"
     },

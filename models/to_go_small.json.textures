@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "to_go_small_0"
+      },
+      "name": "default"
+    }
+  }
+}

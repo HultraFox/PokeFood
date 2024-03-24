@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burgers",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:bun"
+    },
+    {
+      "item": "pokefood:rosted_goldeen"
+    },
+    {
+      "item": "pokefood:cheese_s_2"
+    }
+  ],
+  "result": {
+    "item": "pokefood:burger_deen_cheese",
+    "count": 1
+  }
+}

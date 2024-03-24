@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burgers",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:bun"
+    },
+    {
+      "item": "pokefood:cooked_nido_meat"
+    },
+    {
+      "item": "pokefood:cheese_s_4"
+    }
+  ],
+  "result": {
+    "item": "pokefood:burger_nido_cheese",
+    "count": 1
+  }
+}

@@ -6,11 +6,11 @@
   ],
   "key": {
     "a": {
-      "item": "pokefood:deleted_mod_element"
+      "item": "pokefood:cooking_pot"
     }
   },
   "result": {
-    "item": "pokefood:deleted_mod_element",
+    "item": "pokefood:curry_pot",
     "count": 1
   }
 }

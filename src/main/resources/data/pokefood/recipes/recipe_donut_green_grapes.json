@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "donuts",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:green_grapes_jar"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    },
+    {
+      "item": "pokefood:donut"
+    }
+  ],
+  "result": {
+    "item": "pokefood:donut_green_grapes",
+    "count": 8
+  }
+}

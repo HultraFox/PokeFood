@@ -1,0 +1,51 @@
+{
+  "variants": {
+    "facing=north,texture=0": {
+      "model": "pokefood:block/exterior_coffee_board"
+    },
+    "facing=east,texture=0": {
+      "model": "pokefood:block/exterior_coffee_board",
+      "y": 90
+    },
+    "facing=south,texture=0": {
+      "model": "pokefood:block/exterior_coffee_board",
+      "y": 180
+    },
+    "facing=west,texture=0": {
+      "model": "pokefood:block/exterior_coffee_board",
+      "y": 270
+    },
+
+    "facing=north,texture=1": {
+      "model": "pokefood:block/exterior_coffee_board_1"
+    },
+    "facing=east,texture=1": {
+      "model": "pokefood:block/exterior_coffee_board_1",
+      "y": 90
+    },
+    "facing=south,texture=1": {
+      "model": "pokefood:block/exterior_coffee_board_1",
+      "y": 180
+    },
+    "facing=west,texture=1": {
+      "model": "pokefood:block/exterior_coffee_board_1",
+      "y": 270
+    },
+
+    "facing=north,texture=2": {
+      "model": "pokefood:block/exterior_coffee_board_2"
+    },
+    "facing=east,texture=2": {
+      "model": "pokefood:block/exterior_coffee_board_2",
+      "y": 90
+    },
+    "facing=south,texture=2": {
+      "model": "pokefood:block/exterior_coffee_board_2",
+      "y": 180
+    },
+    "facing=west,texture=2": {
+      "model": "pokefood:block/exterior_coffee_board_2",
+      "y": 270
+    }
+  }
+}

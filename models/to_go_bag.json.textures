@@ -1,0 +1,67 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "to_go_bag_0_0",
+        "2": "to_go_bag_0_1"
+      },
+      "name": "default"
+    },
+    "pokeball": {
+      "map": {
+        "1": "to_go_bag_1_0",
+        "2": "to_go_bag_1_1"
+      },
+      "name": "pokeball"
+    },
+    "greatball": {
+      "map": {
+        "1": "to_go_bag_2_0",
+        "2": "to_go_bag_2_1"
+      },
+      "name": "greatball"
+    },
+    "hyperball": {
+      "map": {
+        "1": "to_go_bag_3_0",
+        "2": "to_go_bag_3_1"
+      },
+      "name": "hyperball"
+    },
+    "masterball": {
+      "map": {
+        "1": "to_go_bag_4_0",
+        "2": "to_go_bag_4_1"
+      },
+      "name": "masterball"
+    },
+    "parkball": {
+      "map": {
+        "1": "to_go_bag_5_0",
+        "2": "to_go_bag_5_1"
+      },
+      "name": "parkball"
+    },
+    "luxuryball": {
+      "map": {
+        "1": "to_go_bag_6_0",
+        "2": "to_go_bag_6_1"
+      },
+      "name": "luxuryball"
+    },
+    "quickball": {
+      "map": {
+        "1": "to_go_bag_7_0",
+        "2": "to_go_bag_7_1"
+      },
+      "name": "quickball"
+    },
+    "dreamball": {
+      "map": {
+        "1": "to_go_bag_8_0",
+        "2": "to_go_bag_8_1"
+      },
+      "name": "dreamball"
+    }
+  }
+}

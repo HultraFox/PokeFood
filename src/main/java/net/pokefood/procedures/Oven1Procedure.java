@@ -7,6 +7,7 @@ import net.minecraft.core.BlockPos;
 public class Oven1Procedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		double craftingTime = 0;
+		boolean returned = false;
 		craftingTime = (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -14,7 +15,8 @@ public class Oven1Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) / 20;
+		}.getValue(world, BlockPos.containing(x, y, z), "cookingTime")) / 15;
+		returned = false;
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -22,16 +24,16 @@ public class Oven1Procedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") > 0 && new Object() {
+		}.getValue(world, BlockPos.containing(x, y, z), "cookingProgress") > 0 * craftingTime && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") <= craftingTime) {
-			return true;
+		}.getValue(world, BlockPos.containing(x, y, z), "cookingProgress") <= 1 * craftingTime) {
+			returned = true;
 		}
-		return false;
+		return returned;
 	}
 }

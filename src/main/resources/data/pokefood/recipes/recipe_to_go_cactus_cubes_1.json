@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cactus_cubes_to_go",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_medium_1"
+    },
+    {
+      "item": "pokefood:fried_cactus_cubes"
+    },
+    {
+      "item": "pokefood:fried_cactus_cubes"
+    },
+    {
+      "item": "pokefood:lettuce"
+    }
+  ],
+  "result": {
+    "item": "pokefood:cactus_cubes_to_go_1",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/bowl_full_0",
+  "textures": {
+    "all": "pokefood:block/bowl_2",
+    "particle": "pokefood:block/bowl_2",
+    "0": "pokefood:block/bowl_2",
+    "1": "pokefood:block/bowl_out_2",
+    "2": "pokefood:block/bowl_food_2"
+  },
+  "render_type": "cutout_mipped"
+}

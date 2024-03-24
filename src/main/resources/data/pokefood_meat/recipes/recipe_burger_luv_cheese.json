@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burgers",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:bun"
+    },
+    {
+      "item": "pokefood:filleted_luvdisc"
+    },
+    {
+      "item": "pokefood:cheese_s_5"
+    }
+  ],
+  "result": {
+    "item": "pokefood:burger_luv_cheese",
+    "count": 1
+  }
+}

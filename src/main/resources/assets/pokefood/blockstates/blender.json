@@ -1,0 +1,381 @@
+{
+  "multipart": [
+    {
+	  "when": { "facing": "north"},
+	  "apply": { "model": "pokefood:block/blender", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east"},
+	  "apply": { "model": "pokefood:block/blender", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south"},
+	  "apply": { "model": "pokefood:block/blender", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west"},
+	  "apply": { "model": "pokefood:block/blender", "y": 270, "uvlock": false }
+    },
+	
+	
+	{
+	  "when": { "facing": "north", "open": "false"},
+	  "apply": { "model": "pokefood:block/blender_plate", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "open": "false"},
+	  "apply": { "model": "pokefood:block/blender_plate", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "open": "false"},
+	  "apply": { "model": "pokefood:block/blender_plate", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "open": "false"},
+	  "apply": { "model": "pokefood:block/blender_plate", "y": 270, "uvlock": false }
+    },
+	
+	
+	{
+	  "when": { "facing": "north", "lights": 0},
+	  "apply": { "model": "pokefood:block/blender_lights_0", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 0},
+	  "apply": { "model": "pokefood:block/blender_lights_0", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 0},
+	  "apply": { "model": "pokefood:block/blender_lights_0", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 0},
+	  "apply": { "model": "pokefood:block/blender_lights_0", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 1},
+	  "apply": { "model": "pokefood:block/blender_lights_1", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 1},
+	  "apply": { "model": "pokefood:block/blender_lights_1", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 1},
+	  "apply": { "model": "pokefood:block/blender_lights_1", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 1},
+	  "apply": { "model": "pokefood:block/blender_lights_1", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 2},
+	  "apply": { "model": "pokefood:block/blender_lights_2", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 2},
+	  "apply": { "model": "pokefood:block/blender_lights_2", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 2},
+	  "apply": { "model": "pokefood:block/blender_lights_2", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 2},
+	  "apply": { "model": "pokefood:block/blender_lights_2", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 3},
+	  "apply": { "model": "pokefood:block/blender_lights_3", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 3},
+	  "apply": { "model": "pokefood:block/blender_lights_3", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 3},
+	  "apply": { "model": "pokefood:block/blender_lights_3", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 3},
+	  "apply": { "model": "pokefood:block/blender_lights_3", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 4},
+	  "apply": { "model": "pokefood:block/blender_lights_4", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 4},
+	  "apply": { "model": "pokefood:block/blender_lights_4", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 4},
+	  "apply": { "model": "pokefood:block/blender_lights_4", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 4},
+	  "apply": { "model": "pokefood:block/blender_lights_4", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 5},
+	  "apply": { "model": "pokefood:block/blender_lights_5", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 5},
+	  "apply": { "model": "pokefood:block/blender_lights_5", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 5},
+	  "apply": { "model": "pokefood:block/blender_lights_5", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 5},
+	  "apply": { "model": "pokefood:block/blender_lights_5", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 6},
+	  "apply": { "model": "pokefood:block/blender_lights_6", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 6},
+	  "apply": { "model": "pokefood:block/blender_lights_6", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 6},
+	  "apply": { "model": "pokefood:block/blender_lights_6", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 6},
+	  "apply": { "model": "pokefood:block/blender_lights_6", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "lights": 7},
+	  "apply": { "model": "pokefood:block/blender_lights_7", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "lights": 7},
+	  "apply": { "model": "pokefood:block/blender_lights_7", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "lights": 7},
+	  "apply": { "model": "pokefood:block/blender_lights_7", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "lights": 7},
+	  "apply": { "model": "pokefood:block/blender_lights_7", "y": 270, "uvlock": false }
+    },
+	
+	
+	
+	{
+	  "when": { "facing": "north", "blocks": 1},
+	  "apply": { "model": "pokefood:block/blender_blocks_0", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 1},
+	  "apply": { "model": "pokefood:block/blender_blocks_0", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 1},
+	  "apply": { "model": "pokefood:block/blender_blocks_0", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 1},
+	  "apply": { "model": "pokefood:block/blender_blocks_0", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 2},
+	  "apply": { "model": "pokefood:block/blender_blocks_1", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 2},
+	  "apply": { "model": "pokefood:block/blender_blocks_1", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 2},
+	  "apply": { "model": "pokefood:block/blender_blocks_1", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 2},
+	  "apply": { "model": "pokefood:block/blender_blocks_1", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 3},
+	  "apply": { "model": "pokefood:block/blender_blocks_2", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 3},
+	  "apply": { "model": "pokefood:block/blender_blocks_2", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 3},
+	  "apply": { "model": "pokefood:block/blender_blocks_2", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 3},
+	  "apply": { "model": "pokefood:block/blender_blocks_2", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 4},
+	  "apply": { "model": "pokefood:block/blender_blocks_3", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 4},
+	  "apply": { "model": "pokefood:block/blender_blocks_3", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 4},
+	  "apply": { "model": "pokefood:block/blender_blocks_3", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 4},
+	  "apply": { "model": "pokefood:block/blender_blocks_3", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 5},
+	  "apply": { "model": "pokefood:block/blender_blocks_4", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 5},
+	  "apply": { "model": "pokefood:block/blender_blocks_4", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 5},
+	  "apply": { "model": "pokefood:block/blender_blocks_4", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 5},
+	  "apply": { "model": "pokefood:block/blender_blocks_4", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 6},
+	  "apply": { "model": "pokefood:block/blender_blocks_5", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 6},
+	  "apply": { "model": "pokefood:block/blender_blocks_5", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 6},
+	  "apply": { "model": "pokefood:block/blender_blocks_5", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 6},
+	  "apply": { "model": "pokefood:block/blender_blocks_5", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 7},
+	  "apply": { "model": "pokefood:block/blender_blocks_6", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 7},
+	  "apply": { "model": "pokefood:block/blender_blocks_6", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 7},
+	  "apply": { "model": "pokefood:block/blender_blocks_6", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 7},
+	  "apply": { "model": "pokefood:block/blender_blocks_6", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 8},
+	  "apply": { "model": "pokefood:block/blender_blocks_7", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 8},
+	  "apply": { "model": "pokefood:block/blender_blocks_7", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 8},
+	  "apply": { "model": "pokefood:block/blender_blocks_7", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 8},
+	  "apply": { "model": "pokefood:block/blender_blocks_7", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 9},
+	  "apply": { "model": "pokefood:block/blender_blocks_8", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 9},
+	  "apply": { "model": "pokefood:block/blender_blocks_8", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 9},
+	  "apply": { "model": "pokefood:block/blender_blocks_8", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 9},
+	  "apply": { "model": "pokefood:block/blender_blocks_8", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 10},
+	  "apply": { "model": "pokefood:block/blender_blocks_9", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 10},
+	  "apply": { "model": "pokefood:block/blender_blocks_9", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 10},
+	  "apply": { "model": "pokefood:block/blender_blocks_9", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 10},
+	  "apply": { "model": "pokefood:block/blender_blocks_9", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 11},
+	  "apply": { "model": "pokefood:block/blender_blocks_10", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 11},
+	  "apply": { "model": "pokefood:block/blender_blocks_10", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 11},
+	  "apply": { "model": "pokefood:block/blender_blocks_10", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 11},
+	  "apply": { "model": "pokefood:block/blender_blocks_10", "y": 270, "uvlock": false }
+    },
+	
+	{
+	  "when": { "facing": "north", "blocks": 12},
+	  "apply": { "model": "pokefood:block/blender_blocks_11", "uvlock": false }
+    },
+    {
+	  "when": { "facing": "east", "blocks": 12},
+	  "apply": { "model": "pokefood:block/blender_blocks_11", "y": 90, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "south", "blocks": 12},
+	  "apply": { "model": "pokefood:block/blender_blocks_11", "y": 180, "uvlock": false }
+    },
+    {
+	  "when": { "facing": "west", "blocks": 12},
+	  "apply": { "model": "pokefood:block/blender_blocks_11", "y": 270, "uvlock": false }
+    }
+  ]
+}

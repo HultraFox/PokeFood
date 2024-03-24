@@ -1,0 +1,116 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bowl_0",
+        "1": "bowl_out_0"
+      },
+      "name": "default"
+    },
+    "_1": {
+      "map": {
+        "0": "bowl_1",
+        "1": "bowl_out_1"
+      },
+      "name": "_1"
+    },
+    "_2": {
+      "map": {
+        "0": "bowl_2",
+        "1": "bowl_out_2"
+      },
+      "name": "_2"
+    },
+    "_3": {
+      "map": {
+        "0": "bowl_3",
+        "1": "bowl_out_3"
+      },
+      "name": "_3"
+    },
+    "_4": {
+      "map": {
+        "0": "bowl_4",
+        "1": "bowl_out_4"
+      },
+      "name": "_4"
+    },
+    "_5": {
+      "map": {
+        "0": "bowl_5",
+        "1": "bowl_out_5"
+      },
+      "name": "_5"
+    },
+    "_6": {
+      "map": {
+        "0": "bowl_6",
+        "1": "bowl_out_6"
+      },
+      "name": "_6"
+    },
+    "_7": {
+      "map": {
+        "0": "bowl_7",
+        "1": "bowl_out_7"
+      },
+      "name": "_7"
+    },
+    "uncooked_0": {
+      "map": {
+        "0": "bowl_uncooked_0",
+        "1": "bowl_uncooked_out_0"
+      },
+      "name": "uncooked_0"
+    },
+    "uncooked_1": {
+      "map": {
+        "0": "bowl_uncooked_1",
+        "1": "bowl_uncooked_out_1"
+      },
+      "name": "uncooked_1"
+    },
+    "uncooked_2": {
+      "map": {
+        "0": "bowl_uncooked_2",
+        "1": "bowl_uncooked_out_2"
+      },
+      "name": "uncooked_2"
+    },
+    "uncooked_3": {
+      "map": {
+        "0": "bowl_uncooked_3",
+        "1": "bowl_uncooked_out_3"
+      },
+      "name": "uncooked_3"
+    },
+    "uncooked_4": {
+      "map": {
+        "0": "bowl_uncooked_4",
+        "1": "bowl_uncooked_out_4"
+      },
+      "name": "uncooked_4"
+    },
+    "uncooked_5": {
+      "map": {
+        "0": "bowl_uncooked_5",
+        "1": "bowl_uncooked_out_5"
+      },
+      "name": "uncooked_5"
+    },
+    "uncooked_6": {
+      "map": {
+        "0": "bowl_uncooked_6",
+        "1": "bowl_uncooked_out_6"
+      },
+      "name": "uncooked_6"
+    },
+    "uncooked_7": {
+      "map": {
+        "0": "bowl_uncooked_7",
+        "1": "bowl_uncooked_out_7"
+      },
+      "name": "uncooked_7"
+    }
+  }
+}

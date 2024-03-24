@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blender_0"
+      },
+      "name": "default"
+    }
+  }
+}

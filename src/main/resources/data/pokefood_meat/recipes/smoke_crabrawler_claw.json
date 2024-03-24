@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "pokefood:crabrawler_claw"
+  },
+  "result": "pokefood:cooked_crabrawler_claw"
+}

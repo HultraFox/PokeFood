@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "cheese_2": {
+      "map": {
+        "0": "warped_burger_cheesy_2"
+      },
+      "name": "cheese_2"
+    },
+    "cheese_3": {
+      "map": {
+        "0": "warped_burger_cheesy_3"
+      },
+      "name": "cheese_3"
+    },
+    "default": {
+      "map": {
+        "0": "warped_burger"
+      },
+      "name": "default"
+    },
+    "cheese_0": {
+      "map": {
+        "0": "warped_burger_cheesy_0"
+      },
+      "name": "cheese_0"
+    },
+    "cheese_1": {
+      "map": {
+        "0": "warped_burger_cheesy_1"
+      },
+      "name": "cheese_1"
+    },
+    "cheese_4": {
+      "map": {
+        "0": "warped_burger_cheesy_4"
+      },
+      "name": "cheese_4"
+    },
+    "cheese_5": {
+      "map": {
+        "0": "warped_burger_cheesy_5"
+      },
+      "name": "cheese_5"
+    },
+    "spicy": {
+      "map": {
+        "0": "warped_burger_spicy"
+      },
+      "name": "spicy"
+    }
+  }
+}

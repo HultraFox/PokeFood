@@ -52,7 +52,14 @@ public class BerriesCalculateProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending") || (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blend")) {
 			slot = 0;
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -324,7 +331,14 @@ public class BerriesCalculateProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending") || (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blend")) {
 			slot = 1;
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -589,7 +603,14 @@ public class BerriesCalculateProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending") || (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blend")) {
 			slot = 2;
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -861,7 +882,14 @@ public class BerriesCalculateProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending")) {
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blending") || (new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blend")) {
 			slot = 3;
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -1134,7 +1162,21 @@ public class BerriesCalculateProcedure {
 		if (sour > spicy && sour > dry && sour > sweet && sour > bitter) {
 			result = "sour";
 		}
-		if (spicy > 0 && (spicy == dry || spicy == sweet || spicy == bitter || spicy == sour)) {
+		if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "craftingType")).equals("blend")
+				&& (spicy - dry < 5 && spicy - dry > -5 && spicy - sweet < 5 && spicy - sweet > -5 && spicy - bitter < 5 && spicy - bitter > -5 && spicy - sour < 5 && spicy - sour > -5
+						|| dry - spicy < 5 && dry - spicy > -5 && dry - sweet < 5 && dry - sweet > -5 && dry - bitter < 5 && dry - bitter > -5 && dry - sour < 5 && dry - sour > -5
+						|| sweet - spicy < 5 && sweet - spicy > -5 && sweet - dry < 5 && sweet - dry > -5 && sweet - bitter < 5 && sweet - bitter > -5 && sweet - sour < 5 && sweet - sour > -5
+						|| bitter - dry < 5 && bitter - dry > -5 && bitter - sweet < 5 && bitter - sweet > -5 && bitter - spicy < 5 && bitter - spicy > -5 && bitter - sour < 5 && bitter - sour > -5
+						|| sour - dry < 5 && sour - dry > -5 && sour - sweet < 5 && sour - sweet > -5 && sour - bitter < 5 && sour - bitter > -5 && sour - spicy < 5 && sour - spicy > -5)) {
+			result = "equal";
+		} else if (spicy > 0 && (spicy == dry || spicy == sweet || spicy == bitter || spicy == sour)) {
 			result = "spicy";
 		} else if (dry > 0 && (dry == sweet || dry == bitter || dry == sour)) {
 			result = "dry";

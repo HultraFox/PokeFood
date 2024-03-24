@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "bottom": "blender_4",
+        "missing": "",
+        "back": "blender_1",
+        "main": "blender_0",
+        "back_2": "blender_2",
+        "front": "blender_3"
+      },
+      "name": "default"
+    }
+  }
+}

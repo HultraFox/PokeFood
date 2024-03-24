@@ -1,0 +1,12 @@
+{
+  "parent": "pokefood:custom/pie_1_quarter",
+  "textures": {
+    "all": "pokefood:block/apple_pie_side",
+    "particle": "pokefood:block/apple_pie_side",
+    "side": "pokefood:block/apple_pie_side",
+    "top": "pokefood:block/apple_pie_top",
+    "bottom": "pokefood:block/apple_pie_bottom",
+	"inner": "pokefood:block/apple_pie_inner"
+  },
+  "render_type": "cutout"
+}

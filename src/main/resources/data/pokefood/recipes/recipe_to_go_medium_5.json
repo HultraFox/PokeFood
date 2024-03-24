@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "medium_to_go_box",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:pink_dye"
+    },
+    "b": {
+      "item": "pokefood:cardboard"
+    }
+  },
+  "result": {
+    "item": "pokefood:to_go_medium_5",
+    "count": 1
+  }
+}

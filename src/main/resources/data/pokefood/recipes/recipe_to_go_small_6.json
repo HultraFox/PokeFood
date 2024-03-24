@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "small_to_go_box",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:orange_dye"
+    },
+    "b": {
+      "item": "pokefood:cardboard"
+    }
+  },
+  "result": {
+    "item": "pokefood:to_go_small_6",
+    "count": 1
+  }
+}

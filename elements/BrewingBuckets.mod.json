@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Malt.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceW.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceD.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceB.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceG.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceY.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceR.bucket"
+      },
+      {
+        "value": "CUSTOM:ApriJuiceP.bucket"
+      },
+      {
+        "value": "CUSTOM:FreshWater.bucket"
+      },
+      {
+        "value": "CUSTOM:Brandy.bucket"
+      },
+      {
+        "value": "Items.BUCKET"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "brewing_buckets",
+    "namespace": "pokefood_ingredients"
+  }
+}

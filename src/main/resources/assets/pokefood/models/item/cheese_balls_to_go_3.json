@@ -1,0 +1,7 @@
+{
+  "parent": "pokefood:custom/to_go_medium",
+  "textures": {
+    "0": "pokefood:block/to_go_cheese_3",
+    "particle": "pokefood:item/cheese_balls"
+  }
+}

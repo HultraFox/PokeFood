@@ -1,0 +1,53 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "fries",
+    "customModelName": "to_go_small:default",
+    "customProperties": {},
+    "states": [],
+    "name": "Fries To-Go Box",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:PokeFoodOnTheGo"
+    },
+    "stackSize": 8,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": true,
+    "nutritionalValue": 6,
+    "saturation": 0.75,
+    "eatResultItem": {
+      "value": "CUSTOM:ToGoSmall11"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

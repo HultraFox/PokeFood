@@ -1,0 +1,57 @@
+{
+  "parent": "pokefood:custom/warped_burger",
+  "textures": {
+    "0": "pokefood:block/warped_burger",
+    "particle": "pokefood:item/warped_burger_empty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 0
+      },
+      "model": "pokefood:item/wrapped_burger_0"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 1
+      },
+      "model": "pokefood:item/wrapped_burger_1"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 2
+      },
+      "model": "pokefood:item/wrapped_burger_2"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 3
+      },
+      "model": "pokefood:item/wrapped_burger_3"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 4
+      },
+      "model": "pokefood:item/wrapped_burger_4"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 5
+      },
+      "model": "pokefood:item/wrapped_burger_5"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 6
+      },
+      "model": "pokefood:item/wrapped_burger_6"
+    },
+    {
+      "predicate": {
+        "pokefood:wrapped_burger_content": 7
+      },
+      "model": "pokefood:item/wrapped_burger_7"
+    }
+  ]
+}

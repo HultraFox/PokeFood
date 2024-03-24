@@ -43,7 +43,7 @@ public class LemonStage3Block extends FlowerBlock implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 24, 16).move(offset.x, offset.y, offset.z);
+		return box(2, 0, 2, 14, 24, 14).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

@@ -1,0 +1,67 @@
+{
+  "variants": {
+    "facing=north,parts=0": {
+      "model": "pokefood:block/lemon_pie"
+    },
+    "facing=east,parts=0": {
+      "model": "pokefood:block/lemon_pie",
+      "y": 90
+    },
+    "facing=south,parts=0": {
+      "model": "pokefood:block/lemon_pie",
+      "y": 180
+    },
+    "facing=west,parts=0": {
+      "model": "pokefood:block/lemon_pie",
+      "y": 270
+    },
+    
+    "facing=north,parts=1": {
+      "model": "pokefood:block/lemon_pie_1"
+    },
+    "facing=east,parts=1": {
+      "model": "pokefood:block/lemon_pie_1",
+      "y": 90
+    },
+    "facing=south,parts=1": {
+      "model": "pokefood:block/lemon_pie_1",
+      "y": 180
+    },
+    "facing=west,parts=1": {
+      "model": "pokefood:block/lemon_pie_1",
+      "y": 270
+    },
+
+    "facing=north,parts=2": {
+      "model": "pokefood:block/lemon_pie_2"
+    },
+    "facing=east,parts=2": {
+      "model": "pokefood:block/lemon_pie_2",
+      "y": 90
+    },
+    "facing=south,parts=2": {
+      "model": "pokefood:block/lemon_pie_2",
+      "y": 180
+    },
+    "facing=west,parts=2": {
+      "model": "pokefood:block/lemon_pie_2",
+      "y": 270
+    },
+
+    "facing=north,parts=3": {
+      "model": "pokefood:block/lemon_pie_3"
+    },
+    "facing=east,parts=3": {
+      "model": "pokefood:block/lemon_pie_3",
+      "y": 90
+    },
+    "facing=south,parts=3": {
+      "model": "pokefood:block/lemon_pie_3",
+      "y": 180
+    },
+    "facing=west,parts=3": {
+      "model": "pokefood:block/lemon_pie_3",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/to_go_bag",
+  "textures": {
+    "all": "pokefood:block/to_go_bag_1_0",
+    "particle": "pokefood:block/to_go_bag_1_0",
+    "1": "pokefood:block/to_go_bag_1_0",
+    "2": "pokefood:block/to_go_bag_1_1"
+  },
+  "render_type": "solid"
+}

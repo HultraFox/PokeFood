@@ -24,7 +24,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:PotEmpty"
+        "value": "CUSTOM:CookingPot"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CurryPotUnlit"
+      "value": "CUSTOM:CurryPot"
     },
     "name": "recipe_curry_pot",
     "namespace": "mod"

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "to_go_bag",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_bag_b_0"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "item": "pokefood:to_go_bag_b_6",
+    "count": 1
+  }
+}

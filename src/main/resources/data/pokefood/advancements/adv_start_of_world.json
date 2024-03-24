@@ -10,11 +10,7 @@
       "pokefood:recipe_cup_uncooked",
       "pokefood:recipe_small_bag",
       "pokefood:recipe_soda_bottle",
-      "pokefood:recipe_glass",
-      "pokefood:recipe_pastry_book",
-      "pokefood:recipe_sweet_drink_book",
-      "pokefood:recipe_alcohol_book",
-      "pokefood:recipe_other_book"
+      "pokefood:recipe_glass"
     ]
   }
 }

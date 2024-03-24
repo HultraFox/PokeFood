@@ -1,0 +1,24 @@
+{
+  "type": "pokefood:curry_cooking",
+  "ingredients": [
+    {
+      "item": "pokefood:curry_pot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "item": "pokefood:curry_mix"
+    },
+    {
+      "tag": "pokefood:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "pokefood:curry",
+    "count": 1
+  }
+}

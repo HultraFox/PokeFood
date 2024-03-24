@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "pokefood:calcuim"
+    },
+    "b": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "pokefood:bun",
+    "count": 2
+  }
+}

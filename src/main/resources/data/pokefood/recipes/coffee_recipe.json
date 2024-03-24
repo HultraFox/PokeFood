@@ -2,10 +2,10 @@
   "type": "pokefood:coffee_making",
   "ingredients": [
     {
-      "item": "minecraft:water_bucket"
+      "item": "pokefood:coffee_powder"
     },
     {
-      "item": "pokefood:coffee_powder"
+      "item": "minecraft:water_bucket"
     }
   ],
   "output": {

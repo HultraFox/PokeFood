@@ -11,6 +11,8 @@ import net.pokefood.jei_recipes.IcecreamRecipeCategory;
 import net.pokefood.jei_recipes.IcecreamRecipe;
 import net.pokefood.jei_recipes.FryRecipeCategory;
 import net.pokefood.jei_recipes.FryRecipe;
+import net.pokefood.jei_recipes.CurryCookingRecipeCategory;
+import net.pokefood.jei_recipes.CurryCookingRecipe;
 import net.pokefood.jei_recipes.CrepeCookingRecipeCategory;
 import net.pokefood.jei_recipes.CrepeCookingRecipe;
 import net.pokefood.jei_recipes.CookingRecipeCategory;
@@ -48,6 +50,7 @@ public class PokefoodModJeiPlugin implements IModPlugin {
 	public static mezz.jei.api.recipe.RecipeType<LinkedInfuseOrBoilRecipe> LinkedInfuseOrBoil_Type = new mezz.jei.api.recipe.RecipeType<>(LinkedInfuseOrBoilRecipeCategory.UID, LinkedInfuseOrBoilRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<CoffeeMakingRecipe> CoffeeMaking_Type = new mezz.jei.api.recipe.RecipeType<>(CoffeeMakingRecipeCategory.UID, CoffeeMakingRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<SugarMeltingRecipe> SugarMelting_Type = new mezz.jei.api.recipe.RecipeType<>(SugarMeltingRecipeCategory.UID, SugarMeltingRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<CurryCookingRecipe> CurryCooking_Type = new mezz.jei.api.recipe.RecipeType<>(CurryCookingRecipeCategory.UID, CurryCookingRecipe.class);
 
 	@Override
 	public ResourceLocation getPluginUid() {
@@ -66,6 +69,7 @@ public class PokefoodModJeiPlugin implements IModPlugin {
 		registration.addRecipeCategories(new LinkedInfuseOrBoilRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new CoffeeMakingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new SugarMeltingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new CurryCookingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 	}
 
 	@Override
@@ -91,6 +95,8 @@ public class PokefoodModJeiPlugin implements IModPlugin {
 		registration.addRecipes(CoffeeMaking_Type, CoffeeMakingRecipes);
 		List<SugarMeltingRecipe> SugarMeltingRecipes = recipeManager.getAllRecipesFor(SugarMeltingRecipe.Type.INSTANCE);
 		registration.addRecipes(SugarMelting_Type, SugarMeltingRecipes);
+		List<CurryCookingRecipe> CurryCookingRecipes = recipeManager.getAllRecipesFor(CurryCookingRecipe.Type.INSTANCE);
+		registration.addRecipes(CurryCooking_Type, CurryCookingRecipes);
 	}
 
 	@Override
@@ -105,5 +111,6 @@ public class PokefoodModJeiPlugin implements IModPlugin {
 		registration.addRecipeCatalyst(new ItemStack(PokefoodModBlocks.COOKING_POT.get().asItem()), LinkedInfuseOrBoil_Type);
 		registration.addRecipeCatalyst(new ItemStack(PokefoodModBlocks.COFFEE_MAKER.get().asItem()), CoffeeMaking_Type);
 		registration.addRecipeCatalyst(new ItemStack(PokefoodModBlocks.SUGAR_MELTER_0.get().asItem()), SugarMelting_Type);
+		registration.addRecipeCatalyst(new ItemStack(PokefoodModBlocks.CURRY_POT.get().asItem()), CurryCooking_Type);
 	}
 }

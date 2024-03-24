@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "leek_to_go",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_small_3"
+    },
+    {
+      "item": "pokefood:fried_leek"
+    },
+    {
+      "item": "pokefood:fried_leek"
+    }
+  ],
+  "result": {
+    "item": "pokefood:to_go_leek_3",
+    "count": 1
+  }
+}

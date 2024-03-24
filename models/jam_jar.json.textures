@@ -1,0 +1,92 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "null"
+      },
+      "name": "default"
+    },
+    "apple": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "apple_jam"
+      },
+      "name": "apple"
+    },
+    "banana": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "banana_jam"
+      },
+      "name": "banana"
+    },
+    "black_grapes": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "black_grapes_jam"
+      },
+      "name": "black_grapes"
+    },
+    "cherry": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "cherry_jam"
+      },
+      "name": "cherry"
+    },
+    "glow_berries": {
+      "map": {
+        "side": "glow_jam_jar",
+        "top": "glow_jam_jar_top",
+        "liquid": "glow_berries_jam"
+      },
+      "name": "glow_berries"
+    },
+    "green_grapes": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "green_grapes_jam"
+      },
+      "name": "green_grapes"
+    },
+    "lemon": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "lemon_jam"
+      },
+      "name": "lemon"
+    },
+    "lime": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "lime_jam"
+      },
+      "name": "lime"
+    },
+    "melon": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "melon_jam"
+      },
+      "name": "melon"
+    },
+    "sweet_berries": {
+      "map": {
+        "side": "jam_jar",
+        "top": "jam_jar_top",
+        "liquid": "sweet_berries_jam"
+      },
+      "name": "sweet_berries"
+    }
+  }
+}

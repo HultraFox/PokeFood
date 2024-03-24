@@ -5,6 +5,12 @@
     "type": "Items",
     "items": [
       {
+        "value": "CUSTOM:CupUncooked"
+      },
+      {
+        "value": "CUSTOM:Cup"
+      },
+      {
         "value": "CUSTOM:CupAprijuiceW"
       },
       {
@@ -59,6 +65,6 @@
     "biomes": [],
     "damageTypes": [],
     "name": "cups",
-    "namespace": "forge"
+    "namespace": "mod"
   }
 }

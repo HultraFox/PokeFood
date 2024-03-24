@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": "TAG:forge:fuel"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -24,15 +24,15 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 159,
-          "y": 44
+          "x": 132,
+          "y": 71
         }
       },
       {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -42,7 +42,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
+          "x": 159,
           "y": 44
         }
       },
@@ -50,7 +50,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -60,7 +60,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 249,
+          "x": 204,
           "y": 44
         }
       },
@@ -68,7 +68,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -78,15 +78,15 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 159,
-          "y": 71
+          "x": 249,
+          "y": 44
         }
       },
       {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -96,6 +96,24 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
           "x": 204,
           "y": 71
         }
@@ -104,12 +122,12 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 5,
+          "id": 6,
           "disablePickup": {
             "fixedValue": false
           },
@@ -122,12 +140,12 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 6,
+          "id": 7,
           "disablePickup": {
             "fixedValue": false
           },
@@ -140,25 +158,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:CookieDough"
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 7,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 98
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": "CUSTOM:CookieDough"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -168,257 +168,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 249,
+          "x": 204,
           "y": 98
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_0.png",
-          "use1Xscale": false,
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_1.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven1"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_2.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven2"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_3.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven3"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_4.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven4"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_5.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven5"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_6.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven6"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_7.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven7"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_8.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven8"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_9.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven9"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_10.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven10"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_11.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven11"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_12.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven12"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_13.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven13"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_14.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven14"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_15.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven15"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_16.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven16"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_17.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven17"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_18.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven18"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_19.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven19"
-          },
-          "x": 126,
-          "y": 38
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "oven_20.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "Oven20"
-          },
-          "x": 126,
-          "y": 38
         }
       },
       {
@@ -435,16 +186,742 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 132,
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
+          "y": 44
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 223,
+          "y": 44
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 268,
+          "y": 44
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 13,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
           "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 14,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 223,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 15,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 268,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 16,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 17,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 223,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "id": 18,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 268,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_0.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven1"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven2"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven3"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven4"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven5"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven6"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven7"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven8"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven9"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven10"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven11"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven12"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven13"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_fire_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven14"
+          },
+          "x": 126,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven0Progress1"
+          },
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven0Progress2"
+          },
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven0Progress3"
+          },
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven1Progress1"
+          },
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven1Progress2"
+          },
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven1Progress3"
+          },
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven2Progress1"
+          },
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven2Progress2"
+          },
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven2Progress3"
+          },
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven3Progress1"
+          },
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven3Progress2"
+          },
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven3Progress3"
+          },
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven4Progress1"
+          },
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven4Progress2"
+          },
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven4Progress3"
+          },
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven5Progress1"
+          },
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven5Progress2"
+          },
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven5Progress3"
+          },
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven6Progress1"
+          },
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven6Progress2"
+          },
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven6Progress3"
+          },
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven7Progress1"
+          },
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven7Progress2"
+          },
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven7Progress3"
+          },
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_0.png",
+          "use1Xscale": false,
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven8Progress1"
+          },
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven8Progress2"
+          },
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oven_process_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Oven8Progress3"
+          },
+          "x": 249,
+          "y": 98
         }
       }
     ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
-      "oy": 14,
+      "ox": 17,
+      "oy": 21,
       "snapOnGrid": true
     }
   }

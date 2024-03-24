@@ -2,6 +2,6 @@
   "parent": "pokefood:custom/pokepuff",
   "textures": {
     "0": "pokefood:block/fancy_stiff",
-    "particle": "pokefood:item/fancy_stiff"
+    "particle": "pokefood:block/fancy_stiff"
   }
 }

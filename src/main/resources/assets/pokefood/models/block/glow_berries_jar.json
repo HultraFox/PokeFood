@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/jam_jar",
+  "textures": {
+    "all": "pokefood:block/glow_berries_jam",
+    "particle": "pokefood:block/glow_berries_jam",
+    "side": "pokefood:block/glow_jam_jar",
+    "top": "pokefood:block/glow_jam_jar_top",
+    "liquid": "pokefood:block/glow_berries_jam"
+  },
+  "render_type": "cutout"
+}

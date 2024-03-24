@@ -1,0 +1,11 @@
+{
+  "parent": "pokefood:custom/jam_jar",
+  "textures": {
+    "all": "pokefood:block/lemon_jam",
+    "particle": "pokefood:block/lemon_jam",
+    "side": "pokefood:block/jam_jar",
+    "top": "pokefood:block/jam_jar_top",
+    "liquid": "pokefood:block/lemon_jam"
+  },
+  "render_type": "cutout"
+}

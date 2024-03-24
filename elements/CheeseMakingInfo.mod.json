@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CheeseMold"
+      },
+      {
+        "value": "CUSTOM:CheeseFull0"
+      },
+      {
+        "value": "CUSTOM:CheeseFull1"
+      },
+      {
+        "value": "CUSTOM:CheeseFull2"
+      },
+      {
+        "value": "CUSTOM:CheeseFull3"
+      },
+      {
+        "value": "CUSTOM:CheeseFull4"
+      },
+      {
+        "value": "CUSTOM:CheeseFull5"
+      },
+      {
+        "value": "CUSTOM:BagCurd"
+      }
+    ],
+    "information": [
+      "Cheese is made by adding a curd bag into a cheese mold.",
+      "",
+      "The biome's temperature will change what cheese you'll get in the end."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sweet_berries_to_go",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pokefood:to_go_medium_4"
+    },
+    {
+      "item": "pokefood:fried_sweet_berries"
+    },
+    {
+      "item": "pokefood:fried_sweet_berries"
+    },
+    {
+      "item": "pokefood:lettuce"
+    }
+  ],
+  "result": {
+    "item": "pokefood:sweet_berries_to_go_4",
+    "count": 1
+  }
+}

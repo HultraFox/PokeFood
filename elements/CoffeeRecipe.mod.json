@@ -9,10 +9,10 @@
     "count": 1,
     "ingredients": [
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:CoffeePowder"
       },
       {
-        "value": "CUSTOM:CoffeePowder"
+        "value": "Items.WATER_BUCKET"
       }
     ]
   }

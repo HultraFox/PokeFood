@@ -2,25 +2,46 @@ package net.pokefood.client.gui;
 
 import net.pokefood.world.inventory.BigOvenGUIMenu;
 import net.pokefood.procedures.Oven9Procedure;
+import net.pokefood.procedures.Oven8Progress3Procedure;
+import net.pokefood.procedures.Oven8Progress2Procedure;
+import net.pokefood.procedures.Oven8Progress1Procedure;
 import net.pokefood.procedures.Oven8Procedure;
+import net.pokefood.procedures.Oven7Progress3Procedure;
+import net.pokefood.procedures.Oven7Progress2Procedure;
+import net.pokefood.procedures.Oven7Progress1Procedure;
 import net.pokefood.procedures.Oven7Procedure;
+import net.pokefood.procedures.Oven6Progress3Procedure;
+import net.pokefood.procedures.Oven6Progress2Procedure;
+import net.pokefood.procedures.Oven6Progress1Procedure;
 import net.pokefood.procedures.Oven6Procedure;
+import net.pokefood.procedures.Oven5Progress3Procedure;
+import net.pokefood.procedures.Oven5Progress2Procedure;
+import net.pokefood.procedures.Oven5Progress1Procedure;
 import net.pokefood.procedures.Oven5Procedure;
+import net.pokefood.procedures.Oven4Progress3Procedure;
+import net.pokefood.procedures.Oven4Progress2Procedure;
+import net.pokefood.procedures.Oven4Progress1Procedure;
 import net.pokefood.procedures.Oven4Procedure;
+import net.pokefood.procedures.Oven3Progress3Procedure;
+import net.pokefood.procedures.Oven3Progress2Procedure;
+import net.pokefood.procedures.Oven3Progress1Procedure;
 import net.pokefood.procedures.Oven3Procedure;
+import net.pokefood.procedures.Oven2Progress3Procedure;
+import net.pokefood.procedures.Oven2Progress2Procedure;
+import net.pokefood.procedures.Oven2Progress1Procedure;
 import net.pokefood.procedures.Oven2Procedure;
-import net.pokefood.procedures.Oven20Procedure;
+import net.pokefood.procedures.Oven1Progress3Procedure;
+import net.pokefood.procedures.Oven1Progress2Procedure;
+import net.pokefood.procedures.Oven1Progress1Procedure;
 import net.pokefood.procedures.Oven1Procedure;
-import net.pokefood.procedures.Oven19Procedure;
-import net.pokefood.procedures.Oven18Procedure;
-import net.pokefood.procedures.Oven17Procedure;
-import net.pokefood.procedures.Oven16Procedure;
-import net.pokefood.procedures.Oven15Procedure;
 import net.pokefood.procedures.Oven14Procedure;
 import net.pokefood.procedures.Oven13Procedure;
 import net.pokefood.procedures.Oven12Procedure;
 import net.pokefood.procedures.Oven11Procedure;
 import net.pokefood.procedures.Oven10Procedure;
+import net.pokefood.procedures.Oven0Progress3Procedure;
+import net.pokefood.procedures.Oven0Progress2Procedure;
+import net.pokefood.procedures.Oven0Progress1Procedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -67,67 +88,157 @@ public class BigOvenGUIScreen extends AbstractContainerScreen<BigOvenGUIMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_0.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_0.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 
 		if (Oven1Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_1.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_1.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven2Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_2.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_2.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven3Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_3.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_3.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven4Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_4.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_4.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven5Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_5.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_5.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven6Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_6.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_6.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven7Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_7.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_7.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven8Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_8.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_8.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven9Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_9.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_9.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven10Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_10.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_10.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven11Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_11.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_11.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven12Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_12.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_12.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven13Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_13.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_13.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
 		if (Oven14Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_14.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_fire_14.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 		}
-		if (Oven15Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_15.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 33, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+
+		if (Oven0Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 33, this.topPos + 7, 0, 0, 28, 22, 28, 22);
 		}
-		if (Oven16Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_16.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		if (Oven0Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 33, this.topPos + 7, 0, 0, 28, 22, 28, 22);
 		}
-		if (Oven17Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_17.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		if (Oven0Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 33, this.topPos + 7, 0, 0, 28, 22, 28, 22);
 		}
-		if (Oven18Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_18.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 78, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+
+		if (Oven1Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 78, this.topPos + 7, 0, 0, 28, 22, 28, 22);
 		}
-		if (Oven19Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_19.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		if (Oven1Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 78, this.topPos + 7, 0, 0, 28, 22, 28, 22);
 		}
-		if (Oven20Procedure.execute(world, x, y, z)) {
-			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_20.png"), this.leftPos + 0, this.topPos + 1, 0, 0, 176, 166, 176, 166);
+		if (Oven1Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 78, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 123, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+
+		if (Oven2Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 123, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven2Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 123, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven2Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 123, this.topPos + 7, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 33, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+
+		if (Oven3Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 33, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven3Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 33, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven3Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 33, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 78, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+
+		if (Oven4Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 78, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven4Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 78, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven4Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 78, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 123, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+
+		if (Oven5Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 123, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven5Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 123, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven5Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 123, this.topPos + 34, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 33, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+
+		if (Oven6Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 33, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven6Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 33, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven6Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 33, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 78, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+
+		if (Oven7Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 78, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven7Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 78, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven7Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 78, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+
+		guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_0.png"), this.leftPos + 123, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+
+		if (Oven8Progress1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_1.png"), this.leftPos + 123, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven8Progress2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_2.png"), this.leftPos + 123, this.topPos + 61, 0, 0, 28, 22, 28, 22);
+		}
+		if (Oven8Progress3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("pokefood:textures/screens/oven_process_3.png"), this.leftPos + 123, this.topPos + 61, 0, 0, 28, 22, 28, 22);
 		}
 		RenderSystem.disableBlend();
 	}

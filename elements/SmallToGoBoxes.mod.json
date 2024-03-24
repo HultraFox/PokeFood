@@ -1,0 +1,112 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ToGoFries0"
+      },
+      {
+        "value": "CUSTOM:ToGoFries1"
+      },
+      {
+        "value": "CUSTOM:ToGoFries2"
+      },
+      {
+        "value": "CUSTOM:ToGoFries3"
+      },
+      {
+        "value": "CUSTOM:ToGoFries4"
+      },
+      {
+        "value": "CUSTOM:ToGoFries5"
+      },
+      {
+        "value": "CUSTOM:ToGoFries6"
+      },
+      {
+        "value": "CUSTOM:ToGoFries7"
+      },
+      {
+        "value": "CUSTOM:ToGoFries8"
+      },
+      {
+        "value": "CUSTOM:ToGoFries9"
+      },
+      {
+        "value": "CUSTOM:ToGoFries10"
+      },
+      {
+        "value": "CUSTOM:ToGoFries11"
+      },
+      {
+        "value": "CUSTOM:ToGoFries12"
+      },
+      {
+        "value": "CUSTOM:ToGoFries13"
+      },
+      {
+        "value": "CUSTOM:ToGoFries14"
+      },
+      {
+        "value": "CUSTOM:ToGoFries15"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek0"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek1"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek2"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek3"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek4"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek5"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek6"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek7"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek8"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek9"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek10"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek11"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek12"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek13"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek14"
+      },
+      {
+        "value": "CUSTOM:ToGoLeek15"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "small_to_go_boxes",
+    "namespace": "mod"
+  }
+}

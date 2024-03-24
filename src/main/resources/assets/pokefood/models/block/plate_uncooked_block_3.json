@@ -1,0 +1,10 @@
+{
+  "parent": "pokefood:custom/plate_3",
+  "textures": {
+    "all": "pokefood:block/plate_uncooked",
+    "particle": "pokefood:block/plate_uncooked",
+    "top": "pokefood:block/plate_uncooked",
+    "under": "pokefood:block/plate_uncooked_under"
+  },
+  "render_type": "solid"
+}

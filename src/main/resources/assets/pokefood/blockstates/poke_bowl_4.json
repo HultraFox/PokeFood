@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "food=0": {
+      "model": "pokefood:block/poke_bowl_4"
+    },
+    "food=1": {
+      "model": "pokefood:block/poke_bowl_4_food_1"
+    },
+    "food=2": {
+      "model": "pokefood:block/poke_bowl_4_food_2"
+    },
+    "food=3": {
+      "model": "pokefood:block/poke_bowl_4_food_3"
+    },
+    "food=4": {
+      "model": "pokefood:block/poke_bowl_4_food_4"
+    },
+    "food=5": {
+      "model": "pokefood:block/poke_bowl_4_food_5"
+    },
+    "food=6": {
+      "model": "pokefood:block/poke_bowl_4_food_6"
+    },
+    "food=7": {
+      "model": "pokefood:block/poke_bowl_4_food_7"
+    },
+    "food=8": {
+      "model": "pokefood:block/poke_bowl_4_food_8"
+    }
+  }
+}

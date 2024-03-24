@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cooked watery meat",
+    "name": "Cooked Watery Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PokeFoodHunt"
@@ -29,6 +29,9 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -37,6 +40,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": true,
     "nutritionalValue": 3,
     "saturation": 1.25,
